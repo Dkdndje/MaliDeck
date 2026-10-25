@@ -1,4 +1,4 @@
-# DroidDeck Mali GPU Compatibility
+# MaliDeck — Mali GPU Compatibility
 
 Community-led compatibility research for running [DroidDeck](https://github.com/Droid-Deck/DroidDeck) on devices powered by ARM Mali GPUs.
 
@@ -11,20 +11,38 @@ Community-led compatibility research for running [DroidDeck](https://github.com/
 - Collect reproducible test results from the community.
 - Improve performance and stability without claiming untested compatibility.
 
-## Target hardware
+## GPU compatibility scope
 
-Testing is welcome on any ARM Mali GPU, including older Mali-T series and Mali-G series such as G52, G57, G68, G71, G72, G76, G77, G78, G610, G710, G720, G725, and newer or other Mali models.
+The current driver target is **Mali kbase CSF (Command Stream Frontend), versions v9–v13**. A GPU model name alone does not prove that the installed kernel driver exposes this interface; verify the device's actual kernel/driver implementation.
 
-This is a **testing scope, not a supported-device list**. GPU name alone is not enough to establish compatibility. Android version, kernel, vendor graphics stack, Vulkan implementation and extensions, DroidDeck build, and driver package can all affect results.
+### CSF candidates — test, not guaranteed
+
+- Mali-G310
+- Mali-G510
+- Mali-G610
+- Mali-G710
+- Mali-G310/G510/G610/G710 family variants such as G310, G510, G610, and G710
+- Mali-G615, G715, G620, G720, G625, and G725
+
+These are candidates because they belong to newer CSF-era GPU families. Exact kernel, firmware, Android vendor stack, and CSF interface version still need to match the driver package. No model is confirmed supported merely by appearing here.
+
+### Not supported by this CSF-only target
+
+- Mali-G52, G57, G68
+- Mali-G71, G72, G76, G77, G78
+
+These older Job Manager (JM) families do not match the current CSF-only target and should be treated as **unsupported by this driver package**, unless a separate compatible JM driver is developed and verified.
+
+Android version, kernel, vendor graphics stack, Vulkan implementation/extensions, DroidDeck build, and driver package can all affect results.
 
 ## Downloads
 
-1. Open this repository's **[Releases](https://github.com/Dkdndje/DroidDeck-Mali-GPU/releases)** page.
-2. Download the DroidDeck APK release asset.
-3. Download the driver ZIP explicitly identified for your device/GPU and software combination.
+1. Open this repository's **[Releases](https://github.com/Dkdndje/MaliDeck/releases)** page.
+2. Check whether a DroidDeck APK is attached to a release.
+3. Check whether a driver ZIP matching your GPU and software combination is attached.
 4. Read the release notes before installing anything.
 
-If no release assets are published yet, there is nothing to download from this repository yet. Do not use a random APK or driver ZIP from an untrusted source. This repository does not currently guarantee that any specific APK or driver package is available.
+A GitHub Release entry may exist without downloadable APK/ZIP assets. If the required file is not listed under **Assets**, it has not been published here; do not assume the release title itself contains a working download. Do not use random APKs or driver ZIPs from untrusted sources.
 
 ## Installation and setup
 
@@ -70,7 +88,7 @@ Please open a GitHub Issue and include as much of the following as you can:
 | Performance | Resolution, interface FPS, in-game FPS, and temperature/throttling observations |
 | Logs | Relevant redacted logs or screenshots; remove personal data and tokens |
 
-Use the [Issues](https://github.com/Dkdndje/DroidDeck-Mali-GPU/issues) page to report bugs or share test results. Do not report a GPU as supported based only on the app opening; include the test conditions and what actually worked.
+Use the [Issues](https://github.com/Dkdndje/MaliDeck/issues) page to report bugs or share test results. Do not report a GPU as supported based only on the app opening; include the test conditions and what actually worked.
 
 ## Safety and compatibility warnings
 
