@@ -133,3 +133,5 @@ Community reports are valuable. Please provide reproducible steps, exact version
 The upstream [DroidDeck project](https://github.com/Droid-Deck/DroidDeck) is licensed under **GPL-3.0**. The APK distributed in this repository is a modified build, not the official unmodified APK.
 
 **The corresponding modified APK source code has not yet been published in this repository.** This means source availability and GPL compliance for the modified build still need to be resolved; do not interpret the APK upload as proof that the corresponding source is available. Driver packages and third-party components may have separate licenses. Check their terms individually.
+
+A partial, decompiled source recovery of this APK is available in [`source-recovery/`](source-recovery/). It is **not** the original source: it contains decompiled Java/smali of the app package, exact copies of the modified guest scripts, and approximate patches against upstream. The original build repository has not yet been located, so GPL compliance remains unresolved. The native adapter source and Gradle build files are not recoverable from the APK.
