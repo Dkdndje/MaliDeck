@@ -1,0 +1,13 @@
+--- a/tools/linuxfs/overlay/usr/local/bin/droiddeck-appimage-run
++++ b/tools/linuxfs/overlay/usr/local/bin/droiddeck-appimage-run
+@@ -74,6 +74,10 @@
+ echo "== appimage $ARGV0 ($APPDIR) ${flags[*]} FEX $fex Qt $qt${QT_QPA_PLATFORM:+ ($QT_QPA_PLATFORM)}"
+ cd "$APPDIR" || exit 1
+ started=$(mktemp "${TMPDIR:-/tmp}/droiddeck-appimage.XXXXXX")
++# A log written milliseconds into the run can land in the same timestamp tick as this stamp on
++# some filesystems, and find -newer is strict - backdate the stamp so anything the app writes
++# during the run is always newer than it. Old logs stay older than it the same way.
++touch -d "@$(( $(date +%s) - 2 ))" "$started" 2>/dev/null || true
+ # Apps expect a session bus; Electron's main process traps (SIGTRAP) on an address it cannot
+ # parse. A run mode has none, so one is started for the app, as for Flatpak apps.
+ case ${DBUS_SESSION_BUS_ADDRESS:-} in

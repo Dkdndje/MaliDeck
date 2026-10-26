@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mode_added_count">
+        <item quantity="one">%1$d игра</item>
+        <item quantity="few">%1$d игры</item>
+        <item quantity="many">%1$d игр</item>
+        <item quantity="other">%1$d игр</item>
+    </plurals>
+    <plurals name="upd_preview_behind">
+        <item quantity="one">Изменения с момента вашей сборки · отставание на %1$d сборку</item>
+        <item quantity="few">Изменения с момента вашей сборки · отставание на %1$d сборки</item>
+        <item quantity="many">Изменения с момента вашей сборки · отставание на %1$d сборок</item>
+        <item quantity="other">Изменения с момента вашей сборки · отставание на %1$d сборки</item>
+    </plurals>
+    <plurals name="upd_preview_recent">
+        <item quantity="one">Недавние изменения · %1$d сборка</item>
+        <item quantity="few">Недавние изменения · %1$d сборки</item>
+        <item quantity="many">Недавние изменения · %1$d сборок</item>
+        <item quantity="other">Недавние изменения · %1$d сборки</item>
+    </plurals>
+    <plurals name="upd_tests_count">
+        <item quantity="one">%1$d доступный тест</item>
+        <item quantity="few">%1$d доступных теста</item>
+        <item quantity="many">%1$d доступных тестов</item>
+        <item quantity="other">%1$d доступных тестов</item>
+    </plurals>
+</resources>

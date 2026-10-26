@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="loading_hints">
+        <item>首次執行會下載 Steam。這可能需要幾分鐘。</item>
+        <item>預設情況下，離開應用程式會暫停 Steam；返回時會從上次中斷處繼續。</item>
+        <item>你的控制器會被識別為 Xbox 360 手把。沒有控制器時，可使用螢幕控制。</item>
+    </array>
+    <array name="loading_hints_desktop">
+        <item>首次執行會設定桌面。這可能需要幾分鐘。</item>
+        <item>預設情況下，離開應用程式會暫停工作階段；返回時會從上次中斷處繼續。</item>
+        <item>觸控會像觸控板一樣運作：拖曳移動指標，輕觸即點擊。</item>
+        <item>你的控制器會被識別為 Xbox 360 手把。沒有控制器時，可使用螢幕控制。</item>
+    </array>
+</resources>

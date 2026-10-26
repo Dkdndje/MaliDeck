@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="loading_hints">
+        <item>First run downloads Steam. This may take a few minutes.</item>
+        <item>By default, leaving the app pauses Steam; it picks up where it left off when you come back.</item>
+        <item>Your controller appears as an Xbox 360 pad. Otherwise, use the on-screen controls.</item>
+    </array>
+    <array name="loading_hints_desktop">
+        <item>First run sets up the desktop. This may take a few minutes.</item>
+        <item>By default, leaving the app pauses the session; it picks up where it left off when you come back.</item>
+        <item>Touch works as a touchpad: drag to move the pointer, tap to click.</item>
+        <item>Your controller appears as an Xbox 360 pad. Otherwise, use the on-screen controls.</item>
+    </array>
+</resources>

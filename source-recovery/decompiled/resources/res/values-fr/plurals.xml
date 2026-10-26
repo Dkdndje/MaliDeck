@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mode_added_count">
+        <item quantity="one">%1$d jeu</item>
+        <item quantity="other">%1$d jeux</item>
+    </plurals>
+    <plurals name="upd_preview_behind">
+        <item quantity="one">Modifications depuis votre version · %1$d version de retard</item>
+        <item quantity="other">Modifications depuis votre version · %1$d versions de retard</item>
+    </plurals>
+    <plurals name="upd_preview_recent">
+        <item quantity="one">Modifications récentes · %1$d version</item>
+        <item quantity="other">Modifications récentes · %1$d versions</item>
+    </plurals>
+    <plurals name="upd_tests_count">
+        <item quantity="one">%1$d disponible</item>
+        <item quantity="other">%1$d disponibles</item>
+    </plurals>
+</resources>

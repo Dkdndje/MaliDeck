@@ -1,0 +1,47 @@
+--- a/tools/linuxfs/overlay/usr/local/bin/droiddeck-steam-install
++++ b/tools/linuxfs/overlay/usr/local/bin/droiddeck-steam-install
+@@ -43,7 +43,8 @@
+ 
+ work=$(mktemp -d)
+ trap 'rm -rf "$work"' EXIT
+-curl -fsSL "$cdn/$manifest" -o "$work/manifest"
++curl -fsSL --retry 5 --retry-all-errors --retry-delay 3 --connect-timeout 20 \
++  "$cdn/$manifest" -o "$work/manifest"
+ version=$(awk -F'"' '$2 == "version" { print $4; exit }' "$work/manifest")
+ # Every component block: its name, then the plain zip's file name and sha256.
+ awk -F'"' '
+@@ -55,13 +56,33 @@
+ [ -s "$work/parts" ] || { echo "droiddeck-steam-install: no client components in $manifest" >&2; exit 1; }
+ total=$(grep -c . "$work/parts" 2>/dev/null || echo 0)
+ 
++# Every part through here, so the timeouts cannot be forgotten on one of the two paths below.
++part_curl() {
++  curl -fsSL --retry 10 --retry-all-errors --retry-delay 3 --connect-timeout 20 \
++    --speed-limit 1024 --speed-time 60 \
++    -w "\n== $(date -u +%H:%M:%S) $block: %{size_download} bytes in %{time_total}s (%{speed_download} B/s)\n" \
++    "$@"
++}
++
+ mkdir -p "$steam_root/package"
+ while read -r block file sum; do
+   i=$((${i:-0} + 1))
+   echo "== STEP $(date -u +%H:%M:%S) downloading Steam: $block ($i/$total)"
+-  curl -fsSL "$cdn/$file" -o "$work/$file"
++  # Retried, resumed and given up on rather than left waiting: a session is frozen for as long
++  # as the app is not in front (Comportamiento en segundo plano), and a curl with no timeout
++  # then waits on a connection that cannot move until the user comes back - which is what a
++  # download that stops at 2 of 17 and never advances looks like from the outside. -C - picks
++  # the part up where the freeze left it instead of starting it again; where the resume cannot
++  # be honoured, the part is fetched whole.
++  part_curl -C - "$cdn/$file" -o "$work/$file" ||
++    { rm -f "$work/$file"; part_curl "$cdn/$file" -o "$work/$file"; }
+   echo "$sum  $work/$file" | sha256sum -c --quiet
+   unzip -qo "$work/$file" -d "$steam_root"
++  # The package file itself, kept under the name the manifest gave it: before the client believes
++  # the install it looks for every one of these in package/ and reports "Package file ... missing
++  # or incorrect size" for each that is not there. Thrown away here, the first start downloads the
++  # 666 MB it already has again, in the dark, while the session looks stuck.
++  cp -f "$work/$file" "$steam_root/package/$file"
+   rm -f "$work/$file"
+ done < "$work/parts"
+ # Some entries are zipped with Windows separators; unzip keeps the backslash in the file name.

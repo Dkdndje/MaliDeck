@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="45"
+    android:versionName="0.4.0-beta.1-mali-g615-experimental"
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    package="com.droiddeck.launcher.mali.g615"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-feature
+        android:name="android.hardware.vulkan.version"
+        android:required="true"
+        android:version="0x401000"/>
+    <uses-feature
+        android:name="android.hardware.gamepad"
+        android:required="false"/>
+    <permission
+        android:name="com.droiddeck.launcher.mali.g615.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.droiddeck.launcher.mali.g615.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:name="com.droiddeck.launcher.App"
+        android:debuggable="true"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:isGame="true"
+        android:extractNativeLibs="true"
+        android:appCategory="game"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:localeConfig="@xml/locales_config">
+        <meta-data
+            android:name="android.game_mode_config"
+            android:resource="@xml/game_mode_config"/>
+        <activity
+            android:name="com.droiddeck.launcher.MainActivity"
+            android:exported="true"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="navigation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="droiddeck"
+                    android:host="game"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.droiddeck.launcher.LAUNCH_GAME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.droiddeck.launcher.HomeActivity"
+            android:enabled="false"
+            android:exported="true"
+            android:taskAffinity="com.droiddeck.launcher.mali.g615.home"
+            android:excludeFromRecents="true"
+            android:screenOrientation="sensorLandscape"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/SessionTheme"
+            android:name="com.droiddeck.launcher.input.ControllerEditorActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard"
+            android:resizeableActivity="true"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.droiddeck.launcher.files.FileManagerActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.droiddeck.launcher.files.FilePickerActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.droiddeck.launcher.stores.StoreLoginActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:theme="@style/SessionTheme"
+            android:name="com.droiddeck.launcher.agent.AgentStartActivity"
+            android:permission="android.permission.DUMP"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true"/>
+        <activity
+            android:theme="@style/SessionTheme"
+            android:name="com.droiddeck.launcher.SessionActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+            android:preferMinimalPostProcessing="true"/>
+        <service
+            android:name="com.droiddeck.launcher.session.SessionService"
+            android:exported="false"
+            android:stopWithTask="false"/>
+        <service
+            android:name="com.droiddeck.launcher.runtime.RuntimeInstallService"
+            android:exported="false"/>
+        <service
+            android:name="com.droiddeck.launcher.core.WirelessAdbPairingService"
+            android:exported="false"/>
+        <service
+            android:name="com.droiddeck.launcher.stores.download.StoreDownloadService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync"/>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.droiddeck.launcher.mali.g615.logs"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/log_share_paths"/>
+        </provider>
+        <provider
+            android:name="com.droiddeck.launcher.files.AppFilesProvider"
+            android:permission="android.permission.MANAGE_DOCUMENTS"
+            android:exported="true"
+            android:authorities="com.droiddeck.launcher.mali.g615.documents"
+            android:grantUriPermissions="true">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <provider
+            android:name="com.droiddeck.launcher.agent.AgentBridgeProvider"
+            android:permission="android.permission.DUMP"
+            android:exported="true"
+            android:authorities="com.droiddeck.launcher.mali.g615.agent"
+            android:grantUriPermissions="false"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.droiddeck.launcher.mali.g615.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,15 @@
+###### Class com.droiddeck.launcher.mali.g615.R is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.anim is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.array is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.attr is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.color is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.dimen is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.drawable is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.id is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.integer is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.layout is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.mipmap is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.plurals is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.string is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.style is created by jadx
+###### Class com.droiddeck.launcher.mali.g615.R.xml is created by jadx

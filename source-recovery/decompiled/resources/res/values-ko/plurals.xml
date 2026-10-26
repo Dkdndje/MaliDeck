@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="drivers_ago_days">
+        <item quantity="other">%1$d일 전</item>
+    </plurals>
+    <plurals name="drivers_ago_hours">
+        <item quantity="other">%1$d시간 전</item>
+    </plurals>
+    <plurals name="drivers_ago_minutes">
+        <item quantity="other">%1$d분 전</item>
+    </plurals>
+    <plurals name="fm_and_more">
+        <item quantity="other">…외 %1$d개</item>
+    </plurals>
+    <plurals name="fm_delete_items_title">
+        <item quantity="other">항목 %1$d개를 삭제하시겠습니까?</item>
+    </plurals>
+    <plurals name="fm_delete_some_failed">
+        <item quantity="other">%1$d개를 삭제할 수 없습니다</item>
+    </plurals>
+    <plurals name="fm_items">
+        <item quantity="other">항목 %1$d개</item>
+    </plurals>
+    <plurals name="fm_paste_copied">
+        <item quantity="other">항목 %1$d개 복사됨</item>
+    </plurals>
+    <plurals name="fm_paste_moved">
+        <item quantity="other">항목 %1$d개 이동됨</item>
+    </plurals>
+    <plurals name="main_logs_cleared">
+        <item quantity="other">세션 로그 폴더 %1$d개를 지웠습니다.</item>
+    </plurals>
+    <plurals name="main_saves_exported">
+        <item quantity="other">파일 %1$d개를 %2$s(으)로 내보냈습니다: %3$s</item>
+    </plurals>
+    <plurals name="main_saves_imported">
+        <item quantity="other">%2$s에서 %3$s(으)로 파일 %1$d개를 가져왔습니다</item>
+    </plurals>
+    <plurals name="main_saves_imported_backup">
+        <item quantity="other">%2$s에서 %3$s(으)로 파일 %1$d개를 가져왔습니다. 이전 저장 데이터는 Download/DroidDeck/Saves/backups에 백업되었습니다</item>
+    </plurals>
+    <plurals name="mode_added_count">
+        <item quantity="other">게임 %1$d개</item>
+    </plurals>
+    <plurals name="rtinst_removing_entries">
+        <item quantity="other">Linux 런타임 제거 중 · 항목 %1$d개</item>
+    </plurals>
+    <plurals name="session_hint_enosys">
+        <item quantity="other">로그에 &quot;Function not implemented&quot; 오류가 %1$d개 있습니다. 이 기기에서 proot의 seccomp 가속이 보조 프로세스를 실패시키고 있습니다. %2$s → &quot;%3$s&quot;(또는 &quot;%4$s&quot;)를 시도한 후 다시 시작하세요.</item>
+    </plurals>
+    <plurals name="upd_preview_behind">
+        <item quantity="other">빌드 이후 변경 사항 · %1$d개 빌드 뒤처짐</item>
+    </plurals>
+    <plurals name="upd_preview_recent">
+        <item quantity="other">최근 변경 사항 · %1$d개 빌드</item>
+    </plurals>
+    <plurals name="upd_tests_count">
+        <item quantity="other">%1$d개 시도 가능</item>
+    </plurals>
+</resources>
