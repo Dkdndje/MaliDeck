@@ -132,14 +132,6 @@ Community reports are valuable. Please provide reproducible steps, exact version
 
 The upstream [DroidDeck project](https://github.com/Droid-Deck/DroidDeck) is licensed under **GPL-3.0**. The APK distributed in this repository is a modified build, not the official unmodified APK.
 
-### APK (`DroidDeck-Mali-v0.4.0-beta.1.apk`)
+**The original (preferred-form) source code of the modified APK has not yet been published in this repository.** This means source availability and GPL compliance for the modified build still need to be resolved; do not interpret the APK upload as proof that the corresponding source is available. Driver packages and third-party components may have separate licenses. Check their terms individually.
 
-This file is byte-identical (SHA-256 `571163b88ccc28cb83ea95ccd24cb1cac965784661f9b8117e45de17a508fbc4`) to the `DroidDeck-Mali-G615-debug.apk` asset published at [jdmg28/DroidDeck-Mali, release v0.4.0-beta.1](https://github.com/jdmg28/DroidDeck-Mali/releases/tag/v0.4.0-beta.1). It was **not built from this repository**.
-
-- Corresponding source: [jdmg28/DroidDeck-Mali, tag `v0.4.0-beta.1`](https://github.com/jdmg28/DroidDeck-Mali/tree/v0.4.0-beta.1) (commit `2a9aa986`), GPL-3.0. A mirror fork is kept at [Dkdndje/DroidDeck-Mali](https://github.com/Dkdndje/DroidDeck-Mali).
-- This is a **debug build**: it is signed with a debug key and is debuggable. Do not treat it as a hardened release.
-- Credit for the Mali port of the app and the PanVK/kbase driver adapter goes to the authors of that repository.
-
-### Driver package (`DroidDeck-Mali-TURBO-PERF.zip`)
-
-Source and origin: *TO BE FILLED IN BY THE MAINTAINER (who built it, from which commit, which changes compared with the driver ZIPs of the release above).* Until this is documented, treat this package as unverified. Driver packages and third-party components (Mesa/PanVK and others) may have separate licenses; check their terms individually.
+A partial, decompiled source recovery of this APK is available in [source-recovery/](source-recovery/). It is **not** the original source: it contains decompiled Java/smali of the app package, exact copies of the modified guest scripts, and approximate patches against upstream. The original build repository has not yet been located, so GPL compliance remains unresolved. The native adapter source and Gradle build files are not recoverable from the APK.
