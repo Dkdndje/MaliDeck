@@ -142,4 +142,8 @@ This file is byte-identical (SHA-256 `571163b88ccc28cb83ea95ccd24cb1cac965784661
 
 ### Driver package (`DroidDeck-Mali-TURBO-PERF.zip`)
 
-Source and origin: *TO BE FILLED IN BY THE MAINTAINER (who built it, from which commit, which changes compared with the driver ZIPs of the release above).* Until this is documented, treat this package as unverified. Driver packages and third-party components (Mesa/PanVK and others) may have separate licenses; check their terms individually.
+This ZIP is a **repackaged copy** of [`DroidDeck-Mali-CSF-PanVK-kbase-universal.zip`](https://github.com/jdmg28/DroidDeck-Mali/releases/tag/v0.4.0-beta.1) from jdmg28/DroidDeck-Mali (release v0.4.0-beta.1). All five files inside (`libpanvk_backend.so`, `libvulkan_droiddeck_mali.so`, `licenses/LICENSE.adapter`, `licenses/NOTICE.txt`, `meta.json`) are byte-identical to the original; only the ZIP container differs. Despite the filename, it contains **no additional performance changes**.
+
+- Source of the adapter: `tools/mali-driver/` in [jdmg28/DroidDeck-Mali, tag `v0.4.0-beta.1`](https://github.com/jdmg28/DroidDeck-Mali/tree/v0.4.0-beta.1) (a mirror is kept at [Dkdndje/DroidDeck-Mali](https://github.com/Dkdndje/DroidDeck-Mali)).
+- The bundled `NOTICE.txt` and `meta.json` are the original ones and may be outdated; the original release notes are authoritative.
+- Driver packages and third-party components (Mesa/PanVK and others) may have separate licenses; check their terms individually.
