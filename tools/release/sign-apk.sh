@@ -21,7 +21,7 @@ export TESTKEY_PASSWORD=android
 work=$(mktemp -d)
 trap 'rm -rf "$work"' EXIT
 
-P=com.droiddeck.launcher
+P=com.malideck.launcher
 if [ "$pkg" = "$P" ]; then
   python3 "$here/axml_rename.py" "$in" "$work/renamed.apk"
 else

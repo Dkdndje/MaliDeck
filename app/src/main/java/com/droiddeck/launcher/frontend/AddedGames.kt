@@ -50,6 +50,8 @@ object AddedGames {
     private val WORD = Regex("[A-Z]?[a-z]+|[A-Z]+(?![a-z])|[0-9]+")
 
     internal fun skipExe(name: String): Boolean {
+        val lower = name.lowercase()
+        if (lower.endsWith(".appimage") || lower.endsWith(".sh") || lower.endsWith(".bin") || lower.endsWith(".bat") || lower.endsWith(".msi")) return false
         if (!name.endsWith(".exe", ignoreCase = true)) return false
         val base = name.dropLast(4)
         if (SKIP_PREFIX.matches(base) || SKIP_PART.containsMatchIn(base)) return true

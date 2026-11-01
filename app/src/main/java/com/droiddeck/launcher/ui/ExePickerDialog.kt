@@ -65,7 +65,7 @@ import com.droiddeck.launcher.stores.formatBytes
 import java.io.File
 
 internal enum class PickKind(val extensions: Set<String>) {
-    EXE(setOf("exe")),
+    EXE(setOf("exe", "bat", "msi", "appimage", "bin", "sh")),
     IMAGE(setOf("png", "jpg", "jpeg", "webp", "ico")),
 }
 

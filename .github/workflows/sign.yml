@@ -79,7 +79,7 @@ jobs:
           apks=(in/*.apk)
           [ ${#apks[@]} = 1 ] && [ -f "${apks[0]}" ] || { echo "::error::expected one apk in the build"; exit 1; }
           mkdir -p out
-          out="out/DroidDeck-$LABEL$suffix.apk"
+          out="out/MaliDeck-$LABEL$suffix.apk"
           tools/release/sign-apk.sh "${apks[0]}" "$VARIANT" "$out"
           ( cd out && sha256sum -- *.apk > "SHA256SUMS-$VARIANT.txt" && cat "SHA256SUMS-$VARIANT.txt" )
           echo "- \`$(basename "$out")\` - $(cut -c1-16 "out/SHA256SUMS-$VARIANT.txt")…" >> "$GITHUB_STEP_SUMMARY"

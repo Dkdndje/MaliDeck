@@ -3,13 +3,13 @@ run-name: ${{ github.event_name == 'pull_request' && format('building pr {0} on 
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, mali ]
     paths-ignore:
       - '**/*.md'
       - 'LICENSE'
       - '.gitignore'
   pull_request:
-    branches: [ main ]
+    branches: [ main, mali ]
     types: [ opened, synchronize, reopened, ready_for_review ]
     paths-ignore:
       - '**/*.md'

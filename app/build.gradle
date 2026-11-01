@@ -119,7 +119,7 @@ android {
     ndkVersion project.findProperty('ndkVersion') ?: '27.3.13750724'
 
     defaultConfig {
-        applicationId "com.droiddeck.launcher"
+        applicationId "com.malideck.launcher"
         minSdkVersion 26
         targetSdkVersion 28
         versionCode 15
@@ -180,11 +180,13 @@ android {
             def localSuffix = localBuildOptions.getProperty('droiddeck.debugApplicationIdSuffix')
             if (localSuffix) {
                 applicationIdSuffix localSuffix
-                resValue 'string', 'app_name', 'DroidDeck XR Dev'
+                resValue 'string', 'app_name', 'MaliDeck XR Dev'
             }
         }
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.testkey
         }
     }

@@ -55,7 +55,7 @@ object GameExePicker {
                     if (f.isDirectory) {
                         visited++
                         if (depth < MAX_DEPTH && !skipDir(f, f.relativeTo(folder).invariantSeparatorsPath)) next.add(f)
-                    } else if (f.isFile && f.name.endsWith(".exe", ignoreCase = true)) {
+                    } else if (f.isFile && (f.name.endsWith(".exe", ignoreCase = true) || f.name.endsWith(".bat", ignoreCase = true) || f.name.endsWith(".msi", ignoreCase = true) || f.name.endsWith(".appimage", ignoreCase = true) || f.name.endsWith(".sh", ignoreCase = true))) {
                         visited++
                         if (!JUNK_EXE_RE.matches(f.nameWithoutExtension)) found.add(f to depth)
                     }

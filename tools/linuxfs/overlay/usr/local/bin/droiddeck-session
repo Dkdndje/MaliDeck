@@ -98,6 +98,13 @@ collect_steam_logs() {
   fi
 }
 trap 'collect_steam_logs 2>/dev/null || true' TERM INT HUP
+# Limit file descriptors to OS hard limit to prevent FD exhaustion
+_bl_fd_hard=$(ulimit -Hn 2>/dev/null) || _bl_fd_hard=
+if [ -n "$_bl_fd_hard" ]; then
+  ulimit -n "$_bl_fd_hard" 2>/dev/null || :
+  echo "== fd limit: soft $(ulimit -Sn 2>/dev/null || echo '?') hard $_bl_fd_hard"
+fi
+
 if [ -n "${BL_VK_DRIVER:-}" ]; then
   bl_icd_lib=$(sed -n 's/.*"library_path"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' "$BL_VK_DRIVER" 2>/dev/null | head -1)
   bl_icd_lib=$(printf '%s' "$bl_icd_lib" | sed 's|\\/|/|g')
@@ -110,9 +117,34 @@ if [ -n "${BL_VK_DRIVER:-}" ]; then
     export VK_ICD_FILENAMES="$BL_VK_DRIVER"
     echo "== vulkan driver: imported $bl_icd_lib (via $BL_VK_DRIVER)"
   else
+    if [ "${BL_GPU_FAMILY:-}" = mali ]; then
+      echo "DD_MALI_BAD_ICD: manifest or backend wrapper is unreadable: $BL_VK_DRIVER"
+      exit 78
+    fi
     echo "== vulkan driver: IGNORING $BL_VK_DRIVER (manifest or ${bl_icd_lib:-library} unreadable); using the runtime's own"
   fi
   unset bl_icd_lib
+fi
+
+# Mali GPU check and environment tuning
+if [ "${BL_GPU_FAMILY:-}" = mali ] && [ -z "${BL_INSIDE:-}" ]; then
+  /usr/local/bin/droiddeck-mali-check || exit 78
+fi
+
+if [ "${BL_GPU_FAMILY:-}" = mali ]; then
+  echo "== mali: configuring PanVK environment settings"
+  export PANVK_KBASE_GPU_SEMAPHORE_WAITS=${PANVK_KBASE_GPU_SEMAPHORE_WAITS:-0}
+  export PANVK_KBASE_DRI3=${PANVK_KBASE_DRI3:-1}
+  case "${BL_MALI_GAMESCOPE_WSI:-0}" in
+    1) echo "== mali games: gamescope WSI layer ON" ;;
+    *) export DISABLE_GAMESCOPE_WSI=1
+       echo "== mali games: gamescope WSI layer bypassed (games present via X11 DRI3)" ;;
+  esac
+fi
+
+# Launch MaliDeck 30 FPS Dynamic Governor
+if [ -x /usr/local/bin/droiddeck-governor ] && [ -z "${BL_INSIDE:-}" ]; then
+  /usr/local/bin/droiddeck-governor
 fi
 export GAMESCOPE_FORCE_VULKAN_REALTIME=${BL_GAMESCOPE_REALTIME:-0}
 

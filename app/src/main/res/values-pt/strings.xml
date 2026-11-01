@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="steamvr_recovery_title">Os gráficos do SteamVR pararam</string>
-    <string name="steamvr_recovery_countdown">O DroidDeck vai reiniciar em %1$d segundos para redefinir os gráficos e reabrir o SteamVR. O jogo em execução será fechado; o progresso não salvo não poderá ser recuperado.</string>
+    <string name="steamvr_recovery_countdown">O MaliDeck vai reiniciar em %1$d segundos para redefinir os gráficos e reabrir o SteamVR. O jogo em execução será fechado; o progresso não salvo não poderá ser recuperado.</string>
     <string name="steamvr_recovery_repeated">A falha gráfica voltou logo após uma reinicialização recente. A recuperação automática foi pausada para evitar um loop. Reiniciar vai fechar o jogo; o progresso não salvo não poderá ser recuperado.</string>
     <string name="steamvr_recovery_restart">Reiniciar agora</string>
     <string name="steamvr_recovery_cancel">Manter aberto</string>
     <string name="steamvr_recovery_restarting">Redefinindo os gráficos e reabrindo o SteamVR…</string>
-    <string name="steamvr_recovery_failed">O DroidDeck não conseguiu reiniciar automaticamente. Feche o app completamente e abra-o de novo.</string>
-    <string name="app_name">DroidDeck</string>
+    <string name="steamvr_recovery_failed">O MaliDeck não conseguiu reiniciar automaticamente. Feche o app completamente e abra-o de novo.</string>
+    <string name="app_name">MaliDeck</string>
     <string-array name="loading_hints">
         <item>Na primeira execução, a Steam é baixada. Isso pode levar alguns minutos.</item>
         <item>Por padrão, sair do app pausa a Steam; ela continua de onde parou quando você voltar.</item>
@@ -139,7 +139,7 @@
     <string name="user_apps_remove_confirm">Pressione de novo para remover</string>
     <string name="user_apps_stop_session">Encerre a sessão para remover</string>
     <string name="user_apps_script_linked">Executa %1$s a partir da própria pasta, vinculada à sessão no local onde está. Remover o app não mexe nessa pasta.</string>
-    <string name="user_apps_script_copied">Executa %1$s a partir de uma cópia da pasta dele dentro do DroidDeck. Remover o app apaga a cópia, não o original.</string>
+    <string name="user_apps_script_copied">Executa %1$s a partir de uma cópia da pasta dele dentro do MaliDeck. Remover o app apaga a cópia, não o original.</string>
     <string name="user_apps_runtime_required">Instale primeiro o runtime do Linux</string>
     <string name="user_apps_file_gone">O arquivo não existe mais</string>
     <string name="user_apps_no_space">Espaço livre insuficiente: copiar a pasta requer %1$s</string>
@@ -174,7 +174,7 @@
     <string name="app_fex_off">Desativado</string>
     <string name="app_fex_hint">O FEX roda programas Linux x86 neste dispositivo ARM64. No Automático, ele é usado quando o programa é feito para x86.</string>
     <string name="app_fex_x86">%1$s pelo FEX</string>
-    <string name="app_fex_not_ready">Este programa é feito para PCs %1$s e roda pelo FEX, que ainda não está configurado. Abra a Steam uma vez com a sessão iniciada: o DroidDeck faz com que ela baixe o FEX e o Steam Linux Runtime necessários, e então isto abre.</string>
+    <string name="app_fex_not_ready">Este programa é feito para PCs %1$s e roda pelo FEX, que ainda não está configurado. Abra a Steam uma vez com a sessão iniciada: o MaliDeck faz com que ela baixe o FEX e o Steam Linux Runtime necessários, e então isto abre.</string>
     <string name="session_end_program">Este programa</string>
     <string name="session_end_steam_download">Não foi possível baixar o cliente Steam. Sua rede ou VPN pode estar bloqueando os servidores da Steam; verifique a conexão e tente novamente.</string>
     <string name="session_end_steam_setup">Não foi possível configurar o cliente Steam. Verifique a conexão e o espaço livre e tente novamente.</string>
@@ -211,13 +211,13 @@
     <string name="edit_app_save">Salvar</string>
     <string name="add_app_checking_folder">Verificando a pasta…</string>
     <string name="add_app_folder_linked">A pasta dele é vinculada à sessão: %1$s</string>
-    <string name="add_app_folder_copied">A pasta dele contém programas Linux, que o armazenamento compartilhado não consegue executar, então ela é copiada para o DroidDeck (%1$s).</string>
+    <string name="add_app_folder_copied">A pasta dele contém programas Linux, que o armazenamento compartilhado não consegue executar, então ela é copiada para o MaliDeck (%1$s).</string>
     <string name="add_app_confirm">Adicionar</string>
     <string name="add_app_cancel">Cancelar</string>
     <string name="add_app_runtime_required">Instale primeiro o runtime do Linux em Configuração.</string>
     <string name="add_app_busy">Aguarde %1$s terminar.</string>
     <string name="steam_compat_label">Compatível</string>
-    <string name="proton_compatible_note">As versões marcadas como “%1$s” no menu Compatibilidade da Steam têm as correções de prefixo do DroidDeck e iniciam jogos aqui. O padrão é o Proton Experimental ARM64 (%1$s), ou o Proton 11.0 ARM64 (%1$s) quando essa versão mais nova estiver instalada. As entradas do Proton da própria Valve sem a marca não conseguem iniciar jogos neste dispositivo.</string>
+    <string name="proton_compatible_note">As versões marcadas como “%1$s” no menu Compatibilidade da Steam têm as correções de prefixo do MaliDeck e iniciam jogos aqui. O padrão é o Proton Experimental ARM64 (%1$s), ou o Proton 11.0 ARM64 (%1$s) quando essa versão mais nova estiver instalada. As entradas do Proton da própria Valve sem a marca não conseguem iniciar jogos neste dispositivo.</string>
     <string name="proton_installed_compatible">%1$s instalado · %2$s</string>
     <string name="common_cancel">Cancelar</string>
     <string name="common_auto">Automático</string>
@@ -307,8 +307,8 @@
     <string name="mode_background_downloads_hint">Adia a suspensão em segundo plano enquanto a Steam estiver baixando.</string>
     <string name="mode_suspend_note">Automático pausa em segundo plano e retoma quando o app reaparece. Manual aguarda Retomar. Nunca continua em execução.</string>
     <string name="mode_startup">Inicialização</string>
-    <string name="mode_steam_startup">Iniciar a Steam com o DroidDeck</string>
-    <string name="mode_steam_startup_hint">Abre a sessão da Steam quando o DroidDeck é iniciado.</string>
+    <string name="mode_steam_startup">Iniciar a Steam com o MaliDeck</string>
+    <string name="mode_steam_startup_hint">Abre a sessão da Steam quando o MaliDeck é iniciado.</string>
     <string name="mode_decky">Decky</string>
     <string name="mode_decky_checking">Procurando versões…</string>
     <string name="mode_decky_ready">Pronto para instalar %1$s.</string>
@@ -401,7 +401,7 @@
     <string name="mode_wifi_open_settings">Abrir configurações</string>
     <string name="mode_wifi_continue">Continuar</string>
     <string name="mode_wifi_explain_title">Ativar a descoberta de Wi-Fi?</string>
-    <string name="mode_wifi_explain_text">O Android exige a permissão de localização para ler nomes de Wi-Fi e descobrir redes próximas. O DroidDeck usa esse acesso para mostrar essas redes na Steam. Não rastreamos sua localização. O acesso à internet funciona sem essa permissão.</string>
+    <string name="mode_wifi_explain_text">O Android exige a permissão de localização para ler nomes de Wi-Fi e descobrir redes próximas. O MaliDeck usa esse acesso para mostrar essas redes na Steam. Não rastreamos sua localização. O acesso à internet funciona sem essa permissão.</string>
     <string name="mode_storage">Armazenamento de jogos</string>
     <string name="mode_storage_auto">Automático - o cartão SD, se houver, mais suas pastas Games</string>
     <string name="mode_storage_auto_none">Automático - suas pastas Games, mais o cartão SD, se houver (nenhum agora)</string>
@@ -505,7 +505,7 @@
     <string name="comp_applies_next_game">Vale a partir da próxima vez que um jogo iniciar</string>
     <string name="comp_import_zip">Importar .zip</string>
     <string name="comp_reading">Lendo as versões do Proton…</string>
-    <string name="comp_no_proton">Nenhum Proton instalado ainda. Inicie a Steam uma vez para baixar o Proton ARM64 dela, ou adicione o GE-Proton, CachyOS ou DroidDeck-Proton em Configuração.</string>
+    <string name="comp_no_proton">Nenhum Proton instalado ainda. Inicie a Steam uma vez para baixar o Proton ARM64 dela, ou adicione o GE-Proton, CachyOS ou MaliDeck-Proton em Configuração.</string>
     <string name="comp_original">Original · %1$s</string>
     <string name="comp_this_build">%1$s · esta versão</string>
     <string name="comp_earlier_build">%1$s · versão anterior</string>
@@ -523,7 +523,7 @@
     <string name="comp_nightlies_count">Nas Nightlies · %1$d</string>
     <string name="comp_channel_stable">Estável</string>
     <string name="comp_channel_nightly">Nightly</string>
-    <string name="comp_refresh_to_list">Atualize para listar os pacotes nas Nightlies e no DroidDeck.</string>
+    <string name="comp_refresh_to_list">Atualize para listar os pacotes nas Nightlies e no MaliDeck.</string>
     <string name="comp_nothing_new">Nada novo desde a última verificação.</string>
     <string name="comp_import_wcp">Importar .wcp</string>
     <string name="comp_restore_original">Restaurar o original deste Proton</string>
@@ -749,7 +749,7 @@
     <string name="setup_language_system">Padrão do sistema (%1$s)</string>
     <string name="setup_language_system_short">Padrão do sistema</string>
     <string name="setup_app_scale">Escala do app</string>
-    <string name="setup_app_scale_hint">Texto e controles do DroidDeck</string>
+    <string name="setup_app_scale_hint">Texto e controles do MaliDeck</string>
     <string name="setup_app_scale_default">%1$d%% (padrão)</string>
     <string name="setup_theme">Tema</string>
     <string name="setup_theme_hint">Aparência do inicializador</string>
@@ -757,8 +757,8 @@
     <string name="setup_launcher_icon_dark">Escuro</string>
     <string name="setup_launcher_icon_light">Claro</string>
     <string name="setup_home">Usar como tela inicial</string>
-    <string name="setup_home_on">O DroidDeck pode ser o app de início</string>
-    <string name="setup_home_off">O DroidDeck nunca é oferecido como app de início</string>
+    <string name="setup_home_on">O MaliDeck pode ser o app de início</string>
+    <string name="setup_home_off">O MaliDeck nunca é oferecido como app de início</string>
     <string name="setup_orientation">Orientação</string>
     <string name="setup_orientation_auto">Paisagem automática</string>
     <string name="setup_orientation_landscape">Paisagem</string>
@@ -837,16 +837,16 @@
     <string name="store_website">Site</string>
     <string name="store_verified">Verificado</string>
     <string name="upd_title">Atualizações</string>
-    <string name="upd_build">DroidDeck %1$s · %2$s</string>
+    <string name="upd_build">MaliDeck %1$s · %2$s</string>
     <string name="upd_checked">Verificado %1$s</string>
     <string name="upd_not_checked">Ainda não verificado</string>
-    <string name="upd_perm_title">Permita que o DroidDeck se atualize</string>
+    <string name="upd_perm_title">Permita que o MaliDeck se atualize</string>
     <string name="upd_perm_text">Na próxima tela, ative Permitir desta fonte e volte. A atualização continua sozinha.</string>
     <string name="upd_open_settings">Abrir configurações</string>
     <string name="upd_not_now">Agora não</string>
     <string name="upd_signed_status">Assinatura diferente</string>
     <string name="upd_signed_headline">Não é possível atualizar por cima</string>
-    <string name="upd_signed_detail">Esta cópia não está assinada com a chave de lançamento do DroidDeck, então as atualizações não podem ser instaladas por cima dela. Desinstale-a para trocar.</string>
+    <string name="upd_signed_detail">Esta cópia não está assinada com a chave de lançamento do MaliDeck, então as atualizações não podem ser instaladas por cima dela. Desinstale-a para trocar.</string>
     <string name="upd_available">Atualização disponível</string>
     <string name="upd_blocked_status">Não é possível instalar</string>
     <string name="upd_switch">Pronto para trocar</string>
@@ -868,7 +868,7 @@
     <string name="upd_stop_session">Encerre a sessão em execução para atualizar.</string>
     <string name="upd_less">Menos</string>
     <string name="upd_more">Mais</string>
-    <string name="upd_new_stable">DroidDeck %1$s</string>
+    <string name="upd_new_stable">MaliDeck %1$s</string>
     <string name="upd_new_preview">Nova versão Prévia</string>
     <string name="upd_new_test">Versão de teste do PR #%1$d</string>
     <string name="upd_mb">%1$d MB</string>
@@ -883,7 +883,7 @@
     <string name="upd_tests_hint">Experimente uma correção antes do lançamento</string>
     <string name="upd_tests_none">Nenhuma no momento</string>
     <string name="upd_pr">PR #%1$d</string>
-    <string name="upd_not_built">Não compilada para esta cópia do DroidDeck</string>
+    <string name="upd_not_built">Não compilada para esta cópia do MaliDeck</string>
     <string name="upd_updated">Atualizado %1$s</string>
     <string name="upd_test_name">teste do PR #%1$d</string>
     <string name="upd_while_ago">há algum tempo</string>
@@ -909,13 +909,13 @@
     <string name="gate_fix_for_me">Corrigir para mim</string>
     <string name="gate_toggle_steps">Ative “Desativar restrições de processos filhos” e volte. Deixe as Opções do desenvolvedor ativadas, ou a chave volta a ser desativada.</string>
     <string name="gate_open_dev">Abrir as Opções do desenvolvedor</string>
-    <string name="gate_no_toggle">Esta versão do Android não tem uma chave para isso, então o DroidDeck faz a mudança pela Depuração por Wi-Fi. Leva cerca de um minuto, sem precisar de computador.</string>
+    <string name="gate_no_toggle">Esta versão do Android não tem uma chave para isso, então o MaliDeck faz a mudança pela Depuração por Wi-Fi. Leva cerca de um minuto, sem precisar de computador.</string>
     <string name="gate_needs_wifi">A Depuração por Wi-Fi requer Wi-Fi. Qualquer rede serve; não precisa de internet.</string>
-    <string name="gate_needs_notifications">O código de pareamento é digitado em uma notificação. Permita notificações do DroidDeck ou use Outras formas.</string>
+    <string name="gate_needs_notifications">O código de pareamento é digitado em uma notificação. Permita notificações do MaliDeck ou use Outras formas.</string>
     <string name="gate_allow_notifications">Permitir notificações</string>
     <string name="gate_step1">Abra Configurações → Opções do desenvolvedor → Depuração por Wi-Fi e ative</string>
     <string name="gate_step2">Toque em “Parear o dispositivo com um código de pareamento”</string>
-    <string name="gate_step3">Digite o código na notificação do DroidDeck</string>
+    <string name="gate_step3">Digite o código na notificação do MaliDeck</string>
     <string name="gate_waiting">Aguardando o pop-up de pareamento…</string>
     <string name="gate_code_needed">Pop-up encontrado. Digite o código dele na notificação.</string>
     <string name="gate_status">Status</string>
@@ -1033,7 +1033,7 @@
     <string name="desktop_removing">Removendo a área de trabalho</string>
     <string name="desktop_removed">Área de trabalho removida</string>
     <string name="desktop_cleaning_legacy">Removendo arquivos antigos do LXQt</string>
-    <string name="desktop_removal_unknown">Atualize o DroidDeck antes de remover esta versão da área de trabalho.</string>
+    <string name="desktop_removal_unknown">Atualize o MaliDeck antes de remover esta versão da área de trabalho.</string>
     <string name="content_linux_desktop">Área de trabalho Linux</string>
     <string name="content_linux_desktop_hint">KDE Plasma, Firefox e seus emuladores</string>
     <string name="games_empty">Os jogos que você instala na Steam aparecem aqui após a sessão.</string>
@@ -1078,7 +1078,7 @@
     <string name="gpu_auto_by_gpu">Automático - escolhido pela GPU</string>
     <string name="gpu_manage">Baixar, importar ou excluir…</string>
     <string name="gpu_in_use_caps">EM USO</string>
-    <string name="gpu_builtin">Os drivers integrados ao DroidDeck</string>
+    <string name="gpu_builtin">Os drivers integrados ao MaliDeck</string>
     <string name="gpu_matched_pair">Drivers do runtime e de exibição definidos juntos como um par compatível.</string>
     <string name="gpu_recommended_for">Recomendado para esta GPU: %1$s.</string>
     <string name="gpu_refresh_hint">Atualize para procurar drivers para esta GPU.</string>
@@ -1181,7 +1181,7 @@
     <string name="unfolded_controls_hint">Desdobrado, o jogo fica acima dos trackpads e dos botões traseiros do Steam Deck. Dobrado, o jogo fica em tela cheia.</string>
     <string name="pip_suspended">Suspenso</string>
     <string name="pip_not_ready">O picture-in-picture fica disponível quando a sessão estiver pronta.</string>
-    <string name="pip_permission">Permita o picture-in-picture para o DroidDeck nas configurações do Android.</string>
+    <string name="pip_permission">Permita o picture-in-picture para o MaliDeck nas configurações do Android.</string>
     <string name="pip_unavailable">O Android não conseguiu abrir o picture-in-picture.</string>
     <string name="game_shortcut">Atalho</string>
     <string name="game_shortcut_add">Adicionar à tela inicial</string>
@@ -1191,7 +1191,7 @@
     <string name="game_link_copied">Link de inicialização copiado</string>
     <string name="game_shortcut_unsupported">Este launcher não pode adicionar atalhos. Use Copiar link de inicialização.</string>
     <string name="game_link_invalid">Link de inicialização de jogo inválido.</string>
-    <string name="game_link_missing">Este jogo não está mais na sua biblioteca do DroidDeck.</string>
+    <string name="game_link_missing">Este jogo não está mais na sua biblioteca do MaliDeck.</string>
     <string name="game_link_session_busy">Pare a sessão atual antes de iniciar um jogo do Steam.</string>
     <string name="game_link_failed">Não foi possível enviar o jogo ao Steam. Tente iniciá-lo novamente.</string>
     <string name="setup_retry_removal">Tentar remover de novo</string>
@@ -1216,9 +1216,9 @@
         <item quantity="other">%1$d arquivos importados de %2$s para %3$s</item>
     </plurals>
     <plurals name="main_saves_imported_backup">
-        <item quantity="one">%1$d arquivo importado de %2$s para %3$s. Backup dos saves antigos em Download/DroidDeck/Saves/backups</item>
-        <item quantity="many">%1$d arquivos importados de %2$s para %3$s. Backup dos saves antigos em Download/DroidDeck/Saves/backups</item>
-        <item quantity="other">%1$d arquivos importados de %2$s para %3$s. Backup dos saves antigos em Download/DroidDeck/Saves/backups</item>
+        <item quantity="one">%1$d arquivo importado de %2$s para %3$s. Backup dos saves antigos em Download/MaliDeck/Saves/backups</item>
+        <item quantity="many">%1$d arquivos importados de %2$s para %3$s. Backup dos saves antigos em Download/MaliDeck/Saves/backups</item>
+        <item quantity="other">%1$d arquivos importados de %2$s para %3$s. Backup dos saves antigos em Download/MaliDeck/Saves/backups</item>
     </plurals>
     <string name="main_saves_pick_zip">Escolha um zip de saves para %1$s</string>
     <string name="main_saves_exporting">Exportando %1$s</string>
@@ -1278,7 +1278,7 @@
 
     <string name="upd_unknown_apps_failed">Não foi possível abrir a configuração “Instalar apps desconhecidos” do Android</string>
     <string name="upd_couldnt_check">Não foi possível verificar: %1$s</string>
-    <string name="upd_no_download">Esta versão não tem download para esta cópia do DroidDeck</string>
+    <string name="upd_no_download">Esta versão não tem download para esta cópia do MaliDeck</string>
     <string name="upd_stop_first">Pare a sessão em execução primeiro e depois atualize</string>
     <string name="upd_stage_downloading">Baixando</string>
     <string name="upd_stage_installing">Instalando</string>
@@ -1307,22 +1307,22 @@
     <string name="drivers_recommended_unpublished">Os drivers recomendados não estão publicados no momento</string>
     <string name="drivers_downloading_pair">Baixando %1$s %2$s…</string>
     <string name="drivers_updated_to">Atualizado para %1$s %2$s.</string>
-    <string name="drivers_updated_to_restart">Atualizado para %1$s %2$s. O driver de vídeo é aplicado depois que o DroidDeck reiniciar.</string>
+    <string name="drivers_updated_to_restart">Atualizado para %1$s %2$s. O driver de vídeo é aplicado depois que o MaliDeck reiniciar.</string>
     <string name="drivers_auto_waits_for_session">As atualizações de driver esperam a sessão terminar.</string>
     <string name="drivers_auto_waits_for_network">%1$s %2$s será baixado quando você sair dos dados móveis e da economia de bateria.</string>
     <string name="drivers_skipping_bad">%1$s %2$s não iniciou uma sessão aqui, então o Automático continua nos drivers que funcionaram.</string>
     <string name="drivers_rolled_back">%1$s não iniciou uma sessão duas vezes, então o Automático voltou aos drivers que funcionavam.</string>
     <string name="drivers_switched_to">Alterado para %1$s %2$s.</string>
-    <string name="drivers_switched_to_restart">Alterado para %1$s %2$s. O driver de vídeo é aplicado depois que o DroidDeck reiniciar.</string>
+    <string name="drivers_switched_to_restart">Alterado para %1$s %2$s. O driver de vídeo é aplicado depois que o MaliDeck reiniciar.</string>
     <string name="drivers_using">Usando %1$s %2$s.</string>
-    <string name="drivers_using_restart">Usando %1$s %2$s. O driver de vídeo é aplicado depois que o DroidDeck reiniciar.</string>
+    <string name="drivers_using_restart">Usando %1$s %2$s. O driver de vídeo é aplicado depois que o MaliDeck reiniciar.</string>
     <string name="drivers_using_quest">Usando o driver de vídeo Quest incluído e o padrão do runtime.</string>
-    <string name="drivers_using_quest_restart">Usando o driver de vídeo Quest incluído e o padrão do runtime. O driver de vídeo vale depois que o DroidDeck reiniciar.</string>
+    <string name="drivers_using_quest_restart">Usando o driver de vídeo Quest incluído e o padrão do runtime. O driver de vídeo vale depois que o MaliDeck reiniciar.</string>
     <string name="drivers_not_a_driver">Não é um zip de driver: não é um driver AdrenoTools, um Turnip -Linux nem um pacote Android + Linux</string>
     <string name="drivers_import_failed">Falha na importação: %1$s</string>
     <string name="drivers_imported_unnamed">Driver importado</string>
     <string name="drivers_using_bundle">Usando %1$s como driver do runtime e de vídeo.</string>
-    <string name="drivers_using_bundle_restart">Usando %1$s como driver do runtime e de vídeo. O driver de vídeo é aplicado depois que o DroidDeck reiniciar.</string>
+    <string name="drivers_using_bundle_restart">Usando %1$s como driver do runtime e de vídeo. O driver de vídeo é aplicado depois que o MaliDeck reiniciar.</string>
     <string name="drivers_deleted_bundle">%1$s excluído (os dois drivers)</string>
     <string name="drivers_deleted">%1$s excluído</string>
     <string name="drivers_release_status">Mais recente: %1$s · verificado %2$s</string>
@@ -1342,7 +1342,7 @@
         <item quantity="many">há %1$d dias</item>
         <item quantity="other">há %1$d dias</item>
     </plurals>
-    <string name="drivers_checking_sources">Verificando Banners-Turnip, WinNative e DroidDeck…</string>
+    <string name="drivers_checking_sources">Verificando Banners-Turnip, WinNative e MaliDeck…</string>
     <string name="drivers_check_failed">falha na verificação</string>
     <string name="drivers_installed_pick_either">%1$s instalado - escolha-o em qualquer uma das listas para definir os dois drivers</string>
     <string name="drivers_installed_pick">%1$s instalado - escolha-o no menu</string>
@@ -1744,7 +1744,7 @@
     <string name="adbfix_no_pairing">Nenhum pareamento de depuração por Wi-Fi salvo</string>
     <string name="adbfix_enter_address">Digite o endereço IP e a porta atuais da depuração por Wi-Fi</string>
 
-    <string name="adbpair_timed_out">Tempo esgotado esperando o pop-up de pareamento. Tente novamente pelo DroidDeck.</string>
+    <string name="adbpair_timed_out">Tempo esgotado esperando o pop-up de pareamento. Tente novamente pelo MaliDeck.</string>
     <string name="adbpair_discovery_failed_code">Não foi possível procurar o pop-up de pareamento (%1$d). Verifique se o Wi-Fi está ativado.</string>
     <string name="adbpair_discovery_failed">Não foi possível procurar o pop-up de pareamento: %1$s</string>
     <string name="adbpair_six_digits">Digite os 6 dígitos do código</string>
@@ -1766,20 +1766,20 @@
     <string name="adbpair_enter_code">Digitar código</string>
     <string name="adbpair_title_working">Configurando o Steam</string>
     <string name="adbpair_title_done">O Steam está pronto</string>
-    <string name="adbpair_done_text">Toque para voltar ao DroidDeck. Você já pode desativar a depuração por Wi-Fi.</string>
+    <string name="adbpair_done_text">Toque para voltar ao MaliDeck. Você já pode desativar a depuração por Wi-Fi.</string>
     <string name="adbpair_title_failed">A configuração da depuração por Wi-Fi parou</string>
 
     <string name="selfinst_download_failed">Falha no download</string>
     <string name="selfinst_size_mismatch">O tamanho do download não corresponde ao APK publicado, e ele foi descartado - tente de novo</string>
     <string name="selfinst_checksum_mismatch">O download não corresponde à soma de verificação e foi descartado - tente de novo</string>
     <string name="selfinst_wrong_package">A atualização é para o pacote Android %1$s, não %2$s</string>
-    <string name="selfinst_metadata_signer">Os metadados da atualização não indicam a chave de assinatura de versões do DroidDeck</string>
+    <string name="selfinst_metadata_signer">Os metadados da atualização não indicam a chave de assinatura de versões do MaliDeck</string>
     <string name="selfinst_unreadable">O Android não conseguiu ler o APK baixado</string>
     <string name="selfinst_apk_wrong_package">O APK baixado é para %1$s, não %2$s</string>
     <string name="selfinst_version_mismatch">O APK baixado informa versionCode %1$d, não o %2$d publicado</string>
     <string name="selfinst_downgrade">O Android não instala o versionCode %1$d por cima do %2$d instalado</string>
     <string name="selfinst_no_signing">O APK baixado não tem informações de assinatura</string>
-    <string name="selfinst_wrong_signer">O APK baixado não está assinado com a chave de versões do DroidDeck</string>
+    <string name="selfinst_wrong_signer">O APK baixado não está assinado com a chave de versões do MaliDeck</string>
     <string name="appupd_http">O catálogo de atualizações respondeu HTTP %1$d</string>
 
     <string name="loadstate_starting">Iniciando a sessão…</string>
@@ -1825,7 +1825,7 @@
     <string name="cmgr_original_kept">O original da versão instalada é mantido: é o caminho de volta.</string>
     <string name="cmgr_not_stored">Não armazenado</string>
     <string name="cmgr_deleted_original">Original do %1$s de %2$s excluído.</string>
-    <string name="cmgr_nightlies_only">Os downloads vêm só das versões Nightlies e DroidDeck</string>
+    <string name="cmgr_nightlies_only">Os downloads vêm só das versões Nightlies e MaliDeck</string>
     <string name="cmgr_nightly_replaced">Falha no download: esta versão nightly pode ter sido substituída por uma mais nova. Atualize a lista e tente de novo.</string>
     <string name="cmgr_list_predates_checksums">Esta lista de pacotes é anterior às somas de verificação - atualize-a e tente de novo</string>
     <string name="cmgr_checksum_mismatch">A soma de verificação não confere</string>
@@ -1864,7 +1864,7 @@
     <string name="gpuinfo_supported">Compatível</string>
     <string name="gpuinfo_experimental">Experimental: os drivers são versões de teste</string>
     <string name="gpuinfo_below_tested">Abaixo do hardware testado (Adreno 725 ou mais recente): pode não funcionar</string>
-    <string name="gpuinfo_unsupported">Incompatível: o DroidDeck precisa de uma GPU Adreno (Snapdragon)</string>
+    <string name="gpuinfo_unsupported">Incompatível: o MaliDeck precisa de uma GPU Adreno (Snapdragon)</string>
 
     <string name="turnip_rate_limited">O limite de requisições do GitHub foi atingido - tente mais tarde</string>
     <string name="turnip_github_http">O GitHub respondeu HTTP %1$d</string>
@@ -1907,10 +1907,10 @@
     <string name="phantom_instructions_not_applicable">Esta versão do Android não usa esse limite.</string>
     <string name="phantom_fix_toggle">Ative “Desativar restrições de processos filhos” nas Opções do desenvolvedor e mantenha as Opções do desenvolvedor ativadas depois.</string>
     <string name="phantom_fix_no_toggle">Esta versão do Android não tem uma chave para isso. Use a depuração por Wi-Fi para alterar pelo próprio dispositivo.</string>
-    <string name="upd_block_no_apk">Esta versão não tem download para esta cópia do DroidDeck.</string>
+    <string name="upd_block_no_apk">Esta versão não tem download para esta cópia do MaliDeck.</string>
     <string name="upd_block_version_code">O Android não vai instalá-la por cima desta versão porque o versionCode %1$d é menor que o %2$d instalado.</string>
     <string name="upd_fail_downgrade">O Android não instala uma versão mais antiga por cima de uma mais nova. Fique nesta versão até o canal alcançá-la.</string>
-    <string name="upd_fail_signature">Esta cópia do DroidDeck tem outra assinatura (uma build local?), então o Android não consegue atualizá-la diretamente.</string>
+    <string name="upd_fail_signature">Esta cópia do MaliDeck tem outra assinatura (uma build local?), então o Android não consegue atualizá-la diretamente.</string>
     <string name="upd_fail_storage">Não há espaço livre suficiente para a atualização.</string>
     <string name="upd_fail_aborted">A atualização foi cancelada.</string>
     <string name="upd_fail_with_message">A atualização não foi instalada: %1$s</string>
@@ -1935,7 +1935,7 @@
     <string name="gstore_volume_free">%1$s · %2$s livres</string>
     <string name="mode_storage_auto_short">Automático</string>
     <string name="appupd_catalog_rejected">O catálogo de atualizações não passou nas verificações (%1$s)</string>
-    <string name="main_adb_clip_label">Configuração de processos filhos do DroidDeck</string>
+    <string name="main_adb_clip_label">Configuração de processos filhos do MaliDeck</string>
     <string name="setup_signed_in_offline_unnamed">Conectado · modo offline</string>
     <string name="setup_signed_in_unnamed">Conectado</string>
     <string name="driver_tag_bundled">INCLUÍDO</string>
@@ -2312,7 +2312,7 @@
     <string name="gpu_display_next">Desenha a tela. Vale a partir da próxima sessão.</string>
     <string name="gpu_previous_driver">o driver anterior</string>
     <string name="gpu_restart_banner">Reinicie para trocar o driver de vídeo.</string>
-    <string name="gpu_restart_blocked">Encerre a sessão atual e reinicie o DroidDeck para trocar o driver de vídeo.</string>
+    <string name="gpu_restart_blocked">Encerre a sessão atual e reinicie o MaliDeck para trocar o driver de vídeo.</string>
     <string name="gpu_restart_now">Reiniciar agora</string>
     <string name="gpu_restart_later">Depois</string>
     <string name="gpu_auto_title">O Automático escolheu este par para sua %1$s</string>
@@ -2388,7 +2388,7 @@
     <string name="touch_speed_normal">Normal</string>
     <string name="touch_speed_fast">Rápida</string>
     <string name="touch_edit_layout">Editar layout</string>
-    <string name="touch_droiddeck_menu">Menu do DroidDeck</string>
+    <string name="touch_droiddeck_menu">Menu do MaliDeck</string>
     <string name="touch_drag_hint">Arraste os controles para a tela</string>
     <string name="touch_arrange">Organizar</string>
     <string name="touch_discard">Descartar</string>
@@ -2456,7 +2456,7 @@
     <string name="glasses_driver_missing">Esta versão não inclui o driver para estes óculos.</string>
     <string name="glasses_connection_failed">Não foi possível conectar aos óculos. Reconecte o cabo ou toque em Permitir para tentar de novo.</string>
     <string name="glasses_allow">Permitir</string>
-    <string name="glasses_allow_hint">Permite que o DroidDeck ajuste a taxa de atualização, o modo 3D, o brilho, o volume e o escurecimento dos óculos, e leia o rastreamento da cabeça deles.</string>
+    <string name="glasses_allow_hint">Permite que o MaliDeck ajuste a taxa de atualização, o modo 3D, o brilho, o volume e o escurecimento dos óculos, e leia o rastreamento da cabeça deles.</string>
     <string name="glasses_asking">Aguardando você permitir na solicitação do Android…</string>
     <string name="glasses_denied">O controle foi recusado. Permita para alterar as configurações dos óculos.</string>
     <string name="glasses_no_control">Estes óculos mostram o jogo, mas as configurações deles não podem ser alteradas por aqui.</string>
@@ -2623,7 +2623,7 @@
     <string name="storage_internal">Armazenamento interno</string>
     <string name="storage_used_of">%1$s de %2$s usados</string>
     <string name="storage_free">%1$s livres</string>
-    <string name="storage_droiddeck_uses">O DroidDeck ocupa %1$s. Medido em %2$s.</string>
+    <string name="storage_droiddeck_uses">O MaliDeck ocupa %1$s. Medido em %2$s.</string>
     <string name="storage_rescanning">medindo de novo…</string>
     <string name="storage_other_apps">Outros apps Android</string>
     <string name="storage_safe_now">Dá para liberar agora</string>
@@ -2642,7 +2642,7 @@
     <string name="storage_desktop_hint">Apps e runtimes Flatpak</string>
     <string name="storage_system">Sistema Linux e cliente Steam</string>
     <string name="storage_system_hint">Necessário para rodar qualquer coisa</string>
-    <string name="storage_app_data">Dados do DroidDeck</string>
+    <string name="storage_app_data">Dados do MaliDeck</string>
     <string name="storage_app_data_hint">Logs de sessões antigas %1$s · cache · drivers</string>
     <string name="storage_legend_games">Jogos</string>
     <string name="storage_legend_data">Dados dos jogos</string>
@@ -2650,7 +2650,7 @@
     <string name="storage_legend_stores">Outras lojas</string>
     <string name="storage_legend_desktop">Apps de desktop</string>
     <string name="storage_legend_system">Sistema Linux</string>
-    <string name="storage_legend_app">DroidDeck</string>
+    <string name="storage_legend_app">MaliDeck</string>
     <string name="storage_clean_up_title">Limpeza</string>
     <string name="storage_clean_up_lede">Aqui nada toca nos jogos instalados nem nos downloads em andamento.</string>
     <string name="storage_nothing_to_clean">Nada para limpar agora.</string>
@@ -2699,8 +2699,8 @@
     <string name="storage_tool_redist">Instaladores de VC++ e DirectX exigidos pelos jogos</string>
     <string name="storage_tool_fex">Roda jogos Linux x86</string>
     <string name="storage_tool_steam">Ferramenta da Steam</string>
-    <string name="storage_tool_old_runtime">O DroidDeck roda jogos sem este runtime</string>
-    <string name="storage_tool_x86_proton">Proton x86, que o DroidDeck não consegue rodar</string>
+    <string name="storage_tool_old_runtime">O MaliDeck roda jogos sem este runtime</string>
+    <string name="storage_tool_x86_proton">Proton x86, que o MaliDeck não consegue rodar</string>
     <string name="storage_tool_custom_default">Padrão para todos os jogos</string>
     <string name="storage_tool_custom_unused">Nenhum jogo usa</string>
     <string name="storage_tool_custom_unknown">As configurações da Steam não são legíveis, então é mantido</string>
@@ -2740,8 +2740,8 @@
         <item quantity="many">%d jogos</item>
         <item quantity="other">%d jogos</item>
     </plurals>
-    <string name="storage_tool_default_proton">Proton padrão do DroidDeck</string>
-    <string name="storage_tool_proton">Opção Proton 11 do DroidDeck</string>
+    <string name="storage_tool_default_proton">Proton padrão do MaliDeck</string>
+    <string name="storage_tool_proton">Opção Proton 11 do MaliDeck</string>
     <plurals name="storage_tool_custom_games">
         <item quantity="one">Usado por %d jogo</item>
         <item quantity="many">Usado por %d jogos</item>
@@ -2798,7 +2798,7 @@
     </plurals>
     <string name="boot_movie">Vídeo de inicialização</string>
     <string name="boot_movie_video">Vídeo</string>
-    <string name="boot_movie_droiddeck">DroidDeck · %1$d fps</string>
+    <string name="boot_movie_droiddeck">MaliDeck · %1$d fps</string>
     <string name="boot_movie_note">60 fps fica mais fluido, mas usa mais CPU enquanto o Steam inicia. Um vídeo escolhido nas configurações do Steam também aparece aqui.</string>
     <string name="boot_movie_sound">Som</string>
     <string name="boot_movie_custom">Seu próprio vídeo</string>
@@ -2810,24 +2810,24 @@
     <string name="boot_movie_imported_silent">%1$s agora é o vídeo de inicialização, sem som</string>
     <string name="boot_movie_too_long">Vídeos que precisam de conversão devem ter até %1$d segundos</string>
     <string name="boot_movie_converting">Convertendo %1$d%%</string>
-    <string name="boot_movie_converting_started">Convertendo %1$s para o Steam. Mantenha o DroidDeck aberto.</string>
+    <string name="boot_movie_converting_started">Convertendo %1$s para o Steam. Mantenha o MaliDeck aberto.</string>
     <string name="boot_movie_unsupported">Este aparelho não consegue decodificar esse vídeo.</string>
     <string name="boot_movie_import_failed">Não foi possível importar esse vídeo</string>
     <string name="boot_movie_remove_confirm">Remover %1$s?</string>
-    <string name="boot_movie_remove_confirm_body">Isso exclui o vídeo do DroidDeck e da pasta de vídeos do Steam.</string>
+    <string name="boot_movie_remove_confirm_body">Isso exclui o vídeo do MaliDeck e da pasta de vídeos do Steam.</string>
     <string name="boot_movie_tab_installed">Instalados</string>
     <string name="boot_movie_tab_import">Importar</string>
     <string name="boot_movie_tab_repo">SteamDeckRepo</string>
     <string name="boot_movie_tab_sound">Som</string>
     <string name="boot_movie_installed">Vídeos instalados</string>
     <string name="boot_movie_browse">Explorar</string>
-    <string name="boot_movie_source_droiddeck">DroidDeck</string>
+    <string name="boot_movie_source_droiddeck">MaliDeck</string>
     <string name="boot_movie_source_import">Importado</string>
     <string name="boot_movie_source_repo">SteamDeckRepo</string>
     <string name="boot_movie_source_steam">Steam</string>
     <string name="boot_movie_source_pointshop">Loja de Pontos</string>
     <string name="boot_movie_report">Relatório dos filmes de inicialização</string>
-    <string name="boot_movie_report_hint">Salva em um arquivo de texto o que o DroidDeck e o Steam sabem sobre os filmes de inicialização, para anexar a um relatório de bug.</string>
+    <string name="boot_movie_report_hint">Salva em um arquivo de texto o que o MaliDeck e o Steam sabem sobre os filmes de inicialização, para anexar a um relatório de bug.</string>
     <string name="boot_movie_report_save">Salvar</string>
     <string name="boot_movie_report_saved">Salvo em %1$s</string>
     <string name="boot_movie_report_failed">Não foi possível salvar o relatório.</string>
@@ -2863,7 +2863,7 @@
     <string name="glasses_joycons_hint">Use as câmeras dos óculos inteligentes para posicionar seus controles Joy-Con emparelhados. A rotação e os comandos dos botões vêm dos controles Joy-Con. A posição é estimada quando seus pulsos estão escondidos. Substitui os controles operados com as mãos nuas e pausa o rastreamento da câmera do telefone. Aponte os controles Joy-Con para frente ao conectar ou redefinir o centro de rastreamento.</string>
     <string name="glasses_joycons_requires_position">Ative o rastreamento de posição primeiro. Requer controles Joy-Con com sensor de movimento no Android 12 ou posterior. Desativado por padrão.</string>
     <string name="setup_tab_glasses">Óculos inteligentes</string>
-    <string name="setup_glasses_scope">As configurações de exibição e rastreamento de cabeça são compartilhadas entre os menus do DroidDeck, jogos e sessões da área de trabalho.</string>
+    <string name="setup_glasses_scope">As configurações de exibição e rastreamento de cabeça são compartilhadas entre os menus do MaliDeck, jogos e sessões da área de trabalho.</string>
     <string name="setup_glasses_connect">Conecte os óculos inteligentes para alterar suas configurações de exibição e rastreamento. Suas configurações salvas são mantidas ao desconectar.</string>
     <string name="glasses_vr">VR</string>
     <string name="glasses_display_mode">Modo de exibição</string>
@@ -2882,7 +2882,7 @@
     <string name="glasses_refresh_30_hint">Ative o recurso \"Jogar em óculos inteligentes\" para selecionar o modo nativo de 30 Hz da tela.</string>
     <string name="glasses_3dof">Tela virtual 3DoF</string>
     <string name="glasses_3dof_hint">Ancore jogos planos à sua frente para que você possa olhar ao redor. Ativa o recurso \"Jogar em óculos inteligentes\" sem alternar para 3D.</string>
-    <string name="glasses_screen_app_wide">A largura e a distância atualizam a tela virtual rastreada para menus, jogos e sessões de desktop do DroidDeck imediatamente.</string>
+    <string name="glasses_screen_app_wide">A largura e a distância atualizam a tela virtual rastreada para menus, jogos e sessões de desktop do MaliDeck imediatamente.</string>
     <string name="glasses_head_tracking_spatial_vr_hint">O rastreamento posicional inclui a rotação da cabeça no SteamVR. Para rastreamento somente de rotação, desative o rastreamento posicional.</string>
     <string name="glasses_head_tracking_spatial_hint">Controla o movimento da cabeça na tela virtual. O rastreamento posicional inclui a rotação da cabeça no SteamVR.</string>
     <string name="glasses_quick_actions">Ações rápidas</string>
@@ -2977,8 +2977,8 @@
     <string name="spatial_timing_values">%1$.1f Hz • idade da imagem %2$.1f ms • processamento %3$.1f ms</string>
     <string name="spatial_input_values">Limite de entrada %1$.1f Hz • %2$.0f%% de imagens da câmera. O rastreamento da cabeça continua em sua frequência máxima.</string>
     <string name="spatial_frame_counts">%1$d processado • %2$d descartado • %3$d ignorado pelo limite de entrada</string>
-    <string name="spatial_print_job">DroidDeck ChArUco 30 mm</string>
-    <string name="spatial_print_title">DroidDeck - Calibração Luma Ultra</string>
+    <string name="spatial_print_job">MaliDeck ChArUco 30 mm</string>
+    <string name="spatial_print_title">MaliDeck - Calibração Luma Ultra</string>
     <string name="spatial_print_scale" formatted="false">Imprimir em 100%/tamanho real. Cada quadrado: 30 mm (1,181 pol.).</string>
     <string name="spatial_print_stationary">Mantenha o alvo de calibração plano e estacionário; mova os óculos inteligentes entre as capturas.</string>
     <string name="spatial_print_check">Verificação de escala: 100 mm (3,937 pol.) entre marcas</string>
@@ -3062,22 +3062,22 @@
     <string name="spatial_opencv_load_error">OpenCV não pôde carregar</string>
     <string name="setup_group_memory">Memória</string>
     <string name="setup_clear_cached">Fechar apps em cache antes de uma sessão</string>
-    <string name="setup_clear_cached_hint">Quando uma sessão começa, o DroidDeck fecha os apps que o Android mantém em segundo plano, para que o jogo tenha mais memória. A Depuração por Wi-Fi precisa estar ativada.</string>
-    <string name="setup_clear_cached_unpaired">O DroidDeck precisa estar pareado com a Depuração por Wi-Fi (Parear, abaixo).</string>
+    <string name="setup_clear_cached_hint">Quando uma sessão começa, o MaliDeck fecha os apps que o Android mantém em segundo plano, para que o jogo tenha mais memória. A Depuração por Wi-Fi precisa estar ativada.</string>
+    <string name="setup_clear_cached_unpaired">O MaliDeck precisa estar pareado com a Depuração por Wi-Fi (Parear, abaixo).</string>
     <string name="setup_memory_hud">Indicador de memória</string>
-    <string name="setup_memory_hud_hint">Memória e swap em uso, na tela da sessão. O modo Avançado divide entre o jogo, o DroidDeck, o Android e a GPU.</string>
+    <string name="setup_memory_hud_hint">Memória e swap em uso, na tela da sessão. O modo Avançado divide entre o jogo, o MaliDeck, o Android e a GPU.</string>
     <string name="setup_memory_hud_simple">Simples</string>
     <string name="setup_memory_hud_advanced">Avançado</string>
     <string name="memory_hud_simple">RAM %1$s/%2$s GB · swap %3$s/%4$s GB</string>
-    <string name="memory_hud_split">jogo %1$s · DroidDeck %2$s · Android %3$s GB</string>
+    <string name="memory_hud_split">jogo %1$s · MaliDeck %2$s · Android %3$s GB</string>
     <string name="memory_hud_gpu">GPU %1$s GB</string>
     <string name="setup_bg_limit">Apps em segundo plano durante uma sessão</string>
-    <string name="setup_bg_limit_hint">Enquanto uma sessão está em andamento, o Android mantém no máximo esse número de apps em cache e fecha o restante, para que o jogo fique com a memória deles. O DroidDeck restaura o limite anterior quando a sessão termina. A Depuração por Wi-Fi precisa estar ativada.</string>
+    <string name="setup_bg_limit_hint">Enquanto uma sessão está em andamento, o Android mantém no máximo esse número de apps em cache e fecha o restante, para que o jogo fique com a memória deles. O MaliDeck restaura o limite anterior quando a sessão termina. A Depuração por Wi-Fi precisa estar ativada.</string>
     <string name="setup_bg_limit_4">No máximo 4</string>
     <string name="setup_bg_limit_1">No máximo 1</string>
     <string name="setup_bg_limit_0">Nenhum</string>
     <string name="setup_adb_pair">Depuração por Wi-Fi</string>
-    <string name="setup_adb_pair_hint">Pareia o DroidDeck com a Depuração por Wi-Fi do Android para as opções acima. O limite de processos filhos continua desativado.</string>
+    <string name="setup_adb_pair_hint">Pareia o MaliDeck com a Depuração por Wi-Fi do Android para as opções acima. O limite de processos filhos continua desativado.</string>
     <string name="setup_adb_pair_button">Parear</string>
     <string name="tracking_recovery_look">Olhe ao redor lentamente em um ambiente bem iluminado.\nMantenha as câmeras de rastreamento desobstruídas e voltadas para móveis ou outros detalhes visíveis.</string>
     <string name="epic_client_missing">Não instalado</string>

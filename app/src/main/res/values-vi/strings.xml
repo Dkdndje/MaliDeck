@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="steamvr_recovery_title">Đồ họa SteamVR đã dừng</string>
-    <string name="steamvr_recovery_countdown">DroidDeck sẽ khởi động lại sau %1$d giây để đặt lại đồ họa và mở lại SteamVR. Game đang chạy sẽ bị đóng; tiến trình chưa lưu sẽ không thể khôi phục.</string>
+    <string name="steamvr_recovery_countdown">MaliDeck sẽ khởi động lại sau %1$d giây để đặt lại đồ họa và mở lại SteamVR. Game đang chạy sẽ bị đóng; tiến trình chưa lưu sẽ không thể khôi phục.</string>
     <string name="steamvr_recovery_repeated">Lỗi đồ họa lại xuất hiện sau lần khởi động lại gần đây. Tự động khôi phục đã tạm dừng để tránh lặp vô hạn. Khởi động lại sẽ đóng game của bạn; tiến trình chưa lưu sẽ không thể khôi phục.</string>
     <string name="steamvr_recovery_restart">Khởi động lại ngay</string>
     <string name="steamvr_recovery_cancel">Giữ mở</string>
     <string name="steamvr_recovery_restarting">Đang đặt lại đồ họa và mở lại SteamVR…</string>
-    <string name="steamvr_recovery_failed">DroidDeck không thể tự khởi động lại. Hãy đóng hẳn ứng dụng rồi mở lại.</string>
-    <string name="app_name">DroidDeck</string>
+    <string name="steamvr_recovery_failed">MaliDeck không thể tự khởi động lại. Hãy đóng hẳn ứng dụng rồi mở lại.</string>
+    <string name="app_name">MaliDeck</string>
     <string-array name="loading_hints">
         <item>Lần chạy đầu tải Steam. Quá trình này có thể mất vài phút.</item>
         <item>Theo mặc định, rời khỏi ứng dụng sẽ tạm dừng Steam; nó tiếp tục từ nơi bạn dừng lại khi bạn quay lại.</item>
@@ -139,7 +139,7 @@
     <string name="user_apps_remove_confirm">Nhấn lại để xóa</string>
     <string name="user_apps_stop_session">Dừng phiên để xóa</string>
     <string name="user_apps_script_linked">Chạy %1$s từ thư mục của nó, được liên kết vào phiên tại chính vị trí đó. Xóa ứng dụng sẽ không ảnh hưởng đến thư mục đó.</string>
-    <string name="user_apps_script_copied">Chạy %1$s từ một bản sao thư mục của nó bên trong DroidDeck. Xóa ứng dụng sẽ xóa bản sao, không phải bản gốc.</string>
+    <string name="user_apps_script_copied">Chạy %1$s từ một bản sao thư mục của nó bên trong MaliDeck. Xóa ứng dụng sẽ xóa bản sao, không phải bản gốc.</string>
     <string name="user_apps_runtime_required">Cài runtime Linux trước</string>
     <string name="user_apps_file_gone">Tệp không còn tồn tại</string>
     <string name="user_apps_no_space">Không đủ dung lượng trống: sao chép thư mục cần %1$s</string>
@@ -174,7 +174,7 @@
     <string name="app_fex_off">Tắt</string>
     <string name="app_fex_hint">FEX chạy các chương trình Linux x86 trên thiết bị ARM64 này. Tự động sẽ dùng nó khi chương trình được build cho x86.</string>
     <string name="app_fex_x86">%1$s qua FEX</string>
-    <string name="app_fex_not_ready">Chương trình này được build cho PC %1$s và chạy qua FEX, hiện chưa được thiết lập. Mở Steam một lần khi đã đăng nhập: DroidDeck sẽ tải FEX và Steam Linux Runtime cần thiết, sau đó ứng dụng này sẽ mở.</string>
+    <string name="app_fex_not_ready">Chương trình này được build cho PC %1$s và chạy qua FEX, hiện chưa được thiết lập. Mở Steam một lần khi đã đăng nhập: MaliDeck sẽ tải FEX và Steam Linux Runtime cần thiết, sau đó ứng dụng này sẽ mở.</string>
     <string name="session_end_program">Chương trình này</string>
     <string name="session_end_steam_download">Không thể tải xuống client Steam. Mạng hoặc VPN của bạn có thể đang chặn máy chủ Steam; hãy kiểm tra kết nối rồi thử lại.</string>
     <string name="session_end_steam_setup">Không thể thiết lập client Steam. Hãy kiểm tra kết nối và dung lượng trống rồi thử lại.</string>
@@ -211,13 +211,13 @@
     <string name="edit_app_save">Lưu</string>
     <string name="add_app_checking_folder">Đang kiểm tra thư mục…</string>
     <string name="add_app_folder_linked">Thư mục của nó được liên kết vào phiên: %1$s</string>
-    <string name="add_app_folder_copied">Thư mục của nó chứa các chương trình Linux, mà bộ nhớ dùng chung không thể chạy, nên nó được sao chép vào DroidDeck (%1$s).</string>
+    <string name="add_app_folder_copied">Thư mục của nó chứa các chương trình Linux, mà bộ nhớ dùng chung không thể chạy, nên nó được sao chép vào MaliDeck (%1$s).</string>
     <string name="add_app_confirm">Thêm</string>
     <string name="add_app_cancel">Hủy</string>
     <string name="add_app_runtime_required">Cài runtime Linux từ Thiết lập trước.</string>
     <string name="add_app_busy">Đợi %1$s hoàn tất.</string>
     <string name="steam_compat_label">Tương thích</string>
-    <string name="proton_compatible_note">Các bản build được đánh dấu “%1$s” trong menu Compatibility của Steam có các bản sửa prefix của DroidDeck và chạy game được ở đây. Mặc định là Proton Experimental ARM64 (%1$s), hoặc Proton 11.0 ARM64 (%1$s) khi bản mới hơn đó đã được cài. Các mục Proton gốc của Valve không có dấu này không thể chạy game trên thiết bị này.</string>
+    <string name="proton_compatible_note">Các bản build được đánh dấu “%1$s” trong menu Compatibility của Steam có các bản sửa prefix của MaliDeck và chạy game được ở đây. Mặc định là Proton Experimental ARM64 (%1$s), hoặc Proton 11.0 ARM64 (%1$s) khi bản mới hơn đó đã được cài. Các mục Proton gốc của Valve không có dấu này không thể chạy game trên thiết bị này.</string>
     <string name="proton_installed_compatible">Đã cài %1$s · %2$s</string>
     <string name="common_cancel">Hủy</string>
     <string name="common_auto">Tự động</string>
@@ -307,8 +307,8 @@
     <string name="mode_background_downloads_hint">Trì hoãn tạm dừng nền khi Steam đang tải xuống.</string>
     <string name="mode_suspend_note">Tự động tạm dừng ở nền và tiếp tục khi hiển thị lại. Thủ công chờ nhấn Tiếp tục. Không bao giờ giữ nó luôn chạy.</string>
     <string name="mode_startup">Khởi động</string>
-    <string name="mode_steam_startup">Khởi động Steam cùng DroidDeck</string>
-    <string name="mode_steam_startup_hint">Mở phiên Steam khi DroidDeck khởi chạy.</string>
+    <string name="mode_steam_startup">Khởi động Steam cùng MaliDeck</string>
+    <string name="mode_steam_startup_hint">Mở phiên Steam khi MaliDeck khởi chạy.</string>
     <string name="mode_decky">Decky</string>
     <string name="mode_decky_checking">Đang kiểm tra bản phát hành…</string>
     <string name="mode_decky_ready">Sẵn sàng cài %1$s.</string>
@@ -399,7 +399,7 @@
     <string name="mode_wifi_open_settings">Mở thiết lập</string>
     <string name="mode_wifi_continue">Tiếp tục</string>
     <string name="mode_wifi_explain_title">Bật dò tìm Wi-Fi?</string>
-    <string name="mode_wifi_explain_text">Android yêu cầu quyền Vị trí để đọc tên Wi-Fi và dò tìm các mạng gần đó. DroidDeck dùng quyền này để hiện các mạng đó trong Steam. Chúng tôi không theo dõi vị trí của bạn. Truy cập Internet vẫn hoạt động mà không cần quyền này.</string>
+    <string name="mode_wifi_explain_text">Android yêu cầu quyền Vị trí để đọc tên Wi-Fi và dò tìm các mạng gần đó. MaliDeck dùng quyền này để hiện các mạng đó trong Steam. Chúng tôi không theo dõi vị trí của bạn. Truy cập Internet vẫn hoạt động mà không cần quyền này.</string>
     <string name="mode_storage">Lưu trữ game</string>
     <string name="mode_storage_auto">Tự động - thẻ SD khi có, cùng các thư mục Games của bạn</string>
     <string name="mode_storage_auto_none">Tự động - các thư mục Games của bạn, cùng thẻ SD khi có (hiện không có)</string>
@@ -501,7 +501,7 @@
     <string name="comp_applies_next_game">Áp dụng vào lần game khởi động kế tiếp</string>
     <string name="comp_import_zip">Nhập tệp .zip</string>
     <string name="comp_reading">Đang đọc Proton…</string>
-    <string name="comp_no_proton">Chưa cài Proton nào. Khởi động Steam một lần để tải Proton ARM64 của nó, hoặc thêm GE-Proton, CachyOS hay DroidDeck-Proton từ Thiết lập.</string>
+    <string name="comp_no_proton">Chưa cài Proton nào. Khởi động Steam một lần để tải Proton ARM64 của nó, hoặc thêm GE-Proton, CachyOS hay MaliDeck-Proton từ Thiết lập.</string>
     <string name="comp_original">Gốc · %1$s</string>
     <string name="comp_this_build">%1$s · build này</string>
     <string name="comp_earlier_build">%1$s · build trước</string>
@@ -519,7 +519,7 @@
     <string name="comp_nightlies_count">Trên Nightlies · %1$d</string>
     <string name="comp_channel_stable">Ổn định</string>
     <string name="comp_channel_nightly">Nightly</string>
-    <string name="comp_refresh_to_list">Làm mới để liệt kê các gói trên Nightlies và DroidDeck.</string>
+    <string name="comp_refresh_to_list">Làm mới để liệt kê các gói trên Nightlies và MaliDeck.</string>
     <string name="comp_nothing_new">Không có gì mới từ lần kiểm tra trước.</string>
     <string name="comp_import_wcp">Nhập tệp .wcp</string>
     <string name="comp_restore_original">Khôi phục bản gốc của Proton này</string>
@@ -751,7 +751,7 @@
     <string name="setup_language_system">Theo hệ thống (%1$s)</string>
     <string name="setup_language_system_short">Theo hệ thống</string>
     <string name="setup_app_scale">Tỷ lệ ứng dụng</string>
-    <string name="setup_app_scale_hint">Văn bản và điều khiển của DroidDeck</string>
+    <string name="setup_app_scale_hint">Văn bản và điều khiển của MaliDeck</string>
     <string name="setup_app_scale_default">%1$d%% (Mặc định)</string>
     <string name="setup_theme">Giao diện</string>
     <string name="setup_theme_hint">Giao diện launcher</string>
@@ -759,8 +759,8 @@
     <string name="setup_launcher_icon_dark">Tối</string>
     <string name="setup_launcher_icon_light">Sáng</string>
     <string name="setup_home">Dùng làm màn hình chính</string>
-    <string name="setup_home_on">DroidDeck có thể là ứng dụng Màn hình chính</string>
-    <string name="setup_home_off">DroidDeck không bao giờ được đề xuất làm ứng dụng Màn hình chính</string>
+    <string name="setup_home_on">MaliDeck có thể là ứng dụng Màn hình chính</string>
+    <string name="setup_home_off">MaliDeck không bao giờ được đề xuất làm ứng dụng Màn hình chính</string>
     <string name="setup_orientation">Hướng màn hình</string>
     <string name="setup_orientation_auto">Ngang tự động</string>
     <string name="setup_orientation_landscape">Ngang</string>
@@ -839,16 +839,16 @@
     <string name="store_website">Trang web</string>
     <string name="store_verified">Đã xác minh</string>
     <string name="upd_title">Cập nhật</string>
-    <string name="upd_build">DroidDeck %1$s · %2$s</string>
+    <string name="upd_build">MaliDeck %1$s · %2$s</string>
     <string name="upd_checked">Đã kiểm tra %1$s</string>
     <string name="upd_not_checked">Chưa kiểm tra</string>
-    <string name="upd_perm_title">Cho phép DroidDeck tự cập nhật</string>
+    <string name="upd_perm_title">Cho phép MaliDeck tự cập nhật</string>
     <string name="upd_perm_text">Ở màn hình kế tiếp, bật Cho phép từ nguồn này, rồi quay lại. Việc cập nhật sẽ tự tiếp tục.</string>
     <string name="upd_open_settings">Mở thiết lập</string>
     <string name="upd_not_now">Không phải bây giờ</string>
     <string name="upd_signed_status">Ký khác nhau</string>
     <string name="upd_signed_headline">Không thể cập nhật tại chỗ</string>
-    <string name="upd_signed_detail">Bản này không được ký bằng khóa phát hành của DroidDeck, nên bản cập nhật không thể cài chồng lên nó. Gỡ cài đặt nó để chuyển.</string>
+    <string name="upd_signed_detail">Bản này không được ký bằng khóa phát hành của MaliDeck, nên bản cập nhật không thể cài chồng lên nó. Gỡ cài đặt nó để chuyển.</string>
     <string name="upd_available">Có cập nhật</string>
     <string name="upd_blocked_status">Không thể cài</string>
     <string name="upd_switch">Sẵn sàng chuyển</string>
@@ -870,7 +870,7 @@
     <string name="upd_stop_session">Dừng phiên đang chạy để cập nhật.</string>
     <string name="upd_less">Ít hơn</string>
     <string name="upd_more">Thêm</string>
-    <string name="upd_new_stable">DroidDeck %1$s</string>
+    <string name="upd_new_stable">MaliDeck %1$s</string>
     <string name="upd_new_preview">Bản Preview mới</string>
     <string name="upd_new_test">Bản thử nghiệm PR #%1$d</string>
     <string name="upd_mb">%1$d MB</string>
@@ -885,7 +885,7 @@
     <string name="upd_tests_hint">Thử một bản sửa trước khi nó được phát hành</string>
     <string name="upd_tests_none">Hiện không có</string>
     <string name="upd_pr">PR #%1$d</string>
-    <string name="upd_not_built">Không được build cho bản DroidDeck này</string>
+    <string name="upd_not_built">Không được build cho bản MaliDeck này</string>
     <string name="upd_updated">Đã cập nhật %1$s</string>
     <string name="upd_test_name">thử nghiệm PR #%1$d</string>
     <string name="upd_while_ago">một lúc trước</string>
@@ -905,13 +905,13 @@
     <string name="gate_fix_for_me">Khắc phục giúp tôi</string>
     <string name="gate_toggle_steps">Bật “Tắt các mục hạn chế đối với tiến trình con”, rồi quay lại. Giữ Tùy chọn cho nhà phát triển luôn mở, nếu không công tắc sẽ tắt lại.</string>
     <string name="gate_open_dev">Mở Tùy chọn cho nhà phát triển</string>
-    <string name="gate_no_toggle">Phiên bản Android này không có công tắc cho việc đó, nên DroidDeck thay đổi nó qua Gỡ lỗi qua mạng không dây. Mất khoảng một phút, không cần máy tính.</string>
+    <string name="gate_no_toggle">Phiên bản Android này không có công tắc cho việc đó, nên MaliDeck thay đổi nó qua Gỡ lỗi qua mạng không dây. Mất khoảng một phút, không cần máy tính.</string>
     <string name="gate_needs_wifi">Gỡ lỗi qua mạng không dây cần Wi-Fi. Mạng nào cũng được; không cần Internet.</string>
-    <string name="gate_needs_notifications">Mã ghép nối nằm trong một thông báo. Hãy cho phép thông báo cho DroidDeck, hoặc dùng Cách khác.</string>
+    <string name="gate_needs_notifications">Mã ghép nối nằm trong một thông báo. Hãy cho phép thông báo cho MaliDeck, hoặc dùng Cách khác.</string>
     <string name="gate_allow_notifications">Cho phép thông báo</string>
     <string name="gate_step1">Mở Settings → Developer options → Wireless debugging và bật nó lên</string>
     <string name="gate_step2">Nhấn “Pair device with pairing code”</string>
-    <string name="gate_step3">Nhập mã vào thông báo của DroidDeck</string>
+    <string name="gate_step3">Nhập mã vào thông báo của MaliDeck</string>
     <string name="gate_waiting">Đang chờ cửa sổ bật lên ghép nối…</string>
     <string name="gate_code_needed">Đã tìm thấy cửa sổ bật lên. Nhập mã của nó vào thông báo.</string>
     <string name="gate_status">Trạng thái</string>
@@ -1029,7 +1029,7 @@
     <string name="desktop_removing">Đang gỡ desktop</string>
     <string name="desktop_removed">Đã gỡ desktop</string>
     <string name="desktop_cleaning_legacy">Đang xóa tệp LXQt cũ</string>
-    <string name="desktop_removal_unknown">Cập nhật DroidDeck trước khi gỡ phiên bản desktop này.</string>
+    <string name="desktop_removal_unknown">Cập nhật MaliDeck trước khi gỡ phiên bản desktop này.</string>
     <string name="content_linux_desktop">Desktop Linux</string>
     <string name="content_linux_desktop_hint">KDE Plasma, Firefox và các trình giả lập của bạn</string>
     <string name="games_empty">Game bạn cài trong Steam sẽ xuất hiện ở đây sau phiên.</string>
@@ -1074,7 +1074,7 @@
     <string name="gpu_auto_by_gpu">Tự động - chọn theo GPU</string>
     <string name="gpu_manage">Tải, nhập hoặc xóa…</string>
     <string name="gpu_in_use_caps">ĐANG DÙNG</string>
-    <string name="gpu_builtin">Các driver tích hợp trong DroidDeck</string>
+    <string name="gpu_builtin">Các driver tích hợp trong MaliDeck</string>
     <string name="gpu_matched_pair">Driver runtime và hiển thị được đặt cùng nhau thành một cặp khớp.</string>
     <string name="gpu_recommended_for">Được đề xuất cho GPU này: %1$s.</string>
     <string name="gpu_refresh_hint">Làm mới để tìm driver cho GPU này.</string>
@@ -1177,7 +1177,7 @@
     <string name="unfolded_controls_hint">Khi mở, game nằm phía trên trackpad và grip phía sau của Steam Deck. Khi gập, game chiếm toàn màn hình.</string>
     <string name="pip_suspended">Đã tạm dừng</string>
     <string name="pip_not_ready">Hình trong hình chỉ khả dụng khi phiên đã sẵn sàng.</string>
-    <string name="pip_permission">Cho phép hình trong hình cho DroidDeck trong thiết lập Android.</string>
+    <string name="pip_permission">Cho phép hình trong hình cho MaliDeck trong thiết lập Android.</string>
     <string name="pip_unavailable">Android không thể mở hình trong hình.</string>
     <string name="game_shortcut">Shortcut</string>
     <string name="game_shortcut_add">Thêm vào màn hình chính</string>
@@ -1187,7 +1187,7 @@
     <string name="game_link_copied">Đã sao chép liên kết khởi chạy</string>
     <string name="game_shortcut_unsupported">Launcher này không thể thêm shortcut. Hãy dùng Sao chép liên kết khởi chạy.</string>
     <string name="game_link_invalid">Liên kết khởi chạy game không hợp lệ.</string>
-    <string name="game_link_missing">Game này không còn trong thư viện DroidDeck của bạn.</string>
+    <string name="game_link_missing">Game này không còn trong thư viện MaliDeck của bạn.</string>
     <string name="game_link_session_busy">Dừng phiên hiện tại trước khi khởi chạy một game Steam.</string>
     <string name="game_link_failed">Không thể gửi game đến Steam. Hãy thử khởi chạy lại.</string>
     <string name="setup_retry_removal">Thử gỡ lại</string>
@@ -1210,7 +1210,7 @@
         <item quantity="other">Đã nhập %1$d tệp từ %2$s vào %3$s</item>
     </plurals>
     <plurals name="main_saves_imported_backup">
-        <item quantity="other">Đã nhập %1$d tệp từ %2$s vào %3$s. Tệp lưu cũ đã được sao lưu vào Download/DroidDeck/Saves/backups</item>
+        <item quantity="other">Đã nhập %1$d tệp từ %2$s vào %3$s. Tệp lưu cũ đã được sao lưu vào Download/MaliDeck/Saves/backups</item>
     </plurals>
     <string name="main_saves_pick_zip">Chọn một tệp zip lưu cho %1$s</string>
     <string name="main_saves_exporting">Đang xuất %1$s</string>
@@ -1266,7 +1266,7 @@
 
     <string name="upd_unknown_apps_failed">Không thể mở thiết lập \"Install unknown apps\" của Android</string>
     <string name="upd_couldnt_check">Không thể kiểm tra: %1$s</string>
-    <string name="upd_no_download">Bản build này không có tệp tải cho bản DroidDeck này</string>
+    <string name="upd_no_download">Bản build này không có tệp tải cho bản MaliDeck này</string>
     <string name="upd_stop_first">Dừng phiên đang chạy trước, rồi cập nhật</string>
     <string name="upd_stage_downloading">Đang tải</string>
     <string name="upd_stage_installing">Đang cài</string>
@@ -1295,22 +1295,22 @@
     <string name="drivers_recommended_unpublished">Các driver được đề xuất hiện không được phát hành</string>
     <string name="drivers_downloading_pair">Đang tải %1$s %2$s…</string>
     <string name="drivers_updated_to">Đã cập nhật lên %1$s %2$s.</string>
-    <string name="drivers_updated_to_restart">Đã cập nhật lên %1$s %2$s. Driver hiển thị áp dụng sau khi DroidDeck khởi động lại.</string>
+    <string name="drivers_updated_to_restart">Đã cập nhật lên %1$s %2$s. Driver hiển thị áp dụng sau khi MaliDeck khởi động lại.</string>
     <string name="drivers_auto_waits_for_session">Bản cập nhật driver sẽ chờ phiên dừng.</string>
     <string name="drivers_auto_waits_for_network">%1$s %2$s sẽ tải xuống khi bạn thoát dữ liệu di động và chế độ tiết kiệm pin.</string>
     <string name="drivers_skipping_bad">%1$s %2$s không khởi động được phiên ở đây, nên Tự động giữ các driver đã chạy được.</string>
     <string name="drivers_rolled_back">%1$s không khởi động được phiên hai lần, nên Tự động quay lại các driver đang hoạt động.</string>
     <string name="drivers_switched_to">Đã chuyển sang %1$s %2$s.</string>
-    <string name="drivers_switched_to_restart">Đã chuyển sang %1$s %2$s. Driver hiển thị áp dụng sau khi DroidDeck khởi động lại.</string>
+    <string name="drivers_switched_to_restart">Đã chuyển sang %1$s %2$s. Driver hiển thị áp dụng sau khi MaliDeck khởi động lại.</string>
     <string name="drivers_using">Đang dùng %1$s %2$s.</string>
-    <string name="drivers_using_restart">Đang dùng %1$s %2$s. Driver hiển thị áp dụng sau khi DroidDeck khởi động lại.</string>
+    <string name="drivers_using_restart">Đang dùng %1$s %2$s. Driver hiển thị áp dụng sau khi MaliDeck khởi động lại.</string>
     <string name="drivers_using_quest">Đang dùng driver hiển thị đi kèm Quest và runtime mặc định.</string>
-    <string name="drivers_using_quest_restart">Đang dùng driver hiển thị đi kèm Quest và runtime mặc định. Driver hiển thị áp dụng sau khi khởi động lại DroidDeck.</string>
+    <string name="drivers_using_quest_restart">Đang dùng driver hiển thị đi kèm Quest và runtime mặc định. Driver hiển thị áp dụng sau khi khởi động lại MaliDeck.</string>
     <string name="drivers_not_a_driver">Không phải zip driver: không phải driver AdrenoTools, Turnip -Linux, cũng không phải gói Android + Linux</string>
     <string name="drivers_import_failed">Nhập thất bại: %1$s</string>
     <string name="drivers_imported_unnamed">Driver đã nhập</string>
     <string name="drivers_using_bundle">Đang dùng %1$s làm cả driver runtime và hiển thị.</string>
-    <string name="drivers_using_bundle_restart">Đang dùng %1$s làm cả driver runtime và hiển thị. Driver hiển thị áp dụng sau khi DroidDeck khởi động lại.</string>
+    <string name="drivers_using_bundle_restart">Đang dùng %1$s làm cả driver runtime và hiển thị. Driver hiển thị áp dụng sau khi MaliDeck khởi động lại.</string>
     <string name="drivers_deleted_bundle">Đã xóa %1$s (cả hai driver)</string>
     <string name="drivers_deleted">Đã xóa %1$s</string>
     <string name="drivers_release_status">Mới nhất: %1$s · đã kiểm tra %2$s</string>
@@ -1324,7 +1324,7 @@
     <plurals name="drivers_ago_days">
         <item quantity="other">%1$d ngày trước</item>
     </plurals>
-    <string name="drivers_checking_sources">Đang kiểm tra Banners-Turnip, WinNative và DroidDeck…</string>
+    <string name="drivers_checking_sources">Đang kiểm tra Banners-Turnip, WinNative và MaliDeck…</string>
     <string name="drivers_check_failed">kiểm tra thất bại</string>
     <string name="drivers_installed_pick_either">Đã cài %1$s - chọn nó ở một trong hai danh sách để đặt cả hai driver</string>
     <string name="drivers_installed_pick">Đã cài %1$s - chọn nó trong menu</string>
@@ -1710,7 +1710,7 @@
     <string name="adbfix_no_pairing">Chưa có ghép nối Gỡ lỗi qua mạng không dây nào được lưu</string>
     <string name="adbfix_enter_address">Nhập địa chỉ IP &amp; cổng Gỡ lỗi qua mạng không dây hiện tại</string>
 
-    <string name="adbpair_timed_out">Hết thời gian chờ cửa sổ bật lên ghép nối. Hãy thử lại từ DroidDeck.</string>
+    <string name="adbpair_timed_out">Hết thời gian chờ cửa sổ bật lên ghép nối. Hãy thử lại từ MaliDeck.</string>
     <string name="adbpair_discovery_failed_code">Không thể tìm cửa sổ bật lên ghép nối (%1$d). Kiểm tra Wi-Fi đã bật.</string>
     <string name="adbpair_discovery_failed">Không thể tìm cửa sổ bật lên ghép nối: %1$s</string>
     <string name="adbpair_six_digits">Nhập đủ 6 số của mã</string>
@@ -1732,20 +1732,20 @@
     <string name="adbpair_enter_code">Nhập mã</string>
     <string name="adbpair_title_working">Đang thiết lập Steam</string>
     <string name="adbpair_title_done">Steam đã sẵn sàng</string>
-    <string name="adbpair_done_text">Nhấn để quay lại DroidDeck. Bạn có thể tắt Gỡ lỗi qua mạng không dây ngay bây giờ.</string>
+    <string name="adbpair_done_text">Nhấn để quay lại MaliDeck. Bạn có thể tắt Gỡ lỗi qua mạng không dây ngay bây giờ.</string>
     <string name="adbpair_title_failed">Thiết lập Gỡ lỗi qua mạng không dây đã dừng</string>
 
     <string name="selfinst_download_failed">Tải xuống thất bại</string>
     <string name="selfinst_size_mismatch">Kích thước tải xuống không khớp với APK đã phát hành và đã bị loại bỏ - hãy thử lại</string>
     <string name="selfinst_checksum_mismatch">Tệp tải xuống không khớp checksum và đã bị loại bỏ - hãy thử lại</string>
     <string name="selfinst_wrong_package">Bản cập nhật này dành cho package Android %1$s, không phải %2$s</string>
-    <string name="selfinst_metadata_signer">Metadata cập nhật không ghi tên khóa ký phát hành của DroidDeck</string>
+    <string name="selfinst_metadata_signer">Metadata cập nhật không ghi tên khóa ký phát hành của MaliDeck</string>
     <string name="selfinst_unreadable">Android không thể đọc APK đã tải xuống</string>
     <string name="selfinst_apk_wrong_package">APK đã tải xuống dành cho %1$s, không phải %2$s</string>
     <string name="selfinst_version_mismatch">APK đã tải xuống ghi versionCode %1$d, không phải %2$d đã phát hành</string>
     <string name="selfinst_downgrade">Android sẽ không cài versionCode %1$d chồng lên %2$d đã cài</string>
     <string name="selfinst_no_signing">APK đã tải xuống không có thông tin ký</string>
-    <string name="selfinst_wrong_signer">APK đã tải xuống không được ký bằng khóa phát hành của DroidDeck</string>
+    <string name="selfinst_wrong_signer">APK đã tải xuống không được ký bằng khóa phát hành của MaliDeck</string>
     <string name="appupd_http">Danh mục cập nhật trả về HTTP %1$d</string>
 
     <string name="loadstate_starting">Đang khởi động phiên…</string>
@@ -1791,7 +1791,7 @@
     <string name="cmgr_original_kept">Bản gốc của build đã cài được giữ lại: đó là đường quay về.</string>
     <string name="cmgr_not_stored">Chưa được lưu</string>
     <string name="cmgr_deleted_original">Đã xóa bản gốc %1$s của %2$s.</string>
-    <string name="cmgr_nightlies_only">Lượt tải chỉ đến từ các bản phát hành Nightlies và DroidDeck</string>
+    <string name="cmgr_nightlies_only">Lượt tải chỉ đến từ các bản phát hành Nightlies và MaliDeck</string>
     <string name="cmgr_nightly_replaced">Tải xuống thất bại: bản nightly này có thể đã được thay bằng bản mới hơn. Hãy làm mới danh sách và thử lại.</string>
     <string name="cmgr_list_predates_checksums">Danh sách gói này có trước checksum - hãy làm mới và thử lại</string>
     <string name="cmgr_checksum_mismatch">Checksum không khớp</string>
@@ -1830,7 +1830,7 @@
     <string name="gpuinfo_supported">Được hỗ trợ</string>
     <string name="gpuinfo_experimental">Thử nghiệm: driver của nó là bản build thử nghiệm</string>
     <string name="gpuinfo_below_tested">Dưới mức phần cứng đã kiểm thử (Adreno 725 và mới hơn): có thể không chạy được</string>
-    <string name="gpuinfo_unsupported">Không được hỗ trợ: DroidDeck cần GPU Adreno (Snapdragon)</string>
+    <string name="gpuinfo_unsupported">Không được hỗ trợ: MaliDeck cần GPU Adreno (Snapdragon)</string>
 
     <string name="turnip_rate_limited">Đã đạt giới hạn tốc độ của GitHub - hãy thử lại sau</string>
     <string name="turnip_github_http">GitHub trả về HTTP %1$d</string>
@@ -1873,10 +1873,10 @@
     <string name="phantom_instructions_not_applicable">Phiên bản Android này không dùng giới hạn này.</string>
     <string name="phantom_fix_toggle">Bật “Tắt các mục hạn chế đối với tiến trình con” trong Developer options, và giữ Developer options luôn mở sau đó.</string>
     <string name="phantom_fix_no_toggle">Phiên bản Android này không có công tắc cho việc đó. Dùng Gỡ lỗi qua mạng không dây để đổi nó từ thiết bị này.</string>
-    <string name="upd_block_no_apk">Bản build này không có tệp tải cho bản DroidDeck này.</string>
+    <string name="upd_block_no_apk">Bản build này không có tệp tải cho bản MaliDeck này.</string>
     <string name="upd_block_version_code">Android sẽ không cài nó chồng lên bản này vì versionCode %1$d của nó thấp hơn %2$d đã cài.</string>
     <string name="upd_fail_downgrade">Android sẽ không cài một phiên bản cũ hơn chồng lên phiên bản mới hơn. Hãy giữ nguyên bản này cho đến khi kênh bắt kịp.</string>
-    <string name="upd_fail_signature">Bản DroidDeck này được ký khác (có thể là bản build cục bộ?), nên Android sẽ không cập nhật tại chỗ.</string>
+    <string name="upd_fail_signature">Bản MaliDeck này được ký khác (có thể là bản build cục bộ?), nên Android sẽ không cập nhật tại chỗ.</string>
     <string name="upd_fail_storage">Không đủ dung lượng trống cho bản cập nhật.</string>
     <string name="upd_fail_aborted">Bản cập nhật đã bị hủy.</string>
     <string name="upd_fail_with_message">Bản cập nhật không cài được: %1$s</string>
@@ -1901,7 +1901,7 @@
     <string name="gstore_volume_free">%1$s · %2$s trống</string>
     <string name="mode_storage_auto_short">Tự động</string>
     <string name="appupd_catalog_rejected">Danh mục cập nhật không qua được kiểm tra (%1$s)</string>
-    <string name="main_adb_clip_label">Thiết lập tiến trình con của DroidDeck</string>
+    <string name="main_adb_clip_label">Thiết lập tiến trình con của MaliDeck</string>
     <string name="setup_signed_in_offline_unnamed">Đã đăng nhập · chế độ ngoại tuyến</string>
     <string name="setup_signed_in_unnamed">Đã đăng nhập</string>
     <string name="driver_tag_bundled">ĐI KÈM</string>
@@ -2277,7 +2277,7 @@
     <string name="gpu_display_next">Vẽ màn hình. Áp dụng từ phiên sau.</string>
     <string name="gpu_previous_driver">driver trước</string>
     <string name="gpu_restart_banner">Khởi động lại để đổi driver hiển thị.</string>
-    <string name="gpu_restart_blocked">Dừng phiên hiện tại và khởi động lại DroidDeck để đổi driver hiển thị.</string>
+    <string name="gpu_restart_blocked">Dừng phiên hiện tại và khởi động lại MaliDeck để đổi driver hiển thị.</string>
     <string name="gpu_restart_now">Khởi động lại ngay</string>
     <string name="gpu_restart_later">Để sau</string>
     <string name="gpu_auto_title">Tự động đã chọn cặp này cho %1$s của bạn</string>
@@ -2353,7 +2353,7 @@
     <string name="touch_speed_normal">Bình thường</string>
     <string name="touch_speed_fast">Nhanh</string>
     <string name="touch_edit_layout">Chỉnh sửa bố cục</string>
-    <string name="touch_droiddeck_menu">Menu DroidDeck</string>
+    <string name="touch_droiddeck_menu">Menu MaliDeck</string>
     <string name="touch_drag_hint">Kéo các nút điều khiển vào màn hình</string>
     <string name="touch_arrange">Sắp xếp</string>
     <string name="touch_discard">Hủy bỏ</string>
@@ -2417,7 +2417,7 @@
     <string name="glasses_driver_missing">Bản build này không có driver cho kính này.</string>
     <string name="glasses_connection_failed">Không thể kết nối với kính. Hãy cắm lại cáp hoặc nhấn “Cho phép” để thử lại.</string>
     <string name="glasses_allow">Cho phép</string>
-    <string name="glasses_allow_hint">Để DroidDeck đặt tốc độ làm mới, chế độ 3D, độ sáng, âm lượng và chống nắng của kính, đồng thời đọc dữ liệu theo dõi đầu của kính.</string>
+    <string name="glasses_allow_hint">Để MaliDeck đặt tốc độ làm mới, chế độ 3D, độ sáng, âm lượng và chống nắng của kính, đồng thời đọc dữ liệu theo dõi đầu của kính.</string>
     <string name="glasses_asking">Đang chờ bạn cho phép trong hộp thoại của Android…</string>
     <string name="glasses_denied">Quyền điều khiển đã bị từ chối. Hãy cho phép để thay đổi thiết lập của kính.</string>
     <string name="glasses_no_control">Kính này hiển thị game, nhưng không thể thay đổi thiết lập của kính từ đây.</string>
@@ -2573,7 +2573,7 @@
     <string name="storage_internal">Bộ nhớ trong</string>
     <string name="storage_used_of">Đã dùng %1$s trên %2$s</string>
     <string name="storage_free">Trống %1$s</string>
-    <string name="storage_droiddeck_uses">DroidDeck dùng %1$s. Đo trên %2$s.</string>
+    <string name="storage_droiddeck_uses">MaliDeck dùng %1$s. Đo trên %2$s.</string>
     <string name="storage_rescanning">đang quét lại…</string>
     <string name="storage_other_apps">Ứng dụng Android khác</string>
     <string name="storage_safe_now">Có thể dọn ngay</string>
@@ -2592,7 +2592,7 @@
     <string name="storage_desktop_hint">Ứng dụng và runtime Flatpak</string>
     <string name="storage_system">Hệ thống Linux và ứng dụng Steam</string>
     <string name="storage_system_hint">Cần để mọi thứ chạy được</string>
-    <string name="storage_app_data">Dữ liệu DroidDeck</string>
+    <string name="storage_app_data">Dữ liệu MaliDeck</string>
     <string name="storage_app_data_hint">Log phiên cũ %1$s · bộ nhớ đệm · driver</string>
     <string name="storage_legend_games">Game</string>
     <string name="storage_legend_data">Dữ liệu game</string>
@@ -2600,7 +2600,7 @@
     <string name="storage_legend_stores">Cửa hàng khác</string>
     <string name="storage_legend_desktop">Ứng dụng máy tính</string>
     <string name="storage_legend_system">Hệ thống Linux</string>
-    <string name="storage_legend_app">DroidDeck</string>
+    <string name="storage_legend_app">MaliDeck</string>
     <string name="storage_clean_up_title">Dọn</string>
     <string name="storage_clean_up_lede">Không mục nào ở đây đụng vào game đã cài hay bản tải đang chạy.</string>
     <string name="storage_nothing_to_clean">Hiện không có gì để dọn.</string>
@@ -2649,8 +2649,8 @@
     <string name="storage_tool_redist">Bộ cài VC++ và DirectX mà game cần</string>
     <string name="storage_tool_fex">Chạy game Linux x86</string>
     <string name="storage_tool_steam">Công cụ Steam</string>
-    <string name="storage_tool_old_runtime">DroidDeck chạy game mà không cần runtime này</string>
-    <string name="storage_tool_x86_proton">Proton x86, DroidDeck không chạy được</string>
+    <string name="storage_tool_old_runtime">MaliDeck chạy game mà không cần runtime này</string>
+    <string name="storage_tool_x86_proton">Proton x86, MaliDeck không chạy được</string>
     <string name="storage_tool_custom_default">Mặc định cho mọi game</string>
     <string name="storage_tool_custom_unused">Không game nào dùng</string>
     <string name="storage_tool_custom_unknown">Không đọc được thiết lập Steam nên giữ lại</string>
@@ -2684,8 +2684,8 @@
         <item quantity="one">%d game</item>
         <item quantity="other">%d game</item>
     </plurals>
-    <string name="storage_tool_default_proton">Proton mặc định của DroidDeck</string>
-    <string name="storage_tool_proton">Tùy chọn Proton 11 của DroidDeck</string>
+    <string name="storage_tool_default_proton">Proton mặc định của MaliDeck</string>
+    <string name="storage_tool_proton">Tùy chọn Proton 11 của MaliDeck</string>
     <plurals name="storage_tool_custom_games">
         <item quantity="one">%d game dùng</item>
         <item quantity="other">%d game dùng</item>
@@ -2739,7 +2739,7 @@
     </plurals>
     <string name="boot_movie">Video khởi động</string>
     <string name="boot_movie_video">Video</string>
-    <string name="boot_movie_droiddeck">DroidDeck · %1$d fps</string>
+    <string name="boot_movie_droiddeck">MaliDeck · %1$d fps</string>
     <string name="boot_movie_note">60 fps mượt hơn nhưng tốn CPU hơn khi Steam đang khởi động. Video chọn trong cài đặt của chính Steam cũng hiện ở đây.</string>
     <string name="boot_movie_sound">Âm thanh</string>
     <string name="boot_movie_custom">Video của bạn</string>
@@ -2751,24 +2751,24 @@
     <string name="boot_movie_imported_silent">%1$s giờ là video khởi động, không có tiếng</string>
     <string name="boot_movie_too_long">Video cần chuyển đổi phải dài tối đa %1$d giây</string>
     <string name="boot_movie_converting">Đang chuyển đổi %1$d%%</string>
-    <string name="boot_movie_converting_started">Đang chuyển đổi %1$s cho Steam. Hãy để DroidDeck mở.</string>
+    <string name="boot_movie_converting_started">Đang chuyển đổi %1$s cho Steam. Hãy để MaliDeck mở.</string>
     <string name="boot_movie_unsupported">Thiết bị này không giải mã được video đó.</string>
     <string name="boot_movie_import_failed">Không thể nhập video này</string>
     <string name="boot_movie_remove_confirm">Xóa %1$s?</string>
-    <string name="boot_movie_remove_confirm_body">Thao tác này xóa video khỏi DroidDeck và khỏi thư mục video của Steam.</string>
+    <string name="boot_movie_remove_confirm_body">Thao tác này xóa video khỏi MaliDeck và khỏi thư mục video của Steam.</string>
     <string name="boot_movie_tab_installed">Đã cài</string>
     <string name="boot_movie_tab_import">Nhập</string>
     <string name="boot_movie_tab_repo">SteamDeckRepo</string>
     <string name="boot_movie_tab_sound">Âm thanh</string>
     <string name="boot_movie_installed">Video đã cài</string>
     <string name="boot_movie_browse">Duyệt</string>
-    <string name="boot_movie_source_droiddeck">DroidDeck</string>
+    <string name="boot_movie_source_droiddeck">MaliDeck</string>
     <string name="boot_movie_source_import">Đã nhập</string>
     <string name="boot_movie_source_repo">SteamDeckRepo</string>
     <string name="boot_movie_source_steam">Steam</string>
     <string name="boot_movie_source_pointshop">Cửa hàng điểm</string>
     <string name="boot_movie_report">Báo cáo phim khởi động</string>
-    <string name="boot_movie_report_hint">Lưu những gì DroidDeck và Steam biết về phim khởi động vào một tệp văn bản để đính kèm báo cáo lỗi.</string>
+    <string name="boot_movie_report_hint">Lưu những gì MaliDeck và Steam biết về phim khởi động vào một tệp văn bản để đính kèm báo cáo lỗi.</string>
     <string name="boot_movie_report_save">Lưu</string>
     <string name="boot_movie_report_saved">Đã lưu vào %1$s</string>
     <string name="boot_movie_report_failed">Không thể lưu báo cáo.</string>
@@ -2804,7 +2804,7 @@
     <string name="glasses_joycons_hint">Sử dụng camera của kính thông minh để định vị bộ điều khiển Joy-Con đã ghép nối. Xoay và nhập nút đến từ bộ điều khiển Joy-Con. Vị trí được ước tính khi cổ tay của bạn bị che khuất. Thay thế bộ điều khiển được điều khiển bằng tay không và tạm dừng theo dõi bằng camera điện thoại. Hướng bộ điều khiển Joy-Con về phía trước khi kết nối hoặc đặt lại trung tâm theo dõi.</string>
     <string name="glasses_joycons_requires_position">Trước tiên hãy bật tính năng theo dõi vị trí. Yêu cầu bộ điều khiển Joy-Con có khả năng chuyển động trên Android 12 trở lên. Mặc định là tắt.</string>
     <string name="setup_tab_glasses">Kính thông minh</string>
-    <string name="setup_glasses_scope">Cài đặt hiển thị và theo dõi đầu được chia sẻ trên các menu, trò chơi và phiên máy tính để bàn của DroidDeck.</string>
+    <string name="setup_glasses_scope">Cài đặt hiển thị và theo dõi đầu được chia sẻ trên các menu, trò chơi và phiên máy tính để bàn của MaliDeck.</string>
     <string name="setup_glasses_connect">Kết nối kính thông minh để thay đổi cài đặt hiển thị và theo dõi của chúng. Các cài đặt đã lưu của bạn sẽ được giữ lại khi bạn ngắt kết nối.</string>
     <string name="glasses_vr">Thực tế ảo (VR)</string>
     <string name="glasses_display_mode">Chế độ hiển thị</string>
@@ -2823,7 +2823,7 @@
     <string name="glasses_refresh_30_hint">Bật Chơi game trên kính thông minh để chọn chế độ 30 Hz gốc của màn hình.</string>
     <string name="glasses_3dof">Màn hình ảo 3DoF</string>
     <string name="glasses_3dof_hint">Neo các trò chơi phẳng trước mặt bạn để bạn có thể nhìn xung quanh. Cho phép Chơi game trên kính thông minh mà không cần chuyển sang 3D.</string>
-    <string name="glasses_screen_app_wide">Chiều rộng và khoảng cách cập nhật màn hình ảo được theo dõi cho menu, trò chơi và phiên máy tính để bàn của DroidDeck ngay lập tức.</string>
+    <string name="glasses_screen_app_wide">Chiều rộng và khoảng cách cập nhật màn hình ảo được theo dõi cho menu, trò chơi và phiên máy tính để bàn của MaliDeck ngay lập tức.</string>
     <string name="glasses_head_tracking_spatial_vr_hint">Theo dõi vị trí bao gồm xoay đầu trong SteamVR. Để chỉ theo dõi xoay, hãy tắt theo dõi vị trí.</string>
     <string name="glasses_head_tracking_spatial_hint">Điều khiển chuyển động đầu trên màn hình ảo. Theo dõi vị trí bao gồm xoay đầu trong SteamVR.</string>
     <string name="glasses_quick_actions">Thao tác nhanh</string>
@@ -2918,8 +2918,8 @@
     <string name="spatial_timing_values">%1$.1f Hz • tuổi hình ảnh %2$.1f ms • xử lý %3$.1f ms</string>
     <string name="spatial_input_values">Giới hạn đầu vào %1$.1f Hz • %2$.0f%% hình ảnh camera. Theo dõi đầu tiếp tục ở tần số tối đa.</string>
     <string name="spatial_frame_counts">%1$d đã xử lý • %2$d bị loại bỏ • %3$d bị bỏ qua theo giới hạn đầu vào</string>
-    <string name="spatial_print_job">DroidDeck ChArUco 30 mm</string>
-    <string name="spatial_print_title">DroidDeck - Hiệu chuẩn Luma Ultra</string>
+    <string name="spatial_print_job">MaliDeck ChArUco 30 mm</string>
+    <string name="spatial_print_title">MaliDeck - Hiệu chuẩn Luma Ultra</string>
     <string name="spatial_print_scale" formatted="false">In ở tỷ lệ 100% / Kích thước thực tế. Mỗi hình vuông: 30 mm (1,181 in).</string>
     <string name="spatial_print_stationary">Giữ mục tiêu hiệu chỉnh bằng phẳng và cố định; di chuyển kính thông minh giữa các lần chụp.</string>
     <string name="spatial_print_check">Kiểm tra tỷ lệ: 100 mm (3,937 in) giữa các dấu tích</string>
@@ -3003,22 +3003,22 @@
     <string name="spatial_opencv_load_error">OpenCV không thể tải</string>
     <string name="setup_group_memory">Bộ nhớ</string>
     <string name="setup_clear_cached">Đóng ứng dụng đã lưu đệm trước phiên</string>
-    <string name="setup_clear_cached_hint">Khi phiên bắt đầu, DroidDeck đóng các ứng dụng mà Android giữ ở nền để game có thêm bộ nhớ. Phải bật Gỡ lỗi qua mạng không dây.</string>
-    <string name="setup_clear_cached_unpaired">Cần ghép nối DroidDeck với Gỡ lỗi qua mạng không dây (Ghép nối, bên dưới).</string>
+    <string name="setup_clear_cached_hint">Khi phiên bắt đầu, MaliDeck đóng các ứng dụng mà Android giữ ở nền để game có thêm bộ nhớ. Phải bật Gỡ lỗi qua mạng không dây.</string>
+    <string name="setup_clear_cached_unpaired">Cần ghép nối MaliDeck với Gỡ lỗi qua mạng không dây (Ghép nối, bên dưới).</string>
     <string name="setup_memory_hud">Chỉ báo bộ nhớ</string>
-    <string name="setup_memory_hud_hint">Bộ nhớ và swap đang dùng, trên màn hình phiên. Nâng cao chia theo game, DroidDeck, Android và GPU.</string>
+    <string name="setup_memory_hud_hint">Bộ nhớ và swap đang dùng, trên màn hình phiên. Nâng cao chia theo game, MaliDeck, Android và GPU.</string>
     <string name="setup_memory_hud_simple">Đơn giản</string>
     <string name="setup_memory_hud_advanced">Nâng cao</string>
     <string name="memory_hud_simple">RAM %1$s/%2$s GB · swap %3$s/%4$s GB</string>
-    <string name="memory_hud_split">game %1$s · DroidDeck %2$s · Android %3$s GB</string>
+    <string name="memory_hud_split">game %1$s · MaliDeck %2$s · Android %3$s GB</string>
     <string name="memory_hud_gpu">GPU %1$s GB</string>
     <string name="setup_bg_limit">Ứng dụng nền trong phiên</string>
-    <string name="setup_bg_limit_hint">Trong khi phiên chạy, Android chỉ giữ tối đa chừng này ứng dụng trong bộ nhớ đệm và đóng phần còn lại để game có bộ nhớ của chúng. DroidDeck đặt lại giới hạn như cũ khi phiên kết thúc. Phải bật Gỡ lỗi qua mạng không dây.</string>
+    <string name="setup_bg_limit_hint">Trong khi phiên chạy, Android chỉ giữ tối đa chừng này ứng dụng trong bộ nhớ đệm và đóng phần còn lại để game có bộ nhớ của chúng. MaliDeck đặt lại giới hạn như cũ khi phiên kết thúc. Phải bật Gỡ lỗi qua mạng không dây.</string>
     <string name="setup_bg_limit_4">Tối đa 4</string>
     <string name="setup_bg_limit_1">Tối đa 1</string>
     <string name="setup_bg_limit_0">Không có</string>
     <string name="setup_adb_pair">Gỡ lỗi qua mạng không dây</string>
-    <string name="setup_adb_pair_hint">Ghép nối DroidDeck với Gỡ lỗi qua mạng không dây của Android cho các tùy chọn ở trên. Giới hạn tiến trình con vẫn tắt.</string>
+    <string name="setup_adb_pair_hint">Ghép nối MaliDeck với Gỡ lỗi qua mạng không dây của Android cho các tùy chọn ở trên. Giới hạn tiến trình con vẫn tắt.</string>
     <string name="setup_adb_pair_button">Ghép nối</string>
     <string name="tracking_recovery_look">Nhìn xung quanh chậm rãi trong phòng có đủ ánh sáng.\nGiữ cho camera theo dõi rõ ràng và hướng về phía đồ nội thất hoặc các chi tiết có thể nhìn thấy khác.</string>
     <string name="epic_client_missing">Chưa cài</string>

@@ -54,7 +54,11 @@ object FrameGen {
 
     /** Arms [mode] in this process's compositor; the cloud player passes its own mode and frame-rate cap. */
     fun apply(context: Context, mode: Mode, refreshHz: Float): String? {
-        when (mode.engine) {
+        val safeMode = if (com.droiddeck.launcher.core.DeviceSupport.mali()) {
+            // Block x3/x4 on Mali GPUs to avoid SIGSEGV in vendor driver
+            mode.copy(multiplier = mode.multiplier.coerceAtMost(2))
+        } else mode
+        when (safeMode.engine) {
             ENGINE_LSFG -> {
                 val status = Lossless.sync(context)
                 val cache = Lossless.cacheFile(context)
@@ -69,17 +73,17 @@ object FrameGen {
                 WaylandCompositor.nativeSetFrameGenEngine(WaylandCompositor.FG_ENGINE_LSFG)
                 WaylandCompositor.nativeSetLsfgCachePath(cache.absolutePath)
                 WaylandCompositor.nativeSetFrameGenTuning(FLOW_SCALE_LSFG, refreshHz)
-                WaylandCompositor.nativeSetFrameGenArmed(true, mode.multiplier, mode.target)
+                WaylandCompositor.nativeSetFrameGenArmed(true, safeMode.multiplier, safeMode.target)
             }
             ENGINE_DDFG -> {
                 WaylandCompositor.nativeSetFrameGenEngine(WaylandCompositor.FG_ENGINE_DDFG)
                 WaylandCompositor.nativeSetDdFgTuning(DDFG_MODEL, DDFG_PERF_PRESET)
                 WaylandCompositor.nativeSetFrameGenTuning(FLOW_SCALE_DDFG, refreshHz)
-                WaylandCompositor.nativeSetFrameGenArmed(true, mode.multiplier, 0)
+                WaylandCompositor.nativeSetFrameGenArmed(true, safeMode.multiplier, 0)
             }
             else -> WaylandCompositor.nativeSetFrameGenArmed(false, 0, 0)
         }
-        Log.i(TAG, "frame generation: $mode at ${refreshHz}Hz")
+        Log.i(TAG, "frame generation: $safeMode at ${refreshHz}Hz")
         return null
     }
 

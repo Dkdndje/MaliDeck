@@ -97,8 +97,9 @@ object DeviceReport {
             b.append(key.padEnd(24)).append(value ?: "unknown").append('\n')
         }
 
-        b.append("DroidDeck session report\n")
+        b.append("MaliDeck session report\n")
         b.append("========================\n")
+        b.append("Based on DroidDeck (GPL-3.0)\n\n")
         k("Written", SimpleDateFormat("yyyy-MM-dd HH:mm:ss zzz", Locale.US).format(Date()))
         k("Session mode", when (mode) { SessionService.MODE_DESKTOP -> "desktop (KDE Plasma)"; SessionService.MODE_RUN -> "a program under gamescope"; else -> "Steam client (gamescope)" })
 
@@ -202,6 +203,12 @@ object DeviceReport {
         k("Foldable", context.packageManager.hasSystemFeature("android.hardware.sensor.hinge_angle"))
 
         h("Drivers")
+        val isMali = DeviceSupport.mali()
+        k("Device Architecture", if (isMali) "ARM Mali GPU (kbase/CSF)" else "Qualcomm Adreno (KGSL)")
+        if (isMali) {
+            k("Mali device node", if (File("/dev/mali0").exists()) "/dev/mali0 (present)" else "absent")
+            k("Mali vendor lib", if (File("/vendor/lib64/hw/vulkan.mali.so").exists()) "vulkan.mali.so (present)" else "none")
+        }
         val gpu = com.droiddeck.launcher.gpu.GpuInfo.detect()
         k("GPU", "${gpu.name} · ${gpu.family.label} · ${gpu.supportText}" + if (gpu.oneUi8Gen2) " · One UI 8 Gen 2" else "")
         if (gpu.model == 740) {

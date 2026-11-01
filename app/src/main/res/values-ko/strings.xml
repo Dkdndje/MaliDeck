@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="steamvr_recovery_title">SteamVR 그래픽 중지됨</string>
-    <string name="steamvr_recovery_countdown">그래픽을 초기화하고 SteamVR을 다시 열기 위해 %1$d초 후 DroidDeck이 다시 시작됩니다. 실행 중인 게임은 종료되며, 저장하지 않은 진행 상황은 복구할 수 없습니다.</string>
+    <string name="steamvr_recovery_countdown">그래픽을 초기화하고 SteamVR을 다시 열기 위해 %1$d초 후 MaliDeck이 다시 시작됩니다. 실행 중인 게임은 종료되며, 저장하지 않은 진행 상황은 복구할 수 없습니다.</string>
     <string name="steamvr_recovery_repeated">최근 다시 시작한 후 그래픽 오류가 다시 발생했습니다. 반복을 막기 위해 자동 복구를 일시 중지했습니다. 다시 시작하면 게임이 종료되며, 저장하지 않은 진행 상황은 복구할 수 없습니다.</string>
     <string name="steamvr_recovery_restart">지금 다시 시작</string>
     <string name="steamvr_recovery_cancel">열어 두기</string>
     <string name="steamvr_recovery_restarting">그래픽을 초기화하고 SteamVR을 다시 여는 중…</string>
-    <string name="steamvr_recovery_failed">DroidDeck을 자동으로 다시 시작하지 못했습니다. 앱을 완전히 종료한 후 다시 여세요.</string>
-    <string name="app_name">DroidDeck</string>
+    <string name="steamvr_recovery_failed">MaliDeck을 자동으로 다시 시작하지 못했습니다. 앱을 완전히 종료한 후 다시 여세요.</string>
+    <string name="app_name">MaliDeck</string>
     <string-array name="loading_hints">
         <item>첫 실행 시 Steam을 다운로드합니다. 몇 분 정도 걸릴 수 있습니다.</item>
         <item>기본적으로 앱을 나가면 Steam이 일시 중지되며, 다시 돌아오면 중단된 부분부터 재개됩니다.</item>
@@ -139,7 +139,7 @@
     <string name="user_apps_remove_confirm">다시 눌러 제거</string>
     <string name="user_apps_stop_session">제거하기 전에 세션을 종료하세요</string>
     <string name="user_apps_script_linked">해당 폴더에서 %1$s을(를) 실행하고 해당 폴더를 세션에 연결합니다. 앱을 제거해도 폴더는 영향을 받지 않습니다.</string>
-    <string name="user_apps_script_copied">DroidDeck 내부로 복사된 폴더에서 %1$s을(를) 실행합니다. 앱을 제거하면 복사본은 삭제되지만 원본 파일은 삭제되지 않습니다.</string>
+    <string name="user_apps_script_copied">MaliDeck 내부로 복사된 폴더에서 %1$s을(를) 실행합니다. 앱을 제거하면 복사본은 삭제되지만 원본 파일은 삭제되지 않습니다.</string>
     <string name="user_apps_runtime_required">먼저 Linux 런타임을 설치하세요</string>
     <string name="user_apps_file_gone">파일이 더 이상 존재하지 않습니다</string>
     <string name="user_apps_no_space">사용 가능한 공간 부족: 이 폴더를 복사하려면 %1$s이(가) 필요합니다</string>
@@ -174,7 +174,7 @@
     <string name="app_fex_off">끔</string>
     <string name="app_fex_hint">FEX는 이 ARM64 기기에서 x86 Linux 프로그램을 실행합니다. 자동으로 설정하면 x86용으로 빌드된 프로그램에 FEX를 사용합니다.</string>
     <string name="app_fex_x86">FEX로 실행되는 %1$s</string>
-    <string name="app_fex_not_ready">이 프로그램은 %1$s PC용으로 빌드되어 FEX를 통해 실행되지만, FEX가 아직 설정되지 않았습니다. 로그인한 상태로 Steam을 한 번 열면 DroidDeck이 FEX와 필요한 Steam Linux Runtime을 다운로드한 후 이 프로그램을 엽니다.</string>
+    <string name="app_fex_not_ready">이 프로그램은 %1$s PC용으로 빌드되어 FEX를 통해 실행되지만, FEX가 아직 설정되지 않았습니다. 로그인한 상태로 Steam을 한 번 열면 MaliDeck이 FEX와 필요한 Steam Linux Runtime을 다운로드한 후 이 프로그램을 엽니다.</string>
     <string name="session_end_program">이 프로그램</string>
     <string name="session_end_steam_download">Steam 클라이언트를 다운로드할 수 없습니다. 네트워크나 VPN이 Steam 서버를 차단하고 있을 수 있습니다. 연결을 확인하고 다시 시도하세요.</string>
     <string name="session_end_steam_setup">Steam 클라이언트를 설정할 수 없습니다. 연결과 남은 저장 공간을 확인한 뒤 다시 시도하세요.</string>
@@ -211,13 +211,13 @@
     <string name="edit_app_save">저장</string>
     <string name="add_app_checking_folder">폴더 확인 중…</string>
     <string name="add_app_folder_linked">폴더가 세션에 연결되었습니다: %1$s</string>
-    <string name="add_app_folder_copied">이 폴더에는 공유 저장 공간에서 실행할 수 없는 Linux 프로그램이 있으므로 DroidDeck으로 복사합니다(%1$s).</string>
+    <string name="add_app_folder_copied">이 폴더에는 공유 저장 공간에서 실행할 수 없는 Linux 프로그램이 있으므로 MaliDeck으로 복사합니다(%1$s).</string>
     <string name="add_app_confirm">추가</string>
     <string name="add_app_cancel">취소</string>
     <string name="add_app_runtime_required">먼저 \"설정\"에서 Linux 런타임을 설치하세요.</string>
     <string name="add_app_busy">%1$s이(가) 완료될 때까지 기다려 주세요.</string>
     <string name="steam_compat_label">호환</string>
-    <string name="proton_compatible_note">Steam 호환성 메뉴에서 “%1$s” 표시가 있는 빌드는 DroidDeck의 프리픽스 수정이 적용되어 여기에서 게임을 실행할 수 있습니다. 기본값은 Proton Experimental ARM64(%1$s)이며, 더 새로운 빌드인 Proton 11.0 ARM64(%1$s)가 설치되면 그 빌드가 기본값이 됩니다. 이 표시가 없는 Valve의 Proton 항목으로는 이 기기에서 게임을 실행할 수 없습니다.</string>
+    <string name="proton_compatible_note">Steam 호환성 메뉴에서 “%1$s” 표시가 있는 빌드는 MaliDeck의 프리픽스 수정이 적용되어 여기에서 게임을 실행할 수 있습니다. 기본값은 Proton Experimental ARM64(%1$s)이며, 더 새로운 빌드인 Proton 11.0 ARM64(%1$s)가 설치되면 그 빌드가 기본값이 됩니다. 이 표시가 없는 Valve의 Proton 항목으로는 이 기기에서 게임을 실행할 수 없습니다.</string>
     <string name="proton_installed_compatible">%1$s 설치됨 · %2$s</string>
     <string name="common_cancel">취소</string>
     <string name="common_auto">자동</string>
@@ -307,8 +307,8 @@
     <string name="mode_background_downloads_hint">Steam이 다운로드 중일 때는 백그라운드 일시 중지를 미룹니다.</string>
     <string name="mode_suspend_note">자동: 백그라운드에서 일시 중지되고 다시 표시되면 재개됩니다. 수동: \"재개\"를 탭할 때까지 기다립니다. 안 함: 계속 실행됩니다.</string>
     <string name="mode_startup">시작</string>
-    <string name="mode_steam_startup">DroidDeck을 열 때 Steam 시작</string>
-    <string name="mode_steam_startup_hint">DroidDeck이 시작될 때 Steam 세션을 엽니다.</string>
+    <string name="mode_steam_startup">MaliDeck을 열 때 Steam 시작</string>
+    <string name="mode_steam_startup_hint">MaliDeck이 시작될 때 Steam 세션을 엽니다.</string>
     <string name="mode_decky">Decky</string>
     <string name="mode_decky_checking">릴리스 확인 중…</string>
     <string name="mode_decky_ready">%1$s을(를) 설치할 준비가 되었습니다.</string>
@@ -325,8 +325,8 @@
     <string name="mode_client">클라이언트</string>
     <string name="mode_mangoapp">성능 오버레이</string>
     <string name="mode_mangoapp_hint">Deck 모드에서 게임이 충돌하거나 화면이 검게 변하면 이 옵션을 끄세요. 다음 세션에 적용됩니다.</string>
-    <string name="mode_return_after_game">게임 종료 후 DroidDeck으로 돌아가기</string>
-    <string name="mode_return_after_game_hint">DroidDeck 또는 다른 런처에서 실행한 게임을 닫으면 Steam이 정상적으로 종료되고(클라우드 저장 동기화를 먼저 완료) 실행한 곳으로 돌아갑니다. 끄면 Steam에 머무릅니다.</string>
+    <string name="mode_return_after_game">게임 종료 후 MaliDeck으로 돌아가기</string>
+    <string name="mode_return_after_game_hint">MaliDeck 또는 다른 런처에서 실행한 게임을 닫으면 Steam이 정상적으로 종료되고(클라우드 저장 동기화를 먼저 완료) 실행한 곳으로 돌아갑니다. 끄면 Steam에 머무릅니다.</string>
     <string name="mode_steam_repair">Steam 클라이언트 복구</string>
     <string name="mode_steam_repair_hint">다음에 Steam을 시작할 때 Steam 클라이언트를 다시 다운로드합니다. Steam이 로딩 화면에서 넘어가지 않을 때 사용하세요. 게임, 로그인 정보 및 설정은 유지됩니다.</string>
     <string name="mode_steam_repair_queued">다음에 Steam을 시작할 때 Steam 클라이언트를 다시 다운로드합니다.</string>
@@ -401,7 +401,7 @@
     <string name="mode_wifi_open_settings">설정 열기</string>
     <string name="mode_wifi_continue">계속</string>
     <string name="mode_wifi_explain_title">Wi-Fi 검색을 활성화하시겠습니까?</string>
-    <string name="mode_wifi_explain_text">Android는 Wi-Fi 이름을 읽고 주변 네트워크를 검색하려면 위치 권한이 필요합니다. DroidDeck은 이 권한을 사용하여 Steam에 이러한 네트워크를 표시합니다. 위치를 추적하지 않습니다. 이 권한 없이도 인터넷에 액세스할 수 있습니다.</string>
+    <string name="mode_wifi_explain_text">Android는 Wi-Fi 이름을 읽고 주변 네트워크를 검색하려면 위치 권한이 필요합니다. MaliDeck은 이 권한을 사용하여 Steam에 이러한 네트워크를 표시합니다. 위치를 추적하지 않습니다. 이 권한 없이도 인터넷에 액세스할 수 있습니다.</string>
     <string name="mode_storage">게임 저장 공간</string>
     <string name="mode_storage_auto">자동 - SD 카드가 있으면 SD 카드 사용, 게임 폴더도 사용</string>
     <string name="mode_storage_auto_none">자동 - 게임 폴더 사용, SD 카드가 있으면 SD 카드도 사용(현재 SD 카드 없음)</string>
@@ -521,7 +521,7 @@
     <string name="comp_nightlies_count">Nightlies 내 · %1$d</string>
     <string name="comp_channel_stable">안정판</string>
     <string name="comp_channel_nightly">나이틀리</string>
-    <string name="comp_refresh_to_list">새로 고쳐 Nightlies 및 DroidDeck의 패키지를 나열합니다.</string>
+    <string name="comp_refresh_to_list">새로 고쳐 Nightlies 및 MaliDeck의 패키지를 나열합니다.</string>
     <string name="comp_nothing_new">마지막 확인 이후 새로운 내용이 없습니다.</string>
     <string name="comp_import_wcp">.wcp 가져오기</string>
     <string name="comp_restore_original">이 Proton의 원본 파일 복원</string>
@@ -753,7 +753,7 @@
     <string name="setup_language_system">시스템 기본값(%1$s)</string>
     <string name="setup_language_system_short">시스템 기본값</string>
     <string name="setup_app_scale">앱 크기</string>
-    <string name="setup_app_scale_hint">DroidDeck 텍스트 및 컨트롤</string>
+    <string name="setup_app_scale_hint">MaliDeck 텍스트 및 컨트롤</string>
     <string name="setup_app_scale_default">%1$d%%(기본값)</string>
     <string name="setup_theme">테마</string>
     <string name="setup_theme_hint">런처 외관</string>
@@ -761,8 +761,8 @@
     <string name="setup_launcher_icon_dark">다크</string>
     <string name="setup_launcher_icon_light">라이트</string>
     <string name="setup_home">홈 화면으로 사용</string>
-    <string name="setup_home_on">DroidDeck을 홈 앱으로 사용할 수 있습니다</string>
-    <string name="setup_home_off">DroidDeck은 홈 앱으로 제공되지 않습니다</string>
+    <string name="setup_home_on">MaliDeck을 홈 앱으로 사용할 수 있습니다</string>
+    <string name="setup_home_off">MaliDeck은 홈 앱으로 제공되지 않습니다</string>
     <string name="setup_orientation">화면 방향</string>
     <string name="setup_orientation_auto">자동 가로 모드</string>
     <string name="setup_orientation_landscape">가로 모드</string>
@@ -841,16 +841,16 @@
     <string name="store_website">웹사이트</string>
     <string name="store_verified">인증됨</string>
     <string name="upd_title">업데이트</string>
-    <string name="upd_build">DroidDeck %1$s · %2$s</string>
+    <string name="upd_build">MaliDeck %1$s · %2$s</string>
     <string name="upd_checked">%1$s 확인됨</string>
     <string name="upd_not_checked">확인하지 않음</string>
-    <string name="upd_perm_title">DroidDeck 자체 업데이트 허용</string>
+    <string name="upd_perm_title">MaliDeck 자체 업데이트 허용</string>
     <string name="upd_perm_text">다음 페이지에서 \"이 출처 허용\"을 켜고 돌아오세요. 업데이트가 자동으로 계속됩니다.</string>
     <string name="upd_open_settings">설정 열기</string>
     <string name="upd_not_now">나중에</string>
     <string name="upd_signed_status">서명 다름</string>
     <string name="upd_signed_headline">덮어쓰기 업데이트 불가</string>
-    <string name="upd_signed_detail">이 복사본은 DroidDeck 릴리스 키로 서명되지 않아 직접 덮어쓸 수 없습니다. 제거한 후 전환하세요.</string>
+    <string name="upd_signed_detail">이 복사본은 MaliDeck 릴리스 키로 서명되지 않아 직접 덮어쓸 수 없습니다. 제거한 후 전환하세요.</string>
     <string name="upd_available">업데이트 있음</string>
     <string name="upd_blocked_status">설치 불가</string>
     <string name="upd_switch">전환 가능</string>
@@ -872,7 +872,7 @@
     <string name="upd_stop_session">업데이트하기 전에 실행 중인 세션을 중지하세요.</string>
     <string name="upd_less">접기</string>
     <string name="upd_more">더보기</string>
-    <string name="upd_new_stable">DroidDeck %1$s</string>
+    <string name="upd_new_stable">MaliDeck %1$s</string>
     <string name="upd_new_preview">새 미리보기 빌드</string>
     <string name="upd_new_test">PR #%1$d 테스트 빌드</string>
     <string name="upd_mb">%1$d MB</string>
@@ -887,7 +887,7 @@
     <string name="upd_tests_hint">정식 출시 전에 특정 수정 사항을 시험해 보기</string>
     <string name="upd_tests_none">현재 없음</string>
     <string name="upd_pr">PR #%1$d</string>
-    <string name="upd_not_built">이 DroidDeck 복사본용으로 빌드되지 않음</string>
+    <string name="upd_not_built">이 MaliDeck 복사본용으로 빌드되지 않음</string>
     <string name="upd_updated">%1$s 업데이트됨</string>
     <string name="upd_test_name">PR #%1$d 테스트 버전</string>
     <string name="upd_while_ago">얼마 전</string>
@@ -907,13 +907,13 @@
     <string name="gate_fix_for_me">자동으로 수정</string>
     <string name="gate_toggle_steps">\"하위 프로세스 제한 사용 중지\"를 켜고 돌아오세요. 개발자 옵션을 켜 둔 상태로 유지하지 않으면 스위치가 다시 꺼집니다.</string>
     <string name="gate_open_dev">개발자 옵션 열기</string>
-    <string name="gate_no_toggle">이 Android 버전에는 해당 스위치가 없으므로 DroidDeck이 무선 디버깅을 통해 수정합니다. 약 1분이 걸리며 PC가 필요하지 않습니다.</string>
+    <string name="gate_no_toggle">이 Android 버전에는 해당 스위치가 없으므로 MaliDeck이 무선 디버깅을 통해 수정합니다. 약 1분이 걸리며 PC가 필요하지 않습니다.</string>
     <string name="gate_needs_wifi">무선 디버깅에는 Wi-Fi가 필요합니다. 네트워크는 아무거나 괜찮으며 인터넷은 필요하지 않습니다.</string>
-    <string name="gate_needs_notifications">페어링 코드가 알림에 표시됩니다. DroidDeck에 알림을 허용하거나 \"다른 방법\"을 사용하세요.</string>
+    <string name="gate_needs_notifications">페어링 코드가 알림에 표시됩니다. MaliDeck에 알림을 허용하거나 \"다른 방법\"을 사용하세요.</string>
     <string name="gate_allow_notifications">알림 허용</string>
     <string name="gate_step1">설정 → 개발자 옵션 → 무선 디버깅을 열고 켜기</string>
     <string name="gate_step2">\"페어링 코드로 기기 페어링\" 탭</string>
-    <string name="gate_step3">DroidDeck 알림에 페어링 코드 입력</string>
+    <string name="gate_step3">MaliDeck 알림에 페어링 코드 입력</string>
     <string name="gate_waiting">페어링 팝업을 기다리는 중…</string>
     <string name="gate_code_needed">팝업을 찾았습니다. 표시된 페어링 코드를 알림에 입력하세요.</string>
     <string name="gate_status">상태</string>
@@ -1031,7 +1031,7 @@
     <string name="desktop_removing">데스크톱 제거 중</string>
     <string name="desktop_removed">데스크톱 제거됨</string>
     <string name="desktop_cleaning_legacy">이전 LXQt 파일 제거 중</string>
-    <string name="desktop_removal_unknown">이 데스크톱 버전을 제거하기 전에 DroidDeck을 업데이트하세요.</string>
+    <string name="desktop_removal_unknown">이 데스크톱 버전을 제거하기 전에 MaliDeck을 업데이트하세요.</string>
     <string name="content_linux_desktop">Linux 데스크톱</string>
     <string name="content_linux_desktop_hint">KDE Plasma, Firefox 및 에뮬레이터</string>
     <string name="games_empty">Steam에서 설치한 게임은 세션 종료 후 여기에 표시됩니다.</string>
@@ -1076,7 +1076,7 @@
     <string name="gpu_auto_by_gpu">자동 - GPU별 선택</string>
     <string name="gpu_manage">다운로드, 가져오기 또는 삭제…</string>
     <string name="gpu_in_use_caps">사용 중</string>
-    <string name="gpu_builtin">DroidDeck 내장 드라이버</string>
+    <string name="gpu_builtin">MaliDeck 내장 드라이버</string>
     <string name="gpu_matched_pair">런타임 드라이버와 디스플레이 드라이버는 일치하는 조합으로 함께 설정됩니다.</string>
     <string name="gpu_recommended_for">이 GPU에 권장: %1$s.</string>
     <string name="gpu_refresh_hint">새로 고쳐 이 GPU에 적합한 드라이버를 찾으세요.</string>
@@ -1179,7 +1179,7 @@
     <string name="unfolded_controls_hint">펼치면 게임이 Steam Deck 터치패드와 뒷면 그립 위에 표시됩니다. 접으면 게임이 전체 화면으로 표시됩니다.</string>
     <string name="pip_suspended">일시 중지됨</string>
     <string name="pip_not_ready">세션이 준비되면 PIP를 사용할 수 있습니다.</string>
-    <string name="pip_permission">Android 설정에서 DroidDeck의 PIP 사용을 허용하세요.</string>
+    <string name="pip_permission">Android 설정에서 MaliDeck의 PIP 사용을 허용하세요.</string>
     <string name="pip_unavailable">Android에서 PIP를 열 수 없습니다.</string>
     <string name="game_shortcut">바로 가기</string>
     <string name="game_shortcut_add">홈 화면에 추가</string>
@@ -1189,7 +1189,7 @@
     <string name="game_link_copied">실행 링크 복사됨</string>
     <string name="game_shortcut_unsupported">이 런처는 바로 가기를 추가할 수 없습니다. \"실행 링크 복사\"를 대신 사용하세요.</string>
     <string name="game_link_invalid">잘못된 게임 실행 링크입니다.</string>
-    <string name="game_link_missing">이 게임은 DroidDeck 라이브러리에 없습니다.</string>
+    <string name="game_link_missing">이 게임은 MaliDeck 라이브러리에 없습니다.</string>
     <string name="game_link_session_busy">Steam 게임을 실행하기 전에 현재 세션을 중지하세요.</string>
     <string name="game_link_failed">Steam으로 게임을 보낼 수 없습니다. 다시 실행해 보세요.</string>
     <string name="setup_retry_removal">제거 다시 시도</string>
@@ -1212,7 +1212,7 @@
         <item quantity="other">%2$s에서 %3$s(으)로 파일 %1$d개를 가져왔습니다</item>
     </plurals>
     <plurals name="main_saves_imported_backup">
-        <item quantity="other">%2$s에서 %3$s(으)로 파일 %1$d개를 가져왔습니다. 이전 저장 데이터는 Download/DroidDeck/Saves/backups에 백업되었습니다</item>
+        <item quantity="other">%2$s에서 %3$s(으)로 파일 %1$d개를 가져왔습니다. 이전 저장 데이터는 Download/MaliDeck/Saves/backups에 백업되었습니다</item>
     </plurals>
     <string name="main_saves_pick_zip">%1$s의 저장 데이터 zip 선택</string>
     <string name="main_saves_exporting">%1$s 내보내는 중</string>
@@ -1268,7 +1268,7 @@
 
     <string name="upd_unknown_apps_failed">Android의 \"출처를 알 수 없는 앱 설치\" 설정을 열 수 없습니다</string>
     <string name="upd_couldnt_check">확인할 수 없음: %1$s</string>
-    <string name="upd_no_download">이 빌드에는 이 DroidDeck 복사본용 다운로드가 없습니다</string>
+    <string name="upd_no_download">이 빌드에는 이 MaliDeck 복사본용 다운로드가 없습니다</string>
     <string name="upd_stop_first">실행 중인 세션을 먼저 중지한 후 업데이트하세요</string>
     <string name="upd_stage_downloading">다운로드 중</string>
     <string name="upd_stage_installing">설치 중</string>
@@ -1297,22 +1297,22 @@
     <string name="drivers_recommended_unpublished">현재 권장 드라이버가 배포되지 않았습니다</string>
     <string name="drivers_downloading_pair">%1$s %2$s 다운로드 중…</string>
     <string name="drivers_updated_to">%1$s %2$s(으)로 업데이트했습니다.</string>
-    <string name="drivers_updated_to_restart">%1$s %2$s(으)로 업데이트했습니다. 디스플레이 드라이버는 DroidDeck을 다시 시작한 후 적용됩니다.</string>
+    <string name="drivers_updated_to_restart">%1$s %2$s(으)로 업데이트했습니다. 디스플레이 드라이버는 MaliDeck을 다시 시작한 후 적용됩니다.</string>
     <string name="drivers_auto_waits_for_session">드라이버 업데이트는 세션이 끝난 뒤 진행됩니다.</string>
     <string name="drivers_auto_waits_for_network">모바일 데이터와 절전 모드를 해제하면 다음을 내려받습니다: %1$s %2$s</string>
     <string name="drivers_skipping_bad">%1$s %2$s 드라이버가 이 기기에서 세션을 시작하지 못해 자동 모드가 사용 가능한 드라이버를 계속 사용합니다.</string>
     <string name="drivers_rolled_back">%1$s 드라이버가 두 번 세션을 시작하지 못해 자동 모드가 사용 가능한 드라이버로 되돌렸습니다.</string>
     <string name="drivers_switched_to">%1$s %2$s(으)로 전환했습니다.</string>
-    <string name="drivers_switched_to_restart">%1$s %2$s(으)로 전환했습니다. 디스플레이 드라이버는 DroidDeck을 다시 시작한 후 적용됩니다.</string>
+    <string name="drivers_switched_to_restart">%1$s %2$s(으)로 전환했습니다. 디스플레이 드라이버는 MaliDeck을 다시 시작한 후 적용됩니다.</string>
     <string name="drivers_using">%1$s %2$s 사용 중.</string>
-    <string name="drivers_using_restart">%1$s %2$s 사용 중. 디스플레이 드라이버는 DroidDeck을 다시 시작한 후 적용됩니다.</string>
+    <string name="drivers_using_restart">%1$s %2$s 사용 중. 디스플레이 드라이버는 MaliDeck을 다시 시작한 후 적용됩니다.</string>
     <string name="drivers_using_quest">내장 Quest 디스플레이 드라이버와 런타임 기본값을 사용합니다.</string>
-    <string name="drivers_using_quest_restart">내장 Quest 디스플레이 드라이버와 런타임 기본값을 사용합니다. 디스플레이 드라이버는 DroidDeck을 다시 시작한 뒤 적용됩니다.</string>
+    <string name="drivers_using_quest_restart">내장 Quest 디스플레이 드라이버와 런타임 기본값을 사용합니다. 디스플레이 드라이버는 MaliDeck을 다시 시작한 뒤 적용됩니다.</string>
     <string name="drivers_not_a_driver">드라이버 zip이 아닙니다. AdrenoTools 드라이버, -Linux Turnip, Android + Linux 번들 중 어느 것도 아닙니다</string>
     <string name="drivers_import_failed">가져오기 실패: %1$s</string>
     <string name="drivers_imported_unnamed">가져온 드라이버</string>
     <string name="drivers_using_bundle">%1$s을(를) 런타임 및 디스플레이 드라이버로 사용 중.</string>
-    <string name="drivers_using_bundle_restart">%1$s을(를) 런타임 및 디스플레이 드라이버로 사용 중. 디스플레이 드라이버는 DroidDeck을 다시 시작한 후 적용됩니다.</string>
+    <string name="drivers_using_bundle_restart">%1$s을(를) 런타임 및 디스플레이 드라이버로 사용 중. 디스플레이 드라이버는 MaliDeck을 다시 시작한 후 적용됩니다.</string>
     <string name="drivers_deleted_bundle">%1$s 삭제됨(드라이버 2개)</string>
     <string name="drivers_deleted">%1$s 삭제됨</string>
     <string name="drivers_release_status">최신: %1$s · %2$s 확인</string>
@@ -1326,7 +1326,7 @@
     <plurals name="drivers_ago_days">
         <item quantity="other">%1$d일 전</item>
     </plurals>
-    <string name="drivers_checking_sources">Banners-Turnip, WinNative 및 DroidDeck 확인 중…</string>
+    <string name="drivers_checking_sources">Banners-Turnip, WinNative 및 MaliDeck 확인 중…</string>
     <string name="drivers_check_failed">확인 실패</string>
     <string name="drivers_installed_pick_either">%1$s 설치됨 - 두 목록 중 어디에서든 선택하면 두 드라이버가 모두 설정됩니다</string>
     <string name="drivers_installed_pick">%1$s 설치됨 - 메뉴에서 선택하세요</string>
@@ -1712,7 +1712,7 @@
     <string name="adbfix_no_pairing">저장된 무선 디버깅 페어링이 없습니다</string>
     <string name="adbfix_enter_address">현재 무선 디버깅의 IP 주소 및 포트를 입력하세요</string>
 
-    <string name="adbpair_timed_out">페어링 팝업을 기다리는 시간이 초과되었습니다. DroidDeck에서 다시 시도하세요.</string>
+    <string name="adbpair_timed_out">페어링 팝업을 기다리는 시간이 초과되었습니다. MaliDeck에서 다시 시도하세요.</string>
     <string name="adbpair_discovery_failed_code">페어링 팝업을 찾을 수 없습니다(%1$d). Wi-Fi가 켜져 있는지 확인하세요.</string>
     <string name="adbpair_discovery_failed">페어링 팝업을 찾을 수 없습니다: %1$s</string>
     <string name="adbpair_six_digits">코드 6자리를 모두 입력하세요</string>
@@ -1734,20 +1734,20 @@
     <string name="adbpair_enter_code">코드 입력</string>
     <string name="adbpair_title_working">Steam 설정 중</string>
     <string name="adbpair_title_done">Steam 준비 완료</string>
-    <string name="adbpair_done_text">탭하여 DroidDeck으로 돌아가세요. 이제 무선 디버깅을 꺼도 됩니다.</string>
+    <string name="adbpair_done_text">탭하여 MaliDeck으로 돌아가세요. 이제 무선 디버깅을 꺼도 됩니다.</string>
     <string name="adbpair_title_failed">무선 디버깅 설정이 중단되었습니다</string>
 
     <string name="selfinst_download_failed">다운로드 실패</string>
     <string name="selfinst_size_mismatch">다운로드 크기가 배포된 APK와 일치하지 않아 삭제했습니다. 다시 시도하세요</string>
     <string name="selfinst_checksum_mismatch">다운로드한 파일이 체크섬과 일치하지 않아 삭제했습니다. 다시 시도하세요</string>
     <string name="selfinst_wrong_package">이 업데이트는 %2$s이(가) 아닌 Android 패키지 %1$s용입니다</string>
-    <string name="selfinst_metadata_signer">업데이트 메타데이터에 DroidDeck 릴리스 서명 키가 지정되어 있지 않습니다</string>
+    <string name="selfinst_metadata_signer">업데이트 메타데이터에 MaliDeck 릴리스 서명 키가 지정되어 있지 않습니다</string>
     <string name="selfinst_unreadable">Android에서 다운로드한 APK를 읽을 수 없습니다</string>
     <string name="selfinst_apk_wrong_package">다운로드한 APK는 %2$s이(가) 아닌 %1$s용입니다</string>
     <string name="selfinst_version_mismatch">다운로드한 APK의 versionCode가 배포된 %2$d이(가) 아닌 %1$d입니다</string>
     <string name="selfinst_downgrade">Android에서 설치된 versionCode %2$d 위에 %1$d을(를) 설치하지 않습니다</string>
     <string name="selfinst_no_signing">다운로드한 APK에 서명 정보가 없습니다</string>
-    <string name="selfinst_wrong_signer">다운로드한 APK가 DroidDeck 릴리스 키로 서명되지 않았습니다</string>
+    <string name="selfinst_wrong_signer">다운로드한 APK가 MaliDeck 릴리스 키로 서명되지 않았습니다</string>
     <string name="appupd_http">업데이트 카탈로그 응답: HTTP %1$d</string>
 
     <string name="loadstate_starting">세션 시작 중…</string>
@@ -1793,7 +1793,7 @@
     <string name="cmgr_original_kept">설치된 빌드의 원본은 되돌리기 위해 유지됩니다.</string>
     <string name="cmgr_not_stored">저장되지 않음</string>
     <string name="cmgr_deleted_original">%2$s의 %1$s 원본을 삭제했습니다.</string>
-    <string name="cmgr_nightlies_only">Nightlies 및 DroidDeck 릴리스에서만 다운로드할 수 있습니다</string>
+    <string name="cmgr_nightlies_only">Nightlies 및 MaliDeck 릴리스에서만 다운로드할 수 있습니다</string>
     <string name="cmgr_nightly_replaced">다운로드 실패: 이 나이틀리 빌드가 더 새로운 빌드로 교체되었을 수 있습니다. 목록을 새로 고친 후 다시 시도하세요.</string>
     <string name="cmgr_list_predates_checksums">이 패키지 목록은 체크섬 도입 이전의 것입니다. 새로 고친 후 다시 시도하세요</string>
     <string name="cmgr_checksum_mismatch">체크섬 불일치</string>
@@ -1832,7 +1832,7 @@
     <string name="gpuinfo_supported">지원됨</string>
     <string name="gpuinfo_experimental">실험적: 드라이버가 테스트 빌드입니다</string>
     <string name="gpuinfo_below_tested">테스트된 하드웨어(Adreno 725 이상)보다 낮음: 실행되지 않을 수 있습니다</string>
-    <string name="gpuinfo_unsupported">지원되지 않음: DroidDeck에는 Adreno(Snapdragon) GPU가 필요합니다</string>
+    <string name="gpuinfo_unsupported">지원되지 않음: MaliDeck에는 Adreno(Snapdragon) GPU가 필요합니다</string>
 
     <string name="turnip_rate_limited">GitHub 요청 한도에 도달했습니다. 나중에 다시 시도하세요</string>
     <string name="turnip_github_http">GitHub 응답: HTTP %1$d</string>
@@ -1875,10 +1875,10 @@
     <string name="phantom_instructions_not_applicable">이 Android 버전에서는 이 제한을 사용하지 않습니다.</string>
     <string name="phantom_fix_toggle">개발자 옵션에서 “하위 프로세스 제한 사용 중지”를 켜고, 이후에도 개발자 옵션을 켜 둔 상태로 유지하세요.</string>
     <string name="phantom_fix_no_toggle">이 Android 버전에는 해당 스위치가 없습니다. 무선 디버깅을 사용하여 이 기기에서 변경하세요.</string>
-    <string name="upd_block_no_apk">이 빌드에는 이 DroidDeck 복사본용 다운로드가 없습니다.</string>
+    <string name="upd_block_no_apk">이 빌드에는 이 MaliDeck 복사본용 다운로드가 없습니다.</string>
     <string name="upd_block_version_code">versionCode %1$d이(가) 설치된 %2$d보다 낮아 Android에서 이 빌드 위에 설치하지 않습니다.</string>
     <string name="upd_fail_downgrade">Android에서는 최신 버전 위에 이전 버전을 설치할 수 없습니다. 채널이 따라잡을 때까지 현재 빌드를 유지하세요.</string>
-    <string name="upd_fail_signature">이 DroidDeck 복사본은 다른 키로 서명되어 있어(로컬 빌드일 수 있음) Android에서 덮어쓰기 업데이트를 할 수 없습니다.</string>
+    <string name="upd_fail_signature">이 MaliDeck 복사본은 다른 키로 서명되어 있어(로컬 빌드일 수 있음) Android에서 덮어쓰기 업데이트를 할 수 없습니다.</string>
     <string name="upd_fail_storage">업데이트에 필요한 저장 공간이 부족합니다.</string>
     <string name="upd_fail_aborted">업데이트가 취소되었습니다.</string>
     <string name="upd_fail_with_message">업데이트가 설치되지 않았습니다: %1$s</string>
@@ -1903,7 +1903,7 @@
     <string name="gstore_volume_free">%1$s · %2$s 사용 가능</string>
     <string name="mode_storage_auto_short">자동</string>
     <string name="appupd_catalog_rejected">업데이트 카탈로그가 검사를 통과하지 못했습니다(%1$s)</string>
-    <string name="main_adb_clip_label">DroidDeck 하위 프로세스 설정</string>
+    <string name="main_adb_clip_label">MaliDeck 하위 프로세스 설정</string>
     <string name="setup_signed_in_offline_unnamed">로그인됨 · 오프라인 모드</string>
     <string name="setup_signed_in_unnamed">로그인됨</string>
     <string name="driver_tag_bundled">내장</string>
@@ -2279,7 +2279,7 @@
     <string name="gpu_display_next">화면 그리기를 담당합니다. 다음 세션부터 적용됩니다.</string>
     <string name="gpu_previous_driver">이전 드라이버</string>
     <string name="gpu_restart_banner">디스플레이 드라이버를 바꾸려면 다시 시작하세요.</string>
-    <string name="gpu_restart_blocked">실행 중인 세션을 중지한 뒤 디스플레이 드라이버를 바꾸려면 DroidDeck을 다시 시작하세요.</string>
+    <string name="gpu_restart_blocked">실행 중인 세션을 중지한 뒤 디스플레이 드라이버를 바꾸려면 MaliDeck을 다시 시작하세요.</string>
     <string name="gpu_restart_now">지금 다시 시작</string>
     <string name="gpu_restart_later">나중에</string>
     <string name="gpu_auto_title">%1$s에 맞춰 이 조합을 자동으로 선택했습니다</string>
@@ -2355,7 +2355,7 @@
     <string name="touch_speed_normal">보통</string>
     <string name="touch_speed_fast">빠름</string>
     <string name="touch_edit_layout">레이아웃 편집</string>
-    <string name="touch_droiddeck_menu">DroidDeck 메뉴</string>
+    <string name="touch_droiddeck_menu">MaliDeck 메뉴</string>
     <string name="touch_drag_hint">화면으로 컨트롤을 끌어다 놓으세요</string>
     <string name="touch_arrange">배치</string>
     <string name="touch_discard">취소</string>
@@ -2419,7 +2419,7 @@
     <string name="glasses_driver_missing">이 빌드에는 이 안경용 드라이버가 포함되어 있지 않습니다.</string>
     <string name="glasses_connection_failed">안경에 연결하지 못했습니다. 케이블을 다시 연결하거나 “허용”을 탭하여 다시 시도하세요.</string>
     <string name="glasses_allow">허용</string>
-    <string name="glasses_allow_hint">DroidDeck이 안경의 주사율, 3D 모드, 밝기, 볼륨, 선블록을 설정하고 헤드 트래킹을 읽도록 허용합니다.</string>
+    <string name="glasses_allow_hint">MaliDeck이 안경의 주사율, 3D 모드, 밝기, 볼륨, 선블록을 설정하고 헤드 트래킹을 읽도록 허용합니다.</string>
     <string name="glasses_asking">Android 안내 창에서 허용하기를 기다리는 중…</string>
     <string name="glasses_denied">제어가 거부되었습니다. 안경 설정을 바꾸려면 허용하세요.</string>
     <string name="glasses_no_control">이 안경은 게임을 표시하지만 여기에서 설정을 바꿀 수는 없습니다.</string>
@@ -2575,7 +2575,7 @@
     <string name="storage_internal">내부 저장 공간</string>
     <string name="storage_used_of">%1$s / %2$s 사용 중</string>
     <string name="storage_free">%1$s 사용 가능</string>
-    <string name="storage_droiddeck_uses">DroidDeck 사용량 %1$s. 계산 시각 %2$s.</string>
+    <string name="storage_droiddeck_uses">MaliDeck 사용량 %1$s. 계산 시각 %2$s.</string>
     <string name="storage_rescanning">다시 계산 중…</string>
     <string name="storage_other_apps">다른 Android 앱</string>
     <string name="storage_safe_now">지금 안전하게 확보 가능</string>
@@ -2594,7 +2594,7 @@
     <string name="storage_desktop_hint">Flatpak 앱과 런타임</string>
     <string name="storage_system">Linux 시스템과 Steam 클라이언트</string>
     <string name="storage_system_hint">무엇이든 실행하는 데 필요</string>
-    <string name="storage_app_data">DroidDeck 데이터</string>
+    <string name="storage_app_data">MaliDeck 데이터</string>
     <string name="storage_app_data_hint">오래된 세션 로그 %1$s · 캐시 · 드라이버</string>
     <string name="storage_legend_games">게임</string>
     <string name="storage_legend_data">게임 데이터</string>
@@ -2602,7 +2602,7 @@
     <string name="storage_legend_stores">기타 스토어</string>
     <string name="storage_legend_desktop">데스크톱 앱</string>
     <string name="storage_legend_system">Linux 시스템</string>
-    <string name="storage_legend_app">DroidDeck</string>
+    <string name="storage_legend_app">MaliDeck</string>
     <string name="storage_clean_up_title">정리</string>
     <string name="storage_clean_up_lede">설치된 게임이나 진행 중인 다운로드에는 영향을 주지 않습니다.</string>
     <string name="storage_nothing_to_clean">지금은 정리할 항목이 없습니다.</string>
@@ -2651,8 +2651,8 @@
     <string name="storage_tool_redist">게임이 요청한 VC++ 및 DirectX 설치 관리자</string>
     <string name="storage_tool_fex">Linux x86 게임 실행</string>
     <string name="storage_tool_steam">Steam 도구</string>
-    <string name="storage_tool_old_runtime">DroidDeck은 이 런타임 없이 게임을 실행할 수 있습니다</string>
-    <string name="storage_tool_x86_proton">x86 Proton이라 DroidDeck에서 실행할 수 없습니다</string>
+    <string name="storage_tool_old_runtime">MaliDeck은 이 런타임 없이 게임을 실행할 수 있습니다</string>
+    <string name="storage_tool_x86_proton">x86 Proton이라 MaliDeck에서 실행할 수 없습니다</string>
     <string name="storage_tool_custom_default">모든 게임의 기본값</string>
     <string name="storage_tool_custom_unused">어떤 게임도 사용하지 않습니다</string>
     <string name="storage_tool_custom_unknown">Steam 설정을 읽을 수 없어 유지합니다</string>
@@ -2686,8 +2686,8 @@
         <item quantity="one">게임 %d개</item>
         <item quantity="other">게임 %d개</item>
     </plurals>
-    <string name="storage_tool_default_proton">DroidDeck 기본 Proton</string>
-    <string name="storage_tool_proton">DroidDeck의 Proton 11 옵션</string>
+    <string name="storage_tool_default_proton">MaliDeck 기본 Proton</string>
+    <string name="storage_tool_proton">MaliDeck의 Proton 11 옵션</string>
     <plurals name="storage_tool_custom_games">
         <item quantity="one">게임 %d개 사용</item>
         <item quantity="other">게임 %d개 사용</item>
@@ -2741,7 +2741,7 @@
     </plurals>
     <string name="boot_movie">부팅 동영상</string>
     <string name="boot_movie_video">동영상</string>
-    <string name="boot_movie_droiddeck">DroidDeck · %1$d fps</string>
+    <string name="boot_movie_droiddeck">MaliDeck · %1$d fps</string>
     <string name="boot_movie_note">60 fps는 더 부드럽지만 Steam이 시작되는 동안 CPU를 더 사용합니다. Steam 자체 설정에서 고른 동영상도 여기에 표시됩니다.</string>
     <string name="boot_movie_sound">소리</string>
     <string name="boot_movie_custom">내 동영상</string>
@@ -2753,24 +2753,24 @@
     <string name="boot_movie_imported_silent">%1$s이(가) 이제 부팅 동영상입니다(소리 없음)</string>
     <string name="boot_movie_too_long">변환이 필요한 동영상은 %1$d초 이하여야 합니다</string>
     <string name="boot_movie_converting">변환 중 %1$d%%</string>
-    <string name="boot_movie_converting_started">Steam용으로 %1$s 변환 중입니다. DroidDeck을 열어 두세요.</string>
+    <string name="boot_movie_converting_started">Steam용으로 %1$s 변환 중입니다. MaliDeck을 열어 두세요.</string>
     <string name="boot_movie_unsupported">이 기기에서 해당 동영상을 디코딩할 수 없습니다.</string>
     <string name="boot_movie_import_failed">동영상을 가져오지 못했습니다</string>
     <string name="boot_movie_remove_confirm">%1$s을(를) 삭제할까요?</string>
-    <string name="boot_movie_remove_confirm_body">DroidDeck과 Steam의 동영상 폴더에서 동영상이 삭제됩니다.</string>
+    <string name="boot_movie_remove_confirm_body">MaliDeck과 Steam의 동영상 폴더에서 동영상이 삭제됩니다.</string>
     <string name="boot_movie_tab_installed">설치됨</string>
     <string name="boot_movie_tab_import">가져오기</string>
     <string name="boot_movie_tab_repo">SteamDeckRepo</string>
     <string name="boot_movie_tab_sound">소리</string>
     <string name="boot_movie_installed">설치된 동영상</string>
     <string name="boot_movie_browse">찾아보기</string>
-    <string name="boot_movie_source_droiddeck">DroidDeck</string>
+    <string name="boot_movie_source_droiddeck">MaliDeck</string>
     <string name="boot_movie_source_import">가져옴</string>
     <string name="boot_movie_source_repo">SteamDeckRepo</string>
     <string name="boot_movie_source_steam">Steam</string>
     <string name="boot_movie_source_pointshop">포인트 상점</string>
     <string name="boot_movie_report">부팅 영상 보고서</string>
-    <string name="boot_movie_report_hint">DroidDeck과 Steam이 부팅 영상에 대해 알고 있는 내용을 텍스트 파일로 저장합니다. 버그 보고서에 첨부할 수 있습니다.</string>
+    <string name="boot_movie_report_hint">MaliDeck과 Steam이 부팅 영상에 대해 알고 있는 내용을 텍스트 파일로 저장합니다. 버그 보고서에 첨부할 수 있습니다.</string>
     <string name="boot_movie_report_save">저장</string>
     <string name="boot_movie_report_saved">%1$s에 저장됨</string>
     <string name="boot_movie_report_failed">보고서를 저장하지 못했습니다.</string>
@@ -2806,7 +2806,7 @@
     <string name="glasses_joycons_hint">스마트 안경 카메라를 사용하여 페어링된 Joy-Con 컨트롤러의 위치를 ​​조정합니다. 회전 및 버튼 입력은 Joy-Con 컨트롤러에서 이루어집니다. 손목이 가려진 경우 위치가 추정됩니다. 맨손으로 조작하는 컨트롤러를 대체하며, 휴대폰 카메라 추적이 일시 중지됩니다. 추적 센터를 연결하거나 재설정할 때는 Joy-Con 컨트롤러를 앞쪽으로 향하게 하십시오.</string>
     <string name="glasses_joycons_requires_position">위치 추적을 먼저 활성화해야 합니다. Android 12 이상에서 모션 기능을 지원하는 Joy-Con 컨트롤러가 필요합니다. 기본적으로 비활성화되어 있습니다.</string>
     <string name="setup_tab_glasses">스마트 안경</string>
-    <string name="setup_glasses_scope">디스플레이 및 헤드 트래킹 설정은 DroidDeck 메뉴, 게임 및 데스크톱 세션에서 공유됩니다.</string>
+    <string name="setup_glasses_scope">디스플레이 및 헤드 트래킹 설정은 MaliDeck 메뉴, 게임 및 데스크톱 세션에서 공유됩니다.</string>
     <string name="setup_glasses_connect">스마트 안경을 연결하여 디스플레이 및 추적 설정을 변경하십시오. 연결을 해제해도 저장된 설정이 유지됩니다.</string>
     <string name="glasses_vr">VR</string>
     <string name="glasses_display_mode">표시 모드</string>
@@ -2825,7 +2825,7 @@
     <string name="glasses_refresh_30_hint">스마트 안경에서 게임 기능을 활성화하여 디스플레이의 기본 30Hz 모드를 선택합니다.</string>
     <string name="glasses_3dof">3DoF 가상 화면</string>
     <string name="glasses_3dof_hint">플랫 게임을 정면에 고정하여 주변을 둘러볼 수 있습니다. 3D 모드로 전환하지 않고도 스마트 안경에서 게임 기능을 활성화할 수 있습니다.</string>
-    <string name="glasses_screen_app_wide">너비와 거리는 DroidDeck 메뉴, 게임 및 데스크톱 세션에 대해 추적된 가상 화면을 즉시 업데이트합니다.</string>
+    <string name="glasses_screen_app_wide">너비와 거리는 MaliDeck 메뉴, 게임 및 데스크톱 세션에 대해 추적된 가상 화면을 즉시 업데이트합니다.</string>
     <string name="glasses_head_tracking_spatial_vr_hint">위치 추적은 SteamVR에서 머리 회전을 포함합니다. 회전만 추적하려면 위치 추적을 끄세요.</string>
     <string name="glasses_head_tracking_spatial_hint">가상 화면에서 머리 움직임을 제어합니다. 위치 추적은 SteamVR에서 머리 회전을 포함합니다.</string>
     <string name="glasses_quick_actions">빠른 실행</string>
@@ -2872,8 +2872,8 @@
     <string name="spatial_timing_values">%1$.1fHz • 이미지 수명 %2$.1fms • 처리 중 %3$.1fms</string>
     <string name="spatial_input_values">카메라 이미지의 입력 제한 %1$.1fHz • %2$.0f%%. 머리 추적은 최대 빈도로 계속됩니다.</string>
     <string name="spatial_frame_counts">%1$d 처리됨 • %2$d 삭제됨 • 입력 제한으로 인해 %3$d 건너뛰음</string>
-    <string name="spatial_print_job">DroidDeck ChArUco 30 mm</string>
-    <string name="spatial_print_title">DroidDeck - Luma Ultra 보정</string>
+    <string name="spatial_print_job">MaliDeck ChArUco 30 mm</string>
+    <string name="spatial_print_title">MaliDeck - Luma Ultra 보정</string>
     <string name="spatial_print_check">눈금 확인: 눈금 간 100mm(3.937인치)</string>
     <string name="spatial_distance_12in">30.48cm(12인치)</string>
     <string name="spatial_distance_30cm">30cm(11.81인치)</string>
@@ -3007,13 +3007,13 @@
     <string name="setup_group_memory">메모리</string>
     <string name="setup_clear_cached">세션 전에 캐시된 앱 닫기</string>
     <string name="setup_clear_cached_hint">세션이 시작될 때 Android가 백그라운드에 보관 중인 앱을 닫아 게임이 메모리를 더 쓸 수 있게 합니다. 무선 디버깅이 켜져 있어야 합니다.</string>
-    <string name="setup_clear_cached_unpaired">DroidDeck을 무선 디버깅과 페어링해야 합니다(아래 페어링).</string>
+    <string name="setup_clear_cached_unpaired">MaliDeck을 무선 디버깅과 페어링해야 합니다(아래 페어링).</string>
     <string name="setup_memory_hud">메모리 표시</string>
-    <string name="setup_memory_hud_hint">사용 중인 메모리와 스왑을 세션 화면에 표시합니다. 고급에서는 게임, DroidDeck, Android, GPU로 나눠 보여 줍니다.</string>
+    <string name="setup_memory_hud_hint">사용 중인 메모리와 스왑을 세션 화면에 표시합니다. 고급에서는 게임, MaliDeck, Android, GPU로 나눠 보여 줍니다.</string>
     <string name="setup_memory_hud_simple">간단</string>
     <string name="setup_memory_hud_advanced">고급</string>
     <string name="memory_hud_simple">RAM %1$s/%2$s GB · 스왑 %3$s/%4$s GB</string>
-    <string name="memory_hud_split">게임 %1$s · DroidDeck %2$s · Android %3$s GB</string>
+    <string name="memory_hud_split">게임 %1$s · MaliDeck %2$s · Android %3$s GB</string>
     <string name="memory_hud_gpu">GPU %1$s GB</string>
     <string name="setup_bg_limit">세션 중 백그라운드 앱</string>
     <string name="setup_bg_limit_hint">세션이 실행되는 동안 Android가 캐시에 두는 앱을 이 개수까지로 제한하고 나머지는 닫아 게임이 그 메모리를 쓰게 합니다. 세션이 끝나면 원래대로 돌아갑니다. 무선 디버깅이 켜져 있어야 합니다.</string>
@@ -3021,7 +3021,7 @@
     <string name="setup_bg_limit_1">최대 1개</string>
     <string name="setup_bg_limit_0">없음</string>
     <string name="setup_adb_pair">무선 디버깅</string>
-    <string name="setup_adb_pair_hint">위 옵션을 위해 DroidDeck을 Android 무선 디버깅과 페어링합니다. 하위 프로세스 제한은 꺼진 상태로 유지됩니다.</string>
+    <string name="setup_adb_pair_hint">위 옵션을 위해 MaliDeck을 Android 무선 디버깅과 페어링합니다. 하위 프로세스 제한은 꺼진 상태로 유지됩니다.</string>
     <string name="setup_adb_pair_button">페어링</string>
     <string name="epic_client_missing">설치되지 않음</string>
     <string name="epic_client_open">열기</string>

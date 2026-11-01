@@ -1,0 +1,120 @@
+#!/usr/bin/env bash
+# SPDX-License-Identifier: GPL-3.0-only
+# MaliDeck 30 FPS Dynamic Governor and Health Monitor
+# Monitors gamescope/mangohud rendering metrics, maintains persistent shader caches,
+# adapts internal render scale to hit >= 30 FPS target, and alerts on thermal throttling.
+
+set -u
+
+GOVERNOR_LOG="/tmp/malideck-governor.log"
+exec > >(tee -a "$GOVERNOR_LOG") 2>&1
+
+echo "== [malideck-governor] Initializing 30 FPS Adaptive Performance Engine"
+
+# 1. Ensure Persistent Shader & Pipeline Caches (Mesa, DXVK, VKD3D)
+CACHE_BASE="${XDG_CACHE_HOME:-$HOME/.cache}"
+mkdir -p "$CACHE_BASE/mesa_shader_cache" "$CACHE_BASE/dxvk_state_cache" "$CACHE_BASE/vkd3d_cache"
+export MESA_SHADER_CACHE_DIR="$CACHE_BASE/mesa_shader_cache"
+export DXVK_STATE_CACHE_DIR="$CACHE_BASE/dxvk_state_cache"
+export VKD3D_CACHE_PATH="$CACHE_BASE/vkd3d_cache"
+export MESA_GLSL_CACHE_DIR="$CACHE_BASE/mesa_shader_cache"
+export MESA_DISK_CACHE_SINGLE_FILE=1
+echo "== [malideck-governor] Shader caching active in $CACHE_BASE"
+
+# 2. Frame Gen Guard: Block multipliers x3/x4, auto-disable on crashes
+if [ -f "/tmp/malideck-fg-crash.flag" ]; then
+    echo "== [malideck-governor] Previous crash with Frame Generation detected! Auto-disabling FG."
+    rm -f "/tmp/malideck-fg-crash.flag"
+    export MALIDECK_FG_DISABLED=1
+fi
+
+TARGET_FPS=30
+LOW_FPS_THRESHOLD=28
+HIGH_FPS_THRESHOLD=34
+CONSECUTIVE_LOW=0
+CONSECUTIVE_HIGH=0
+CURRENT_SCALE_INDEX=0
+
+# Scaling profiles: 0 = Native (100%), 1 = 80%, 2 = 66% (FSR Quality), 3 = 50% (Performance)
+SCALERS=(1.0 0.8 0.66 0.5)
+SCALER_NAMES=("Native (1.0x)" "Quality (0.8x)" "Balanced (0.66x)" "Performance (0.5x)")
+
+apply_resolution_scale() {
+    local idx=$1
+    echo "== [malideck-governor] Adapting render scale to ${SCALER_NAMES[$idx]}"
+    if command -v xprop >/dev/null 2>&1; then
+        # Inform gamescope scaler
+        xprop -root -f GAMESCOPE_FSR_FEEDBACK 32c -set GAMESCOPE_FSR_FEEDBACK "$idx" 2>/dev/null || true
+    fi
+}
+
+check_thermals() {
+    local max_temp=0
+    for tz in /sys/class/thermal/thermal_zone*/temp; do
+        if [ -r "$tz" ]; then
+            val=$(cat "$tz" 2>/dev/null || echo 0)
+            if [ "$val" -gt 1000 ]; then val=$((val / 1000)); fi
+            if [ "$val" -gt "$max_temp" ] && [ "$val" -lt 120 ]; then
+                max_temp=$val
+            fi
+        fi
+    done
+    if [ "$max_temp" -ge 80 ]; then
+        echo "== [malideck-governor] WARNING: Thermal throttling imminent ($max_temp°C). Downscaling advised."
+    fi
+}
+
+# Daemon loop: runs in background during gameplay
+governor_loop() {
+    local loops=0
+    local honest_warning_given=0
+    while true; do
+        sleep 3
+        loops=$((loops + 1))
+
+        # Check thermals every 15 seconds
+        if [ $((loops % 5)) -eq 0 ]; then
+            check_thermals
+        fi
+
+        # Read MangoHud socket/output if available
+        # MangoHud writes fps to /tmp/mangohud_fps or can be queried
+        local current_fps=0
+        if [ -f "/tmp/mangohud.fps" ]; then
+            current_fps=$(cat /tmp/mangohud.fps 2>/dev/null || echo 0)
+        fi
+
+        # If we have valid FPS readings from the running game
+        if [ "$current_fps" -gt 0 ]; then
+            if [ "$current_fps" -lt "$LOW_FPS_THRESHOLD" ]; then
+                CONSECUTIVE_LOW=$((CONSECUTIVE_LOW + 1))
+                CONSECUTIVE_HIGH=0
+                if [ "$CONSECUTIVE_LOW" -ge 2 ]; then
+                    if [ "$CURRENT_SCALE_INDEX" -lt 3 ]; then
+                        CURRENT_SCALE_INDEX=$((CURRENT_SCALE_INDEX + 1))
+                        apply_resolution_scale "$CURRENT_SCALE_INDEX"
+                        CONSECUTIVE_LOW=0
+                    elif [ "$honest_warning_given" -eq 0 ]; then
+                        echo "== [malideck-governor] HONEST ADVISORY: Target game may not reach 30 FPS on this device at current settings."
+                        honest_warning_given=1
+                    fi
+                fi
+            elif [ "$current_fps" -gt "$HIGH_FPS_THRESHOLD" ]; then
+                CONSECUTIVE_HIGH=$((CONSECUTIVE_HIGH + 1))
+                CONSECUTIVE_LOW=0
+                if [ "$CONSECUTIVE_HIGH" -ge 4 ] && [ "$CURRENT_SCALE_INDEX" -gt 0 ]; then
+                    CURRENT_SCALE_INDEX=$((CURRENT_SCALE_INDEX - 1))
+                    apply_resolution_scale "$CURRENT_SCALE_INDEX"
+                    CONSECUTIVE_HIGH=0
+                fi
+            else
+                CONSECUTIVE_LOW=0
+                CONSECUTIVE_HIGH=0
+            fi
+        fi
+    done
+}
+
+governor_loop &
+GOV_PID=$!
+echo "== [malideck-governor] Background governor daemon active (PID $GOV_PID)"

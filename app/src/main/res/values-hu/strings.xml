@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="steamvr_recovery_title">A SteamVR grafikája leállt</string>
-    <string name="steamvr_recovery_countdown">A DroidDeck %1$d másodperc múlva újraindul, hogy visszaállítsa a grafikát, és újra megnyissa a SteamVR-t. A futó játék bezárul; a nem mentett előrehaladás nem állítható vissza.</string>
+    <string name="steamvr_recovery_countdown">A MaliDeck %1$d másodperc múlva újraindul, hogy visszaállítsa a grafikát, és újra megnyissa a SteamVR-t. A futó játék bezárul; a nem mentett előrehaladás nem állítható vissza.</string>
     <string name="steamvr_recovery_repeated">A grafikus hiba egy nemrégi újraindítás után ismét jelentkezett. Az automatikus helyreállítás szünetel, hogy ne alakuljon ki végtelen ciklus. Az újraindítás bezárja a játékot; a nem mentett előrehaladás nem állítható vissza.</string>
     <string name="steamvr_recovery_restart">Újraindítás most</string>
     <string name="steamvr_recovery_cancel">Nyitva tartás</string>
     <string name="steamvr_recovery_restarting">A grafika visszaállítása és a SteamVR újranyitása…</string>
-    <string name="steamvr_recovery_failed">A DroidDeck nem tudott automatikusan újraindulni. Zárja be teljesen az alkalmazást, majd nyissa meg újra.</string>
-    <string name="app_name">DroidDeck</string>
+    <string name="steamvr_recovery_failed">A MaliDeck nem tudott automatikusan újraindulni. Zárja be teljesen az alkalmazást, majd nyissa meg újra.</string>
+    <string name="app_name">MaliDeck</string>
     <string-array name="loading_hints">
         <item>Az első indítás letölti a Steamet. Ez néhány percet vehet igénybe.</item>
         <item>Alapértelmezés szerint az alkalmazás elhagyása szünetelteti a Steamet; visszatéréskor ott folytatja, ahol abbahagyta.</item>
@@ -139,7 +139,7 @@
     <string name="user_apps_remove_confirm">Nyomja meg újra az eltávolításhoz</string>
     <string name="user_apps_stop_session">Állítsa le a munkamenetet az eltávolításhoz</string>
     <string name="user_apps_script_linked">A %1$s a saját mappájából fut, amely a helyén csatolva van a munkamenetbe. Az alkalmazás eltávolítása nem érinti azt a mappát.</string>
-    <string name="user_apps_script_copied">A %1$s a mappájának egy, a DroidDecken belüli másolatából fut. Az alkalmazás eltávolítása törli a másolatot, az eredetit nem.</string>
+    <string name="user_apps_script_copied">A %1$s a mappájának egy, a MaliDecken belüli másolatából fut. Az alkalmazás eltávolítása törli a másolatot, az eredetit nem.</string>
     <string name="user_apps_runtime_required">Előbb telepítse a Linux futtatókörnyezetet</string>
     <string name="user_apps_file_gone">A fájl már nincs meg</string>
     <string name="user_apps_no_space">Nincs elég szabad hely: a mappa másolásához %1$s szükséges</string>
@@ -174,7 +174,7 @@
     <string name="app_fex_off">Ki</string>
     <string name="app_fex_hint">A FEX x86-os Linux-programokat futtat ezen az ARM64-es eszközön. Az Automatikus akkor használja, ha a program x86-ra készült.</string>
     <string name="app_fex_x86">%1$s a FEX-en keresztül</string>
-    <string name="app_fex_not_ready">Ez a program %1$s PC-khez készült, és a FEX-en keresztül fut, amely még nincs beállítva. Nyissa meg egyszer a Steamet bejelentkezve: a DroidDeck ekkor letölti a FEX-et és a szükséges Steam Linux Runtime-ot, majd ez megnyílik.</string>
+    <string name="app_fex_not_ready">Ez a program %1$s PC-khez készült, és a FEX-en keresztül fut, amely még nincs beállítva. Nyissa meg egyszer a Steamet bejelentkezve: a MaliDeck ekkor letölti a FEX-et és a szükséges Steam Linux Runtime-ot, majd ez megnyílik.</string>
     <string name="session_end_program">Ez a program</string>
     <string name="session_end_steam_download">A Steam-klienst nem sikerült letölteni. Lehet, hogy a hálózat vagy a VPN blokkolja a Steam szervereit; ellenőrizd a kapcsolatot, és próbáld újra.</string>
     <string name="session_end_steam_setup">A Steam-klienst nem sikerült beállítani. Ellenőrizd a kapcsolatot és a szabad tárhelyet, majd próbáld újra.</string>
@@ -211,13 +211,13 @@
     <string name="edit_app_save">Mentés</string>
     <string name="add_app_checking_folder">A mappa ellenőrzése…</string>
     <string name="add_app_folder_linked">A mappája a munkamenetbe van csatolva: %1$s</string>
-    <string name="add_app_folder_copied">A mappája Linux-programokat tartalmaz, amelyeket a megosztott tárhely nem tud futtatni, ezért átkerül a DroidDeckbe (%1$s).</string>
+    <string name="add_app_folder_copied">A mappája Linux-programokat tartalmaz, amelyeket a megosztott tárhely nem tud futtatni, ezért átkerül a MaliDeckbe (%1$s).</string>
     <string name="add_app_confirm">Hozzáadás</string>
     <string name="add_app_cancel">Mégse</string>
     <string name="add_app_runtime_required">Előbb telepítse a Linux futtatókörnyezetet a Beállításból.</string>
     <string name="add_app_busy">Várja meg, amíg a(z) %1$s befejeződik.</string>
     <string name="steam_compat_label">Kompatibilis</string>
-    <string name="proton_compatible_note">A Steam Kompatibilitás menüjében „%1$s” jelölésű buildek tartalmazzák a DroidDeck prefixjavításait, és ezeken itt elindulnak a játékok. Az alapértelmezett a Proton Experimental ARM64 (%1$s), vagy a Proton 11.0 ARM64 (%1$s), ha az az újabb build telepítve van. A Valve saját, jelölés nélküli Proton-bejegyzései nem tudnak játékot elindítani ezen az eszközön.</string>
+    <string name="proton_compatible_note">A Steam Kompatibilitás menüjében „%1$s” jelölésű buildek tartalmazzák a MaliDeck prefixjavításait, és ezeken itt elindulnak a játékok. Az alapértelmezett a Proton Experimental ARM64 (%1$s), vagy a Proton 11.0 ARM64 (%1$s), ha az az újabb build telepítve van. A Valve saját, jelölés nélküli Proton-bejegyzései nem tudnak játékot elindítani ezen az eszközön.</string>
     <string name="proton_installed_compatible">%1$s telepítve · %2$s</string>
     <string name="common_cancel">Mégse</string>
     <string name="common_auto">Automatikus</string>
@@ -307,8 +307,8 @@
     <string name="mode_background_downloads_hint">Elhalasztja a háttérbeli felfüggesztést, amíg a Steam aktívan letölt.</string>
     <string name="mode_suspend_note">Az Automatikus szüneteltet a háttérben, és megjelenéskor folytatja. A Manuális megvárja a Folytatást. A Soha mindig futva tartja.</string>
     <string name="mode_startup">Indítás</string>
-    <string name="mode_steam_startup">Steam indítása a DroidDeckkel</string>
-    <string name="mode_steam_startup_hint">Megnyitja a Steam-munkamenetet a DroidDeck indulásakor.</string>
+    <string name="mode_steam_startup">Steam indítása a MaliDeckkel</string>
+    <string name="mode_steam_startup_hint">Megnyitja a Steam-munkamenetet a MaliDeck indulásakor.</string>
     <string name="mode_decky">Decky</string>
     <string name="mode_decky_checking">Kiadások keresése…</string>
     <string name="mode_decky_ready">Készen áll a %1$s telepítésére.</string>
@@ -400,7 +400,7 @@
     <string name="mode_wifi_open_settings">Beállítások megnyitása</string>
     <string name="mode_wifi_continue">Folytatás</string>
     <string name="mode_wifi_explain_title">Bekapcsolja a Wi-Fi felderítést?</string>
-    <string name="mode_wifi_explain_text">Az Android helymeghatározási engedélyt igényel a Wi-Fi nevek beolvasásához és a közeli hálózatok felderítéséhez. A DroidDeck ezt a hozzáférést arra használja, hogy megjelenítse ezeket a hálózatokat a Steamben. Nem követjük a helyadatait. Az internet-hozzáférés ezen engedély nélkül is működik.</string>
+    <string name="mode_wifi_explain_text">Az Android helymeghatározási engedélyt igényel a Wi-Fi nevek beolvasásához és a közeli hálózatok felderítéséhez. A MaliDeck ezt a hozzáférést arra használja, hogy megjelenítse ezeket a hálózatokat a Steamben. Nem követjük a helyadatait. Az internet-hozzáférés ezen engedély nélkül is működik.</string>
     <string name="mode_storage">Játéktárhely</string>
     <string name="mode_storage_auto">Automatikus – az SD-kártya, ha van, és a Játékok mappái</string>
     <string name="mode_storage_auto_none">Automatikus – a Játékok mappái, és az SD-kártya, ha van (jelenleg nincs)</string>
@@ -503,7 +503,7 @@
     <string name="comp_applies_next_game">A következő játékindítástól érvényes</string>
     <string name="comp_import_zip">.zip importálása</string>
     <string name="comp_reading">Protonok beolvasása…</string>
-    <string name="comp_no_proton">Még nincs telepítve Proton. Indítsa el egyszer a Steamet az ARM64 Protonjának letöltéséhez, vagy adjon hozzá GE-Protont, CachyOS-t vagy DroidDeck-Protont a Beállításból.</string>
+    <string name="comp_no_proton">Még nincs telepítve Proton. Indítsa el egyszer a Steamet az ARM64 Protonjának letöltéséhez, vagy adjon hozzá GE-Protont, CachyOS-t vagy MaliDeck-Protont a Beállításból.</string>
     <string name="comp_original">Eredeti · %1$s</string>
     <string name="comp_this_build">%1$s · ez a build</string>
     <string name="comp_earlier_build">%1$s · korábbi build</string>
@@ -521,7 +521,7 @@
     <string name="comp_nightlies_count">A Nightliesen · %1$d</string>
     <string name="comp_channel_stable">Stabil</string>
     <string name="comp_channel_nightly">Nightly</string>
-    <string name="comp_refresh_to_list">Frissítsen a Nightlies és a DroidDeck csomagjainak listázásához.</string>
+    <string name="comp_refresh_to_list">Frissítsen a Nightlies és a MaliDeck csomagjainak listázásához.</string>
     <string name="comp_nothing_new">Nincs semmi új az utolsó ellenőrzés óta.</string>
     <string name="comp_import_wcp">.wcp importálása</string>
     <string name="comp_restore_original">Ennek a Protonnak az eredetijének visszaállítása</string>
@@ -754,7 +754,7 @@
     <string name="setup_language_system">Rendszer alapértelmezett (%1$s)</string>
     <string name="setup_language_system_short">Rendszer alapértelmezett</string>
     <string name="setup_app_scale">Alkalmazásméret</string>
-    <string name="setup_app_scale_hint">A DroidDeck szövege és vezérlői</string>
+    <string name="setup_app_scale_hint">A MaliDeck szövege és vezérlői</string>
     <string name="setup_app_scale_default">%1$d%% (Alapértelmezett)</string>
     <string name="setup_theme">Téma</string>
     <string name="setup_theme_hint">Az indítóalkalmazás megjelenése</string>
@@ -762,8 +762,8 @@
     <string name="setup_launcher_icon_dark">Sötét</string>
     <string name="setup_launcher_icon_light">Világos</string>
     <string name="setup_home">Használat kezdőképernyőként</string>
-    <string name="setup_home_on">A DroidDeck lehet a kezdőképernyő alkalmazás</string>
-    <string name="setup_home_off">A DroidDeck soha nem jelenik meg kezdőképernyő alkalmazásként</string>
+    <string name="setup_home_on">A MaliDeck lehet a kezdőképernyő alkalmazás</string>
+    <string name="setup_home_off">A MaliDeck soha nem jelenik meg kezdőképernyő alkalmazásként</string>
     <string name="setup_orientation">Tájolás</string>
     <string name="setup_orientation_auto">Automatikus fekvő</string>
     <string name="setup_orientation_landscape">Fekvő</string>
@@ -842,16 +842,16 @@
     <string name="store_website">Weboldal</string>
     <string name="store_verified">Ellenőrzött</string>
     <string name="upd_title">Frissítések</string>
-    <string name="upd_build">DroidDeck %1$s · %2$s</string>
+    <string name="upd_build">MaliDeck %1$s · %2$s</string>
     <string name="upd_checked">Ellenőrizve: %1$s</string>
     <string name="upd_not_checked">Még nincs ellenőrizve</string>
-    <string name="upd_perm_title">Engedélyezze, hogy a DroidDeck magát frissítse</string>
+    <string name="upd_perm_title">Engedélyezze, hogy a MaliDeck magát frissítse</string>
     <string name="upd_perm_text">A következő képernyőn kapcsolja be az „Engedélyezés ebből a forrásból” lehetőséget, majd térjen vissza. A frissítés önműködően folytatódik.</string>
     <string name="upd_open_settings">Beállítások megnyitása</string>
     <string name="upd_not_now">Most nem</string>
     <string name="upd_signed_status">Másként aláírva</string>
     <string name="upd_signed_headline">Nem frissíthető a helyén</string>
-    <string name="upd_signed_detail">Ez a másolat nincs a DroidDeck kiadási kulcsával aláírva, így a frissítések nem telepíthetők rá. Távolítsa el az átváltáshoz.</string>
+    <string name="upd_signed_detail">Ez a másolat nincs a MaliDeck kiadási kulcsával aláírva, így a frissítések nem telepíthetők rá. Távolítsa el az átváltáshoz.</string>
     <string name="upd_available">Elérhető frissítés</string>
     <string name="upd_blocked_status">Nem telepíthető</string>
     <string name="upd_switch">Kész az átváltásra</string>
@@ -873,7 +873,7 @@
     <string name="upd_stop_session">Állítsa le a futó munkamenetet a frissítéshez.</string>
     <string name="upd_less">Kevesebb</string>
     <string name="upd_more">Több</string>
-    <string name="upd_new_stable">DroidDeck %1$s</string>
+    <string name="upd_new_stable">MaliDeck %1$s</string>
     <string name="upd_new_preview">Új Preview build</string>
     <string name="upd_new_test">PR #%1$d teszt build</string>
     <string name="upd_mb">%1$d MB</string>
@@ -888,7 +888,7 @@
     <string name="upd_tests_hint">Próbáljon ki egy javítást a kiadása előtt</string>
     <string name="upd_tests_none">Jelenleg nincs</string>
     <string name="upd_pr">PR #%1$d</string>
-    <string name="upd_not_built">Nincs buildelve ehhez a DroidDeck-másolathoz</string>
+    <string name="upd_not_built">Nincs buildelve ehhez a MaliDeck-másolathoz</string>
     <string name="upd_updated">Frissítve: %1$s</string>
     <string name="upd_test_name">a PR #%1$d teszt</string>
     <string name="upd_while_ago">egy ideje</string>
@@ -911,13 +911,13 @@
     <string name="gate_fix_for_me">Javítsa ezt helyettem</string>
     <string name="gate_toggle_steps">Kapcsolja be az „Alárendelt folyamatok korlátozásának kikapcsolása” kapcsolót, majd térjen vissza. Hagyja bekapcsolva a Fejlesztői beállításokat, különben a kapcsoló visszakapcsol.</string>
     <string name="gate_open_dev">Fejlesztői beállítások megnyitása</string>
-    <string name="gate_no_toggle">Ehhez az Android-verzióhoz nincs kapcsoló, ezért a DroidDeck a vezeték nélküli hibakeresésen keresztül módosítja. Körülbelül egy percet vesz igénybe, számítógép nélkül.</string>
+    <string name="gate_no_toggle">Ehhez az Android-verzióhoz nincs kapcsoló, ezért a MaliDeck a vezeték nélküli hibakeresésen keresztül módosítja. Körülbelül egy percet vesz igénybe, számítógép nélkül.</string>
     <string name="gate_needs_wifi">A vezeték nélküli hibakereséshez Wi-Fi szükséges. Bármelyik hálózat megfelel; internetkapcsolat nem szükséges.</string>
-    <string name="gate_needs_notifications">A párosítási kód egy értesítésben jelenik meg. Engedélyezze az értesítéseket a DroidDecknek, vagy használja az Egyéb módokat.</string>
+    <string name="gate_needs_notifications">A párosítási kód egy értesítésben jelenik meg. Engedélyezze az értesítéseket a MaliDecknek, vagy használja az Egyéb módokat.</string>
     <string name="gate_allow_notifications">Értesítések engedélyezése</string>
     <string name="gate_step1">Nyissa meg: Beállítások → Fejlesztői beállítások → Vezeték nélküli hibakeresés, és kapcsolja be</string>
     <string name="gate_step2">Koppintson az „Eszköz párosítása párosítási kóddal” lehetőségre</string>
-    <string name="gate_step3">Írja be a kódot a DroidDeck értesítésébe</string>
+    <string name="gate_step3">Írja be a kódot a MaliDeck értesítésébe</string>
     <string name="gate_waiting">Várakozás a párosítási felugró ablakra…</string>
     <string name="gate_code_needed">Felugró ablak megtalálva. Írja be a kódját az értesítésbe.</string>
     <string name="gate_status">Állapot</string>
@@ -1035,7 +1035,7 @@
     <string name="desktop_removing">Asztal eltávolítása</string>
     <string name="desktop_removed">Asztal eltávolítva</string>
     <string name="desktop_cleaning_legacy">Régi LXQt-fájlok eltávolítása</string>
-    <string name="desktop_removal_unknown">Frissítse a DroidDecket, mielőtt eltávolítja ezt az asztali verziót.</string>
+    <string name="desktop_removal_unknown">Frissítse a MaliDecket, mielőtt eltávolítja ezt az asztali verziót.</string>
     <string name="content_linux_desktop">Linux-asztal</string>
     <string name="content_linux_desktop_hint">KDE Plasma, Firefox és az emulátorai</string>
     <string name="games_empty">A Steamben telepített játékok a munkamenet után itt jelennek meg.</string>
@@ -1080,7 +1080,7 @@
     <string name="gpu_auto_by_gpu">Automatikus – GPU szerint kiválasztva</string>
     <string name="gpu_manage">Letöltés, importálás vagy törlés…</string>
     <string name="gpu_in_use_caps">HASZNÁLATBAN</string>
-    <string name="gpu_builtin">A DroidDeckbe épített illesztőprogramok</string>
+    <string name="gpu_builtin">A MaliDeckbe épített illesztőprogramok</string>
     <string name="gpu_matched_pair">A futtatókörnyezet- és megjelenítő-illesztőprogramok együtt, párként beállítva.</string>
     <string name="gpu_recommended_for">Ehhez a GPU-hoz ajánlott: %1$s.</string>
     <string name="gpu_refresh_hint">Frissítsen az ehhez a GPU-hoz tartozó illesztőprogramok kereséséhez.</string>
@@ -1183,7 +1183,7 @@
     <string name="unfolded_controls_hint">Kinyitva a játék a Steam Deck érintőpadjai és hátsó fogói fölött jelenik meg. Összecsukva a játék teljes képernyős.</string>
     <string name="pip_suspended">Felfüggesztve</string>
     <string name="pip_not_ready">A kép a képben mód csak a munkamenet elkészülése után érhető el.</string>
-    <string name="pip_permission">Engedélyezze a kép a képben módot a DroidDeck számára az Android beállításaiban.</string>
+    <string name="pip_permission">Engedélyezze a kép a képben módot a MaliDeck számára az Android beállításaiban.</string>
     <string name="pip_unavailable">Az Android nem tudta megnyitni a kép a képben módot.</string>
     <string name="game_shortcut">Parancsikon</string>
     <string name="game_shortcut_add">Hozzáadás a kezdőképernyőhöz</string>
@@ -1193,7 +1193,7 @@
     <string name="game_link_copied">Indítási link másolva</string>
     <string name="game_shortcut_unsupported">Ez az indítóalkalmazás nem tud parancsikont hozzáadni. Használja helyette az „Indítási link másolása” lehetőséget.</string>
     <string name="game_link_invalid">Érvénytelen játékindítási link.</string>
-    <string name="game_link_missing">Ez a játék már nincs a DroidDeck könyvtárában.</string>
+    <string name="game_link_missing">Ez a játék már nincs a MaliDeck könyvtárában.</string>
     <string name="game_link_session_busy">Állítsa le a jelenlegi munkamenetet, mielőtt elindít egy Steam-játékot.</string>
     <string name="game_link_failed">Nem sikerült elküldeni a játékot a Steamnek. Próbálja újra elindítani.</string>
     <string name="setup_retry_removal">Eltávolítás újra</string>
@@ -1217,8 +1217,8 @@
         <item quantity="other">%1$d fájl importálva innen: %2$s, ide: %3$s</item>
     </plurals>
     <plurals name="main_saves_imported_backup">
-        <item quantity="one">%1$d fájl importálva innen: %2$s, ide: %3$s. A régi mentések mentve itt: Download/DroidDeck/Saves/backups</item>
-        <item quantity="other">%1$d fájl importálva innen: %2$s, ide: %3$s. A régi mentések mentve itt: Download/DroidDeck/Saves/backups</item>
+        <item quantity="one">%1$d fájl importálva innen: %2$s, ide: %3$s. A régi mentések mentve itt: Download/MaliDeck/Saves/backups</item>
+        <item quantity="other">%1$d fájl importálva innen: %2$s, ide: %3$s. A régi mentések mentve itt: Download/MaliDeck/Saves/backups</item>
     </plurals>
     <string name="main_saves_pick_zip">Válasszon mentés zip fájlt ehhez: %1$s</string>
     <string name="main_saves_exporting">%1$s exportálása</string>
@@ -1276,7 +1276,7 @@
 
     <string name="upd_unknown_apps_failed">Nem sikerült megnyitni az Android „Ismeretlen alkalmazások telepítése” beállítását</string>
     <string name="upd_couldnt_check">Nem sikerült ellenőrizni: %1$s</string>
-    <string name="upd_no_download">Ez a build nem rendelkezik letöltéssel a DroidDeck ezen másolatához</string>
+    <string name="upd_no_download">Ez a build nem rendelkezik letöltéssel a MaliDeck ezen másolatához</string>
     <string name="upd_stop_first">Előbb állítsa le a futó munkamenetet, majd frissítsen</string>
     <string name="upd_stage_downloading">Letöltés</string>
     <string name="upd_stage_installing">Telepítés</string>
@@ -1305,22 +1305,22 @@
     <string name="drivers_recommended_unpublished">Az ajánlott illesztőprogramok jelenleg nincsenek kiadva</string>
     <string name="drivers_downloading_pair">%1$s %2$s letöltése…</string>
     <string name="drivers_updated_to">Frissítve erre: %1$s %2$s.</string>
-    <string name="drivers_updated_to_restart">Frissítve erre: %1$s %2$s. A megjelenítő-illesztőprogram a DroidDeck újraindítása után lép érvénybe.</string>
+    <string name="drivers_updated_to_restart">Frissítve erre: %1$s %2$s. A megjelenítő-illesztőprogram a MaliDeck újraindítása után lép érvénybe.</string>
     <string name="drivers_auto_waits_for_session">Az illesztőprogram-frissítések a munkamenet leállásáig várnak.</string>
     <string name="drivers_auto_waits_for_network">A(z) %1$s %2$s letöltése akkor indul, amikor kilépsz a mobilnetről és az energiatakarékos módból.</string>
     <string name="drivers_skipping_bad">A(z) %1$s %2$s nem indított itt munkamenetet, ezért az Automatikus azoknál az illesztőprogramoknál marad, amelyek igen.</string>
     <string name="drivers_rolled_back">A(z) %1$s kétszer nem indított munkamenetet, ezért az Automatikus visszatért a működő illesztőprogramokhoz.</string>
     <string name="drivers_switched_to">Átváltva erre: %1$s %2$s.</string>
-    <string name="drivers_switched_to_restart">Átváltva erre: %1$s %2$s. A megjelenítő-illesztőprogram a DroidDeck újraindítása után lép érvénybe.</string>
+    <string name="drivers_switched_to_restart">Átváltva erre: %1$s %2$s. A megjelenítő-illesztőprogram a MaliDeck újraindítása után lép érvénybe.</string>
     <string name="drivers_using">%1$s %2$s használatban.</string>
-    <string name="drivers_using_restart">%1$s %2$s használatban. A megjelenítő-illesztőprogram a DroidDeck újraindítása után lép érvénybe.</string>
+    <string name="drivers_using_restart">%1$s %2$s használatban. A megjelenítő-illesztőprogram a MaliDeck újraindítása után lép érvénybe.</string>
     <string name="drivers_using_quest">A Questhez adott kép-illesztőprogram és az alapértelmezett futtatókörnyezet van használatban.</string>
-    <string name="drivers_using_quest_restart">A Questhez adott kép-illesztőprogram és az alapértelmezett futtatókörnyezet van használatban. A kép-illesztőprogram a DroidDeck újraindítása után lép életbe.</string>
+    <string name="drivers_using_quest_restart">A Questhez adott kép-illesztőprogram és az alapértelmezett futtatókörnyezet van használatban. A kép-illesztőprogram a MaliDeck újraindítása után lép életbe.</string>
     <string name="drivers_not_a_driver">Nem illesztőprogram zip: nem AdrenoTools-illesztőprogram, nem -Linux Turnip és nem Android + Linux csomag</string>
     <string name="drivers_import_failed">Importálás sikertelen: %1$s</string>
     <string name="drivers_imported_unnamed">Illesztőprogram importálva</string>
     <string name="drivers_using_bundle">%1$s használatban mind futtatókörnyezet-, mind megjelenítő-illesztőprogramként.</string>
-    <string name="drivers_using_bundle_restart">%1$s használatban mind futtatókörnyezet-, mind megjelenítő-illesztőprogramként. A megjelenítő-illesztőprogram a DroidDeck újraindítása után lép érvénybe.</string>
+    <string name="drivers_using_bundle_restart">%1$s használatban mind futtatókörnyezet-, mind megjelenítő-illesztőprogramként. A megjelenítő-illesztőprogram a MaliDeck újraindítása után lép érvénybe.</string>
     <string name="drivers_deleted_bundle">%1$s törölve (mindkét illesztőprogram)</string>
     <string name="drivers_deleted">%1$s törölve</string>
     <string name="drivers_release_status">Legújabb: %1$s · ellenőrizve: %2$s</string>
@@ -1337,7 +1337,7 @@
         <item quantity="one">%1$d napja</item>
         <item quantity="other">%1$d napja</item>
     </plurals>
-    <string name="drivers_checking_sources">A Banners-Turnip, a WinNative és a DroidDeck ellenőrzése…</string>
+    <string name="drivers_checking_sources">A Banners-Turnip, a WinNative és a MaliDeck ellenőrzése…</string>
     <string name="drivers_check_failed">ellenőrzés sikertelen</string>
     <string name="drivers_installed_pick_either">%1$s telepítve – válassza ki bármelyik listában mindkét illesztőprogram beállításához</string>
     <string name="drivers_installed_pick">%1$s telepítve – válassza ki a menüben</string>
@@ -1731,7 +1731,7 @@
     <string name="adbfix_no_pairing">Nincs mentett vezeték nélküli hibakeresés-párosítás</string>
     <string name="adbfix_enter_address">Adja meg a vezeték nélküli hibakeresés jelenlegi IP-címét és portját</string>
 
-    <string name="adbpair_timed_out">Időtúllépés a párosítási felugró ablakra várva. Próbálja újra a DroidDeckből.</string>
+    <string name="adbpair_timed_out">Időtúllépés a párosítási felugró ablakra várva. Próbálja újra a MaliDeckből.</string>
     <string name="adbpair_discovery_failed_code">Nem sikerült megkeresni a párosítási felugró ablakot (%1$d). Ellenőrizze, hogy a Wi-Fi be van kapcsolva.</string>
     <string name="adbpair_discovery_failed">Nem sikerült megkeresni a párosítási felugró ablakot: %1$s</string>
     <string name="adbpair_six_digits">Írja be a kód mind a 6 számjegyét</string>
@@ -1753,20 +1753,20 @@
     <string name="adbpair_enter_code">Kód megadása</string>
     <string name="adbpair_title_working">A Steam beállítása</string>
     <string name="adbpair_title_done">A Steam készen áll</string>
-    <string name="adbpair_done_text">Koppintson a DroidDeckhez való visszatéréshez. A vezeték nélküli hibakeresést most kikapcsolhatja.</string>
+    <string name="adbpair_done_text">Koppintson a MaliDeckhez való visszatéréshez. A vezeték nélküli hibakeresést most kikapcsolhatja.</string>
     <string name="adbpair_title_failed">A vezeték nélküli hibakeresés beállítása megállt</string>
 
     <string name="selfinst_download_failed">A letöltés nem sikerült</string>
     <string name="selfinst_size_mismatch">A letöltés mérete nem egyezett a közzétett APK-val, és elvetésre került – próbálja újra</string>
     <string name="selfinst_checksum_mismatch">A letöltés nem egyezett az ellenőrzőösszegével, és elvetésre került – próbálja újra</string>
     <string name="selfinst_wrong_package">A frissítés a %1$s Android-csomaghoz tartozik, nem a %2$s-hez</string>
-    <string name="selfinst_metadata_signer">A frissítés metaadatai nem nevezik meg a DroidDeck kiadási aláírókulcsát</string>
+    <string name="selfinst_metadata_signer">A frissítés metaadatai nem nevezik meg a MaliDeck kiadási aláírókulcsát</string>
     <string name="selfinst_unreadable">Az Android nem tudta beolvasni a letöltött APK-t</string>
     <string name="selfinst_apk_wrong_package">A letöltött APK a %1$s-hez tartozik, nem a %2$s-hez</string>
     <string name="selfinst_version_mismatch">A letöltött APK %1$d versionCode-ot ad meg, nem a közzétett %2$d-t</string>
     <string name="selfinst_downgrade">Az Android nem telepíti a %1$d versionCode-ot a telepített %2$d fölé</string>
     <string name="selfinst_no_signing">A letöltött APK nem tartalmaz aláírási információt</string>
-    <string name="selfinst_wrong_signer">A letöltött APK nincs aláírva a DroidDeck kiadási kulcsával</string>
+    <string name="selfinst_wrong_signer">A letöltött APK nincs aláírva a MaliDeck kiadási kulcsával</string>
     <string name="appupd_http">A frissítési katalógus HTTP %1$d választ adott</string>
 
     <string name="loadstate_starting">A munkamenet indítása…</string>
@@ -1812,7 +1812,7 @@
     <string name="cmgr_original_kept">A telepített build eredetije megmarad: ez a visszaút.</string>
     <string name="cmgr_not_stored">Nincs tárolva</string>
     <string name="cmgr_deleted_original">A %2$s %1$s eredetije törölve.</string>
-    <string name="cmgr_nightlies_only">A letöltések csak a Nightlies és a DroidDeck kiadásokból érkeznek</string>
+    <string name="cmgr_nightlies_only">A letöltések csak a Nightlies és a MaliDeck kiadásokból érkeznek</string>
     <string name="cmgr_nightly_replaced">A letöltés sikertelen: lehet, hogy ezt a nightly buildet egy újabb váltotta. Frissítse a listát, és próbálja újra.</string>
     <string name="cmgr_list_predates_checksums">Ez a csomaglista régebbi, mint az ellenőrzőösszegek – frissítse, és próbálja újra</string>
     <string name="cmgr_checksum_mismatch">Az ellenőrzőösszeg nem egyezik</string>
@@ -1851,7 +1851,7 @@
     <string name="gpuinfo_supported">Támogatott</string>
     <string name="gpuinfo_experimental">Kísérleti: az illesztőprogramjai teszt buildek</string>
     <string name="gpuinfo_below_tested">A tesztelt hardver alatt (Adreno 725 és újabb): lehet, hogy nem fut</string>
-    <string name="gpuinfo_unsupported">Nem támogatott: a DroidDecknek Adreno (Snapdragon) GPU szükséges</string>
+    <string name="gpuinfo_unsupported">Nem támogatott: a MaliDecknek Adreno (Snapdragon) GPU szükséges</string>
 
     <string name="turnip_rate_limited">A GitHub korlátja elérve – próbálja újra később</string>
     <string name="turnip_github_http">A GitHub HTTP %1$d választ adott</string>
@@ -1894,10 +1894,10 @@
     <string name="phantom_instructions_not_applicable">Ez az Android-verzió nem használja ezt a korlátot.</string>
     <string name="phantom_fix_toggle">Kapcsolja be az „Alárendelt folyamatok korlátozásának kikapcsolása” lehetőséget a Fejlesztői beállításokban, és utána hagyja bekapcsolva a Fejlesztői beállításokat.</string>
     <string name="phantom_fix_no_toggle">Ehhez az Android-verzióhoz nincs kapcsoló. Használja a vezeték nélküli hibakeresést a módosításához erről az eszközről.</string>
-    <string name="upd_block_no_apk">Ehhez a buildhez nincs letöltés a DroidDeck ezen másolatához.</string>
+    <string name="upd_block_no_apk">Ehhez a buildhez nincs letöltés a MaliDeck ezen másolatához.</string>
     <string name="upd_block_version_code">Az Android nem telepíti ezt a buildet fölé, mert a %1$d versionCode-ja a telepített %2$d alatt van.</string>
     <string name="upd_fail_downgrade">Az Android nem telepít régebbi verziót egy újabb fölé. Maradjon ezen a buildon, amíg a csatorna felzárkózik.</string>
-    <string name="upd_fail_signature">Ez a DroidDeck-másolat másként van aláírva (talán egy helyi build?), így az Android nem frissíti a helyén.</string>
+    <string name="upd_fail_signature">Ez a MaliDeck-másolat másként van aláírva (talán egy helyi build?), így az Android nem frissíti a helyén.</string>
     <string name="upd_fail_storage">Nincs elég szabad hely a frissítéshez.</string>
     <string name="upd_fail_aborted">A frissítés megszakítva.</string>
     <string name="upd_fail_with_message">A frissítés nem települt: %1$s</string>
@@ -1922,7 +1922,7 @@
     <string name="gstore_volume_free">%1$s · %2$s szabad</string>
     <string name="mode_storage_auto_short">Automatikus</string>
     <string name="appupd_catalog_rejected">A frissítési katalógus nem ment át az ellenőrzéseken (%1$s)</string>
-    <string name="main_adb_clip_label">DroidDeck gyermekfolyamat-beállítás</string>
+    <string name="main_adb_clip_label">MaliDeck gyermekfolyamat-beállítás</string>
     <string name="setup_signed_in_offline_unnamed">Bejelentkezve · offline mód</string>
     <string name="setup_signed_in_unnamed">Bejelentkezve</string>
     <string name="driver_tag_bundled">CSOMAGOLT</string>
@@ -2300,7 +2300,7 @@
     <string name="gpu_display_next">A képernyőt rajzolja. A következő munkamenettől érvényes.</string>
     <string name="gpu_previous_driver">az előző illesztőprogram</string>
     <string name="gpu_restart_banner">Indítsd újra a kép-illesztőprogram váltásához.</string>
-    <string name="gpu_restart_blocked">Állítsd le a jelenlegi munkamenetet és indítsd újra a DroidDecket a kép-illesztőprogram váltásához.</string>
+    <string name="gpu_restart_blocked">Állítsd le a jelenlegi munkamenetet és indítsd újra a MaliDecket a kép-illesztőprogram váltásához.</string>
     <string name="gpu_restart_now">Újraindítás most</string>
     <string name="gpu_restart_later">Később</string>
     <string name="gpu_auto_title">Az Automatikus ezt a párt választotta ehhez: %1$s</string>
@@ -2376,7 +2376,7 @@
     <string name="touch_speed_normal">Normál</string>
     <string name="touch_speed_fast">Gyors</string>
     <string name="touch_edit_layout">Elrendezés szerkesztése</string>
-    <string name="touch_droiddeck_menu">DroidDeck menü</string>
+    <string name="touch_droiddeck_menu">MaliDeck menü</string>
     <string name="touch_drag_hint">Húzd a vezérlőket a képernyőre</string>
     <string name="touch_arrange">Elrendezés</string>
     <string name="touch_discard">Elvetés</string>
@@ -2442,7 +2442,7 @@
     <string name="glasses_driver_missing">Ez a verzió nem tartalmazza a szemüveg illesztőprogramját.</string>
     <string name="glasses_connection_failed">Nem sikerült csatlakozni a szemüveghez. Csatlakoztassa újra a kábelt, vagy koppintson az Engedélyezés gombra az újrapróbáláshoz.</string>
     <string name="glasses_allow">Engedélyezés</string>
-    <string name="glasses_allow_hint">Engedélyezze, hogy a DroidDeck beállítsa a szemüveg frissítési frekvenciáját, 3D módját, fényerejét, hangerejét és elsötétítését, valamint olvassa a fejkövetési adatait.</string>
+    <string name="glasses_allow_hint">Engedélyezze, hogy a MaliDeck beállítsa a szemüveg frissítési frekvenciáját, 3D módját, fényerejét, hangerejét és elsötétítését, valamint olvassa a fejkövetési adatait.</string>
     <string name="glasses_asking">Várakozás az engedélyére az Android ablakában…</string>
     <string name="glasses_denied">A vezérlés elutasítva. Engedélyezze, hogy módosíthassa a szemüveg beállításait.</string>
     <string name="glasses_no_control">Ez a szemüveg megjeleníti a játékot, de a beállításai innen nem módosíthatók.</string>
@@ -2598,7 +2598,7 @@
     <string name="storage_internal">Belső tárhely</string>
     <string name="storage_used_of">%1$s / %2$s használt</string>
     <string name="storage_free">%1$s szabad</string>
-    <string name="storage_droiddeck_uses">A DroidDeck %1$s-t használ. Mérve: %2$s.</string>
+    <string name="storage_droiddeck_uses">A MaliDeck %1$s-t használ. Mérve: %2$s.</string>
     <string name="storage_rescanning">újramérés…</string>
     <string name="storage_other_apps">Egyéb Android-alkalmazások</string>
     <string name="storage_safe_now">Most felszabadítható</string>
@@ -2617,7 +2617,7 @@
     <string name="storage_desktop_hint">Flatpak-alkalmazások és futtatókörnyezetek</string>
     <string name="storage_system">Linux rendszer és Steam kliens</string>
     <string name="storage_system_hint">Szükséges ahhoz, hogy bármi fusson</string>
-    <string name="storage_app_data">DroidDeck-adatok</string>
+    <string name="storage_app_data">MaliDeck-adatok</string>
     <string name="storage_app_data_hint">Régi munkamenetek naplói %1$s · gyorsítótár · illesztőprogramok</string>
     <string name="storage_legend_games">Játékok</string>
     <string name="storage_legend_data">Játékadatok</string>
@@ -2625,7 +2625,7 @@
     <string name="storage_legend_stores">Más áruházak</string>
     <string name="storage_legend_desktop">Asztali alkalmazások</string>
     <string name="storage_legend_system">Linux rendszer</string>
-    <string name="storage_legend_app">DroidDeck</string>
+    <string name="storage_legend_app">MaliDeck</string>
     <string name="storage_clean_up_title">Takarítás</string>
     <string name="storage_clean_up_lede">Itt semmi sem érinti a telepített játékokat vagy a futó letöltéseket.</string>
     <string name="storage_nothing_to_clean">Most nincs mit takarítani.</string>
@@ -2674,8 +2674,8 @@
     <string name="storage_tool_redist">A játékokhoz szükséges VC++ és DirectX telepítések</string>
     <string name="storage_tool_fex">Linux x86-os játékokat futtat</string>
     <string name="storage_tool_steam">Steam-eszköz</string>
-    <string name="storage_tool_old_runtime">A DroidDeck e futtatókörnyezet nélkül futtat játékokat</string>
-    <string name="storage_tool_x86_proton">Proton x86, amit a DroidDeck nem tud futtatni</string>
+    <string name="storage_tool_old_runtime">A MaliDeck e futtatókörnyezet nélkül futtat játékokat</string>
+    <string name="storage_tool_x86_proton">Proton x86, amit a MaliDeck nem tud futtatni</string>
     <string name="storage_tool_custom_default">Alapértelmezett minden játéknak</string>
     <string name="storage_tool_custom_unused">Egy játék sem használja</string>
     <string name="storage_tool_custom_unknown">A Steam beállításai nem olvashatók, ezért megmarad</string>
@@ -2709,8 +2709,8 @@
         <item quantity="one">%d játék</item>
         <item quantity="other">%d játék</item>
     </plurals>
-    <string name="storage_tool_default_proton">A DroidDeck alap Protonja</string>
-    <string name="storage_tool_proton">A DroidDeck Proton 11 lehetősége</string>
+    <string name="storage_tool_default_proton">A MaliDeck alap Protonja</string>
+    <string name="storage_tool_proton">A MaliDeck Proton 11 lehetősége</string>
     <plurals name="storage_tool_custom_games">
         <item quantity="one">%d játék használja</item>
         <item quantity="other">%d játék használja</item>
@@ -2764,7 +2764,7 @@
     </plurals>
     <string name="boot_movie">Indítóvideó</string>
     <string name="boot_movie_video">Videó</string>
-    <string name="boot_movie_droiddeck">DroidDeck · %1$d fps</string>
+    <string name="boot_movie_droiddeck">MaliDeck · %1$d fps</string>
     <string name="boot_movie_note">A 60 fps simább, de jobban terheli a processzort a Steam indulása közben. A Steam saját beállításaiban választott videó itt is megjelenik.</string>
     <string name="boot_movie_sound">Hang</string>
     <string name="boot_movie_custom">Saját videó</string>
@@ -2776,24 +2776,24 @@
     <string name="boot_movie_imported_silent">Mostantól %1$s az indítóvideó, hang nélkül</string>
     <string name="boot_movie_too_long">Az átalakítandó videó legfeljebb %1$d másodperces lehet</string>
     <string name="boot_movie_converting">Átalakítás %1$d%%</string>
-    <string name="boot_movie_converting_started">%1$s átalakítása a Steamhez. Hagyd nyitva a DroidDecket.</string>
+    <string name="boot_movie_converting_started">%1$s átalakítása a Steamhez. Hagyd nyitva a MaliDecket.</string>
     <string name="boot_movie_unsupported">Ez az eszköz nem tudja dekódolni a videót.</string>
     <string name="boot_movie_import_failed">Nem sikerült importálni a videót</string>
     <string name="boot_movie_remove_confirm">Eltávolítod: %1$s?</string>
-    <string name="boot_movie_remove_confirm_body">Ezzel törlődik a videó a DroidDeckből és a Steam videómappájából.</string>
+    <string name="boot_movie_remove_confirm_body">Ezzel törlődik a videó a MaliDeckből és a Steam videómappájából.</string>
     <string name="boot_movie_tab_installed">Telepítve</string>
     <string name="boot_movie_tab_import">Importálás</string>
     <string name="boot_movie_tab_repo">SteamDeckRepo</string>
     <string name="boot_movie_tab_sound">Hang</string>
     <string name="boot_movie_installed">Telepített videók</string>
     <string name="boot_movie_browse">Tallózás</string>
-    <string name="boot_movie_source_droiddeck">DroidDeck</string>
+    <string name="boot_movie_source_droiddeck">MaliDeck</string>
     <string name="boot_movie_source_import">Importált</string>
     <string name="boot_movie_source_repo">SteamDeckRepo</string>
     <string name="boot_movie_source_steam">Steam</string>
     <string name="boot_movie_source_pointshop">Pontbolt</string>
     <string name="boot_movie_report">Indítóvideó-jelentés</string>
-    <string name="boot_movie_report_hint">Szöveges fájlba menti, amit a DroidDeck és a Steam tud az indítóvideókról, hibajelentéshez csatolható.</string>
+    <string name="boot_movie_report_hint">Szöveges fájlba menti, amit a MaliDeck és a Steam tud az indítóvideókról, hibajelentéshez csatolható.</string>
     <string name="boot_movie_report_save">Mentés</string>
     <string name="boot_movie_report_saved">Mentve: %1$s</string>
     <string name="boot_movie_report_failed">A jelentést nem sikerült menteni.</string>
@@ -2829,7 +2829,7 @@
     <string name="glasses_joycons_hint">Használd az okosszemüveg kameráit a párosított Joy-Con kontrollerek pozicionálásához. A forgatás és a gombbemenetek a Joy-Con kontrollerekről származnak. A pozíció akkor becsült, amikor a csuklód rejtve van. Helyettesíti a puszta kézzel működtetett kontrollereket, és szünetelteti a telefonkamera követést. Irányítsd a Joy-Con kontrollereket előre a követőközpont csatlakoztatásakor vagy visszaállításakor.</string>
     <string name="glasses_joycons_requires_position">Először engedélyezd a pozíciókövetést. Mozgásérzékelős Joy-Con kontrollereket igényel Android 12-es vagy újabb rendszeren. Alapértelmezés szerint ki van kapcsolva.</string>
     <string name="setup_tab_glasses">Okosszemüveg</string>
-    <string name="setup_glasses_scope">A kijelző és a fejkövetés beállításai megoszlanak a DroidDeck menükben, játékokban és asztali munkamenetekben.</string>
+    <string name="setup_glasses_scope">A kijelző és a fejkövetés beállításai megoszlanak a MaliDeck menükben, játékokban és asztali munkamenetekben.</string>
     <string name="setup_glasses_connect">Csatlakoztasd az okosszemüveget a kijelző és a követés beállításainak módosításához. A mentett beállítások a leválasztáskor is megmaradnak.</string>
     <string name="glasses_vr">VR</string>
     <string name="glasses_display_mode">Kijelző mód</string>
@@ -2847,7 +2847,7 @@
     <string name="glasses_resolution_hint">Kimeneti felbontás szemenként.</string>
     <string name="glasses_refresh_30_hint">Engedélyezze a Játék okosszemüvegen funkciót a kijelző natív 30 Hz-es módjának kiválasztásához.</string>
     <string name="glasses_3dof_hint">Lapos játékok rögzítése előtted, hogy körülnézhess. Engedélyezi a Játék okosszemüvegen funkciót 3D-re váltás nélkül.</string>
-    <string name="glasses_screen_app_wide">A szélesség és távolság azonnal frissíti a követett virtuális képernyőt a DroidDeck menükben, játékokban és asztali munkamenetekben.</string>
+    <string name="glasses_screen_app_wide">A szélesség és távolság azonnal frissíti a követett virtuális képernyőt a MaliDeck menükben, játékokban és asztali munkamenetekben.</string>
     <string name="glasses_head_tracking_spatial_vr_hint">A pozíciókövetés magában foglalja a fej elforgatását a SteamVR-ben. Csak elforgatásos követéshez kapcsolja ki a pozíciókövetést.</string>
     <string name="glasses_head_tracking_spatial_hint">A fej mozgását vezérli a virtuális képernyőn. A pozíciókövetés magában foglalja a fej elforgatását a SteamVR-ben.</string>
     <string name="glasses_quick_actions">Gyors műveletek</string>
@@ -2942,8 +2942,8 @@
     <string name="spatial_timing_values">%1$.1f Hz • kép kora %2$.1f ms • feldolgozás %3$.1f ms</string>
     <string name="spatial_input_values">Bemeneti korlát %1$.1f Hz • %2$.0f%% kamerakép. A fejkövetés a maximális frekvencián folytatódik.</string>
     <string name="spatial_frame_counts">%1$d feldolgozva • %2$d elvetve • %3$d kihagyva a beviteli korlát miatt</string>
-    <string name="spatial_print_job">DroidDeck ChArUco 30 mm</string>
-    <string name="spatial_print_title">DroidDeck – Luma Ultra kalibrálás</string>
+    <string name="spatial_print_job">MaliDeck ChArUco 30 mm</string>
+    <string name="spatial_print_title">MaliDeck – Luma Ultra kalibrálás</string>
     <string name="spatial_print_scale" formatted="false">Nyomtatás 100%/Tényleges méretben. Mindegyik négyzet: 30 mm (1,181 hüvelyk).</string>
     <string name="spatial_print_stationary">Tartsa a kalibrációs célt síkban és álló helyzetben; mozgassa az okosszemüveget a felvételek között.</string>
     <string name="spatial_print_check">Skálaellenőrzés: 100 mm (3,937 hüvelyk) a jelölések között</string>
@@ -3027,22 +3027,22 @@
     <string name="spatial_opencv_load_error">Az OpenCV betöltése nem sikerült</string>
     <string name="setup_group_memory">Memória</string>
     <string name="setup_clear_cached">Gyorsítótárazott alkalmazások bezárása munkamenet előtt</string>
-    <string name="setup_clear_cached_hint">Munkamenet indításakor a DroidDeck bezárja azokat az alkalmazásokat, amelyeket az Android a háttérben tart, így a játéknak több memória jut. A vezeték nélküli hibakeresésnek bekapcsolva kell lennie.</string>
-    <string name="setup_clear_cached_unpaired">A DroidDecket párosítani kell a vezeték nélküli hibakereséssel (Párosítás, lent).</string>
+    <string name="setup_clear_cached_hint">Munkamenet indításakor a MaliDeck bezárja azokat az alkalmazásokat, amelyeket az Android a háttérben tart, így a játéknak több memória jut. A vezeték nélküli hibakeresésnek bekapcsolva kell lennie.</string>
+    <string name="setup_clear_cached_unpaired">A MaliDecket párosítani kell a vezeték nélküli hibakereséssel (Párosítás, lent).</string>
     <string name="setup_memory_hud">Memóriakijelzés</string>
-    <string name="setup_memory_hud_hint">A használt memória és swap a munkamenet képernyőjén. A Speciális nézet szétbontja a játék, a DroidDeck, az Android és a GPU között.</string>
+    <string name="setup_memory_hud_hint">A használt memória és swap a munkamenet képernyőjén. A Speciális nézet szétbontja a játék, a MaliDeck, az Android és a GPU között.</string>
     <string name="setup_memory_hud_simple">Egyszerű</string>
     <string name="setup_memory_hud_advanced">Speciális</string>
     <string name="memory_hud_simple">RAM %1$s/%2$s GB · swap %3$s/%4$s GB</string>
-    <string name="memory_hud_split">játék %1$s · DroidDeck %2$s · Android %3$s GB</string>
+    <string name="memory_hud_split">játék %1$s · MaliDeck %2$s · Android %3$s GB</string>
     <string name="memory_hud_gpu">GPU %1$s GB</string>
     <string name="setup_bg_limit">Háttéralkalmazások munkamenet közben</string>
-    <string name="setup_bg_limit_hint">Munkamenet közben az Android legfeljebb ennyi alkalmazást tart a gyorsítótárban, a többit bezárja, így azok memóriája a játéké lesz. A munkamenet végén a DroidDeck visszaállítja a korábbi korlátot. A vezeték nélküli hibakeresésnek bekapcsolva kell lennie.</string>
+    <string name="setup_bg_limit_hint">Munkamenet közben az Android legfeljebb ennyi alkalmazást tart a gyorsítótárban, a többit bezárja, így azok memóriája a játéké lesz. A munkamenet végén a MaliDeck visszaállítja a korábbi korlátot. A vezeték nélküli hibakeresésnek bekapcsolva kell lennie.</string>
     <string name="setup_bg_limit_4">Legfeljebb 4</string>
     <string name="setup_bg_limit_1">Legfeljebb 1</string>
     <string name="setup_bg_limit_0">Nincs</string>
     <string name="setup_adb_pair">Vezeték nélküli hibakeresés</string>
-    <string name="setup_adb_pair_hint">Párosítja a DroidDecket az Android vezeték nélküli hibakeresésével a fenti beállításokhoz. A gyermekfolyamat-korlát kikapcsolva marad.</string>
+    <string name="setup_adb_pair_hint">Párosítja a MaliDecket az Android vezeték nélküli hibakeresésével a fenti beállításokhoz. A gyermekfolyamat-korlát kikapcsolva marad.</string>
     <string name="setup_adb_pair_button">Párosítás</string>
     <string name="glasses_3dof">3DoF virtuális képernyő</string>
     <string name="glasses_6dof">6DoF virtuális képernyő</string>

@@ -19,7 +19,7 @@ concurrency:
 jobs:
   find:
     name: find the main build
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/mali'
     runs-on: ubuntu-24.04
     outputs:
       run_id: ${{ steps.find.outputs.run_id }}
@@ -39,7 +39,7 @@ jobs:
           [[ $VERSION == "$name" || $VERSION == "$name"-* ]] || {
             echo "::error::version '$VERSION' does not match versionName '$name' in app/build.gradle: bump versionName and versionCode first"; exit 1;
           }
-          runs=$(gh run list -R "$GITHUB_REPOSITORY" --workflow build.yml --branch main --commit "$GITHUB_SHA" \
+          runs=$(gh run list -R "$GITHUB_REPOSITORY" --workflow build.yml --branch ${{ github.ref_name }} --commit "$GITHUB_SHA" \
                    --status success --json databaseId,event,headSha -L 20)
           id=$(jq -r --arg sha "$GITHUB_SHA" \
                  '[.[] | select(.headSha == $sha and (.event == "push" or .event == "workflow_dispatch"))][0].databaseId // empty' <<<"$runs")

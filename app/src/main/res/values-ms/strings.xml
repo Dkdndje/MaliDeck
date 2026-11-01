@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="steamvr_recovery_title">Grafik SteamVR terhenti</string>
-    <string name="steamvr_recovery_countdown">DroidDeck akan dimulakan semula dalam %1$d saat untuk menetapkan semula grafik dan membuka SteamVR sekali lagi. Permainan yang sedang berjalan akan ditutup; kemajuan yang belum disimpan tidak dapat dipulihkan.</string>
+    <string name="steamvr_recovery_countdown">MaliDeck akan dimulakan semula dalam %1$d saat untuk menetapkan semula grafik dan membuka SteamVR sekali lagi. Permainan yang sedang berjalan akan ditutup; kemajuan yang belum disimpan tidak dapat dipulihkan.</string>
     <string name="steamvr_recovery_repeated">Ralat grafik berlaku lagi selepas dimulakan semula baru-baru ini. Pemulihan automatik dijeda untuk mengelakkan gelung. Memulakan semula akan menutup permainan anda; kemajuan yang belum disimpan tidak dapat dipulihkan.</string>
     <string name="steamvr_recovery_restart">Mulakan semula sekarang</string>
     <string name="steamvr_recovery_cancel">Biarkan terbuka</string>
     <string name="steamvr_recovery_restarting">Menetapkan semula grafik dan membuka SteamVR sekali lagi…</string>
-    <string name="steamvr_recovery_failed">DroidDeck tidak dapat dimulakan semula secara automatik. Tutup apl sepenuhnya, kemudian buka semula.</string>
-    <string name="app_name">DroidDeck</string>
+    <string name="steamvr_recovery_failed">MaliDeck tidak dapat dimulakan semula secara automatik. Tutup apl sepenuhnya, kemudian buka semula.</string>
+    <string name="app_name">MaliDeck</string>
     <string-array name="loading_hints">
         <item>Larian pertama memuat turun Steam. Ini mungkin mengambil beberapa minit.</item>
         <item>Secara lalai, meninggalkan apl ini menjedakan Steam; ia menyambung semula dari tempat ia berhenti apabila anda kembali.</item>
@@ -139,7 +139,7 @@
     <string name="user_apps_remove_confirm">Tekan sekali lagi untuk alih keluar</string>
     <string name="user_apps_stop_session">Hentikan sesi untuk alih keluar</string>
     <string name="user_apps_script_linked">Menjalankan %1$s daripada folder asalnya, dipautkan ke dalam sesi di tempat ia berada. Mengalih keluar apl ini tidak mengubah folder tersebut.</string>
-    <string name="user_apps_script_copied">Menjalankan %1$s daripada salinan foldernya dalam DroidDeck. Mengalih keluar apl ini memadam salinan tersebut, bukan yang asal.</string>
+    <string name="user_apps_script_copied">Menjalankan %1$s daripada salinan foldernya dalam MaliDeck. Mengalih keluar apl ini memadam salinan tersebut, bukan yang asal.</string>
     <string name="user_apps_runtime_required">Pasang runtime Linux dahulu</string>
     <string name="user_apps_file_gone">Fail itu sudah tiada</string>
     <string name="user_apps_no_space">Ruang kosong tidak mencukupi: menyalin folder memerlukan %1$s</string>
@@ -174,7 +174,7 @@
     <string name="app_fex_off">Mati</string>
     <string name="app_fex_hint">FEX menjalankan program Linux x86 pada peranti ARM64 ini. Auto menggunakannya apabila program dibina untuk x86.</string>
     <string name="app_fex_x86">%1$s melalui FEX</string>
-    <string name="app_fex_not_ready">Program ini dibina untuk PC %1$s dan berjalan melalui FEX, yang belum disediakan lagi. Buka Steam sekali semasa anda log masuk: DroidDeck akan memuat turun FEX dan Steam Linux Runtime yang diperlukan, kemudian ini akan dibuka.</string>
+    <string name="app_fex_not_ready">Program ini dibina untuk PC %1$s dan berjalan melalui FEX, yang belum disediakan lagi. Buka Steam sekali semasa anda log masuk: MaliDeck akan memuat turun FEX dan Steam Linux Runtime yang diperlukan, kemudian ini akan dibuka.</string>
     <string name="session_end_program">Program ini</string>
     <string name="session_end_steam_download">Tidak dapat memuat turun klien Steam. Rangkaian atau VPN anda mungkin menyekat pelayan Steam; semak sambungan dan cuba lagi.</string>
     <string name="session_end_steam_setup">Tidak dapat menyediakan klien Steam. Semak sambungan dan ruang storan kosong, kemudian cuba lagi.</string>
@@ -211,13 +211,13 @@
     <string name="edit_app_save">Simpan</string>
     <string name="add_app_checking_folder">Menyemak folder…</string>
     <string name="add_app_folder_linked">Foldernya dipautkan ke dalam sesi: %1$s</string>
-    <string name="add_app_folder_copied">Foldernya menyimpan program Linux, yang tidak dapat dijalankan oleh storan kongsi, jadi ia disalin ke dalam DroidDeck (%1$s).</string>
+    <string name="add_app_folder_copied">Foldernya menyimpan program Linux, yang tidak dapat dijalankan oleh storan kongsi, jadi ia disalin ke dalam MaliDeck (%1$s).</string>
     <string name="add_app_confirm">Tambah</string>
     <string name="add_app_cancel">Batal</string>
     <string name="add_app_runtime_required">Pasang runtime Linux daripada Persediaan dahulu.</string>
     <string name="add_app_busy">Tunggu %1$s selesai.</string>
     <string name="steam_compat_label">Serasi</string>
-    <string name="proton_compatible_note">Binaan yang ditanda “%1$s” dalam menu Compatibility Steam mempunyai pembaikan prefix DroidDeck dan boleh memulakan permainan di sini. Lalai adalah Proton Experimental ARM64 (%1$s), atau Proton 11.0 ARM64 (%1$s) sebaik sahaja binaan terbaharu itu dipasang. Entri Proton asal Valve tanpa tanda ini tidak boleh memulakan permainan pada peranti ini.</string>
+    <string name="proton_compatible_note">Binaan yang ditanda “%1$s” dalam menu Compatibility Steam mempunyai pembaikan prefix MaliDeck dan boleh memulakan permainan di sini. Lalai adalah Proton Experimental ARM64 (%1$s), atau Proton 11.0 ARM64 (%1$s) sebaik sahaja binaan terbaharu itu dipasang. Entri Proton asal Valve tanpa tanda ini tidak boleh memulakan permainan pada peranti ini.</string>
     <string name="proton_installed_compatible">Dipasang %1$s · %2$s</string>
     <string name="common_cancel">Batal</string>
     <string name="common_auto">Auto</string>
@@ -307,8 +307,8 @@
     <string name="mode_background_downloads_hint">Lambatkan penjedaan latar belakang semasa Steam aktif memuat turun.</string>
     <string name="mode_suspend_note">Auto menjeda di latar belakang dan menyambung semula apabila dipaparkan. Manual menunggu Sambung. Jangan sekali-kali terus berjalan.</string>
     <string name="mode_startup">Permulaan</string>
-    <string name="mode_steam_startup">Mulakan Steam bersama DroidDeck</string>
-    <string name="mode_steam_startup_hint">Membuka sesi Steam apabila DroidDeck dilancarkan.</string>
+    <string name="mode_steam_startup">Mulakan Steam bersama MaliDeck</string>
+    <string name="mode_steam_startup_hint">Membuka sesi Steam apabila MaliDeck dilancarkan.</string>
     <string name="mode_decky">Decky</string>
     <string name="mode_decky_checking">Menyemak keluaran…</string>
     <string name="mode_decky_ready">Sedia untuk memasang %1$s.</string>
@@ -399,7 +399,7 @@
     <string name="mode_wifi_open_settings">Buka tetapan</string>
     <string name="mode_wifi_continue">Teruskan</string>
     <string name="mode_wifi_explain_title">Aktifkan penemuan Wi-Fi?</string>
-    <string name="mode_wifi_explain_text">Android memerlukan kebenaran Lokasi untuk membaca nama Wi-Fi dan menemui rangkaian berdekatan. DroidDeck menggunakan akses ini untuk menunjukkan rangkaian tersebut dalam Steam. Kami tidak menjejaki lokasi anda. Akses internet berfungsi tanpa kebenaran ini.</string>
+    <string name="mode_wifi_explain_text">Android memerlukan kebenaran Lokasi untuk membaca nama Wi-Fi dan menemui rangkaian berdekatan. MaliDeck menggunakan akses ini untuk menunjukkan rangkaian tersebut dalam Steam. Kami tidak menjejaki lokasi anda. Akses internet berfungsi tanpa kebenaran ini.</string>
     <string name="mode_storage">Storan permainan</string>
     <string name="mode_storage_auto">Automatik - kad SD jika ada, serta folder Games anda</string>
     <string name="mode_storage_auto_none">Automatik - folder Games anda, serta kad SD jika ada (tiada sekarang)</string>
@@ -501,7 +501,7 @@
     <string name="comp_applies_next_game">Berkuat kuasa pada permulaan permainan seterusnya</string>
     <string name="comp_import_zip">Import .zip</string>
     <string name="comp_reading">Membaca Proton…</string>
-    <string name="comp_no_proton">Tiada Proton dipasang lagi. Mulakan Steam sekali untuk memuat turun Proton ARM64-nya, atau tambah GE-Proton, CachyOS atau DroidDeck-Proton daripada Persediaan.</string>
+    <string name="comp_no_proton">Tiada Proton dipasang lagi. Mulakan Steam sekali untuk memuat turun Proton ARM64-nya, atau tambah GE-Proton, CachyOS atau MaliDeck-Proton daripada Persediaan.</string>
     <string name="comp_original">Asal · %1$s</string>
     <string name="comp_this_build">%1$s · binaan ini</string>
     <string name="comp_earlier_build">%1$s · binaan terdahulu</string>
@@ -519,7 +519,7 @@
     <string name="comp_nightlies_count">Pada Nightlies · %1$d</string>
     <string name="comp_channel_stable">Stabil</string>
     <string name="comp_channel_nightly">Nightly</string>
-    <string name="comp_refresh_to_list">Segarkan semula untuk menyenaraikan pakej pada Nightlies dan DroidDeck.</string>
+    <string name="comp_refresh_to_list">Segarkan semula untuk menyenaraikan pakej pada Nightlies dan MaliDeck.</string>
     <string name="comp_nothing_new">Tiada apa-apa yang baharu sejak semakan terakhir.</string>
     <string name="comp_import_wcp">Import .wcp</string>
     <string name="comp_restore_original">Pulihkan yang asal bagi Proton ini</string>
@@ -751,7 +751,7 @@
     <string name="setup_language_system">Lalai sistem (%1$s)</string>
     <string name="setup_language_system_short">Lalai sistem</string>
     <string name="setup_app_scale">Skala apl</string>
-    <string name="setup_app_scale_hint">Teks dan kawalan DroidDeck</string>
+    <string name="setup_app_scale_hint">Teks dan kawalan MaliDeck</string>
     <string name="setup_app_scale_default">%1$d%% (Lalai)</string>
     <string name="setup_theme">Tema</string>
     <string name="setup_theme_hint">Rupa pelancar</string>
@@ -759,8 +759,8 @@
     <string name="setup_launcher_icon_dark">Gelap</string>
     <string name="setup_launcher_icon_light">Cerah</string>
     <string name="setup_home">Gunakan sebagai skrin Utama</string>
-    <string name="setup_home_on">DroidDeck boleh menjadi apl Utama</string>
-    <string name="setup_home_off">DroidDeck tidak sekali-kali ditawarkan sebagai apl Utama</string>
+    <string name="setup_home_on">MaliDeck boleh menjadi apl Utama</string>
+    <string name="setup_home_off">MaliDeck tidak sekali-kali ditawarkan sebagai apl Utama</string>
     <string name="setup_orientation">Orientasi</string>
     <string name="setup_orientation_auto">Lanskap automatik</string>
     <string name="setup_orientation_landscape">Lanskap</string>
@@ -839,16 +839,16 @@
     <string name="store_website">Laman web</string>
     <string name="store_verified">Disahkan</string>
     <string name="upd_title">Kemas kini</string>
-    <string name="upd_build">DroidDeck %1$s · %2$s</string>
+    <string name="upd_build">MaliDeck %1$s · %2$s</string>
     <string name="upd_checked">Disemak %1$s</string>
     <string name="upd_not_checked">Belum disemak</string>
-    <string name="upd_perm_title">Benarkan DroidDeck mengemas kini sendiri</string>
+    <string name="upd_perm_title">Benarkan MaliDeck mengemas kini sendiri</string>
     <string name="upd_perm_text">Pada skrin seterusnya, hidupkan Benarkan daripada sumber ini, kemudian kembali semula. Kemas kini akan diteruskan secara automatik.</string>
     <string name="upd_open_settings">Buka tetapan</string>
     <string name="upd_not_now">Bukan sekarang</string>
     <string name="upd_signed_status">Ditandatangani berbeza</string>
     <string name="upd_signed_headline">Tidak boleh dikemas kini di tempat</string>
-    <string name="upd_signed_detail">Salinan ini tidak ditandatangani dengan kunci keluaran DroidDeck, jadi kemas kini tidak boleh dipasang menggantikannya. Nyahpasang untuk bertukar.</string>
+    <string name="upd_signed_detail">Salinan ini tidak ditandatangani dengan kunci keluaran MaliDeck, jadi kemas kini tidak boleh dipasang menggantikannya. Nyahpasang untuk bertukar.</string>
     <string name="upd_available">Kemas kini tersedia</string>
     <string name="upd_blocked_status">Tidak boleh dipasang</string>
     <string name="upd_switch">Sedia untuk bertukar</string>
@@ -870,7 +870,7 @@
     <string name="upd_stop_session">Hentikan sesi yang berjalan untuk mengemas kini.</string>
     <string name="upd_less">Kurang</string>
     <string name="upd_more">Lagi</string>
-    <string name="upd_new_stable">DroidDeck %1$s</string>
+    <string name="upd_new_stable">MaliDeck %1$s</string>
     <string name="upd_new_preview">Binaan Preview baharu</string>
     <string name="upd_new_test">Binaan ujian PR #%1$d</string>
     <string name="upd_mb">%1$d MB</string>
@@ -885,7 +885,7 @@
     <string name="upd_tests_hint">Cuba pembetulan sebelum dikeluarkan</string>
     <string name="upd_tests_none">Tiada pada masa ini</string>
     <string name="upd_pr">PR #%1$d</string>
-    <string name="upd_not_built">Tidak dibina untuk salinan DroidDeck ini</string>
+    <string name="upd_not_built">Tidak dibina untuk salinan MaliDeck ini</string>
     <string name="upd_updated">Dikemas kini %1$s</string>
     <string name="upd_test_name">ujian PR #%1$d</string>
     <string name="upd_while_ago">beberapa ketika dahulu</string>
@@ -905,13 +905,13 @@
     <string name="gate_fix_for_me">Betulkan untuk saya</string>
     <string name="gate_toggle_steps">Hidupkan “Lumpuhkan sekatan proses anak”, kemudian kembali semula. Biarkan Pilihan pembangun hidup, atau suis itu akan mati semula.</string>
     <string name="gate_open_dev">Buka Pilihan pembangun</string>
-    <string name="gate_no_toggle">Versi Android ini tidak mempunyai suis untuknya, jadi DroidDeck menukarnya melalui Debugging Wayarles. Mengambil masa kira-kira seminit, tanpa komputer diperlukan.</string>
+    <string name="gate_no_toggle">Versi Android ini tidak mempunyai suis untuknya, jadi MaliDeck menukarnya melalui Debugging Wayarles. Mengambil masa kira-kira seminit, tanpa komputer diperlukan.</string>
     <string name="gate_needs_wifi">Debugging Wayarles memerlukan Wi-Fi. Mana-mana rangkaian berfungsi; ia tidak memerlukan internet.</string>
-    <string name="gate_needs_notifications">Kod gandingan dihantar dalam pemberitahuan. Benarkan pemberitahuan untuk DroidDeck, atau gunakan Cara lain.</string>
+    <string name="gate_needs_notifications">Kod gandingan dihantar dalam pemberitahuan. Benarkan pemberitahuan untuk MaliDeck, atau gunakan Cara lain.</string>
     <string name="gate_allow_notifications">Benarkan pemberitahuan</string>
     <string name="gate_step1">Buka Tetapan → Pilihan pembangun → Debugging Wayarles dan hidupkannya</string>
     <string name="gate_step2">Ketik “Gandingkan peranti dengan kod gandingan”</string>
-    <string name="gate_step3">Taip kod itu ke dalam pemberitahuan DroidDeck</string>
+    <string name="gate_step3">Taip kod itu ke dalam pemberitahuan MaliDeck</string>
     <string name="gate_waiting">Menunggu tetingkap timbul gandingan…</string>
     <string name="gate_code_needed">Tetingkap timbul dijumpai. Masukkan kodnya dalam pemberitahuan.</string>
     <string name="gate_status">Status</string>
@@ -1029,7 +1029,7 @@
     <string name="desktop_removing">Mengalih keluar desktop</string>
     <string name="desktop_removed">Desktop dialih keluar</string>
     <string name="desktop_cleaning_legacy">Mengalih keluar fail LXQt lama</string>
-    <string name="desktop_removal_unknown">Kemas kini DroidDeck sebelum mengalih keluar versi desktop ini.</string>
+    <string name="desktop_removal_unknown">Kemas kini MaliDeck sebelum mengalih keluar versi desktop ini.</string>
     <string name="content_linux_desktop">Desktop Linux</string>
     <string name="content_linux_desktop_hint">KDE Plasma, Firefox dan emulator anda</string>
     <string name="games_empty">Permainan yang anda pasang dalam Steam muncul di sini selepas sesi.</string>
@@ -1074,7 +1074,7 @@
     <string name="gpu_auto_by_gpu">Auto - dipilih mengikut GPU</string>
     <string name="gpu_manage">Muat turun, import atau padam…</string>
     <string name="gpu_in_use_caps">SEDANG DIGUNAKAN</string>
-    <string name="gpu_builtin">Pemacu terbina dalam DroidDeck</string>
+    <string name="gpu_builtin">Pemacu terbina dalam MaliDeck</string>
     <string name="gpu_matched_pair">Pemacu masa jalan dan paparan ditetapkan bersama sebagai pasangan sepadan.</string>
     <string name="gpu_recommended_for">Disyorkan untuk GPU ini: %1$s.</string>
     <string name="gpu_refresh_hint">Segarkan untuk mencari pemacu bagi GPU ini.</string>
@@ -1177,7 +1177,7 @@
     <string name="unfolded_controls_hint">Terbuka, permainan terletak di atas trackpad dan pemegang belakang Steam Deck. Dilipat, permainan menjadi skrin penuh.</string>
     <string name="pip_suspended">Digantung</string>
     <string name="pip_not_ready">Gambar dalam gambar tersedia sebaik sahaja sesi sedia.</string>
-    <string name="pip_permission">Benarkan gambar dalam gambar untuk DroidDeck dalam tetapan Android.</string>
+    <string name="pip_permission">Benarkan gambar dalam gambar untuk MaliDeck dalam tetapan Android.</string>
     <string name="pip_unavailable">Android tidak dapat membuka gambar dalam gambar.</string>
     <string name="game_shortcut">Pintasan</string>
     <string name="game_shortcut_add">Tambah ke skrin utama</string>
@@ -1187,7 +1187,7 @@
     <string name="game_link_copied">Pautan pelancaran disalin</string>
     <string name="game_shortcut_unsupported">Pelancar ini tidak dapat menambah pintasan. Gunakan Salin pautan pelancaran sebaliknya.</string>
     <string name="game_link_invalid">Pautan pelancaran permainan tidak sah.</string>
-    <string name="game_link_missing">Permainan ini tidak lagi berada dalam pustaka DroidDeck anda.</string>
+    <string name="game_link_missing">Permainan ini tidak lagi berada dalam pustaka MaliDeck anda.</string>
     <string name="game_link_session_busy">Hentikan sesi semasa sebelum melancarkan permainan Steam.</string>
     <string name="game_link_failed">Tidak dapat menghantar permainan ke Steam. Cuba lancarkan semula.</string>
     <string name="setup_retry_removal">Cuba semula pengalihan keluar</string>
@@ -1210,7 +1210,7 @@
         <item quantity="other">Mengimport %1$d fail daripada %2$s ke %3$s</item>
     </plurals>
     <plurals name="main_saves_imported_backup">
-        <item quantity="other">Mengimport %1$d fail daripada %2$s ke %3$s. Simpanan lama disandarkan ke Download/DroidDeck/Saves/backups</item>
+        <item quantity="other">Mengimport %1$d fail daripada %2$s ke %3$s. Simpanan lama disandarkan ke Download/MaliDeck/Saves/backups</item>
     </plurals>
     <string name="main_saves_pick_zip">Pilih zip simpanan untuk %1$s</string>
     <string name="main_saves_exporting">Mengeksport %1$s</string>
@@ -1266,7 +1266,7 @@
 
     <string name="upd_unknown_apps_failed">Tidak dapat membuka tetapan “Pasang apl tidak diketahui” Android</string>
     <string name="upd_couldnt_check">Tidak dapat menyemak: %1$s</string>
-    <string name="upd_no_download">Binaan ini tidak mempunyai muat turun untuk salinan DroidDeck ini</string>
+    <string name="upd_no_download">Binaan ini tidak mempunyai muat turun untuk salinan MaliDeck ini</string>
     <string name="upd_stop_first">Hentikan sesi yang berjalan dahulu, kemudian kemas kini</string>
     <string name="upd_stage_downloading">Memuat turun</string>
     <string name="upd_stage_installing">Memasang</string>
@@ -1295,22 +1295,22 @@
     <string name="drivers_recommended_unpublished">Pemacu yang disyorkan tidak diterbitkan sekarang</string>
     <string name="drivers_downloading_pair">Memuat turun %1$s %2$s…</string>
     <string name="drivers_updated_to">Dikemas kini ke %1$s %2$s.</string>
-    <string name="drivers_updated_to_restart">Dikemas kini ke %1$s %2$s. Pemacu paparan berkuat kuasa selepas DroidDeck dimulakan semula.</string>
+    <string name="drivers_updated_to_restart">Dikemas kini ke %1$s %2$s. Pemacu paparan berkuat kuasa selepas MaliDeck dimulakan semula.</string>
     <string name="drivers_auto_waits_for_session">Kemas kini pemacu menunggu sesi berhenti.</string>
     <string name="drivers_auto_waits_for_network">%1$s %2$s akan dimuat turun selepas anda keluar daripada data mudah alih dan penjimat bateri.</string>
     <string name="drivers_skipping_bad">%1$s %2$s tidak memulakan sesi di sini, jadi Automatik kekal dengan pemacu yang berjaya.</string>
     <string name="drivers_rolled_back">%1$s gagal memulakan sesi dua kali, jadi Automatik kembali kepada pemacu yang berfungsi.</string>
     <string name="drivers_switched_to">Ditukar ke %1$s %2$s.</string>
-    <string name="drivers_switched_to_restart">Ditukar ke %1$s %2$s. Pemacu paparan berkuat kuasa selepas DroidDeck dimulakan semula.</string>
+    <string name="drivers_switched_to_restart">Ditukar ke %1$s %2$s. Pemacu paparan berkuat kuasa selepas MaliDeck dimulakan semula.</string>
     <string name="drivers_using">Menggunakan %1$s %2$s.</string>
-    <string name="drivers_using_restart">Menggunakan %1$s %2$s. Pemacu paparan berkuat kuasa selepas DroidDeck dimulakan semula.</string>
+    <string name="drivers_using_restart">Menggunakan %1$s %2$s. Pemacu paparan berkuat kuasa selepas MaliDeck dimulakan semula.</string>
     <string name="drivers_using_quest">Pemacu paparan bawaan Quest dan runtime lalai sedang digunakan.</string>
-    <string name="drivers_using_quest_restart">Pemacu paparan bawaan Quest dan runtime lalai sedang digunakan. Pemacu paparan berkuat kuasa selepas DroidDeck dimulakan semula.</string>
+    <string name="drivers_using_quest_restart">Pemacu paparan bawaan Quest dan runtime lalai sedang digunakan. Pemacu paparan berkuat kuasa selepas MaliDeck dimulakan semula.</string>
     <string name="drivers_not_a_driver">Bukan zip pemacu: bukan pemacu AdrenoTools, Turnip -Linux, atau gabungan Android + Linux</string>
     <string name="drivers_import_failed">Import gagal: %1$s</string>
     <string name="drivers_imported_unnamed">Pemacu diimport</string>
     <string name="drivers_using_bundle">Menggunakan %1$s sebagai pemacu masa jalan dan paparan.</string>
-    <string name="drivers_using_bundle_restart">Menggunakan %1$s sebagai pemacu masa jalan dan paparan. Pemacu paparan berkuat kuasa selepas DroidDeck dimulakan semula.</string>
+    <string name="drivers_using_bundle_restart">Menggunakan %1$s sebagai pemacu masa jalan dan paparan. Pemacu paparan berkuat kuasa selepas MaliDeck dimulakan semula.</string>
     <string name="drivers_deleted_bundle">%1$s dipadam (kedua-dua pemacu)</string>
     <string name="drivers_deleted">%1$s dipadam</string>
     <string name="drivers_release_status">Terkini: %1$s · disemak %2$s</string>
@@ -1324,7 +1324,7 @@
     <plurals name="drivers_ago_days">
         <item quantity="other">%1$d hari lalu</item>
     </plurals>
-    <string name="drivers_checking_sources">Menyemak Banners-Turnip, WinNative dan DroidDeck…</string>
+    <string name="drivers_checking_sources">Menyemak Banners-Turnip, WinNative dan MaliDeck…</string>
     <string name="drivers_check_failed">semakan gagal</string>
     <string name="drivers_installed_pick_either">%1$s dipasang - pilih dalam mana-mana senarai untuk menetapkan kedua-dua pemacu</string>
     <string name="drivers_installed_pick">%1$s dipasang - pilih dalam menu</string>
@@ -1710,7 +1710,7 @@
     <string name="adbfix_no_pairing">Tiada gandingan Debugging Wayarles disimpan</string>
     <string name="adbfix_enter_address">Masukkan alamat IP &amp; Port Debugging Wayarles semasa</string>
 
-    <string name="adbpair_timed_out">Masa tamat menunggu tetingkap timbul gandingan. Cuba lagi daripada DroidDeck.</string>
+    <string name="adbpair_timed_out">Masa tamat menunggu tetingkap timbul gandingan. Cuba lagi daripada MaliDeck.</string>
     <string name="adbpair_discovery_failed_code">Tidak dapat mencari tetingkap timbul gandingan (%1$d). Semak Wi-Fi dihidupkan.</string>
     <string name="adbpair_discovery_failed">Tidak dapat mencari tetingkap timbul gandingan: %1$s</string>
     <string name="adbpair_six_digits">Masukkan kesemua 6 digit kod</string>
@@ -1732,20 +1732,20 @@
     <string name="adbpair_enter_code">Masukkan kod</string>
     <string name="adbpair_title_working">Menyediakan Steam</string>
     <string name="adbpair_title_done">Steam sedia</string>
-    <string name="adbpair_done_text">Ketik untuk kembali ke DroidDeck. Anda boleh matikan Debugging Wayarles sekarang.</string>
+    <string name="adbpair_done_text">Ketik untuk kembali ke MaliDeck. Anda boleh matikan Debugging Wayarles sekarang.</string>
     <string name="adbpair_title_failed">Persediaan Debugging Wayarles terhenti</string>
 
     <string name="selfinst_download_failed">Muat turun gagal</string>
     <string name="selfinst_size_mismatch">Saiz muat turun tidak sepadan dengan APK yang diterbitkan dan telah dibuang - cuba lagi</string>
     <string name="selfinst_checksum_mismatch">Muat turun tidak sepadan dengan checksumnya dan telah dibuang - cuba lagi</string>
     <string name="selfinst_wrong_package">Kemas kini ini untuk pakej Android %1$s, bukan %2$s</string>
-    <string name="selfinst_metadata_signer">Metadata kemas kini tidak menamakan kunci tandatangan keluaran DroidDeck</string>
+    <string name="selfinst_metadata_signer">Metadata kemas kini tidak menamakan kunci tandatangan keluaran MaliDeck</string>
     <string name="selfinst_unreadable">Android tidak dapat membaca APK yang dimuat turun</string>
     <string name="selfinst_apk_wrong_package">APK yang dimuat turun untuk %1$s, bukan %2$s</string>
     <string name="selfinst_version_mismatch">APK yang dimuat turun menyatakan versionCode %1$d, bukan %2$d yang diterbitkan</string>
     <string name="selfinst_downgrade">Android tidak akan memasang versionCode %1$d menggantikan %2$d yang dipasang</string>
     <string name="selfinst_no_signing">APK yang dimuat turun tidak mempunyai maklumat tandatangan</string>
-    <string name="selfinst_wrong_signer">APK yang dimuat turun tidak ditandatangani dengan kunci keluaran DroidDeck</string>
+    <string name="selfinst_wrong_signer">APK yang dimuat turun tidak ditandatangani dengan kunci keluaran MaliDeck</string>
     <string name="appupd_http">Katalog kemas kini menjawab HTTP %1$d</string>
 
     <string name="loadstate_starting">Memulakan sesi…</string>
@@ -1791,7 +1791,7 @@
     <string name="cmgr_original_kept">Asal binaan yang dipasang dikekalkan: itulah jalan kembali.</string>
     <string name="cmgr_not_stored">Tidak disimpan</string>
     <string name="cmgr_deleted_original">Asal %1$s bagi %2$s telah dipadam.</string>
-    <string name="cmgr_nightlies_only">Muat turun hanya datang daripada keluaran Nightlies dan DroidDeck</string>
+    <string name="cmgr_nightlies_only">Muat turun hanya datang daripada keluaran Nightlies dan MaliDeck</string>
     <string name="cmgr_nightly_replaced">Muat turun gagal: binaan nightly ini mungkin telah diganti dengan yang lebih baharu. Segarkan semula senarai dan cuba lagi.</string>
     <string name="cmgr_list_predates_checksums">Senarai pakej ini mendahului checksum - segarkan dan cuba lagi</string>
     <string name="cmgr_checksum_mismatch">Checksum tidak sepadan</string>
@@ -1830,7 +1830,7 @@
     <string name="gpuinfo_supported">Disokong</string>
     <string name="gpuinfo_experimental">Eksperimen: pemacunya ialah binaan ujian</string>
     <string name="gpuinfo_below_tested">Di bawah perkakasan yang diuji (Adreno 725 dan lebih baharu): mungkin tidak dapat berjalan</string>
-    <string name="gpuinfo_unsupported">Tidak disokong: DroidDeck memerlukan GPU Adreno (Snapdragon)</string>
+    <string name="gpuinfo_unsupported">Tidak disokong: MaliDeck memerlukan GPU Adreno (Snapdragon)</string>
 
     <string name="turnip_rate_limited">Had kadar GitHub dicapai - cuba lagi kemudian</string>
     <string name="turnip_github_http">GitHub menjawab HTTP %1$d</string>
@@ -1873,10 +1873,10 @@
     <string name="phantom_instructions_not_applicable">Versi Android ini tidak menggunakan had ini.</string>
     <string name="phantom_fix_toggle">Hidupkan “Lumpuhkan sekatan proses anak” dalam Pilihan pembangun, dan biarkan Pilihan pembangun hidup selepas itu.</string>
     <string name="phantom_fix_no_toggle">Versi Android ini tidak mempunyai suis untuknya. Gunakan Debugging Wayarles untuk menukarnya daripada peranti ini.</string>
-    <string name="upd_block_no_apk">Binaan ini tidak mempunyai muat turun untuk salinan DroidDeck ini.</string>
+    <string name="upd_block_no_apk">Binaan ini tidak mempunyai muat turun untuk salinan MaliDeck ini.</string>
     <string name="upd_block_version_code">Android tidak akan memasangnya menggantikan binaan ini kerana versionCode %1$d lebih rendah daripada %2$d yang dipasang.</string>
     <string name="upd_fail_downgrade">Android tidak akan memasang versi lama menggantikan versi baharu. Kekal pada binaan ini sehingga saluran menyusul.</string>
-    <string name="upd_fail_signature">Salinan DroidDeck ini ditandatangani secara berbeza (binaan tempatan?), jadi Android tidak akan mengemas kininya di tempat.</string>
+    <string name="upd_fail_signature">Salinan MaliDeck ini ditandatangani secara berbeza (binaan tempatan?), jadi Android tidak akan mengemas kininya di tempat.</string>
     <string name="upd_fail_storage">Tidak cukup ruang bebas untuk kemas kini.</string>
     <string name="upd_fail_aborted">Kemas kini telah dibatalkan.</string>
     <string name="upd_fail_with_message">Kemas kini tidak terpasang: %1$s</string>
@@ -1901,7 +1901,7 @@
     <string name="gstore_volume_free">%1$s · %2$s bebas</string>
     <string name="mode_storage_auto_short">Automatik</string>
     <string name="appupd_catalog_rejected">Katalog kemas kini gagal semakannya (%1$s)</string>
-    <string name="main_adb_clip_label">Tetapan proses anak DroidDeck</string>
+    <string name="main_adb_clip_label">Tetapan proses anak MaliDeck</string>
     <string name="setup_signed_in_offline_unnamed">Dilog masuk · mod luar talian</string>
     <string name="setup_signed_in_unnamed">Dilog masuk</string>
     <string name="driver_tag_bundled">TERBUNDLE</string>
@@ -2277,7 +2277,7 @@
     <string name="gpu_display_next">Melukis skrin. Berkuat kuasa mulai sesi seterusnya.</string>
     <string name="gpu_previous_driver">pemacu sebelum ini</string>
     <string name="gpu_restart_banner">Mula semula untuk menukar pemacu paparan.</string>
-    <string name="gpu_restart_blocked">Hentikan sesi semasa dan mula semula DroidDeck untuk menukar pemacu paparan.</string>
+    <string name="gpu_restart_blocked">Hentikan sesi semasa dan mula semula MaliDeck untuk menukar pemacu paparan.</string>
     <string name="gpu_restart_now">Mula semula sekarang</string>
     <string name="gpu_restart_later">Kemudian</string>
     <string name="gpu_auto_title">Automatik memilih pasangan ini untuk %1$s anda</string>
@@ -2353,7 +2353,7 @@
     <string name="touch_speed_normal">Biasa</string>
     <string name="touch_speed_fast">Pantas</string>
     <string name="touch_edit_layout">Edit susun atur</string>
-    <string name="touch_droiddeck_menu">Menu DroidDeck</string>
+    <string name="touch_droiddeck_menu">Menu MaliDeck</string>
     <string name="touch_drag_hint">Seret kawalan ke skrin</string>
     <string name="touch_arrange">Susun</string>
     <string name="touch_discard">Buang</string>
@@ -2417,7 +2417,7 @@
     <string name="glasses_driver_missing">Binaan ini tidak menyertakan pemacu untuk cermin mata ini.</string>
     <string name="glasses_connection_failed">Tidak dapat menyambung ke cermin mata. Sambungkan semula kabel atau ketik Benarkan untuk mencuba lagi.</string>
     <string name="glasses_allow">Benarkan</string>
-    <string name="glasses_allow_hint">Benarkan DroidDeck menetapkan kadar penyegaran, mod 3D, kecerahan, kelantangan dan peredup kanta cermin mata, serta membaca penjejakan kepalanya.</string>
+    <string name="glasses_allow_hint">Benarkan MaliDeck menetapkan kadar penyegaran, mod 3D, kecerahan, kelantangan dan peredup kanta cermin mata, serta membaca penjejakan kepalanya.</string>
     <string name="glasses_asking">Menunggu anda membenarkannya dalam dialog Android…</string>
     <string name="glasses_denied">Kawalan ditolak. Benarkannya untuk menukar tetapan cermin mata.</string>
     <string name="glasses_no_control">Cermin mata ini memaparkan permainan, tetapi tetapannya tidak boleh ditukar dari sini.</string>
@@ -2573,7 +2573,7 @@
     <string name="storage_internal">Storan dalaman</string>
     <string name="storage_used_of">%1$s daripada %2$s digunakan</string>
     <string name="storage_free">%1$s kosong</string>
-    <string name="storage_droiddeck_uses">DroidDeck menggunakan %1$s. Diukur pada %2$s.</string>
+    <string name="storage_droiddeck_uses">MaliDeck menggunakan %1$s. Diukur pada %2$s.</string>
     <string name="storage_rescanning">mengimbas semula…</string>
     <string name="storage_other_apps">Aplikasi Android lain</string>
     <string name="storage_safe_now">Boleh dikosongkan sekarang</string>
@@ -2592,7 +2592,7 @@
     <string name="storage_desktop_hint">Aplikasi dan runtime Flatpak</string>
     <string name="storage_system">Sistem Linux dan klien Steam</string>
     <string name="storage_system_hint">Diperlukan untuk apa-apa berjalan</string>
-    <string name="storage_app_data">Data DroidDeck</string>
+    <string name="storage_app_data">Data MaliDeck</string>
     <string name="storage_app_data_hint">Log sesi lama %1$s · cache · pemacu</string>
     <string name="storage_legend_games">Permainan</string>
     <string name="storage_legend_data">Data permainan</string>
@@ -2600,7 +2600,7 @@
     <string name="storage_legend_stores">Kedai lain</string>
     <string name="storage_legend_desktop">Aplikasi desktop</string>
     <string name="storage_legend_system">Sistem Linux</string>
-    <string name="storage_legend_app">DroidDeck</string>
+    <string name="storage_legend_app">MaliDeck</string>
     <string name="storage_clean_up_title">Bersihkan</string>
     <string name="storage_clean_up_lede">Tiada apa di sini yang menyentuh permainan yang dipasang atau muat turun yang sedang berjalan.</string>
     <string name="storage_nothing_to_clean">Tiada apa untuk dibersihkan sekarang.</string>
@@ -2649,8 +2649,8 @@
     <string name="storage_tool_redist">Pemasangan VC++ dan DirectX yang diperlukan permainan</string>
     <string name="storage_tool_fex">Menjalankan permainan Linux x86</string>
     <string name="storage_tool_steam">Alat Steam</string>
-    <string name="storage_tool_old_runtime">DroidDeck menjalankan permainan tanpa runtime ini</string>
-    <string name="storage_tool_x86_proton">Proton x86, yang tidak dapat dijalankan oleh DroidDeck</string>
+    <string name="storage_tool_old_runtime">MaliDeck menjalankan permainan tanpa runtime ini</string>
+    <string name="storage_tool_x86_proton">Proton x86, yang tidak dapat dijalankan oleh MaliDeck</string>
     <string name="storage_tool_custom_default">Lalai untuk semua permainan</string>
     <string name="storage_tool_custom_unused">Tiada permainan menggunakannya</string>
     <string name="storage_tool_custom_unknown">Tetapan Steam tidak dapat dibaca, jadi ini disimpan</string>
@@ -2684,8 +2684,8 @@
         <item quantity="one">%d permainan</item>
         <item quantity="other">%d permainan</item>
     </plurals>
-    <string name="storage_tool_default_proton">Proton lalai DroidDeck</string>
-    <string name="storage_tool_proton">Pilihan Proton 11 DroidDeck</string>
+    <string name="storage_tool_default_proton">Proton lalai MaliDeck</string>
+    <string name="storage_tool_proton">Pilihan Proton 11 MaliDeck</string>
     <plurals name="storage_tool_custom_games">
         <item quantity="one">digunakan %d permainan</item>
         <item quantity="other">digunakan %d permainan</item>
@@ -2739,7 +2739,7 @@
     </plurals>
     <string name="boot_movie">Video but</string>
     <string name="boot_movie_video">Video</string>
-    <string name="boot_movie_droiddeck">DroidDeck · %1$d fps</string>
+    <string name="boot_movie_droiddeck">MaliDeck · %1$d fps</string>
     <string name="boot_movie_note">60 fps kelihatan lebih lancar tetapi menggunakan lebih banyak CPU semasa Steam bermula. Video yang dipilih dalam tetapan Steam sendiri turut dipaparkan di sini.</string>
     <string name="boot_movie_sound">Bunyi</string>
     <string name="boot_movie_custom">Video anda sendiri</string>
@@ -2751,24 +2751,24 @@
     <string name="boot_movie_imported_silent">%1$s kini video but, tanpa bunyi</string>
     <string name="boot_movie_too_long">Video yang perlu ditukar mestilah %1$d saat atau kurang</string>
     <string name="boot_movie_converting">Menukar %1$d%%</string>
-    <string name="boot_movie_converting_started">Menukar %1$s untuk Steam. Biarkan DroidDeck terbuka.</string>
+    <string name="boot_movie_converting_started">Menukar %1$s untuk Steam. Biarkan MaliDeck terbuka.</string>
     <string name="boot_movie_unsupported">Peranti ini tidak dapat menyahkod video itu.</string>
     <string name="boot_movie_import_failed">Tidak dapat mengimport video itu</string>
     <string name="boot_movie_remove_confirm">Alih keluar %1$s?</string>
-    <string name="boot_movie_remove_confirm_body">Ini memadamkan video daripada DroidDeck dan daripada folder video Steam.</string>
+    <string name="boot_movie_remove_confirm_body">Ini memadamkan video daripada MaliDeck dan daripada folder video Steam.</string>
     <string name="boot_movie_tab_installed">Dipasang</string>
     <string name="boot_movie_tab_import">Import</string>
     <string name="boot_movie_tab_repo">SteamDeckRepo</string>
     <string name="boot_movie_tab_sound">Bunyi</string>
     <string name="boot_movie_installed">Video dipasang</string>
     <string name="boot_movie_browse">Layari</string>
-    <string name="boot_movie_source_droiddeck">DroidDeck</string>
+    <string name="boot_movie_source_droiddeck">MaliDeck</string>
     <string name="boot_movie_source_import">Diimport</string>
     <string name="boot_movie_source_repo">SteamDeckRepo</string>
     <string name="boot_movie_source_steam">Steam</string>
     <string name="boot_movie_source_pointshop">Kedai Mata</string>
     <string name="boot_movie_report">Laporan filem but</string>
-    <string name="boot_movie_report_hint">Menyimpan apa yang DroidDeck dan Steam ketahui tentang filem but ke dalam fail teks yang boleh dilampirkan pada laporan pepijat.</string>
+    <string name="boot_movie_report_hint">Menyimpan apa yang MaliDeck dan Steam ketahui tentang filem but ke dalam fail teks yang boleh dilampirkan pada laporan pepijat.</string>
     <string name="boot_movie_report_save">Simpan</string>
     <string name="boot_movie_report_saved">Disimpan di %1$s</string>
     <string name="boot_movie_report_failed">Laporan tidak dapat disimpan.</string>
@@ -2804,7 +2804,7 @@
     <string name="glasses_joycons_hint">Gunakan kamera cermin mata pintar untuk meletakkan pengawal Joy-Con yang dipasangkan. Input putaran dan butang datang daripada pengawal Joy-Con. Kedudukan dianggarkan apabila pergelangan tangan anda tersembunyi. Menggantikan pengawal yang dikendalikan dengan tangan kosong dan menjeda penjejakan kamera telefon. Halakan pengawal Joy-Con ke hadapan semasa menyambung atau menetapkan semula pusat penjejakan.</string>
     <string name="glasses_joycons_requires_position">Dayakan penjejakan kedudukan terlebih dahulu. Memerlukan pengawal Joy-Con yang berkemampuan gerakan pada Android 12 atau lebih baharu. Dimatikan secara lalai.</string>
     <string name="setup_tab_glasses">Cermin mata pintar</string>
-    <string name="setup_glasses_scope">Tetapan penjejakan paparan dan kepala dikongsi merentasi menu, permainan dan sesi desktop DroidDeck.</string>
+    <string name="setup_glasses_scope">Tetapan penjejakan paparan dan kepala dikongsi merentasi menu, permainan dan sesi desktop MaliDeck.</string>
     <string name="setup_glasses_connect">Sambungkan cermin mata pintar untuk menukar tetapan paparan dan penjejakannya. Tetapan anda yang disimpan disimpan apabila anda memutuskan sambungan.</string>
     <string name="glasses_vr">VR</string>
     <string name="glasses_display_mode">Mod paparan</string>
@@ -2823,7 +2823,7 @@
     <string name="glasses_refresh_30_hint">Dayakan Permainan pada cermin mata pintar untuk memilih mod 30 Hz natif paparan.</string>
     <string name="glasses_3dof">Skrin maya 3DoF</string>
     <string name="glasses_3dof_hint">Sauhkan permainan rata di hadapan anda supaya anda boleh melihat sekeliling. Mendayakan Permainan pada cermin mata pintar tanpa bertukar kepada 3D.</string>
-    <string name="glasses_screen_app_wide">Lebar dan jarak mengemas kini skrin maya yang dijejaki untuk menu, permainan dan sesi desktop DroidDeck dengan segera.</string>
+    <string name="glasses_screen_app_wide">Lebar dan jarak mengemas kini skrin maya yang dijejaki untuk menu, permainan dan sesi desktop MaliDeck dengan segera.</string>
     <string name="glasses_head_tracking_spatial_vr_hint">Penjejakan kedudukan termasuk putaran kepala dalam SteamVR. Untuk penjejakan putaran sahaja, matikan penjejakan kedudukan.</string>
     <string name="glasses_head_tracking_spatial_hint">Mengawal pergerakan kepala pada skrin maya. Penjejakan kedudukan termasuk putaran kepala dalam SteamVR.</string>
     <string name="glasses_quick_actions">Tindakan pantas</string>
@@ -2919,7 +2919,7 @@
     <string name="spatial_timing_values">%1$.1f Hz • umur imej %2$.1f ms • pemprosesan %3$.1f ms</string>
     <string name="spatial_input_values">Had input %1$.1f Hz • %2$.0f%% imej kamera. Pengesanan kepala diteruskan pada kekerapan maksimumnya.</string>
     <string name="spatial_frame_counts">%1$d diproses • %2$d digugurkan • %3$d dilangkau mengikut had input</string>
-    <string name="spatial_print_job">DroidDeck ChArUco 30 mm</string>
+    <string name="spatial_print_job">MaliDeck ChArUco 30 mm</string>
     <string name="spatial_print_scale" formatted="false">Cetak pada 100% / Saiz sebenar. Setiap segi empat sama: 30 mm (1.181 in).</string>
     <string name="spatial_print_stationary">Pastikan sasaran penentukuran rata dan pegun; gerakkan cermin mata pintar antara tangkapan.</string>
     <string name="spatial_print_check">Semakan skala: 100 mm (3.937 in) antara tanda skala</string>
@@ -3002,24 +3002,24 @@
     <string name="spatial_opencv_load_error">OpenCV tidak dapat dimuatkan</string>
     <string name="setup_group_memory">Memori</string>
     <string name="setup_clear_cached">Tutup apl dalam cache sebelum sesi</string>
-    <string name="setup_clear_cached_hint">Apabila sesi bermula, DroidDeck menutup apl yang disimpan Android di latar belakang supaya permainan mendapat lebih banyak memori. Debugging Wayarles mesti dihidupkan.</string>
-    <string name="setup_clear_cached_unpaired">Memerlukan DroidDeck digandingkan dengan Debugging Wayarles (Gandingkan, di bawah).</string>
+    <string name="setup_clear_cached_hint">Apabila sesi bermula, MaliDeck menutup apl yang disimpan Android di latar belakang supaya permainan mendapat lebih banyak memori. Debugging Wayarles mesti dihidupkan.</string>
+    <string name="setup_clear_cached_unpaired">Memerlukan MaliDeck digandingkan dengan Debugging Wayarles (Gandingkan, di bawah).</string>
     <string name="setup_memory_hud">Paparan memori</string>
-    <string name="setup_memory_hud_hint">Memori dan swap yang digunakan, pada skrin sesi. Lanjutan memecahkannya kepada permainan, DroidDeck, Android dan GPU.</string>
+    <string name="setup_memory_hud_hint">Memori dan swap yang digunakan, pada skrin sesi. Lanjutan memecahkannya kepada permainan, MaliDeck, Android dan GPU.</string>
     <string name="setup_memory_hud_simple">Ringkas</string>
     <string name="setup_memory_hud_advanced">Lanjutan</string>
     <string name="memory_hud_simple">RAM %1$s/%2$s GB · swap %3$s/%4$s GB</string>
-    <string name="memory_hud_split">permainan %1$s · DroidDeck %2$s · Android %3$s GB</string>
+    <string name="memory_hud_split">permainan %1$s · MaliDeck %2$s · Android %3$s GB</string>
     <string name="memory_hud_gpu">GPU %1$s GB</string>
     <string name="setup_bg_limit">Apl latar belakang semasa sesi</string>
-    <string name="setup_bg_limit_hint">Semasa sesi berjalan, Android menyimpan paling banyak bilangan apl ini dalam cache dan menutup selebihnya, supaya permainan mendapat memori apl tersebut. DroidDeck memulihkan had seperti asal apabila sesi tamat. Debugging Wayarles mesti dihidupkan.</string>
+    <string name="setup_bg_limit_hint">Semasa sesi berjalan, Android menyimpan paling banyak bilangan apl ini dalam cache dan menutup selebihnya, supaya permainan mendapat memori apl tersebut. MaliDeck memulihkan had seperti asal apabila sesi tamat. Debugging Wayarles mesti dihidupkan.</string>
     <string name="setup_bg_limit_4">Paling banyak 4</string>
     <string name="setup_bg_limit_1">Paling banyak 1</string>
     <string name="setup_bg_limit_0">Tiada</string>
     <string name="setup_adb_pair">Debugging Wayarles</string>
-    <string name="setup_adb_pair_hint">Menggandingkan DroidDeck dengan Debugging Wayarles Android untuk pilihan di atas. Had proses anak kekal dimatikan.</string>
+    <string name="setup_adb_pair_hint">Menggandingkan MaliDeck dengan Debugging Wayarles Android untuk pilihan di atas. Had proses anak kekal dimatikan.</string>
     <string name="setup_adb_pair_button">Gandingkan</string>
-    <string name="spatial_print_title">DroidDeck - Penentukuran Luma Ultra</string>
+    <string name="spatial_print_title">MaliDeck - Penentukuran Luma Ultra</string>
     <string name="spatial_base_loaded">Penentukuran asas Luma Ultra dimuatkan</string>
     <string name="epic_client_missing">Belum dipasang</string>
     <string name="epic_client_open">Buka</string>

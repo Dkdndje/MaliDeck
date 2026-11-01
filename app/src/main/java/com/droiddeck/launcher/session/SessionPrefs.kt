@@ -276,6 +276,17 @@ object SessionPrefs {
         prefs(context).edit().putString("linuxDriver", id).apply()
     }
 
+    const val GPU_SAFETY_AUTO = "auto"
+    const val GPU_SAFETY_SOFTWARE = "software"
+    const val GPU_SAFETY_MALI = "mali"
+
+    fun gpuSafety(context: Context): String =
+        prefs(context).getString("gpuSafety", GPU_SAFETY_MALI) ?: GPU_SAFETY_MALI
+
+    fun setGpuSafety(context: Context, value: String) {
+        prefs(context).edit().putString("gpuSafety", value).apply()
+    }
+
     const val GPU_DRIVERS_AUTO = "auto"
     const val GPU_DRIVERS_MANUAL = "manual"
     const val GPU_DRIVERS_MIX = "mix"

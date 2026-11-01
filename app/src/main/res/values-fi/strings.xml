@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="steamvr_recovery_title">SteamVR:n grafiikka pysähtyi</string>
-    <string name="steamvr_recovery_countdown">DroidDeck käynnistyy uudelleen %1$d sekunnin kuluttua nollatakseen grafiikan ja avatakseen SteamVR:n uudelleen. Käynnissä oleva pelisi suljetaan; tallentamatonta edistymistä ei voi palauttaa.</string>
+    <string name="steamvr_recovery_countdown">MaliDeck käynnistyy uudelleen %1$d sekunnin kuluttua nollatakseen grafiikan ja avatakseen SteamVR:n uudelleen. Käynnissä oleva pelisi suljetaan; tallentamatonta edistymistä ei voi palauttaa.</string>
     <string name="steamvr_recovery_repeated">Grafiikkavirhe palasi äskeisen uudelleenkäynnistyksen jälkeen. Automaattinen palautus on keskeytetty silmukan estämiseksi. Uudelleenkäynnistys sulkee pelisi; tallentamatonta edistymistä ei voi palauttaa.</string>
     <string name="steamvr_recovery_restart">Käynnistä uudelleen</string>
     <string name="steamvr_recovery_cancel">Pidä auki</string>
     <string name="steamvr_recovery_restarting">Nollataan grafiikkaa ja avataan SteamVR uudelleen…</string>
-    <string name="steamvr_recovery_failed">DroidDeck ei pystynyt käynnistymään uudelleen automaattisesti. Sulje sovellus kokonaan ja avaa se sitten uudelleen.</string>
-    <string name="app_name">DroidDeck</string>
+    <string name="steamvr_recovery_failed">MaliDeck ei pystynyt käynnistymään uudelleen automaattisesti. Sulje sovellus kokonaan ja avaa se sitten uudelleen.</string>
+    <string name="app_name">MaliDeck</string>
     <string-array name="loading_hints">
         <item>Ensimmäinen käynnistys lataa Steamin. Tämä voi kestää muutaman minuutin.</item>
         <item>Oletuksena sovelluksesta poistuminen keskeyttää Steamin; se jatkuu siitä mihin jäit, kun palaat takaisin.</item>
@@ -139,7 +139,7 @@
     <string name="user_apps_remove_confirm">Paina uudelleen poistaaksesi</string>
     <string name="user_apps_stop_session">Lopeta istunto poistaaksesi</string>
     <string name="user_apps_script_linked">Suorittaa %1$s:n omasta kansiostaan, linkitettynä istuntoon siihen paikkaan, jossa se sijaitsee. Sovelluksen poistaminen ei koske kyseistä kansiota.</string>
-    <string name="user_apps_script_copied">Suorittaa %1$s:n sen kansion kopiosta DroidDeckin sisällä. Sovelluksen poistaminen poistaa kopion, ei alkuperäistä.</string>
+    <string name="user_apps_script_copied">Suorittaa %1$s:n sen kansion kopiosta MaliDeckin sisällä. Sovelluksen poistaminen poistaa kopion, ei alkuperäistä.</string>
     <string name="user_apps_runtime_required">Asenna Linux-ajoympäristö ensin</string>
     <string name="user_apps_file_gone">Tiedosto on kadonnut</string>
     <string name="user_apps_no_space">Vapaata tilaa ei ole tarpeeksi: kansion kopioiminen vaatii %1$s</string>
@@ -174,7 +174,7 @@
     <string name="app_fex_off">Pois</string>
     <string name="app_fex_hint">FEX suorittaa x86-Linux-ohjelmia tällä ARM64-laitteella. Automaattinen käyttää sitä, kun ohjelma on tehty x86:lle.</string>
     <string name="app_fex_x86">%1$s FEXin kautta</string>
-    <string name="app_fex_not_ready">Tämä ohjelma on tehty %1$s-tietokoneille ja käynnistyy FEXin kautta, jota ei ole vielä määritetty. Avaa Steam kerran kirjautuneena: DroidDeck lataa sen myötä FEXin ja tarvittavan Steam Linux Runtimen, jonka jälkeen tämä avautuu.</string>
+    <string name="app_fex_not_ready">Tämä ohjelma on tehty %1$s-tietokoneille ja käynnistyy FEXin kautta, jota ei ole vielä määritetty. Avaa Steam kerran kirjautuneena: MaliDeck lataa sen myötä FEXin ja tarvittavan Steam Linux Runtimen, jonka jälkeen tämä avautuu.</string>
     <string name="session_end_program">Tämä ohjelma</string>
     <string name="session_end_steam_download">Steam-asiakasohjelmaa ei voitu ladata. Verkkosi tai VPN saattaa estää Steamin palvelimet; tarkista yhteys ja yritä uudelleen.</string>
     <string name="session_end_steam_setup">Steam-asiakasohjelmaa ei voitu ottaa käyttöön. Tarkista yhteys ja vapaa tallennustila ja yritä uudelleen.</string>
@@ -211,13 +211,13 @@
     <string name="edit_app_save">Tallenna</string>
     <string name="add_app_checking_folder">Tarkistetaan kansiota…</string>
     <string name="add_app_folder_linked">Sen kansio on linkitetty istuntoon: %1$s</string>
-    <string name="add_app_folder_copied">Sen kansio sisältää Linux-ohjelmia, joita jaettu tallennustila ei voi suorittaa, joten se kopioidaan DroidDeckiin (%1$s).</string>
+    <string name="add_app_folder_copied">Sen kansio sisältää Linux-ohjelmia, joita jaettu tallennustila ei voi suorittaa, joten se kopioidaan MaliDeckiin (%1$s).</string>
     <string name="add_app_confirm">Lisää</string>
     <string name="add_app_cancel">Peruuta</string>
     <string name="add_app_runtime_required">Asenna Linux-ajoympäristö ensin Käyttöönotto-sivulta.</string>
     <string name="add_app_busy">Odota, että %1$s valmistuu.</string>
     <string name="steam_compat_label">Yhteensopiva</string>
-    <string name="proton_compatible_note">Steamin Yhteensopivuus-valikossa merkinnällä ”%1$s” varustetuissa versioissa on DroidDeckin etuliitekorjaukset, ja pelit käynnistyvät niillä täällä. Oletus on Proton Experimental ARM64 (%1$s), tai Proton 11.0 ARM64 (%1$s) kun tuo uudempi versio on asennettu. Valven omat Proton-merkinnät, joissa ei ole merkintää, eivät voi käynnistää peliä tällä laitteella.</string>
+    <string name="proton_compatible_note">Steamin Yhteensopivuus-valikossa merkinnällä ”%1$s” varustetuissa versioissa on MaliDeckin etuliitekorjaukset, ja pelit käynnistyvät niillä täällä. Oletus on Proton Experimental ARM64 (%1$s), tai Proton 11.0 ARM64 (%1$s) kun tuo uudempi versio on asennettu. Valven omat Proton-merkinnät, joissa ei ole merkintää, eivät voi käynnistää peliä tällä laitteella.</string>
     <string name="proton_installed_compatible">Asennettu %1$s · %2$s</string>
     <string name="common_cancel">Peruuta</string>
     <string name="common_auto">Automaattinen</string>
@@ -307,8 +307,8 @@
     <string name="mode_background_downloads_hint">Viivästytä taustakeskeytystä, kun Steam lataa aktiivisesti.</string>
     <string name="mode_suspend_note">Automaattinen keskeyttää taustalla ja jatkaa, kun sovellus tulee näkyviin. Manuaalinen odottaa Jatka-painiketta. Ei koskaan pitää sovelluksen aina käynnissä.</string>
     <string name="mode_startup">Käynnistys</string>
-    <string name="mode_steam_startup">Käynnistä Steam DroidDeckin kanssa</string>
-    <string name="mode_steam_startup_hint">Avaa Steam-istunnon, kun DroidDeck käynnistyy.</string>
+    <string name="mode_steam_startup">Käynnistä Steam MaliDeckin kanssa</string>
+    <string name="mode_steam_startup_hint">Avaa Steam-istunnon, kun MaliDeck käynnistyy.</string>
     <string name="mode_decky">Decky</string>
     <string name="mode_decky_checking">Tarkistetaan julkaisuja…</string>
     <string name="mode_decky_ready">Valmiina asentamaan %1$s.</string>
@@ -400,7 +400,7 @@
     <string name="mode_wifi_open_settings">Avaa asetukset</string>
     <string name="mode_wifi_continue">Jatka</string>
     <string name="mode_wifi_explain_title">Otetaanko Wi-Fi-haku käyttöön?</string>
-    <string name="mode_wifi_explain_text">Android vaatii sijaintiluvan Wi-Fi-nimien lukemiseen ja lähellä olevien verkkojen löytämiseen. DroidDeck käyttää tätä oikeutta näyttääkseen nämä verkot Steamissa. Emme seuraa sijaintiasi. Internet-yhteys toimii myös ilman tätä lupaa.</string>
+    <string name="mode_wifi_explain_text">Android vaatii sijaintiluvan Wi-Fi-nimien lukemiseen ja lähellä olevien verkkojen löytämiseen. MaliDeck käyttää tätä oikeutta näyttääkseen nämä verkot Steamissa. Emme seuraa sijaintiasi. Internet-yhteys toimii myös ilman tätä lupaa.</string>
     <string name="mode_storage">Pelien tallennustila</string>
     <string name="mode_storage_auto">Automaattinen - SD-kortti, kun käytettävissä, sekä Games-kansiosi</string>
     <string name="mode_storage_auto_none">Automaattinen - Games-kansiosi, sekä SD-kortti, kun käytettävissä (ei nyt käytettävissä)</string>
@@ -503,7 +503,7 @@
     <string name="comp_applies_next_game">Tulee voimaan, kun peli käynnistyy seuraavan kerran</string>
     <string name="comp_import_zip">Tuo .zip</string>
     <string name="comp_reading">Luetaan Protoneja…</string>
-    <string name="comp_no_proton">Protonia ei ole vielä asennettu. Käynnistä Steam kerran, jotta sen ARM64-Proton latautuu, tai lisää GE-Proton, CachyOS tai DroidDeck-Proton Käyttöönotto-sivulta.</string>
+    <string name="comp_no_proton">Protonia ei ole vielä asennettu. Käynnistä Steam kerran, jotta sen ARM64-Proton latautuu, tai lisää GE-Proton, CachyOS tai MaliDeck-Proton Käyttöönotto-sivulta.</string>
     <string name="comp_original">Alkuperäinen · %1$s</string>
     <string name="comp_this_build">%1$s · tämä versio</string>
     <string name="comp_earlier_build">%1$s · aiempi versio</string>
@@ -521,7 +521,7 @@
     <string name="comp_nightlies_count">Nightliesissä · %1$d</string>
     <string name="comp_channel_stable">Vakaa</string>
     <string name="comp_channel_nightly">Yöversio</string>
-    <string name="comp_refresh_to_list">Päivitä nähdäksesi Nightliesin ja DroidDeckin paketit.</string>
+    <string name="comp_refresh_to_list">Päivitä nähdäksesi Nightliesin ja MaliDeckin paketit.</string>
     <string name="comp_nothing_new">Ei mitään uutta viimeisimmän tarkistuksen jälkeen.</string>
     <string name="comp_import_wcp">Tuo .wcp</string>
     <string name="comp_restore_original">Palauta tämän Protonin alkuperäinen</string>
@@ -754,7 +754,7 @@
     <string name="setup_language_system">Järjestelmän oletus (%1$s)</string>
     <string name="setup_language_system_short">Järjestelmän oletus</string>
     <string name="setup_app_scale">Sovelluksen skaalaus</string>
-    <string name="setup_app_scale_hint">DroidDeckin tekstit ja säätimet</string>
+    <string name="setup_app_scale_hint">MaliDeckin tekstit ja säätimet</string>
     <string name="setup_app_scale_default">%1$d %% (Oletus)</string>
     <string name="setup_theme">Teema</string>
     <string name="setup_theme_hint">Käynnistimen ulkoasu</string>
@@ -762,8 +762,8 @@
     <string name="setup_launcher_icon_dark">Tumma</string>
     <string name="setup_launcher_icon_light">Vaalea</string>
     <string name="setup_home">Käytä Aloitusnäyttönä</string>
-    <string name="setup_home_on">DroidDeck voi olla kotisovellus</string>
-    <string name="setup_home_off">DroidDeckiä ei koskaan tarjota kotisovellukseksi</string>
+    <string name="setup_home_on">MaliDeck voi olla kotisovellus</string>
+    <string name="setup_home_off">MaliDeckiä ei koskaan tarjota kotisovellukseksi</string>
     <string name="setup_orientation">Suunta</string>
     <string name="setup_orientation_auto">Automaattinen vaakasuunta</string>
     <string name="setup_orientation_landscape">Vaakasuunta</string>
@@ -842,16 +842,16 @@
     <string name="store_website">Verkkosivu</string>
     <string name="store_verified">Vahvistettu</string>
     <string name="upd_title">Päivitykset</string>
-    <string name="upd_build">DroidDeck %1$s · %2$s</string>
+    <string name="upd_build">MaliDeck %1$s · %2$s</string>
     <string name="upd_checked">Tarkistettu %1$s</string>
     <string name="upd_not_checked">Ei tarkistettu vielä</string>
-    <string name="upd_perm_title">Anna DroidDeckin päivittää itsensä</string>
+    <string name="upd_perm_title">Anna MaliDeckin päivittää itsensä</string>
     <string name="upd_perm_text">Ota seuraavalla näytöllä käyttöön Salli tästä lähteestä ja palaa takaisin. Päivitys jatkuu itsekseen.</string>
     <string name="upd_open_settings">Avaa asetukset</string>
     <string name="upd_not_now">Ei nyt</string>
     <string name="upd_signed_status">Allekirjoitettu eri tavalla</string>
     <string name="upd_signed_headline">Ei voida päivittää paikan päällä</string>
-    <string name="upd_signed_detail">Tätä kopiota ei ole allekirjoitettu DroidDeckin julkaisuavaimella, niin päivitykset eivät voi asentua sen päälle. Poista se, jos haluat vaihtaa.</string>
+    <string name="upd_signed_detail">Tätä kopiota ei ole allekirjoitettu MaliDeckin julkaisuavaimella, niin päivitykset eivät voi asentua sen päälle. Poista se, jos haluat vaihtaa.</string>
     <string name="upd_available">Päivitys saatavilla</string>
     <string name="upd_blocked_status">Ei voida asentaa</string>
     <string name="upd_switch">Valmis vaihdettavaksi</string>
@@ -873,7 +873,7 @@
     <string name="upd_stop_session">Lopeta käynnissä oleva istunto päivittääksesi.</string>
     <string name="upd_less">Vähemmän</string>
     <string name="upd_more">Lisää</string>
-    <string name="upd_new_stable">DroidDeck %1$s</string>
+    <string name="upd_new_stable">MaliDeck %1$s</string>
     <string name="upd_new_preview">Uusi Preview-build</string>
     <string name="upd_new_test">PR #%1$d -testibuild</string>
     <string name="upd_mb">%1$d MB</string>
@@ -888,7 +888,7 @@
     <string name="upd_tests_hint">Kokeile korjausta ennen sen julkaisua</string>
     <string name="upd_tests_none">Ei yhtään juuri nyt</string>
     <string name="upd_pr">PR #%1$d</string>
-    <string name="upd_not_built">Ei rakennettu tälle DroidDeck-kopiolle</string>
+    <string name="upd_not_built">Ei rakennettu tälle MaliDeck-kopiolle</string>
     <string name="upd_updated">Päivitettiin %1$s</string>
     <string name="upd_test_name">PR #%1$d -testi</string>
     <string name="upd_while_ago">hetki sitten</string>
@@ -911,13 +911,13 @@
     <string name="gate_fix_for_me">Korjaa se puolestani</string>
     <string name="gate_toggle_steps">Ota käyttöön ”Poista käytöstä alatason prosessirajoitukset” ja palaa takaisin. Jätä Kehittäjäasetukset päälle, tai kytkin kytkeytyy taas pois päältä.</string>
     <string name="gate_open_dev">Avaa Kehittäjäasetukset</string>
-    <string name="gate_no_toggle">Tässä Android-versiossa ei ole kytkintä tälle, niin DroidDeck muuttaa sen Langattoman virheenkorjauksen kautta. Kestää noin minuutin, ei tarvita tietokonetta.</string>
+    <string name="gate_no_toggle">Tässä Android-versiossa ei ole kytkintä tälle, niin MaliDeck muuttaa sen Langattoman virheenkorjauksen kautta. Kestää noin minuutin, ei tarvita tietokonetta.</string>
     <string name="gate_needs_wifi">Langaton virheenkorjaus vaatii Wi-Fi-yhteyden. Mikä tahansa verkko käy; internet-yhteyttä ei tarvita.</string>
-    <string name="gate_needs_notifications">Pariutuskoodi tulee ilmoitukseen. Salli ilmoitukset DroidDeckille, tai käytä Muita tapoja.</string>
+    <string name="gate_needs_notifications">Pariutuskoodi tulee ilmoitukseen. Salli ilmoitukset MaliDeckille, tai käytä Muita tapoja.</string>
     <string name="gate_allow_notifications">Salli ilmoitukset</string>
     <string name="gate_step1">Avaa Asetukset → Kehittäjäasetukset → Langaton virheenkorjaus ja kytke se päälle</string>
     <string name="gate_step2">Napauta ”Pariuta laite pariutuskoodilla”</string>
-    <string name="gate_step3">Kirjoita koodi DroidDeckin ilmoitukseen</string>
+    <string name="gate_step3">Kirjoita koodi MaliDeckin ilmoitukseen</string>
     <string name="gate_waiting">Odotetaan pariutuksen ponnahdusikkunaa…</string>
     <string name="gate_code_needed">Ponnahdusikkuna löytyi. Syötä sen koodi ilmoitukseen.</string>
     <string name="gate_status">Tila</string>
@@ -1035,7 +1035,7 @@
     <string name="desktop_removing">Poistetaan työpöytää</string>
     <string name="desktop_removed">Työpöytä poistettu</string>
     <string name="desktop_cleaning_legacy">Poistetaan vanhoja LXQt-tiedostoja</string>
-    <string name="desktop_removal_unknown">Päivitä DroidDeck ennen tämän työpöytäversion poistamista.</string>
+    <string name="desktop_removal_unknown">Päivitä MaliDeck ennen tämän työpöytäversion poistamista.</string>
     <string name="content_linux_desktop">Linux-työpöytä</string>
     <string name="content_linux_desktop_hint">KDE Plasma, Firefox ja emulaattorisi</string>
     <string name="games_empty">Steamissa asentamasi pelit näkyvät tässä istunnon jälkeen.</string>
@@ -1080,7 +1080,7 @@
     <string name="gpu_auto_by_gpu">Automaattinen - valittu GPU:n mukaan</string>
     <string name="gpu_manage">Lataa, tuo tai poista…</string>
     <string name="gpu_in_use_caps">KÄYTÖSSÄ</string>
-    <string name="gpu_builtin">DroidDeckiin sisäänrakennetut ajurit</string>
+    <string name="gpu_builtin">MaliDeckiin sisäänrakennetut ajurit</string>
     <string name="gpu_matched_pair">Ajoympäristö- ja näyttöajurit asetetaan yhdessä toisiinsa sopivana parina.</string>
     <string name="gpu_recommended_for">Suositellaan tälle GPU:lle: %1$s.</string>
     <string name="gpu_refresh_hint">Päivitä etsiäksesi ajureita tälle GPU:lle.</string>
@@ -1183,7 +1183,7 @@
     <string name="unfolded_controls_hint">Avattuna peli sijaitsee Steam Deckin kosketuslevyjen ja takakahvojen yläpuolella. Taitettuna peli on koko näytön kokoinen.</string>
     <string name="pip_suspended">Keskeytetty</string>
     <string name="pip_not_ready">Kuva kuvassa -tila on käytettävissä, kun istunto on valmis.</string>
-    <string name="pip_permission">Salli kuva kuvassa -tila DroidDeckille Android-asetuksissa.</string>
+    <string name="pip_permission">Salli kuva kuvassa -tila MaliDeckille Android-asetuksissa.</string>
     <string name="pip_unavailable">Android ei pystynyt avaamaan kuva kuvassa -tilaa.</string>
     <string name="game_shortcut">Pikakuvake</string>
     <string name="game_shortcut_add">Lisää aloitusnäytölle</string>
@@ -1193,7 +1193,7 @@
     <string name="game_link_copied">Käynnistyslinkki kopioitu</string>
     <string name="game_shortcut_unsupported">Tämä käynnistin ei voi lisätä pikakuvakkeita. Käytä sen sijaan Kopioi käynnistyslinkki -toimintoa.</string>
     <string name="game_link_invalid">Virheellinen pelin käynnistyslinkki.</string>
-    <string name="game_link_missing">Tämä peli ei ole enää DroidDeck-kirjastossasi.</string>
+    <string name="game_link_missing">Tämä peli ei ole enää MaliDeck-kirjastossasi.</string>
     <string name="game_link_session_busy">Pysäytä nykyinen istunto ennen Steam-pelin käynnistämistä.</string>
     <string name="game_link_failed">Pelin lähettäminen Steamiin epäonnistui. Yritä käynnistää se uudelleen.</string>
     <string name="setup_retry_removal">Yritä poistoa uudelleen</string>
@@ -1217,8 +1217,8 @@
         <item quantity="other">Tuotiin %1$d tiedostoa %2$s-muodosta kohteeseen %3$s</item>
     </plurals>
     <plurals name="main_saves_imported_backup">
-        <item quantity="one">Tuotiin %1$d tiedosto %2$s-muodosta kohteeseen %3$s. Vanhat tallennukset varmuuskopioitu kansioon Download/DroidDeck/Saves/backups</item>
-        <item quantity="other">Tuotiin %1$d tiedostoa %2$s-muodosta kohteeseen %3$s. Vanhat tallennukset varmuuskopioitu kansioon Download/DroidDeck/Saves/backups</item>
+        <item quantity="one">Tuotiin %1$d tiedosto %2$s-muodosta kohteeseen %3$s. Vanhat tallennukset varmuuskopioitu kansioon Download/MaliDeck/Saves/backups</item>
+        <item quantity="other">Tuotiin %1$d tiedostoa %2$s-muodosta kohteeseen %3$s. Vanhat tallennukset varmuuskopioitu kansioon Download/MaliDeck/Saves/backups</item>
     </plurals>
     <string name="main_saves_pick_zip">Valitse tallennusten zip-tiedosto kohteelle %1$s</string>
     <string name="main_saves_exporting">Viedään %1$s</string>
@@ -1276,7 +1276,7 @@
 
     <string name="upd_unknown_apps_failed">Androidin \"Tuntemattomien sovellusten asentaminen\" -asetusta ei voitu avata</string>
     <string name="upd_couldnt_check">Tarkistus epäonnistui: %1$s</string>
-    <string name="upd_no_download">Tälle versiolle ei ole latausta tähän DroidDeck-kopioon</string>
+    <string name="upd_no_download">Tälle versiolle ei ole latausta tähän MaliDeck-kopioon</string>
     <string name="upd_stop_first">Pysäytä käynnissä oleva istunto ennen päivitystä</string>
     <string name="upd_stage_downloading">Latausta</string>
     <string name="upd_stage_installing">Asennusta</string>
@@ -1305,22 +1305,22 @@
     <string name="drivers_recommended_unpublished">Suositeltuja ajureita ei ole julkaistu juuri nyt</string>
     <string name="drivers_downloading_pair">Ladataan %1$s %2$s…</string>
     <string name="drivers_updated_to">Päivitetty versioon %1$s %2$s.</string>
-    <string name="drivers_updated_to_restart">Päivitetty versioon %1$s %2$s. Näyttöajuri otetaan käyttöön, kun DroidDeck käynnistyy uudelleen.</string>
+    <string name="drivers_updated_to_restart">Päivitetty versioon %1$s %2$s. Näyttöajuri otetaan käyttöön, kun MaliDeck käynnistyy uudelleen.</string>
     <string name="drivers_auto_waits_for_session">Ajuripäivitykset odottavat, kunnes istunto pysäytetään.</string>
     <string name="drivers_auto_waits_for_network">%1$s %2$s ladataan, kun poistut mobiilidatasta ja virransäästöstä.</string>
     <string name="drivers_skipping_bad">%1$s %2$s ei käynnistänyt istuntoa täällä, joten Automaattinen pysyy ajureissa, jotka käynnistivät.</string>
     <string name="drivers_rolled_back">%1$s ei käynnistänyt istuntoa kahdesti, joten Automaattinen palasi toimineisiin ajureihin.</string>
     <string name="drivers_switched_to">Vaihdettu versioon %1$s %2$s.</string>
-    <string name="drivers_switched_to_restart">Vaihdettu versioon %1$s %2$s. Näyttöajuri otetaan käyttöön, kun DroidDeck käynnistyy uudelleen.</string>
+    <string name="drivers_switched_to_restart">Vaihdettu versioon %1$s %2$s. Näyttöajuri otetaan käyttöön, kun MaliDeck käynnistyy uudelleen.</string>
     <string name="drivers_using">Käytössä %1$s %2$s.</string>
-    <string name="drivers_using_restart">Käytössä %1$s %2$s. Näyttöajuri otetaan käyttöön, kun DroidDeck käynnistyy uudelleen.</string>
+    <string name="drivers_using_restart">Käytössä %1$s %2$s. Näyttöajuri otetaan käyttöön, kun MaliDeck käynnistyy uudelleen.</string>
     <string name="drivers_using_quest">Käytössä ovat Questin mukana tuleva kuva-ajuri ja oletusajonaikaympäristö.</string>
-    <string name="drivers_using_quest_restart">Käytössä ovat Questin mukana tuleva kuva-ajuri ja oletusajonaikaympäristö. Kuva-ajuri astuu voimaan, kun DroidDeck käynnistetään uudelleen.</string>
+    <string name="drivers_using_quest_restart">Käytössä ovat Questin mukana tuleva kuva-ajuri ja oletusajonaikaympäristö. Kuva-ajuri astuu voimaan, kun MaliDeck käynnistetään uudelleen.</string>
     <string name="drivers_not_a_driver">Ei ajuri-zip: ei AdrenoTools-ajuri, -Linux-Turnip eikä Android + Linux -paketti</string>
     <string name="drivers_import_failed">Tuonti epäonnistui: %1$s</string>
     <string name="drivers_imported_unnamed">Ajuri tuotu</string>
     <string name="drivers_using_bundle">Käytetään %1$s sekä ajoympäristön että näytön ajurina.</string>
-    <string name="drivers_using_bundle_restart">Käytetään %1$s sekä ajoympäristön että näytön ajurina. Näyttöajuri otetaan käyttöön, kun DroidDeck käynnistyy uudelleen.</string>
+    <string name="drivers_using_bundle_restart">Käytetään %1$s sekä ajoympäristön että näytön ajurina. Näyttöajuri otetaan käyttöön, kun MaliDeck käynnistyy uudelleen.</string>
     <string name="drivers_deleted_bundle">Poistettu %1$s (molemmat ajurit)</string>
     <string name="drivers_deleted">Poistettu %1$s</string>
     <string name="drivers_release_status">Uusimmat: %1$s · tarkistettu %2$s</string>
@@ -1337,7 +1337,7 @@
         <item quantity="one">%1$d päivä sitten</item>
         <item quantity="other">%1$d päivää sitten</item>
     </plurals>
-    <string name="drivers_checking_sources">Tarkistetaan Banners-Turnip, WinNative ja DroidDeck…</string>
+    <string name="drivers_checking_sources">Tarkistetaan Banners-Turnip, WinNative ja MaliDeck…</string>
     <string name="drivers_check_failed">tarkistus epäonnistui</string>
     <string name="drivers_installed_pick_either">Asennettu %1$s - valitse se kummasta tahansa listasta asettaaksesi molemmat ajurit</string>
     <string name="drivers_installed_pick">Asennettu %1$s - valitse se valikosta</string>
@@ -1731,7 +1731,7 @@
     <string name="adbfix_no_pairing">Langattoman virheenkorjauksen laiteparitusta ei ole tallennettu</string>
     <string name="adbfix_enter_address">Anna langattoman virheenkorjauksen nykyinen IP-osoite ja portti</string>
 
-    <string name="adbpair_timed_out">Paritusikkunan odotus aikakatkaistiin. Yritä uudelleen DroidDeckistä.</string>
+    <string name="adbpair_timed_out">Paritusikkunan odotus aikakatkaistiin. Yritä uudelleen MaliDeckistä.</string>
     <string name="adbpair_discovery_failed_code">Paritusikkunaa ei voitu etsiä (%1$d). Tarkista, että Wi-Fi on päällä.</string>
     <string name="adbpair_discovery_failed">Paritusikkunaa ei voitu etsiä: %1$s</string>
     <string name="adbpair_six_digits">Anna koodin kaikki 6 numeroa</string>
@@ -1753,20 +1753,20 @@
     <string name="adbpair_enter_code">Syötä koodi</string>
     <string name="adbpair_title_working">Otetaan Steamia käyttöön</string>
     <string name="adbpair_title_done">Steam on valmis</string>
-    <string name="adbpair_done_text">Napauta palataksesi DroidDeckiin. Voit sammuttaa langattoman virheenkorjauksen nyt.</string>
+    <string name="adbpair_done_text">Napauta palataksesi MaliDeckiin. Voit sammuttaa langattoman virheenkorjauksen nyt.</string>
     <string name="adbpair_title_failed">Langattoman virheenkorjauksen käyttöönotto pysähtyi</string>
 
     <string name="selfinst_download_failed">Lataus epäonnistui</string>
     <string name="selfinst_size_mismatch">Latauksen koko ei vastannut julkaistua APK-tiedostoa, ja se hylättiin - yritä uudelleen</string>
     <string name="selfinst_checksum_mismatch">Lataus ei vastannut tarkistussummaansa, ja se hylättiin - yritä uudelleen</string>
     <string name="selfinst_wrong_package">Päivitys on Android-paketille %1$s, ei %2$s</string>
-    <string name="selfinst_metadata_signer">Päivityksen metatiedot eivät mainitse DroidDeckin julkaisun allekirjoitusavainta</string>
+    <string name="selfinst_metadata_signer">Päivityksen metatiedot eivät mainitse MaliDeckin julkaisun allekirjoitusavainta</string>
     <string name="selfinst_unreadable">Android ei pystynyt lukemaan ladattua APK-tiedostoa</string>
     <string name="selfinst_apk_wrong_package">Ladattu APK on sovellukselle %1$s, ei %2$s</string>
     <string name="selfinst_version_mismatch">Ladattu APK ilmoittaa versionCode-arvon %1$d, ei julkaistua %2$d</string>
     <string name="selfinst_downgrade">Android ei asenna versionCode-arvoa %1$d asennetun %2$d päälle</string>
     <string name="selfinst_no_signing">Ladatussa APK-tiedostossa ei ole allekirjoitustietoja</string>
-    <string name="selfinst_wrong_signer">Ladattu APK ei ole allekirjoitettu DroidDeckin julkaisuavaimella</string>
+    <string name="selfinst_wrong_signer">Ladattu APK ei ole allekirjoitettu MaliDeckin julkaisuavaimella</string>
     <string name="appupd_http">Päivitysluettelo vastasi HTTP %1$d</string>
 
     <string name="loadstate_starting">Käynnistetään istuntoa…</string>
@@ -1812,7 +1812,7 @@
     <string name="cmgr_original_kept">Asennetun version alkuperäinen säilytetään: se on tie takaisin.</string>
     <string name="cmgr_not_stored">Ei tallennettu</string>
     <string name="cmgr_deleted_original">Poistettu %2$s:n %1$s-alkuperäinen.</string>
-    <string name="cmgr_nightlies_only">Lataukset tulevat vain Nightlies- ja DroidDeck-julkaisuista</string>
+    <string name="cmgr_nightlies_only">Lataukset tulevat vain Nightlies- ja MaliDeck-julkaisuista</string>
     <string name="cmgr_nightly_replaced">Lataus epäonnistui: tämä yöversio on ehkä korvattu uudemmalla. Päivitä luettelo ja yritä uudelleen.</string>
     <string name="cmgr_list_predates_checksums">Tämä pakettiluettelo on tarkistussummia vanhempi - päivitä se ja yritä uudelleen</string>
     <string name="cmgr_checksum_mismatch">Tarkistussumma ei täsmää</string>
@@ -1851,7 +1851,7 @@
     <string name="gpuinfo_supported">Tuettu</string>
     <string name="gpuinfo_experimental">Kokeellinen: sen ajurit ovat testiversioita</string>
     <string name="gpuinfo_below_tested">Testatun laitteiston alapuolella (Adreno 725 ja uudemmat): ei välttämättä toimi</string>
-    <string name="gpuinfo_unsupported">Ei tuettu: DroidDeck vaatii Adreno (Snapdragon) -grafiikkapiirin</string>
+    <string name="gpuinfo_unsupported">Ei tuettu: MaliDeck vaatii Adreno (Snapdragon) -grafiikkapiirin</string>
 
     <string name="turnip_rate_limited">GitHubin käyttörajoitus tuli vastaan - yritä myöhemmin uudelleen</string>
     <string name="turnip_github_http">GitHub vastasi HTTP %1$d</string>
@@ -1894,10 +1894,10 @@
     <string name="phantom_instructions_not_applicable">Tämä Android-versio ei käytä tätä rajaa.</string>
     <string name="phantom_fix_toggle">Ota käyttöön ”Poista käytöstä alatason prosessirajoitukset” Kehittäjäasetuksissa, ja pidä Kehittäjäasetukset päällä sen jälkeen.</string>
     <string name="phantom_fix_no_toggle">Tässä Android-versiossa ei ole kytkintä sille. Käytä langatonta virheenkorjausta muuttaaksesi sitä tältä laitteelta.</string>
-    <string name="upd_block_no_apk">Tälle versiolle ei ole latausta tähän DroidDeck-kopioon.</string>
+    <string name="upd_block_no_apk">Tälle versiolle ei ole latausta tähän MaliDeck-kopioon.</string>
     <string name="upd_block_version_code">Android ei asenna sitä tämän version päälle, koska sen versionCode %1$d on pienempi kuin asennettu %2$d.</string>
     <string name="upd_fail_downgrade">Android ei asenna vanhempaa versiota uudemman päälle. Pysy tässä versiossa, kunnes kanava saavuttaa sen.</string>
-    <string name="upd_fail_signature">Tämä DroidDeck-kopio on allekirjoitettu eri tavalla (paikallinen käännös?), joten Android ei päivitä sitä paikan päällä.</string>
+    <string name="upd_fail_signature">Tämä MaliDeck-kopio on allekirjoitettu eri tavalla (paikallinen käännös?), joten Android ei päivitä sitä paikan päällä.</string>
     <string name="upd_fail_storage">Vapaata tilaa ei ole riittävästi päivitykselle.</string>
     <string name="upd_fail_aborted">Päivitys peruutettiin.</string>
     <string name="upd_fail_with_message">Päivitys ei asentunut: %1$s</string>
@@ -1922,7 +1922,7 @@
     <string name="gstore_volume_free">%1$s · %2$s vapaana</string>
     <string name="mode_storage_auto_short">Automaattinen</string>
     <string name="appupd_catalog_rejected">Päivitysluettelo ei läpäissyt tarkistuksia (%1$s)</string>
-    <string name="main_adb_clip_label">DroidDeckin lapsiprosessiasetus</string>
+    <string name="main_adb_clip_label">MaliDeckin lapsiprosessiasetus</string>
     <string name="setup_signed_in_offline_unnamed">Kirjautunut · offline-tila</string>
     <string name="setup_signed_in_unnamed">Kirjautunut</string>
     <string name="driver_tag_bundled">MUKANA</string>
@@ -2300,7 +2300,7 @@
     <string name="gpu_display_next">Piirtää näytön. Astuu voimaan seuraavasta istunnosta.</string>
     <string name="gpu_previous_driver">edellinen ajuri</string>
     <string name="gpu_restart_banner">Käynnistä uudelleen vaihtaaksesi kuva-ajurin.</string>
-    <string name="gpu_restart_blocked">Pysäytä nykyinen istunto ja käynnistä DroidDeck uudelleen vaihtaaksesi kuva-ajurin.</string>
+    <string name="gpu_restart_blocked">Pysäytä nykyinen istunto ja käynnistä MaliDeck uudelleen vaihtaaksesi kuva-ajurin.</string>
     <string name="gpu_restart_now">Käynnistä uudelleen</string>
     <string name="gpu_restart_later">Myöhemmin</string>
     <string name="gpu_auto_title">Automaattinen valitsi tämän parin GPU:lle %1$s</string>
@@ -2376,7 +2376,7 @@
     <string name="touch_speed_normal">Normaali</string>
     <string name="touch_speed_fast">Nopea</string>
     <string name="touch_edit_layout">Muokkaa asettelua</string>
-    <string name="touch_droiddeck_menu">DroidDeck-valikko</string>
+    <string name="touch_droiddeck_menu">MaliDeck-valikko</string>
     <string name="touch_drag_hint">Vedä ohjaimia näytölle</string>
     <string name="touch_arrange">Järjestä</string>
     <string name="touch_discard">Hylkää</string>
@@ -2442,7 +2442,7 @@
     <string name="glasses_driver_missing">Tämä versio ei sisällä näiden lasien ajuria.</string>
     <string name="glasses_connection_failed">Laseihin ei saatu yhteyttä. Kytke kaapeli uudelleen tai yritä uudestaan napauttamalla Salli.</string>
     <string name="glasses_allow">Salli</string>
-    <string name="glasses_allow_hint">Anna DroidDeckin säätää lasien virkistystaajuutta, 3D-tilaa, kirkkautta, äänenvoimakkuutta ja tummennusta sekä lukea niiden pään seurantaa.</string>
+    <string name="glasses_allow_hint">Anna MaliDeckin säätää lasien virkistystaajuutta, 3D-tilaa, kirkkautta, äänenvoimakkuutta ja tummennusta sekä lukea niiden pään seurantaa.</string>
     <string name="glasses_asking">Odotetaan, että sallit sen Androidin kehotteessa…</string>
     <string name="glasses_denied">Hallinta hylättiin. Salli se, jotta voit muuttaa lasien asetuksia.</string>
     <string name="glasses_no_control">Nämä lasit näyttävät pelin, mutta niiden asetuksia ei voi muuttaa täältä.</string>
@@ -2598,7 +2598,7 @@
     <string name="storage_internal">Sisäinen tallennustila</string>
     <string name="storage_used_of">%1$s / %2$s käytössä</string>
     <string name="storage_free">%1$s vapaana</string>
-    <string name="storage_droiddeck_uses">DroidDeck käyttää %1$s. Mitattu %2$s.</string>
+    <string name="storage_droiddeck_uses">MaliDeck käyttää %1$s. Mitattu %2$s.</string>
     <string name="storage_rescanning">mitataan uudelleen…</string>
     <string name="storage_other_apps">Muut Android-sovellukset</string>
     <string name="storage_safe_now">Vapautettavissa nyt</string>
@@ -2617,7 +2617,7 @@
     <string name="storage_desktop_hint">Flatpak-sovellukset ja ajonaikaympäristöt</string>
     <string name="storage_system">Linux-järjestelmä ja Steam-asiakas</string>
     <string name="storage_system_hint">Tarvitaan, jotta mitään voi ajaa</string>
-    <string name="storage_app_data">DroidDeckin tiedot</string>
+    <string name="storage_app_data">MaliDeckin tiedot</string>
     <string name="storage_app_data_hint">Vanhojen istuntojen lokit %1$s · välimuisti · ajurit</string>
     <string name="storage_legend_games">Pelit</string>
     <string name="storage_legend_data">Pelidata</string>
@@ -2625,7 +2625,7 @@
     <string name="storage_legend_stores">Muut kaupat</string>
     <string name="storage_legend_desktop">Työpöytäsovellukset</string>
     <string name="storage_legend_system">Linux-järjestelmä</string>
-    <string name="storage_legend_app">DroidDeck</string>
+    <string name="storage_legend_app">MaliDeck</string>
     <string name="storage_clean_up_title">Siivoa</string>
     <string name="storage_clean_up_lede">Mikään tässä ei koske asennettuihin peleihin tai käynnissä oleviin latauksiin.</string>
     <string name="storage_nothing_to_clean">Nyt ei ole siivottavaa.</string>
@@ -2674,8 +2674,8 @@
     <string name="storage_tool_redist">Pelien tarvitsemat VC++- ja DirectX-asennukset</string>
     <string name="storage_tool_fex">Ajaa Linux x86 -pelejä</string>
     <string name="storage_tool_steam">Steam-työkalu</string>
-    <string name="storage_tool_old_runtime">DroidDeck ajaa pelejä ilman tätä ajonaikaympäristöä</string>
-    <string name="storage_tool_x86_proton">Proton x86, jota DroidDeck ei pysty ajamaan</string>
+    <string name="storage_tool_old_runtime">MaliDeck ajaa pelejä ilman tätä ajonaikaympäristöä</string>
+    <string name="storage_tool_x86_proton">Proton x86, jota MaliDeck ei pysty ajamaan</string>
     <string name="storage_tool_custom_default">Oletus kaikille peleille</string>
     <string name="storage_tool_custom_unused">Mikään peli ei käytä tätä</string>
     <string name="storage_tool_custom_unknown">Steam-asetuksia ei voi lukea, joten se säilytetään</string>
@@ -2709,8 +2709,8 @@
         <item quantity="one">%d peli</item>
         <item quantity="other">%d peliä</item>
     </plurals>
-    <string name="storage_tool_default_proton">DroidDeckin oletus-Proton</string>
-    <string name="storage_tool_proton">DroidDeckin Proton 11 -vaihtoehto</string>
+    <string name="storage_tool_default_proton">MaliDeckin oletus-Proton</string>
+    <string name="storage_tool_proton">MaliDeckin Proton 11 -vaihtoehto</string>
     <plurals name="storage_tool_custom_games">
         <item quantity="one">%d peli käyttää</item>
         <item quantity="other">%d peliä käyttää</item>
@@ -2764,7 +2764,7 @@
     </plurals>
     <string name="boot_movie">Käynnistysvideo</string>
     <string name="boot_movie_video">Video</string>
-    <string name="boot_movie_droiddeck">DroidDeck · %1$d fps</string>
+    <string name="boot_movie_droiddeck">MaliDeck · %1$d fps</string>
     <string name="boot_movie_note">60 fps näyttää sulavammalta, mutta kuormittaa suoritinta enemmän Steamin käynnistyessä. Steamin omista asetuksista valittu video näkyy myös täällä.</string>
     <string name="boot_movie_sound">Ääni</string>
     <string name="boot_movie_custom">Oma video</string>
@@ -2776,24 +2776,24 @@
     <string name="boot_movie_imported_silent">%1$s on nyt käynnistysvideo, ilman ääntä</string>
     <string name="boot_movie_too_long">Muunnettavan videon pituus saa olla enintään %1$d sekuntia</string>
     <string name="boot_movie_converting">Muunnetaan %1$d %%</string>
-    <string name="boot_movie_converting_started">Muunnetaan %1$s Steamille. Pidä DroidDeck auki.</string>
+    <string name="boot_movie_converting_started">Muunnetaan %1$s Steamille. Pidä MaliDeck auki.</string>
     <string name="boot_movie_unsupported">Laite ei pysty purkamaan videota.</string>
     <string name="boot_movie_import_failed">Videon tuonti epäonnistui</string>
     <string name="boot_movie_remove_confirm">Poistetaanko %1$s?</string>
-    <string name="boot_movie_remove_confirm_body">Tämä poistaa videon DroidDeckistä ja Steamin videokansiosta.</string>
+    <string name="boot_movie_remove_confirm_body">Tämä poistaa videon MaliDeckistä ja Steamin videokansiosta.</string>
     <string name="boot_movie_tab_installed">Asennetut</string>
     <string name="boot_movie_tab_import">Tuo</string>
     <string name="boot_movie_tab_repo">SteamDeckRepo</string>
     <string name="boot_movie_tab_sound">Ääni</string>
     <string name="boot_movie_installed">Asennetut videot</string>
     <string name="boot_movie_browse">Selaa</string>
-    <string name="boot_movie_source_droiddeck">DroidDeck</string>
+    <string name="boot_movie_source_droiddeck">MaliDeck</string>
     <string name="boot_movie_source_import">Tuotu</string>
     <string name="boot_movie_source_repo">SteamDeckRepo</string>
     <string name="boot_movie_source_steam">Steam</string>
     <string name="boot_movie_source_pointshop">Pisteputiikki</string>
     <string name="boot_movie_report">Käynnistyselokuvaraportti</string>
-    <string name="boot_movie_report_hint">Tallentaa tekstitiedostoon, mitä DroidDeck ja Steam tietävät käynnistyselokuvista, liitettäväksi virheilmoitukseen.</string>
+    <string name="boot_movie_report_hint">Tallentaa tekstitiedostoon, mitä MaliDeck ja Steam tietävät käynnistyselokuvista, liitettäväksi virheilmoitukseen.</string>
     <string name="boot_movie_report_save">Tallenna</string>
     <string name="boot_movie_report_saved">Tallennettu: %1$s</string>
     <string name="boot_movie_report_failed">Raportin tallennus epäonnistui.</string>
@@ -2829,7 +2829,7 @@
     <string name="glasses_joycons_hint">Käytä älylasien kameroita pariliitettyjen Joy-Con-ohjainten asemointiin. Kierto- ja painikesyötteet tulevat Joy-Con-ohjaimista. Sijainti arvioidaan, kun ranteesi ovat piilossa. Korvaa paljain käsin käytettävät ohjaimet ja keskeyttää puhelimen kameran seurannan. Osoita Joy-Con-ohjaimet eteenpäin, kun yhdistät tai nollaat seurantakeskuksen.</string>
     <string name="glasses_joycons_requires_position">Ota ensin käyttöön sijainnin seuranta. Vaatii liiketunnistuksella varustetut Joy-Con-ohjaimet Android 12:ssa tai uudemmassa käyttöjärjestelmässä. Oletusarvoisesti pois päältä.</string>
     <string name="setup_tab_glasses">Älylasit</string>
-    <string name="setup_glasses_scope">Näyttö- ja päänseuranta-asetukset jaetaan DroidDeck-valikoiden, pelien ja työpöytäistuntojen välillä.</string>
+    <string name="setup_glasses_scope">Näyttö- ja päänseuranta-asetukset jaetaan MaliDeck-valikoiden, pelien ja työpöytäistuntojen välillä.</string>
     <string name="setup_glasses_connect">Yhdistä älylasit muuttaaksesi niiden näyttö- ja seuranta-asetuksia. Tallennetut asetuksesi säilyvät, kun irrotat yhteyden.</string>
     <string name="glasses_vr">VR</string>
     <string name="glasses_display_mode">Näyttötila</string>
@@ -2848,7 +2848,7 @@
     <string name="glasses_refresh_30_hint">Ota käyttöön älylasien pelitoiminto valitaksesi näytön natiivin 30 Hz:n tilan.</string>
     <string name="glasses_3dof">3DoF-virtuaalinäyttö</string>
     <string name="glasses_3dof_hint">Ankkuroi tasaiset pelit eteesi, jotta voit katsella ympärillesi. Mahdollistaa älylasien pelitoiminnon ilman 3D-tilaan vaihtamista.</string>
-    <string name="glasses_screen_app_wide">Leveys ja etäisyys päivittävät seuratun virtuaalinäytön DroidDeck-valikoissa, peleissä ja työpöytäistunnoissa välittömästi.</string>
+    <string name="glasses_screen_app_wide">Leveys ja etäisyys päivittävät seuratun virtuaalinäytön MaliDeck-valikoissa, peleissä ja työpöytäistunnoissa välittömästi.</string>
     <string name="glasses_head_tracking_spatial_vr_hint">Sijainnin seuranta sisältää pään kierron SteamVR:ssä. Jos haluat vain kierron seurannan, poista sijainnin seuranta käytöstä.</string>
     <string name="glasses_head_tracking_spatial_hint">Ohjaa pään liikettä virtuaalinäytöllä. Sijainnin seuranta sisältää pään kierron SteamVR:ssä.</string>
     <string name="glasses_quick_actions">Pikatoiminnot</string>
@@ -2944,8 +2944,8 @@
     <string name="spatial_timing_values">%1$.1f Hz • kuvan ikä %2$.1f ms • käsittely %3$.1f ms</string>
     <string name="spatial_input_values">Tuloraja %1$.1f Hz • %2$.0f%% kamerakuvia. Pään seuranta jatkuu maksimitaajuudellaan.</string>
     <string name="spatial_frame_counts">%1$d käsitelty • %2$d pudonnut • %3$d ohitettu syöttörajan mukaan</string>
-    <string name="spatial_print_job">DroidDeck ChArUco 30 mm</string>
-    <string name="spatial_print_title">DroidDeck – Luma Ultra -kalibrointi</string>
+    <string name="spatial_print_job">MaliDeck ChArUco 30 mm</string>
+    <string name="spatial_print_title">MaliDeck – Luma Ultra -kalibrointi</string>
     <string name="spatial_print_scale" formatted="false">Tulosta 100% / todellinen koko. Jokainen neliö: 30 mm (1,181 tuumaa).</string>
     <string name="spatial_print_stationary">Pidä kalibrointikohde tasaisena ja paikallaan; siirrä älylaseja kuvausten välillä.</string>
     <string name="spatial_print_check">Mittakaavatarkistus: 100 mm (3,937 tuumaa) punkkien välillä</string>
@@ -3029,22 +3029,22 @@
     <string name="spatial_opencv_load_error">OpenCV:tä ei voitu ladata</string>
     <string name="setup_group_memory">Muisti</string>
     <string name="setup_clear_cached">Sulje välimuistissa olevat sovellukset ennen istuntoa</string>
-    <string name="setup_clear_cached_hint">Kun istunto alkaa, DroidDeck sulkee sovellukset, joita Android pitää taustalla, jotta pelillä on enemmän muistia. Langattoman virheenkorjauksen on oltava päällä.</string>
-    <string name="setup_clear_cached_unpaired">Vaatii, että DroidDeck on pariutettu Langattoman virheenkorjauksen kautta (Pariuta, alla).</string>
+    <string name="setup_clear_cached_hint">Kun istunto alkaa, MaliDeck sulkee sovellukset, joita Android pitää taustalla, jotta pelillä on enemmän muistia. Langattoman virheenkorjauksen on oltava päällä.</string>
+    <string name="setup_clear_cached_unpaired">Vaatii, että MaliDeck on pariutettu Langattoman virheenkorjauksen kautta (Pariuta, alla).</string>
     <string name="setup_memory_hud">Muistinäyttö</string>
-    <string name="setup_memory_hud_hint">Käytössä oleva muisti ja swap istuntonäytöllä. Laajennettu näyttää erikseen pelin, DroidDeckin, Androidin ja GPU:n osuuden.</string>
+    <string name="setup_memory_hud_hint">Käytössä oleva muisti ja swap istuntonäytöllä. Laajennettu näyttää erikseen pelin, MaliDeckin, Androidin ja GPU:n osuuden.</string>
     <string name="setup_memory_hud_simple">Yksinkertainen</string>
     <string name="setup_memory_hud_advanced">Laajennettu</string>
     <string name="memory_hud_simple">RAM %1$s/%2$s GB · swap %3$s/%4$s GB</string>
-    <string name="memory_hud_split">peli %1$s · DroidDeck %2$s · Android %3$s GB</string>
+    <string name="memory_hud_split">peli %1$s · MaliDeck %2$s · Android %3$s GB</string>
     <string name="memory_hud_gpu">GPU %1$s GB</string>
     <string name="setup_bg_limit">Taustasovellukset istunnon aikana</string>
-    <string name="setup_bg_limit_hint">Istunnon aikana Android pitää välimuistissa enintään näin monta sovellusta ja sulkee loput, jotta peli saa niiden muistin. DroidDeck palauttaa rajan ennalleen, kun istunto päättyy. Langattoman virheenkorjauksen on oltava päällä.</string>
+    <string name="setup_bg_limit_hint">Istunnon aikana Android pitää välimuistissa enintään näin monta sovellusta ja sulkee loput, jotta peli saa niiden muistin. MaliDeck palauttaa rajan ennalleen, kun istunto päättyy. Langattoman virheenkorjauksen on oltava päällä.</string>
     <string name="setup_bg_limit_4">Enintään 4</string>
     <string name="setup_bg_limit_1">Enintään 1</string>
     <string name="setup_bg_limit_0">Ei mitään</string>
     <string name="setup_adb_pair">Langaton virheenkorjaus</string>
-    <string name="setup_adb_pair_hint">Pariuttaa DroidDeckin Androidin Langattomaan virheenkorjaukseen yllä olevia asetuksia varten. Lapsiprosessien raja pysyy pois päältä.</string>
+    <string name="setup_adb_pair_hint">Pariuttaa MaliDeckin Androidin Langattomaan virheenkorjaukseen yllä olevia asetuksia varten. Lapsiprosessien raja pysyy pois päältä.</string>
     <string name="setup_adb_pair_button">Pariuta</string>
     <string name="epic_client_missing">Ei asennettu</string>
     <string name="epic_client_open">Avaa</string>

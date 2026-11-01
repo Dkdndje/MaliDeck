@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="steamvr_recovery_title">SteamVR 圖形已停止運作</string>
-    <string name="steamvr_recovery_countdown">DroidDeck 將在 %1$d 秒後重新啟動，以重設圖形並重新開啟 SteamVR。執行中的遊戲會被關閉，未儲存的進度將無法復原。</string>
+    <string name="steamvr_recovery_countdown">MaliDeck 將在 %1$d 秒後重新啟動，以重設圖形並重新開啟 SteamVR。執行中的遊戲會被關閉，未儲存的進度將無法復原。</string>
     <string name="steamvr_recovery_repeated">最近一次重新啟動後，圖形故障再次發生。為避免無限循環，已暫停自動復原。重新啟動會關閉你的遊戲，未儲存的進度將無法復原。</string>
     <string name="steamvr_recovery_restart">立即重新啟動</string>
     <string name="steamvr_recovery_cancel">保持開啟</string>
     <string name="steamvr_recovery_restarting">正在重設圖形並重新開啟 SteamVR…</string>
-    <string name="steamvr_recovery_failed">DroidDeck 無法自動重新啟動。請完全關閉應用程式，然後重新開啟。</string>
-    <string name="app_name">DroidDeck</string>
+    <string name="steamvr_recovery_failed">MaliDeck 無法自動重新啟動。請完全關閉應用程式，然後重新開啟。</string>
+    <string name="app_name">MaliDeck</string>
     <string-array name="loading_hints">
         <item>首次執行會下載 Steam。這可能需要幾分鐘。</item>
         <item>預設情況下，離開應用程式會暫停 Steam；返回時會從上次中斷處繼續。</item>
@@ -139,7 +139,7 @@
     <string name="user_apps_remove_confirm">再次點擊以移除</string>
     <string name="user_apps_stop_session">請先結束工作階段再移除</string>
     <string name="user_apps_script_linked">從其所在資料夾執行 %1$s，該資料夾會原地連結到工作階段中。移除應用程式不會動到該資料夾。</string>
-    <string name="user_apps_script_copied">從複製到 DroidDeck 內部的資料夾中執行 %1$s。移除應用程式會刪除複本，不會刪除原始檔案。</string>
+    <string name="user_apps_script_copied">從複製到 MaliDeck 內部的資料夾中執行 %1$s。移除應用程式會刪除複本，不會刪除原始檔案。</string>
     <string name="user_apps_runtime_required">請先安裝 Linux 執行環境</string>
     <string name="user_apps_file_gone">檔案已不存在</string>
     <string name="user_apps_no_space">可用空間不足：複製該資料夾需要 %1$s</string>
@@ -174,7 +174,7 @@
     <string name="app_fex_off">關閉</string>
     <string name="app_fex_hint">FEX 可在這部 ARM64 裝置上執行 x86 Linux 程式。「自動」會在程式為 x86 組建時使用 FEX。</string>
     <string name="app_fex_x86">透過 FEX 執行 %1$s</string>
-    <string name="app_fex_not_ready">此程式是為 %1$s 電腦組建的，需透過 FEX 執行，但 FEX 尚未設定。請在登入狀態下開啟一次 Steam：DroidDeck 會讓它下載 FEX 和所需的 Steam Linux Runtime，之後就能開啟此程式。</string>
+    <string name="app_fex_not_ready">此程式是為 %1$s 電腦組建的，需透過 FEX 執行，但 FEX 尚未設定。請在登入狀態下開啟一次 Steam：MaliDeck 會讓它下載 FEX 和所需的 Steam Linux Runtime，之後就能開啟此程式。</string>
     <string name="session_end_program">此程式</string>
     <string name="session_end_steam_download">無法下載 Steam 用戶端。你的網路或 VPN 可能封鎖了 Steam 的伺服器；請檢查連線後再試一次。</string>
     <string name="session_end_steam_setup">無法設定 Steam 用戶端。請檢查連線和可用儲存空間，然後再試一次。</string>
@@ -211,13 +211,13 @@
     <string name="edit_app_save">儲存</string>
     <string name="add_app_checking_folder">正在檢查資料夾…</string>
     <string name="add_app_folder_linked">其資料夾已連結到工作階段中：%1$s</string>
-    <string name="add_app_folder_copied">該資料夾包含 Linux 程式，共用儲存空間無法執行這些程式，因此會將其複製到 DroidDeck（%1$s）。</string>
+    <string name="add_app_folder_copied">該資料夾包含 Linux 程式，共用儲存空間無法執行這些程式，因此會將其複製到 MaliDeck（%1$s）。</string>
     <string name="add_app_confirm">新增</string>
     <string name="add_app_cancel">取消</string>
     <string name="add_app_runtime_required">請先從「初始設定」中安裝 Linux 執行環境。</string>
     <string name="add_app_busy">請等待 %1$s 完成。</string>
     <string name="steam_compat_label">相容</string>
-    <string name="proton_compatible_note">在 Steam 的「相容性」選單中標示「%1$s」的組建版本包含 DroidDeck 的 前綴修正，可在此啟動遊戲。預設為 Proton Experimental ARM64（%1$s）；安裝較新的 Proton 11.0 ARM64（%1$s）後則改用該版本。Valve 自己未帶此標示的 Proton 項目無法在這部裝置上啟動遊戲。</string>
+    <string name="proton_compatible_note">在 Steam 的「相容性」選單中標示「%1$s」的組建版本包含 MaliDeck 的 前綴修正，可在此啟動遊戲。預設為 Proton Experimental ARM64（%1$s）；安裝較新的 Proton 11.0 ARM64（%1$s）後則改用該版本。Valve 自己未帶此標示的 Proton 項目無法在這部裝置上啟動遊戲。</string>
     <string name="proton_installed_compatible">已安裝 %1$s · %2$s</string>
     <string name="common_cancel">取消</string>
     <string name="common_auto">自動</string>
@@ -307,8 +307,8 @@
     <string name="mode_background_downloads_hint">Steam 正在下載時，延後在背景暫停。</string>
     <string name="mode_suspend_note">「自動」會在背景時暫停，並在重新顯示時繼續。「手動」會等你點擊「繼續」。「從不」則會持續執行。</string>
     <string name="mode_startup">啟動</string>
-    <string name="mode_steam_startup">隨 DroidDeck 啟動 Steam</string>
-    <string name="mode_steam_startup_hint">DroidDeck 啟動時開啟 Steam 工作階段。</string>
+    <string name="mode_steam_startup">隨 MaliDeck 啟動 Steam</string>
+    <string name="mode_steam_startup_hint">MaliDeck 啟動時開啟 Steam 工作階段。</string>
     <string name="mode_decky">Decky</string>
     <string name="mode_decky_checking">正在檢查發行版本…</string>
     <string name="mode_decky_ready">已準備好安裝 %1$s。</string>
@@ -325,8 +325,8 @@
     <string name="mode_client">用戶端</string>
     <string name="mode_mangoapp">效能重疊層</string>
     <string name="mode_mangoapp_hint">如果 Deck 模式下遊戲崩潰或黑畫面，請關閉此項。下次工作階段生效。</string>
-    <string name="mode_return_after_game">遊戲結束後返回 DroidDeck</string>
-    <string name="mode_return_after_game_hint">從 DroidDeck 或其他啟動器啟動的遊戲關閉後，Steam 會正常退出（先完成雲端存檔同步），並返回啟動位置。關閉：留在 Steam 中。</string>
+    <string name="mode_return_after_game">遊戲結束後返回 MaliDeck</string>
+    <string name="mode_return_after_game_hint">從 MaliDeck 或其他啟動器啟動的遊戲關閉後，Steam 會正常退出（先完成雲端存檔同步），並返回啟動位置。關閉：留在 Steam 中。</string>
     <string name="mode_steam_repair">修復 Steam 用戶端</string>
     <string name="mode_steam_repair_hint">下次啟動 Steam 時重新下載 Steam 用戶端。如果 Steam 一直停在載入畫面，請使用此功能。遊戲、登入狀態和設定都會保留。</string>
     <string name="mode_steam_repair_queued">下次啟動 Steam 時會重新下載 Steam 用戶端。</string>
@@ -401,7 +401,7 @@
     <string name="mode_wifi_open_settings">開啟設定</string>
     <string name="mode_wifi_continue">繼續</string>
     <string name="mode_wifi_explain_title">啟用 Wi-Fi 探索？</string>
-    <string name="mode_wifi_explain_text">Android 需要定位權限才能讀取 Wi-Fi 名稱並探索附近網路。DroidDeck 使用此權限在 Steam 中顯示這些網路。我們不會追蹤你的位置。沒有此權限也可以存取網際網路。</string>
+    <string name="mode_wifi_explain_text">Android 需要定位權限才能讀取 Wi-Fi 名稱並探索附近網路。MaliDeck 使用此權限在 Steam 中顯示這些網路。我們不會追蹤你的位置。沒有此權限也可以存取網際網路。</string>
     <string name="mode_storage">遊戲儲存空間</string>
     <string name="mode_storage_auto">自動 - 有 SD 卡時使用 SD 卡，以及你的遊戲資料夾</string>
     <string name="mode_storage_auto_none">自動 - 使用你的遊戲資料夾，有 SD 卡時也使用 SD 卡（目前無 SD 卡）</string>
@@ -521,7 +521,7 @@
     <string name="comp_nightlies_count">Nightlies 中 · %1$d</string>
     <string name="comp_channel_stable">穩定版</string>
     <string name="comp_channel_nightly">每夜版</string>
-    <string name="comp_refresh_to_list">重新整理以列出 Nightlies 和 DroidDeck 中的套件。</string>
+    <string name="comp_refresh_to_list">重新整理以列出 Nightlies 和 MaliDeck 中的套件。</string>
     <string name="comp_nothing_new">自上次檢查以來沒有新內容。</string>
     <string name="comp_import_wcp">匯入 .wcp</string>
     <string name="comp_restore_original">還原此 Proton 的原始檔案</string>
@@ -753,7 +753,7 @@
     <string name="setup_language_system">系統預設（%1$s）</string>
     <string name="setup_language_system_short">系統預設</string>
     <string name="setup_app_scale">應用程式縮放</string>
-    <string name="setup_app_scale_hint">DroidDeck 的文字和控制項</string>
+    <string name="setup_app_scale_hint">MaliDeck 的文字和控制項</string>
     <string name="setup_app_scale_default">%1$d%%（預設）</string>
     <string name="setup_theme">佈景主題</string>
     <string name="setup_theme_hint">啟動器外觀</string>
@@ -761,8 +761,8 @@
     <string name="setup_launcher_icon_dark">深色</string>
     <string name="setup_launcher_icon_light">淺色</string>
     <string name="setup_home">用作主螢幕</string>
-    <string name="setup_home_on">DroidDeck 可以作為主螢幕應用程式</string>
-    <string name="setup_home_off">DroidDeck 不會作為主螢幕應用程式提供</string>
+    <string name="setup_home_on">MaliDeck 可以作為主螢幕應用程式</string>
+    <string name="setup_home_off">MaliDeck 不會作為主螢幕應用程式提供</string>
     <string name="setup_orientation">螢幕方向</string>
     <string name="setup_orientation_auto">自動橫向</string>
     <string name="setup_orientation_landscape">橫向</string>
@@ -841,16 +841,16 @@
     <string name="store_website">網站</string>
     <string name="store_verified">已驗證</string>
     <string name="upd_title">更新</string>
-    <string name="upd_build">DroidDeck %1$s · %2$s</string>
+    <string name="upd_build">MaliDeck %1$s · %2$s</string>
     <string name="upd_checked">已檢查 %1$s</string>
     <string name="upd_not_checked">尚未檢查</string>
-    <string name="upd_perm_title">允許 DroidDeck 自行更新</string>
+    <string name="upd_perm_title">允許 MaliDeck 自行更新</string>
     <string name="upd_perm_text">在下一頁開啟「允許來自此來源」，然後返回。更新會自動繼續。</string>
     <string name="upd_open_settings">開啟設定</string>
     <string name="upd_not_now">暫時不要</string>
     <string name="upd_signed_status">簽章不同</string>
     <string name="upd_signed_headline">無法原地更新</string>
-    <string name="upd_signed_detail">此複本使用的不是 DroidDeck 發行金鑰簽章，因此無法直接覆寫更新。請解除安裝後切換。</string>
+    <string name="upd_signed_detail">此複本使用的不是 MaliDeck 發行金鑰簽章，因此無法直接覆寫更新。請解除安裝後切換。</string>
     <string name="upd_available">有可用更新</string>
     <string name="upd_blocked_status">無法安裝</string>
     <string name="upd_switch">可以切換</string>
@@ -872,7 +872,7 @@
     <string name="upd_stop_session">請停止正在執行的工作階段後再更新。</string>
     <string name="upd_less">收合</string>
     <string name="upd_more">更多</string>
-    <string name="upd_new_stable">DroidDeck %1$s</string>
+    <string name="upd_new_stable">MaliDeck %1$s</string>
     <string name="upd_new_preview">新的預覽版組建版本</string>
     <string name="upd_new_test">PR #%1$d 測試組建版本</string>
     <string name="upd_mb">%1$d MB</string>
@@ -887,7 +887,7 @@
     <string name="upd_tests_hint">在正式發布前試用修正</string>
     <string name="upd_tests_none">目前沒有</string>
     <string name="upd_pr">PR #%1$d</string>
-    <string name="upd_not_built">未為此 DroidDeck 複本組建</string>
+    <string name="upd_not_built">未為此 MaliDeck 複本組建</string>
     <string name="upd_updated">已更新 %1$s</string>
     <string name="upd_test_name">PR #%1$d 測試版</string>
     <string name="upd_while_ago">一段時間前</string>
@@ -907,13 +907,13 @@
     <string name="gate_fix_for_me">幫我修復</string>
     <string name="gate_toggle_steps">開啟「停止限制子程序」，然後返回。請保持開發人員選項開啟，否則該開關會再次關閉。</string>
     <string name="gate_open_dev">開啟開發人員選項</string>
-    <string name="gate_no_toggle">此 Android 版本沒有該開關，因此 DroidDeck 會透過無線偵錯進行修改。大約需要一分鐘，無需電腦。</string>
+    <string name="gate_no_toggle">此 Android 版本沒有該開關，因此 MaliDeck 會透過無線偵錯進行修改。大約需要一分鐘，無需電腦。</string>
     <string name="gate_needs_wifi">無線偵錯需要 Wi-Fi。任何網路都可以，不需要網際網路。</string>
-    <string name="gate_needs_notifications">配對碼會顯示在通知中。請允許 DroidDeck 傳送通知，或使用「其他方式」。</string>
+    <string name="gate_needs_notifications">配對碼會顯示在通知中。請允許 MaliDeck 傳送通知，或使用「其他方式」。</string>
     <string name="gate_allow_notifications">允許通知</string>
     <string name="gate_step1">開啟「Android 設定」→「開發人員選項」→「無線偵錯」，並將其開啟</string>
     <string name="gate_step2">點擊「使用配對碼配對裝置」</string>
-    <string name="gate_step3">將配對碼輸入 DroidDeck 通知中</string>
+    <string name="gate_step3">將配對碼輸入 MaliDeck 通知中</string>
     <string name="gate_waiting">正在等待配對彈出視窗…</string>
     <string name="gate_code_needed">已找到彈出視窗。請將其中的配對碼輸入通知。</string>
     <string name="gate_status">狀態</string>
@@ -1031,7 +1031,7 @@
     <string name="desktop_removing">正在移除桌面</string>
     <string name="desktop_removed">已移除桌面</string>
     <string name="desktop_cleaning_legacy">正在移除舊的 LXQt 檔案</string>
-    <string name="desktop_removal_unknown">請先更新 DroidDeck，再移除此桌面版本。</string>
+    <string name="desktop_removal_unknown">請先更新 MaliDeck，再移除此桌面版本。</string>
     <string name="content_linux_desktop">Linux 桌面</string>
     <string name="content_linux_desktop_hint">KDE Plasma、Firefox 和你的模擬器</string>
     <string name="games_empty">在 Steam 中安裝的遊戲會在工作階段結束後顯示在這裡。</string>
@@ -1076,7 +1076,7 @@
     <string name="gpu_auto_by_gpu">自動 - 按 GPU 選擇</string>
     <string name="gpu_manage">下載、匯入或刪除…</string>
     <string name="gpu_in_use_caps">正在使用</string>
-    <string name="gpu_builtin">DroidDeck 內建驅動程式</string>
+    <string name="gpu_builtin">MaliDeck 內建驅動程式</string>
     <string name="gpu_matched_pair">執行環境驅動程式和顯示驅動程式作為配對組合一起設定。</string>
     <string name="gpu_recommended_for">建議此 GPU 使用：%1$s。</string>
     <string name="gpu_refresh_hint">重新整理以尋找適用於此 GPU 的驅動程式。</string>
@@ -1179,7 +1179,7 @@
     <string name="unfolded_controls_hint">展開時，遊戲會顯示在 Steam Deck 觸控板和背面握把上方。摺疊時，遊戲以全螢幕顯示。</string>
     <string name="pip_suspended">已暫停</string>
     <string name="pip_not_ready">工作階段準備就緒後即可使用子母畫面。</string>
-    <string name="pip_permission">請在 Android 設定中允許 DroidDeck 使用子母畫面。</string>
+    <string name="pip_permission">請在 Android 設定中允許 MaliDeck 使用子母畫面。</string>
     <string name="pip_unavailable">Android 無法開啟子母畫面。</string>
     <string name="game_shortcut">捷徑</string>
     <string name="game_shortcut_add">新增至主螢幕</string>
@@ -1189,7 +1189,7 @@
     <string name="game_link_copied">已複製啟動連結</string>
     <string name="game_shortcut_unsupported">此啟動器無法新增捷徑。請改用「複製啟動連結」。</string>
     <string name="game_link_invalid">無效的遊戲啟動連結。</string>
-    <string name="game_link_missing">此遊戲已不在你的 DroidDeck 收藏庫中。</string>
+    <string name="game_link_missing">此遊戲已不在你的 MaliDeck 收藏庫中。</string>
     <string name="game_link_session_busy">啟動 Steam 遊戲前請停止目前工作階段。</string>
     <string name="game_link_failed">無法將遊戲傳送到 Steam。請再次嘗試啟動。</string>
     <string name="setup_retry_removal">重試移除</string>
@@ -1212,7 +1212,7 @@
         <item quantity="other">已從 %2$s 匯入 %1$d 個檔案到 %3$s</item>
     </plurals>
     <plurals name="main_saves_imported_backup">
-        <item quantity="other">已從 %2$s 匯入 %1$d 個檔案到 %3$s。舊存檔已備份到 Download/DroidDeck/Saves/backups</item>
+        <item quantity="other">已從 %2$s 匯入 %1$d 個檔案到 %3$s。舊存檔已備份到 Download/MaliDeck/Saves/backups</item>
     </plurals>
     <string name="main_saves_pick_zip">選擇 %1$s 的存檔壓縮檔</string>
     <string name="main_saves_exporting">正在匯出 %1$s</string>
@@ -1268,7 +1268,7 @@
 
     <string name="upd_unknown_apps_failed">無法開啟 Android 的「安裝不明應用程式」設定</string>
     <string name="upd_couldnt_check">無法檢查：%1$s</string>
-    <string name="upd_no_download">此組建版本沒有適用於此 DroidDeck 複本的下載檔案</string>
+    <string name="upd_no_download">此組建版本沒有適用於此 MaliDeck 複本的下載檔案</string>
     <string name="upd_stop_first">請先停止正在執行的工作階段，再進行更新</string>
     <string name="upd_stage_downloading">正在下載</string>
     <string name="upd_stage_installing">正在安裝</string>
@@ -1297,22 +1297,22 @@
     <string name="drivers_recommended_unpublished">建議的驅動程式目前尚未發布</string>
     <string name="drivers_downloading_pair">正在下載 %1$s %2$s…</string>
     <string name="drivers_updated_to">已更新到 %1$s %2$s。</string>
-    <string name="drivers_updated_to_restart">已更新到 %1$s %2$s。顯示驅動程式會在 DroidDeck 重新啟動後生效。</string>
+    <string name="drivers_updated_to_restart">已更新到 %1$s %2$s。顯示驅動程式會在 MaliDeck 重新啟動後生效。</string>
     <string name="drivers_auto_waits_for_session">驅動程式更新會等到工作階段結束後進行。</string>
     <string name="drivers_auto_waits_for_network">結束行動數據與省電模式後，將下載 %1$s %2$s。</string>
     <string name="drivers_skipping_bad">%1$s %2$s 在此裝置上未能啟動工作階段，自動模式繼續使用可用的驅動程式。</string>
     <string name="drivers_rolled_back">%1$s 兩次未能啟動工作階段，自動模式已回到可用的驅動程式。</string>
     <string name="drivers_switched_to">已切換到 %1$s %2$s。</string>
-    <string name="drivers_switched_to_restart">已切換到 %1$s %2$s。顯示驅動程式會在 DroidDeck 重新啟動後生效。</string>
+    <string name="drivers_switched_to_restart">已切換到 %1$s %2$s。顯示驅動程式會在 MaliDeck 重新啟動後生效。</string>
     <string name="drivers_using">正在使用 %1$s %2$s。</string>
-    <string name="drivers_using_restart">正在使用 %1$s %2$s。顯示驅動程式會在 DroidDeck 重新啟動後生效。</string>
+    <string name="drivers_using_restart">正在使用 %1$s %2$s。顯示驅動程式會在 MaliDeck 重新啟動後生效。</string>
     <string name="drivers_using_quest">使用內建的 Quest 顯示驅動程式與執行環境預設值。</string>
-    <string name="drivers_using_quest_restart">使用內建的 Quest 顯示驅動程式與執行環境預設值。顯示驅動程式將在 DroidDeck 重新啟動後生效。</string>
+    <string name="drivers_using_quest_restart">使用內建的 Quest 顯示驅動程式與執行環境預設值。顯示驅動程式將在 MaliDeck 重新啟動後生效。</string>
     <string name="drivers_not_a_driver">不是驅動程式 zip：既不是 AdrenoTools 驅動程式、-Linux Turnip，也不是 Android + Linux 套件組合</string>
     <string name="drivers_import_failed">匯入失敗：%1$s</string>
     <string name="drivers_imported_unnamed">已匯入的驅動程式</string>
     <string name="drivers_using_bundle">正在將 %1$s 同時用作執行環境驅動程式和顯示驅動程式。</string>
-    <string name="drivers_using_bundle_restart">正在將 %1$s 同時用作執行環境驅動程式和顯示驅動程式。顯示驅動程式會在 DroidDeck 重新啟動後生效。</string>
+    <string name="drivers_using_bundle_restart">正在將 %1$s 同時用作執行環境驅動程式和顯示驅動程式。顯示驅動程式會在 MaliDeck 重新啟動後生效。</string>
     <string name="drivers_deleted_bundle">已刪除 %1$s（兩個驅動程式）</string>
     <string name="drivers_deleted">已刪除 %1$s</string>
     <string name="drivers_release_status">最新：%1$s · 檢查於 %2$s</string>
@@ -1326,7 +1326,7 @@
     <plurals name="drivers_ago_days">
         <item quantity="other">%1$d 天前</item>
     </plurals>
-    <string name="drivers_checking_sources">正在檢查 Banners-Turnip、WinNative 和 DroidDeck…</string>
+    <string name="drivers_checking_sources">正在檢查 Banners-Turnip、WinNative 和 MaliDeck…</string>
     <string name="drivers_check_failed">檢查失敗</string>
     <string name="drivers_installed_pick_either">已安裝 %1$s - 在任一清單中選擇它即可同時設定兩個驅動程式</string>
     <string name="drivers_installed_pick">已安裝 %1$s - 請在選單中選擇</string>
@@ -1712,7 +1712,7 @@
     <string name="adbfix_no_pairing">尚未儲存任何無線偵錯配對</string>
     <string name="adbfix_enter_address">請輸入目前的無線偵錯 IP 位址和連接埠</string>
 
-    <string name="adbpair_timed_out">等待配對彈出視窗逾時。請從 DroidDeck 再試一次。</string>
+    <string name="adbpair_timed_out">等待配對彈出視窗逾時。請從 MaliDeck 再試一次。</string>
     <string name="adbpair_discovery_failed_code">無法尋找配對彈出視窗（%1$d）。請確認 Wi-Fi 已開啟。</string>
     <string name="adbpair_discovery_failed">無法尋找配對彈出視窗：%1$s</string>
     <string name="adbpair_six_digits">請輸入完整的 6 位數配對碼</string>
@@ -1734,20 +1734,20 @@
     <string name="adbpair_enter_code">輸入配對碼</string>
     <string name="adbpair_title_working">正在設定 Steam</string>
     <string name="adbpair_title_done">Steam 已就緒</string>
-    <string name="adbpair_done_text">點擊即可返回 DroidDeck。現在可以關閉無線偵錯了。</string>
+    <string name="adbpair_done_text">點擊即可返回 MaliDeck。現在可以關閉無線偵錯了。</string>
     <string name="adbpair_title_failed">無線偵錯設定已停止</string>
 
     <string name="selfinst_download_failed">下載失敗</string>
     <string name="selfinst_size_mismatch">下載的大小與發布的 APK 不符，已捨棄 - 請再試一次</string>
     <string name="selfinst_checksum_mismatch">下載的檔案與校驗碼不符，已捨棄 - 請再試一次</string>
     <string name="selfinst_wrong_package">此更新適用於 Android 套件 %1$s，而非 %2$s</string>
-    <string name="selfinst_metadata_signer">更新中繼資料未列出 DroidDeck 的發行簽署金鑰</string>
+    <string name="selfinst_metadata_signer">更新中繼資料未列出 MaliDeck 的發行簽署金鑰</string>
     <string name="selfinst_unreadable">Android 無法讀取下載的 APK</string>
     <string name="selfinst_apk_wrong_package">下載的 APK 適用於 %1$s，而非 %2$s</string>
     <string name="selfinst_version_mismatch">下載的 APK 標示 versionCode 為 %1$d，與發布的 %2$d 不符</string>
     <string name="selfinst_downgrade">Android 不會以 versionCode %1$d 覆蓋已安裝的 %2$d</string>
     <string name="selfinst_no_signing">下載的 APK 沒有簽署資訊</string>
-    <string name="selfinst_wrong_signer">下載的 APK 並非以 DroidDeck 的發行金鑰簽署</string>
+    <string name="selfinst_wrong_signer">下載的 APK 並非以 MaliDeck 的發行金鑰簽署</string>
     <string name="appupd_http">更新目錄回應 HTTP %1$d</string>
 
     <string name="loadstate_starting">正在啟動工作階段…</string>
@@ -1793,7 +1793,7 @@
     <string name="cmgr_original_kept">已安裝組建的原始版本會保留，以便還原。</string>
     <string name="cmgr_not_stored">未儲存</string>
     <string name="cmgr_deleted_original">已刪除 %2$s 來自 %1$s 的原始版本。</string>
-    <string name="cmgr_nightlies_only">只會從 Nightlies 和 DroidDeck 發行版本下載</string>
+    <string name="cmgr_nightlies_only">只會從 Nightlies 和 MaliDeck 發行版本下載</string>
     <string name="cmgr_nightly_replaced">下載失敗：此每夜版本可能已被較新的版本取代。請重新整理清單後再試一次。</string>
     <string name="cmgr_list_predates_checksums">此套件清單早於校驗碼機制 - 請重新整理後再試一次</string>
     <string name="cmgr_checksum_mismatch">校驗碼不符</string>
@@ -1833,7 +1833,7 @@
     <string name="gpuinfo_experimental">實驗性：其驅動程式為測試版本</string>
     <string name="gpuinfo_a850_experimental">Adreno 850 實驗性支援：需要相容的實驗版顯示驅動程式及遊戲驅動程式；尚未在此裝置上驗證</string>
     <string name="gpuinfo_below_tested">低於已測試的硬體（Adreno 725 及更新機型）：可能無法執行</string>
-    <string name="gpuinfo_unsupported">不受支援：DroidDeck 需要 Adreno（Snapdragon）GPU</string>
+    <string name="gpuinfo_unsupported">不受支援：MaliDeck 需要 Adreno（Snapdragon）GPU</string>
 
     <string name="turnip_rate_limited">已達 GitHub 速率限制 - 請稍後再試</string>
     <string name="turnip_github_http">GitHub 回應 HTTP %1$d</string>
@@ -1876,10 +1876,10 @@
     <string name="phantom_instructions_not_applicable">此 Android 版本不使用這項限制。</string>
     <string name="phantom_fix_toggle">在開發人員選項中開啟「停止限制子程序」，之後請保持開發人員選項開啟。</string>
     <string name="phantom_fix_no_toggle">此 Android 版本沒有這個開關。請使用無線偵錯，直接在此裝置上變更。</string>
-    <string name="upd_block_no_apk">此組建版本沒有適用於此 DroidDeck 複本的下載檔案。</string>
+    <string name="upd_block_no_apk">此組建版本沒有適用於此 MaliDeck 複本的下載檔案。</string>
     <string name="upd_block_version_code">Android 不會以此版本覆蓋目前的組建，因為它的 versionCode %1$d 低於已安裝的 %2$d。</string>
     <string name="upd_fail_downgrade">Android 不會以舊版本覆蓋新版本。請先留在此組建版本，等更新頻道趕上。</string>
-    <string name="upd_fail_signature">此 DroidDeck 複本的簽章不同（是本機組建的嗎？），因此 Android 無法直接覆寫更新。</string>
+    <string name="upd_fail_signature">此 MaliDeck 複本的簽章不同（是本機組建的嗎？），因此 Android 無法直接覆寫更新。</string>
     <string name="upd_fail_storage">可用空間不足，無法更新。</string>
     <string name="upd_fail_aborted">已取消更新。</string>
     <string name="upd_fail_with_message">未能安裝更新：%1$s</string>
@@ -1904,7 +1904,7 @@
     <string name="gstore_volume_free">%1$s · 可用 %2$s</string>
     <string name="mode_storage_auto_short">自動</string>
     <string name="appupd_catalog_rejected">更新目錄未通過檢查（%1$s）</string>
-    <string name="main_adb_clip_label">DroidDeck 子處理程序設定</string>
+    <string name="main_adb_clip_label">MaliDeck 子處理程序設定</string>
     <string name="setup_signed_in_offline_unnamed">已登入 · 離線模式</string>
     <string name="setup_signed_in_unnamed">已登入</string>
     <string name="driver_tag_bundled">內建</string>
@@ -2280,7 +2280,7 @@
     <string name="gpu_display_next">負責繪製畫面。從下次工作階段起生效。</string>
     <string name="gpu_previous_driver">上一個驅動程式</string>
     <string name="gpu_restart_banner">重新啟動以切換顯示驅動程式。</string>
-    <string name="gpu_restart_blocked">請先停止執行中的工作階段，再重新啟動 DroidDeck 以切換顯示驅動程式。</string>
+    <string name="gpu_restart_blocked">請先停止執行中的工作階段，再重新啟動 MaliDeck 以切換顯示驅動程式。</string>
     <string name="gpu_restart_now">立即重新啟動</string>
     <string name="gpu_restart_later">稍後</string>
     <string name="gpu_auto_title">已為你的 %1$s 自動選擇此組合</string>
@@ -2356,7 +2356,7 @@
     <string name="touch_speed_normal">正常</string>
     <string name="touch_speed_fast">快</string>
     <string name="touch_edit_layout">編輯版面配置</string>
-    <string name="touch_droiddeck_menu">DroidDeck 選單</string>
+    <string name="touch_droiddeck_menu">MaliDeck 選單</string>
     <string name="touch_drag_hint">將控制項拖曳到畫面上</string>
     <string name="touch_arrange">排列</string>
     <string name="touch_discard">放棄</string>
@@ -2420,7 +2420,7 @@
     <string name="glasses_driver_missing">這個版本未包含這副眼鏡的驅動程式。</string>
     <string name="glasses_connection_failed">無法連線到眼鏡。請重新插上傳輸線，或點擊「允許」重試。</string>
     <string name="glasses_allow">允許</string>
-    <string name="glasses_allow_hint">允許 DroidDeck 設定眼鏡的更新率、3D 模式、亮度、音量和遮光，並讀取其頭部追蹤。</string>
+    <string name="glasses_allow_hint">允許 MaliDeck 設定眼鏡的更新率、3D 模式、亮度、音量和遮光，並讀取其頭部追蹤。</string>
     <string name="glasses_asking">正在等待你在 Android 提示中允許…</string>
     <string name="glasses_denied">控制已被拒絕。允許後才能變更眼鏡設定。</string>
     <string name="glasses_no_control">這副眼鏡可以顯示遊戲，但無法在此變更其設定。</string>
@@ -2576,7 +2576,7 @@
     <string name="storage_internal">內部儲存空間</string>
     <string name="storage_used_of">已用 %1$s / %2$s</string>
     <string name="storage_free">可用 %1$s</string>
-    <string name="storage_droiddeck_uses">DroidDeck 使用 %1$s。統計時間 %2$s。</string>
+    <string name="storage_droiddeck_uses">MaliDeck 使用 %1$s。統計時間 %2$s。</string>
     <string name="storage_rescanning">正在重新統計…</string>
     <string name="storage_other_apps">其他 Android 應用程式</string>
     <string name="storage_safe_now">現在可安全釋放</string>
@@ -2595,7 +2595,7 @@
     <string name="storage_desktop_hint">Flatpak 應用程式與執行環境</string>
     <string name="storage_system">Linux 系統與 Steam 用戶端</string>
     <string name="storage_system_hint">執行任何內容所必需</string>
-    <string name="storage_app_data">DroidDeck 資料</string>
+    <string name="storage_app_data">MaliDeck 資料</string>
     <string name="storage_app_data_hint">舊工作階段日誌 %1$s · 快取 · 驅動程式</string>
     <string name="storage_legend_games">遊戲</string>
     <string name="storage_legend_data">遊戲資料</string>
@@ -2603,7 +2603,7 @@
     <string name="storage_legend_stores">其他商店</string>
     <string name="storage_legend_desktop">桌面應用程式</string>
     <string name="storage_legend_system">Linux 系統</string>
-    <string name="storage_legend_app">DroidDeck</string>
+    <string name="storage_legend_app">MaliDeck</string>
     <string name="storage_clean_up_title">清理</string>
     <string name="storage_clean_up_lede">此處不會影響已安裝的遊戲或進行中的下載。</string>
     <string name="storage_nothing_to_clean">目前沒有可清理的內容。</string>
@@ -2652,8 +2652,8 @@
     <string name="storage_tool_redist">遊戲要求的 VC++ 與 DirectX 安裝程式</string>
     <string name="storage_tool_fex">執行 Linux x86 遊戲</string>
     <string name="storage_tool_steam">Steam 工具</string>
-    <string name="storage_tool_old_runtime">DroidDeck 不需要此執行環境即可執行遊戲</string>
-    <string name="storage_tool_x86_proton">x86 Proton，DroidDeck 無法執行</string>
+    <string name="storage_tool_old_runtime">MaliDeck 不需要此執行環境即可執行遊戲</string>
+    <string name="storage_tool_x86_proton">x86 Proton，MaliDeck 無法執行</string>
     <string name="storage_tool_custom_default">所有遊戲的預設項目</string>
     <string name="storage_tool_custom_unused">沒有遊戲使用它</string>
     <string name="storage_tool_custom_unknown">無法讀取 Steam 的設定，因此保留</string>
@@ -2687,8 +2687,8 @@
         <item quantity="one">%d 個遊戲</item>
         <item quantity="other">%d 個遊戲</item>
     </plurals>
-    <string name="storage_tool_default_proton">DroidDeck 的預設 Proton</string>
-    <string name="storage_tool_proton">DroidDeck 的 Proton 11 選項</string>
+    <string name="storage_tool_default_proton">MaliDeck 的預設 Proton</string>
+    <string name="storage_tool_proton">MaliDeck 的 Proton 11 選項</string>
     <plurals name="storage_tool_custom_games">
         <item quantity="one">%d 個遊戲使用</item>
         <item quantity="other">%d 個遊戲使用</item>
@@ -2742,7 +2742,7 @@
     </plurals>
     <string name="boot_movie">開機動畫</string>
     <string name="boot_movie_video">影片</string>
-    <string name="boot_movie_droiddeck">DroidDeck · %1$d fps</string>
+    <string name="boot_movie_droiddeck">MaliDeck · %1$d fps</string>
     <string name="boot_movie_note">60 fps 較流暢，但 Steam 啟動時會使用較多 CPU。在 Steam 本身設定中選擇的動畫也會顯示在這裡。</string>
     <string name="boot_movie_sound">聲音</string>
     <string name="boot_movie_custom">自訂影片</string>
@@ -2754,24 +2754,24 @@
     <string name="boot_movie_imported_silent">%1$s 現在是開機動畫（無聲）</string>
     <string name="boot_movie_too_long">需要轉換的影片不能超過 %1$d 秒</string>
     <string name="boot_movie_converting">正在轉換 %1$d%%</string>
-    <string name="boot_movie_converting_started">正在為 Steam 轉換 %1$s。請保持 DroidDeck 開啟。</string>
+    <string name="boot_movie_converting_started">正在為 Steam 轉換 %1$s。請保持 MaliDeck 開啟。</string>
     <string name="boot_movie_unsupported">此裝置無法解碼該影片。</string>
     <string name="boot_movie_import_failed">無法匯入此影片</string>
     <string name="boot_movie_remove_confirm">移除 %1$s？</string>
-    <string name="boot_movie_remove_confirm_body">這會從 DroidDeck 和 Steam 的動畫資料夾中刪除該動畫。</string>
+    <string name="boot_movie_remove_confirm_body">這會從 MaliDeck 和 Steam 的動畫資料夾中刪除該動畫。</string>
     <string name="boot_movie_tab_installed">已安裝</string>
     <string name="boot_movie_tab_import">匯入</string>
     <string name="boot_movie_tab_repo">SteamDeckRepo</string>
     <string name="boot_movie_tab_sound">聲音</string>
     <string name="boot_movie_installed">已安裝的動畫</string>
     <string name="boot_movie_browse">瀏覽</string>
-    <string name="boot_movie_source_droiddeck">DroidDeck</string>
+    <string name="boot_movie_source_droiddeck">MaliDeck</string>
     <string name="boot_movie_source_import">已匯入</string>
     <string name="boot_movie_source_repo">SteamDeckRepo</string>
     <string name="boot_movie_source_steam">Steam</string>
     <string name="boot_movie_source_pointshop">點數商店</string>
     <string name="boot_movie_report">啟動影片報告</string>
-    <string name="boot_movie_report_hint">將 DroidDeck 和 Steam 掌握的啟動影片資訊儲存為文字檔，可附在錯誤報告中。</string>
+    <string name="boot_movie_report_hint">將 MaliDeck 和 Steam 掌握的啟動影片資訊儲存為文字檔，可附在錯誤報告中。</string>
     <string name="boot_movie_report_save">儲存</string>
     <string name="boot_movie_report_saved">已儲存到 %1$s</string>
     <string name="boot_movie_report_failed">無法儲存報告。</string>
@@ -2807,7 +2807,7 @@
     <string name="glasses_joycons_hint">使用智慧眼鏡攝影機定位已配對的 Joy-Con 控制器。旋轉和按鍵輸入來自 Joy-Con 控制器。當您的手腕被遮住時，系統會估算位置。此功能會取代徒手操作的控制器，並暫停手機相機追蹤。連接或重設追蹤中心時，請將 Joy-Con 控制器指向前方。</string>
     <string name="glasses_joycons_requires_position">請先啟用位置追蹤功能。需要 Android 12 或更高版本且 Joy-Con 控制器支援體感功能。預設關閉。</string>
     <string name="setup_tab_glasses">智慧眼鏡</string>
-    <string name="setup_glasses_scope">顯示和頭部追蹤設定可在 DroidDeck 選單、遊戲和桌面會話之間共用。</string>
+    <string name="setup_glasses_scope">顯示和頭部追蹤設定可在 MaliDeck 選單、遊戲和桌面會話之間共用。</string>
     <string name="setup_glasses_connect">連接智慧眼鏡以變更其顯示和追蹤設定。斷開連線後，您儲存的設定將被保留。</string>
     <string name="glasses_vr">VR</string>
     <string name="glasses_display_mode">顯示模式</string>
@@ -2826,7 +2826,7 @@
     <string name="glasses_refresh_30_hint">啟用智慧眼鏡遊戲功能，選擇顯示器的原生 30 Hz 模式。</string>
     <string name="glasses_3dof">3DoF 虛擬螢幕</string>
     <string name="glasses_3dof_hint">將平面遊戲固定在您面前，以便您可以環顧四周。無需切換到 3D 模式即可啟用智慧眼鏡遊戲功能。</string>
-    <string name="glasses_screen_app_wide">寬度和距離會立即更新 DroidDeck 選單、遊戲和桌面會話的追蹤虛擬畫面。</string>
+    <string name="glasses_screen_app_wide">寬度和距離會立即更新 MaliDeck 選單、遊戲和桌面會話的追蹤虛擬畫面。</string>
     <string name="glasses_head_tracking_spatial_vr_hint">位置追蹤包含 SteamVR 中的頭部旋轉。如需僅進行旋轉追踪，請關閉位置追蹤。</string>
     <string name="glasses_head_tracking_spatial_hint">控制虛擬螢幕上的頭部移動。位置追蹤包含 SteamVR 中的頭部旋轉。</string>
     <string name="glasses_quick_actions">快速操作</string>
@@ -2920,7 +2920,7 @@
     <string name="spatial_timing_values">%1$.1f Hz • 影像年齡 %2$.1f ms • 處理 %3$.1f ms</string>
     <string name="spatial_input_values">輸入限制%1$.1f Hz • 攝影機影像的%2$.0f%%。頭部追蹤繼續以其最大頻率進行。</string>
     <string name="spatial_frame_counts">%1$d 已處理 • %2$d 已丟棄 • %3$d 因輸入限製而被跳過</string>
-    <string name="spatial_print_title">DroidDeck - Luma Ultra 校準</string>
+    <string name="spatial_print_title">MaliDeck - Luma Ultra 校準</string>
     <string name="spatial_print_scale" formatted="false">以 100%/實際尺寸列印。每個正方形：30 毫米（1.181 吋）。</string>
     <string name="spatial_print_stationary">保持校準目標平坦且靜止；在拍攝之間移動智慧眼鏡。</string>
     <string name="spatial_print_check">刻度檢查：刻度之間 100 毫米（3.937 吋）</string>
@@ -3004,17 +3004,17 @@
     <string name="spatial_opencv_load_error">OpenCV 無法載入</string>
     <string name="glasses_6dof">6DoF 虛擬螢幕</string>
     <string name="tracking_recovery_look">在光線充足的房間內緩慢環顧四周。\n不要遮擋追蹤攝影機，並面向家具等有明顯細節的物體。</string>
-    <string name="spatial_print_job">DroidDeck ChArUco 30 mm</string>
+    <string name="spatial_print_job">MaliDeck ChArUco 30 mm</string>
     <string name="setup_group_memory">記憶體</string>
     <string name="setup_clear_cached">工作階段前關閉快取的應用程式</string>
     <string name="setup_clear_cached_hint">工作階段開始時關閉 Android 留在背景的應用程式，讓遊戲有更多記憶體可用。需要開啟無線偵錯。</string>
-    <string name="setup_clear_cached_unpaired">需要先將 DroidDeck 與無線偵錯配對（見下方「配對」）。</string>
+    <string name="setup_clear_cached_unpaired">需要先將 MaliDeck 與無線偵錯配對（見下方「配對」）。</string>
     <string name="setup_memory_hud">記憶體讀數</string>
-    <string name="setup_memory_hud_hint">在工作階段畫面上顯示已用記憶體和交換空間。進階模式會分別顯示遊戲、DroidDeck、Android 和 GPU。</string>
+    <string name="setup_memory_hud_hint">在工作階段畫面上顯示已用記憶體和交換空間。進階模式會分別顯示遊戲、MaliDeck、Android 和 GPU。</string>
     <string name="setup_memory_hud_simple">簡單</string>
     <string name="setup_memory_hud_advanced">進階</string>
     <string name="memory_hud_simple">記憶體 %1$s/%2$s GB · 交換 %3$s/%4$s GB</string>
-    <string name="memory_hud_split">遊戲 %1$s · DroidDeck %2$s · Android %3$s GB</string>
+    <string name="memory_hud_split">遊戲 %1$s · MaliDeck %2$s · Android %3$s GB</string>
     <string name="memory_hud_gpu">GPU %1$s GB</string>
     <string name="setup_bg_limit">工作階段期間的背景應用程式</string>
     <string name="setup_bg_limit_hint">工作階段執行期間，Android 最多快取這麼多個應用程式並關閉其餘的，讓遊戲使用它們的記憶體。工作階段結束後還原。需要開啟無線偵錯。</string>
@@ -3022,7 +3022,7 @@
     <string name="setup_bg_limit_1">最多 1 個</string>
     <string name="setup_bg_limit_0">無</string>
     <string name="setup_adb_pair">無線偵錯</string>
-    <string name="setup_adb_pair_hint">為上面的選項將 DroidDeck 與 Android 無線偵錯配對。子處理程序限制保持關閉。</string>
+    <string name="setup_adb_pair_hint">為上面的選項將 MaliDeck 與 Android 無線偵錯配對。子處理程序限制保持關閉。</string>
     <string name="setup_adb_pair_button">配對</string>
     <string name="epic_client_missing">未安裝</string>
     <string name="epic_client_open">開啟</string>
