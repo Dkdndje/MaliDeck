@@ -17,7 +17,7 @@ For project acknowledgments and detailed licensing information, see [CREDITS.md]
 ## Release v0.6.0-mali-1.0.0
 
 - **Tag:** [`v0.6.0-mali-1.0.0`](https://github.com/Dkdndje/MaliDeck/releases/tag/v0.6.0-mali-1.0.0)
-- **Source Commit:** [`538316c`](https://github.com/Dkdndje/MaliDeck/commit/538316cc20fef731fc61fb97ef0fe07525287aa9) (base code commit) on branch `mali` / `main`.
+- **Source Commit:** [`538316c`](https://github.com/Dkdndje/MaliDeck/commit/538316ccc78b1f3fa6ae24d719a22f203677d753) (base code commit) on branch `mali` / `main`.
 
 ### Release Assets & Provenance
 
