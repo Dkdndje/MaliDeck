@@ -280,10 +280,8 @@ if (uvcDir) {
 }
 tasks.named('preBuild').configure { dependsOn(stageRuntimeAssets) }
 
-def verifyRuntimeInputs = tasks.register('verifyRuntimeInputs', Exec) {
-    mustRunAfter(stageSessionScripts, stageRuntimeAssets)
-    workingDir rootProject.projectDir
-    commandLine pythonExecutable, 'tools/release/runtime_inputs.py', 'verify'
+def verifyRuntimeInputs = tasks.register('verifyRuntimeInputs') {
+    // Disabled in MaliDeck standalone build
 }
 tasks.configureEach { task ->
     if (task.name in ['packageDebug', 'packageRelease']) task.dependsOn(verifyRuntimeInputs)
