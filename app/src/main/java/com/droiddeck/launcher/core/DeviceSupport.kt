@@ -24,6 +24,8 @@ object DeviceSupport {
     /** MaliDeck allows both Adreno and Mali devices. */
     fun canTry(): Boolean = adreno() || mali()
 
+    fun lowLatencyWifiSafe(): Boolean = Build.VERSION.SDK_INT < 31 || Build.SOC_MODEL != "CQ8725S"
+
     /** The chip as the device names it, for the card that explains device info. */
     fun gpuName(context: Context): String {
         val soc = if (Build.VERSION.SDK_INT >= 31) Build.SOC_MODEL.takeIf { it.isNotBlank() && it != Build.UNKNOWN } else null
