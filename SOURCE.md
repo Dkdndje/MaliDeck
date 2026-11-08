@@ -52,6 +52,7 @@ For project acknowledgments and detailed licensing information, see [CREDITS.md]
    - **Built From This Repo:** **NO**.
    - **Origin:** Byte-identical copy of `DroidDeck-Mali-G615-debug.apk` built and published by jdmg28 in [jdmg28/DroidDeck-Mali release v0.4.0-beta.1](https://github.com/jdmg28/DroidDeck-Mali/releases/tag/v0.4.0-beta.1) (source commit `2a9aa986d92bfc9216c5568aed1cd4e4ffab4a15`). This was a debug build by jdmg28.
 
-2. **`DroidDeck-Mali-TURBO-PERF.zip`**
+2. **`DroidDeck-Mali-CSF-PanVK-kbase-universal.zip`**
+   - **SHA-256:** `67ca9a08ad954cd108dad69907cf0595d775707598eb6a4a02683b11c62a2467`
    - **Built From This Repo:** **NO**.
-   - **Origin:** Byte-identical repackaged copy of `DroidDeck-Mali-CSF-PanVK-kbase-universal.zip` from jdmg28/DroidDeck-Mali v0.4.0-beta.1. Despite the file name, it contains no additional performance modifications.
+   - **Origin:** Byte-identical copy of `DroidDeck-Mali-CSF-PanVK-kbase-universal.zip` released by jdmg28 in [jdmg28/DroidDeck-Mali release v0.4.0-beta.1](https://github.com/jdmg28/DroidDeck-Mali/releases/tag/v0.4.0-beta.1).

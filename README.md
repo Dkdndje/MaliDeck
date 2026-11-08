@@ -48,7 +48,7 @@ We report hardware test status honestly. Do not assume compatibility without dev
 
 | Release / Build | Hardware Tested | Results & Observations | Status |
 |---|---|---|---|
-| **v0.6.0-mali-1.0.0** (Current) | *None* | Build verified via GitHub Actions CI and code audit. Has **not** been run on any physical Mali device. | **Untested on physical devices** |
+| **v0.6.0-mali-1.0.0** (Current) | *None* | Built and signed by GitHub Actions CI (structural verification only); no code audit or device test was performed. Has **not** been run on any physical Mali device. | **Untested on physical devices** |
 | **v0.4.0-beta.1** (Historical Beta) | Mali-G720 MC8 (POCO X8 Pro) | Steam client launched; 3D title ran at 720p ~20–30 FPS; NIS upscaler operational. Frame generation x2 crashed intermittently; x3/x4 caused crashes (`SIGSEGV` in `libGLES_mali.so` in 4 of 5 sessions). | Historical Reference ([docs/BETA-README.md](docs/BETA-README.md)) |
 | **Earlier Beta Builds** (jdmg28) | Mali-G615 MC6 (POCO X6 Pro) | Tested by jdmg28 on his initial fork builds. Not re-tested on v0.6.0. | Upstream fork reference |
 
