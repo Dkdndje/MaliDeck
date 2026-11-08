@@ -55,4 +55,4 @@ For project acknowledgments and detailed licensing information, see [CREDITS.md]
 2. **`DroidDeck-Mali-CSF-PanVK-kbase-universal.zip`**
    - **SHA-256:** `67ca9a08ad954cd108dad69907cf0595d775707598eb6a4a02683b11c62a2467`
    - **Built From This Repo:** **NO**.
-   - **Origin:** Byte-identical copy of `DroidDeck-Mali-CSF-PanVK-kbase-universal.zip` released by jdmg28 in [jdmg28/DroidDeck-Mali release v0.4.0-beta.1](https://github.com/jdmg28/DroidDeck-Mali/releases/tag/v0.4.0-beta.1).
+   - **Origin:** Repackaged copy (renamed from DroidDeck-Mali-TURBO-PERF.zip; the ZIP container differs from jdmg28's, SHA-256 00bed74c5c6a8eddfd36da181603b109ba1368ae86846ec9614f06a09fabb9c0). All five files inside (libpanvk_backend.so, libvulkan_droiddeck_mali.so, licenses/LICENSE.adapter, licenses/NOTICE.txt, meta.json) are byte-identical to jdmg28's universal zip from [jdmg28/DroidDeck-Mali release v0.4.0-beta.1](https://github.com/jdmg28/DroidDeck-Mali/releases/tag/v0.4.0-beta.1).
