@@ -52,7 +52,6 @@ object FrameGen {
 
     fun apply(context: Context, refreshHz: Float): String? = apply(context, mode(context), refreshHz)
 
-    /** Arms [mode] in this process's compositor; the cloud player passes its own mode and frame-rate cap. */
     fun apply(context: Context, mode: Mode, refreshHz: Float): String? {
         val safeMode = if (com.droiddeck.launcher.core.DeviceSupport.mali()) {
             // Block x3/x4 on Mali GPUs to avoid SIGSEGV in vendor driver

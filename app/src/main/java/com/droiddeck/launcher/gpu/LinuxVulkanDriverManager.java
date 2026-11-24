@@ -186,6 +186,7 @@ public class LinuxVulkanDriverManager {
                             throw new IllegalArgumentException("duplicate runtime library in driver zip: " + base);
                         runtimeSeen.add(base);
                         unpacked += copyBounded(zis, new File(tmpDir, base), DriverArchivePolicy.MAX_RUNTIME_LIBRARY_BYTES);
+                    }
                     } else if (base.equals(META_NAME)) {
                         try {
                             zipMeta = new JSONObject(new String(readAllBounded(zis, DriverArchivePolicy.MAX_META_BYTES), StandardCharsets.UTF_8));
@@ -224,7 +225,8 @@ public class LinuxVulkanDriverManager {
             if (soName == null) {
                 throw new IllegalArgumentException(context.getString(R.string.lvd_no_library));
             }
-            File so = new File(tmpDir, LIB_NAME);
+            String stored = storedName(soName);
+            File so = new File(tmpDir, stored);
             if (!isAarch64Elf(so)) {
                 throw new IllegalArgumentException(context.getString(R.string.lvd_not_aarch64, soName));
             }
@@ -308,6 +310,24 @@ public class LinuxVulkanDriverManager {
         int n = 2;
         while (getDriverDir(id).exists()) id = base + "-" + (n++);
         return id;
+    }
+
+    /** The names an installed driver's library is kept under; Turnip keeps {@link #LIB_NAME}. */
+    private static final String[] STORED_NAMES = {LIB_NAME, "libvulkan_panfrost.so", "libvulkan_radeon.so"};
+
+    /**
+     * The name a driver library is installed under: its own driver's (PanVK, RADV), so the session
+     * log and the graphics report say which driver it is; a Turnip build keeps {@link #LIB_NAME}.
+     */
+    public static String storedName(String soName) {
+        if (soName != null && soName.startsWith("libvulkan_panfrost")) return "libvulkan_panfrost.so";
+        if (soName != null && soName.startsWith("libvulkan_radeon")) return "libvulkan_radeon.so";
+        return LIB_NAME;
+    }
+
+    public static boolean isDriverLibrary(String base) {
+        return base.endsWith(".so") && (base.startsWith("libvulkan_freedreno")
+                || base.startsWith("libvulkan_panfrost") || base.startsWith("libvulkan_radeon"));
     }
 
     static String sanitizeId(String name) {
