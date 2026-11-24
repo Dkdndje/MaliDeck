@@ -43,14 +43,14 @@ jobs:
         run: |
           mkdir -p app/build/packs
           # Create placeholder archives for add-on packs if not built in CI
-          for p in proot directaudio tracking xbox comet; do
+          for p in proot directaudio tracking xbox comet butler powervr; do
             touch "app/build/packs/${p}.tar.zst"
           done
           mkdir -p app/build/prepared-assets
 
       - name: Build Release APK
         env:
-          DROIDDECK_BUILD_LABEL: "MaliDeck v0.6.0-mali-1.0.0"
+          DROIDDECK_BUILD_LABEL: "MaliDeck v0.7.0-mali-1.0.0"
         run: ./gradlew assembleRelease --stacktrace
 
       - name: Upload Unsigned APK
@@ -86,7 +86,7 @@ jobs:
           
           mkdir -p out
           in_apk=(in/*.apk)
-          out_apk="out/MaliDeck-v0.6.0-mali-1.0.0.apk"
+          out_apk="out/MaliDeck-v0.7.0-mali-1.0.0.apk"
           
           "$BUILD_TOOLS/zipalign" -p -f 4 "${in_apk[0]}" "$RUNNER_TEMP/aligned.apk"
           "$BUILD_TOOLS/apksigner" sign \
@@ -94,35 +94,78 @@ jobs:
             --ks-key-alias droiddeck --key-pass "pass:$RELEASE_STORE_PASSWORD" \
             --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true \
             --out "$out_apk" "$RUNNER_TEMP/aligned.apk"
+
+      - name: Package Mali Driver Kit (PanVK v0.2.0)
+        run: |
+          set -euo pipefail
+          mkdir -p kit_build/licenses
+          curl -fsSL -o kit_build/libpanvk_backend.so \
+            https://github.com/zenithblue-oss/panvk-kbase-android/releases/download/panvk-kbase-v26.3.1/libvulkan_panfrost-glibc-aarch64.so
           
-          ( cd out && sha256sum MaliDeck-v0.6.0-mali-1.0.0.apk > SHA256SUMS.txt )
+          curl -fsSL -o beta_kit.zip \
+            https://github.com/Dkdndje/MaliDeck/releases/download/Beta/DroidDeck-Mali-CSF-PanVK-kbase-universal.zip
+          unzip -p beta_kit.zip libvulkan_droiddeck_mali.so > kit_build/libvulkan_droiddeck_mali.so
+          unzip -p beta_kit.zip licenses/LICENSE.adapter > kit_build/licenses/LICENSE.adapter
+          unzip -p beta_kit.zip licenses/NOTICE.txt > kit_build/licenses/NOTICE.txt
+          cp kit_build/licenses/NOTICE.txt kit_build/NOTICE.txt
+          
+          cat << 'META' > kit_build/meta.json
+          {
+            "schemaVersion": 1,
+            "kind": "vulkan",
+            "name": "DroidDeck Mali PanVK (PanVK-kbase v26.3.1 + universal adapter)",
+            "description": "PanVK-kbase v26.3.1 (Mesa 26.3.0-devel build 122i, Vulkan 1.4.363) + universal Mali ICD adapter for MaliDeck. Supports CSF (v10-v14) & JM (v6/v7/v9).",
+            "driverVersion": "Adapter 0.2.0 (universal Mali) / PanVK-kbase v26.3.1 (Mesa 26.3.0-devel, build 122i)",
+            "gpu": "Mali CSF v10-v14 (G615/G925/G720/G715/G610) & JM v6/v7/v9 (G52/G57/G77/G78)",
+            "minGlibc": "2.38",
+            "libraryName": "libvulkan_droiddeck_mali.so",
+            "adapterBinarySha256": "250e2663e904ad7ef87095660cb1bb656a63a09f0e77298044824c5b0fb23b83",
+            "panvkBinarySha256": "063bcf0cacd6605458f01530e7fc4f4de43cda7d7a995d9518e1a6e38f5d0db6",
+            "note": "PanVK-kbase v26.3.1 glibc backend with universal Mali adapter. Verified on Mali-G615 and compatible CSF/JM Mali GPUs."
+          }
+          META
+          
+          python3 - << 'PY'
+          import zipfile, os
+          with zipfile.ZipFile("out/MaliDeck-PanVK-Universal-v0.2.0.zip", "w", zipfile.ZIP_DEFLATED) as z:
+              for root, _, files in os.walk("kit_build"):
+                  for file in sorted(files):
+                      full = os.path.join(root, file)
+                      rel = os.path.relpath(full, "kit_build")
+                      z.write(full, rel)
+          PY
+          
+          ( cd out && sha256sum MaliDeck-v0.7.0-mali-1.0.0.apk MaliDeck-PanVK-Universal-v0.2.0.zip > SHA256SUMS.txt )
           cat out/SHA256SUMS.txt
 
       - name: Create GitHub Release
+        if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          TAG="v0.6.0-mali-1.0.0"
-          TITLE="MaliDeck v0.6.0-mali-1.0.0 (ARM Mali Optimized)"
+          TAG="v0.7.0-mali-1.0.0"
+          TITLE="MaliDeck v0.7.0-mali-1.0.0 (ARM Mali Optimized)"
           cat << 'BODY' > release_notes.md
-          # MaliDeck v0.6.0-mali-1.0.0
+          # MaliDeck v0.7.0-mali-1.0.0
 
-          Based on DroidDeck (GPL-3.0) — optimized for ARM Mali GPUs.
+          Based on DroidDeck 0.7.0 (GPL-3.0) — fully optimized for ARM Mali GPUs.
 
           ### Highlights
-          - **Rebrand:** Application ID `com.malideck.launcher`, MaliDeck branding with proper GPL-3.0 attribution.
-          - **Mali & PanVK:** Automatic `/dev/mali0` detection, safe runtime driver import, bypass gamescope WSI when needed.
-          - **30 FPS Adaptive Performance Engine:**
-            - Dynamic governor scaling resolution & FSR when FPS drops below 30.
-            - Honest advisory when 30 FPS cannot be reached on hardware.
-            - Thermal throttling detection and lower profile guidance.
-            - Frame Generation protection (blocks unsafe multipliers, crash auto-disable).
-            - Persistent shader caches for Mesa, DXVK, and VKD3D.
-          - **External Games:** Pick Windows `.exe`, `.bat`, `.msi`, Linux `.AppImage`, `.sh` directly from storage.
-          - **One-Tap Diagnostics:** Detailed GPU, kbase, SoC, and session report for GitHub issues.
-          - **Clean Build:** Adreno Turnip assets excluded, signed with release key, shrink enabled.
+          - **Rebase on DroidDeck 0.7.0:** Upgraded from 0.6.0. Includes memory compression for idle background games, session bus fix for Steam, input latency improvements, and updated controller handling.
+          - **Driver Package v0.2.0 (`MaliDeck-PanVK-Universal-v0.2.0.zip`):** Bundles PanVK-kbase v26.3.1 (Mesa 26.3.0-devel build 122i, Vulkan 1.4.363) with the universal Mali ICD adapter supporting Mali CSF (v10–v14) & JM (v6/v7/v9).
+          - **Lean Mali-Exclusive Build:** Stripped all Qualcomm Adreno / Turnip assets.
+          - **Mali Gaming Performance Profile:**
+            - `PAN_MESA_DEBUG=sink_sync`
+            - `MESA_DISK_CACHE_SINGLE_FILE=1`
+            - `MESA_SHADER_CACHE_MAX_SIZE=2G`
+            - `DXVK_STATE_CACHE=1`
+            - `DXVK_ASYNC=1`
+            - `vblank_mode=0`
+          - **Adaptive Performance Engine & Diagnostics:** Dynamic governor scaling, thermal throttling detection, frame generation safety checks, and one-tap GPU diagnostics.
+
+          See [SOURCE.md](SOURCE.md) and [CREDITS.md](CREDITS.md) for provenance and upstream attribution.
           BODY
           
-          gh release create "$TAG" out/MaliDeck-v0.6.0-mali-1.0.0.apk out/SHA256SUMS.txt \
+          gh release create "$TAG" out/MaliDeck-v0.7.0-mali-1.0.0.apk out/MaliDeck-PanVK-Universal-v0.2.0.zip out/SHA256SUMS.txt \
             --title "$TITLE" --notes-file release_notes.md --target "${{ github.sha }}"

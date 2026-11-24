@@ -141,5 +141,10 @@ def build(ndk, output=OUTPUT):
 
 
 if __name__ == '__main__':
+    original = ROOT / 'app/src/main/assets/graphics_driver/adrenotools-turnip25.1.0.tzst'
+    if not original.exists():
+        print(f"Adreno Turnip driver absent ({original}) - MaliDeck Mali-exclusive build, skipping Quest turnip driver build")
+        OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+        sys.exit(0)
     build(sys.argv[1])
     build_a6xx(sys.argv[1])
