@@ -234,6 +234,12 @@ if [ "${BL_GPU_FAMILY:-}" = mali ]; then
   echo "== mali: configuring PanVK environment settings"
   export PANVK_KBASE_GPU_SEMAPHORE_WAITS=${PANVK_KBASE_GPU_SEMAPHORE_WAITS:-0}
   export PANVK_KBASE_DRI3=${PANVK_KBASE_DRI3:-1}
+  export PAN_MESA_DEBUG=${PAN_MESA_DEBUG:-sink_sync}
+  export MESA_DISK_CACHE_SINGLE_FILE=1
+  export MESA_SHADER_CACHE_MAX_SIZE=2G
+  export DXVK_STATE_CACHE=1
+  export DXVK_ASYNC=${DXVK_ASYNC:-1}
+  export vblank_mode=0
   case "${BL_MALI_GAMESCOPE_WSI:-0}" in
     1) echo "== mali games: gamescope WSI layer ON" ;;
     *) export DISABLE_GAMESCOPE_WSI=1
