@@ -9,8 +9,26 @@ For project acknowledgments and detailed licensing information, see [CREDITS.md]
 ## Upstream Base
 
 - **Upstream Repository:** [https://github.com/Droid-Deck/DroidDeck](https://github.com/Droid-Deck/DroidDeck)
-- **Base Commit:** [`fbb334263c388f30778bf60e441764e0b76f3f54`](https://github.com/Droid-Deck/DroidDeck/commit/fbb334263c388f30778bf60e441764e0b76f3f54) (`fbb3342`)
+- **Current Base Tag:** [`0.7.0`](https://github.com/Droid-Deck/DroidDeck/releases/tag/0.7.0) (commit [`2bd7df5e1ad3aed25a5c9ddede1120a7c2f0b104`](https://github.com/Droid-Deck/DroidDeck/commit/2bd7df5e1ad3aed25a5c9ddede1120a7c2f0b104))
+- **Initial Fork Commit:** [`fbb334263c388f30778bf60e441764e0b76f3f54`](https://github.com/Droid-Deck/DroidDeck/commit/fbb334263c388f30778bf60e441764e0b76f3f54) (`fbb3342`)
 - **License:** GNU General Public License v3.0 ([GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.html))
+
+---
+
+## Driver Packages & Provenance
+
+### MaliDeck-PanVK-Universal-v0.2.0.zip (Current)
+
+- **SHA-256:** `11cb0e185f127da7f21f5b88d04b0e468759f050e023466f7389f0867d97d44d`
+- **Backend Library (`libpanvk_backend.so`):** Upgraded to [zenithblue-oss/panvk-kbase-android release panvk-kbase-v26.3.1](https://github.com/zenithblue-oss/panvk-kbase-android/releases/tag/panvk-kbase-v26.3.1) (`libvulkan_panfrost-glibc-aarch64.so`, SHA-256 `063bcf0cacd6605458f01530e7fc4f4de43cda7d7a995d9518e1a6e38f5d0db6`).
+- **ICD Adapter (`libvulkan_droiddeck_mali.so`):** Universal Mali ICD adapter compiled from [`tools/mali-driver/`](tools/mali-driver/) providing the `/dev/mali0` nested DRM node facade.
+- **Hardware Coverage:** Extends support to ARM Mali CSF v10-v14 as well as Bifrost JM (v6/v7) and Valhall JM (v9).
+
+### MaliDeck-PanVK-Universal-v0.1.0.zip (Legacy v0.6.0)
+
+- **SHA-256:** `6ae65cff3567fe6e99c0a427e2a5eb8c72ec8e4734d3554e92488591595c3a79`
+- **Built From This Repo:** **NO**.
+- **Origin & Contents:** Repackaged binaries (`libpanvk_backend.so`, `libvulkan_droiddeck_mali.so`, `licenses/LICENSE.adapter`) byte-identical to `DroidDeck-Mali-CSF-PanVK-kbase-universal.zip` from jdmg28/DroidDeck-Mali v0.4.0-beta.1.
 
 ---
 
@@ -29,13 +47,7 @@ For project acknowledgments and detailed licensing information, see [CREDITS.md]
 
 2. **`MaliDeck-PanVK-Universal-v0.1.0.zip`**
    - **SHA-256:** `6ae65cff3567fe6e99c0a427e2a5eb8c72ec8e4734d3554e92488591595c3a79`
-   - **Built From This Repo:** **NO**.
-   - **Origin & Contents:** This driver package contains prebuilt shared library binaries (`libpanvk_backend.so`, `libvulkan_droiddeck_mali.so`, `licenses/LICENSE.adapter`) that are byte-identical to `DroidDeck-Mali-CSF-PanVK-kbase-universal.zip` released by jdmg28 in [jdmg28/DroidDeck-Mali tag v0.4.0-beta.1](https://github.com/jdmg28/DroidDeck-Mali/releases/tag/v0.4.0-beta.1). Only `meta.json` and `NOTICE.txt` were repackaged.
-   - **Source Code for the Adapter:** The adapter C source and build scripts (`src/droiddeck_mali_icd.c`, `build-adapter.sh`, `make-universal-zip.sh`) are imported from jdmg28/DroidDeck-Mali at commit `2a9aa986` and reside in [`tools/mali-driver/`](tools/mali-driver/).
-   - **PanVK Backend Source:** Maintained by [zenithblue-oss/panvk-kbase-android](https://github.com/zenithblue-oss/panvk-kbase-android).
-
-3. **`SHA256SUMS.txt`**
-   - **Origin:** Generated manifest containing checksums for both the APK and the driver ZIP.
+   - See above.
 
 ---
 
